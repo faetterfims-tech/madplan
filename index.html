@@ -519,21 +519,63 @@ function toggleCheck(key,el) {
 }
 
 // ── AI REQUESTS ───────────────────────────────────────────
-function requestNewWeek() {
+const BACKEND = 'https://madplan-backend.onrender.com';
+
+async function requestNewWeek() {
+  const btn = document.querySelector('.btn.ai');
+  btn.disabled = true;
+  btn.textContent = '⏳ Genererer madplan...';
+
   const disliked = Object.entries(ratings).filter(([,v])=>v==='disliked').map(([k])=>k);
   const liked = Object.entries(ratings).filter(([,v])=>v==='liked').map(([k])=>k);
   const favNames = favourites.map(f=>f.name);
   const avoid = [...new Set([...recentMeals,...Object.values(weekPlan).filter(Boolean).map(m=>m.name)])].slice(0,14);
-  const msg = 'MEAL_PLAN_REQUEST: Plan 7 dinners (Mon-Sun) for a Danish family of 3-4. Total budget max 1000 DKK combined (realistic Bilka prices). All meals must be different, no repeated cuisines back-to-back. Mix easy weekday meals (80-120 kr) with nicer weekend meals (130-160 kr). Disliked (never suggest): '+(disliked.join(', ')||'none')+'. Family favourites (include 1-2): '+(favNames.join(', ')||liked.join(', ')||'none')+'. Recently eaten (avoid): '+(avoid.join(', ')||'none')+'.';
-  alert('📋 Kopiér denne besked og send den til Claude:\n\n'+msg);
+
+  try {
+    const res = await fetch(BACKEND+'/plan', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ disliked, liked: [...favNames,...liked], avoid })
+    });
+    const data = await res.json();
+    if(data.error) throw new Error(data.error);
+    weekPlan = {};
+    data.plan.forEach(m => { if(m.day) weekPlan[m.day] = m; });
+    save(); renderWeekGrid(); renderHistory();
+  } catch(e) {
+    alert('Fejl: '+e.message);
+  }
+
+  btn.disabled = false;
+  btn.textContent = '✨ Planlæg uge med AI';
 }
-function requestSwap(day) {
+
+async function requestSwap(day) {
+  const btn = event.target;
+  btn.disabled = true;
+  btn.textContent = '⏳...';
+
   const disliked = Object.entries(ratings).filter(([,v])=>v==='disliked').map(([k])=>k);
   const liked = [...Object.entries(ratings).filter(([,v])=>v==='liked').map(([k])=>k),...favourites.map(f=>f.name)];
-  const currentNames = DAYS.filter(d=>weekPlan[d]&&d!==day).map(d=>weekPlan[d].name);
-  const remaining = BUDGET-totalCost()+(weekPlan[day]?weekPlan[day].cost:0);
-  const msg = 'SWAP_MEAL_REQUEST day="'+day+'" budget='+remaining+': Suggest one dinner for Danish family of 3-4. Do not repeat: '+(currentNames.join(', ')||'none')+'. Never suggest: '+(disliked.join(', ')||'none')+'. Family likes: '+(liked.join(', ')||'none')+'. Reply with ONE JSON object only: {"name":"...","cost":NUMBER,"time":"... min","cuisine":"...","ingredients":["...","...","...","...","..."],"steps":["Trin 1...","Trin 2...","Trin 3...","Trin 4..."]}';
-  alert('📋 Kopiér og send til Claude:\n\n'+msg);
+  const currentMeals = DAYS.filter(d=>weekPlan[d]&&d!==day).map(d=>weekPlan[d].name);
+  const budget = BUDGET-totalCost()+(weekPlan[day]?weekPlan[day].cost:0);
+
+  try {
+    const res = await fetch(BACKEND+'/swap', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ day, budget, currentMeals, disliked, liked })
+    });
+    const data = await res.json();
+    if(data.error) throw new Error(data.error);
+    weekPlan[day] = data.meal;
+    save(); renderWeekGrid();
+  } catch(e) {
+    alert('Fejl: '+e.message);
+  }
+
+  btn.disabled = false;
+  btn.textContent = '↔ Skift';
 }
 
 // ── LOAD PLAN (called from Claude response) ───────────────
@@ -578,3 +620,4 @@ renderGrocery();
 </script>
 </body>
 </html>
+
