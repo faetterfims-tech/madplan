@@ -2,22 +2,18 @@
   "name": "Ugentlig Madplan",
   "short_name": "Madplan",
   "description": "Ugentlig madplanlægger med AI og Bilka ToGo indkøbsliste",
-  "start_url": "/",
+  "start_url": "/madplan/",
+  "scope": "/madplan/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#2d7a2d",
   "orientation": "portrait",
   "icons": [
     {
-      "src": "icon.png",
+      "src": "https://faetterfims-tech.github.io/madplan/icon.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
-    },
-    {
-      "src": "icon512.png",
-      "sizes": "512x512",
-      "type": "image/png"
     }
   ]
 }
