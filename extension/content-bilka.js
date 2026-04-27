@@ -74,16 +74,38 @@ chrome.storage.local.get('sp_pending_search', data => {
 
 function buildPanel() {
   if (document.getElementById('sp-panel')) return;
+
+  // Lille fane der vises når panelet er minimeret
+  const tab = document.createElement('div');
+  tab.id = 'sp-tab';
+  tab.style.cssText = [
+    'position:fixed','bottom:80px','left:0','z-index:2147483647',
+    'background:#2d7a2d','color:#fff','border-radius:0 8px 8px 0',
+    'padding:10px 10px 10px 8px','cursor:pointer','display:none',
+    'font-family:-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif',
+    'font-size:12px','font-weight:700','writing-mode:horizontal-tb',
+    'box-shadow:2px 2px 8px rgba(0,0,0,.25)','line-height:1.3',
+    'text-align:center'
+  ].join(';');
+  tab.innerHTML = '🥗<br>Liste';
+  document.body.appendChild(tab);
+
   const el = document.createElement('div');
   el.id = 'sp-panel';
   el.style.cssText = [
-    'position:fixed','bottom:16px','right:16px','width:272px',
+    'position:fixed','bottom:60px','left:16px','width:272px',
     'background:#fff','border-radius:14px',
     'box-shadow:0 6px 28px rgba(0,0,0,.22)','z-index:2147483647',
     'font-family:-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif',
     'overflow:hidden','color:#1a1a1a'
   ].join(';');
   document.body.appendChild(el);
+
+  tab.addEventListener('click', () => {
+    el.style.display = '';
+    tab.style.display = 'none';
+  });
+
   renderPanel();
 }
 
@@ -160,6 +182,8 @@ function renderPanel() {
 
     document.getElementById('sp-close')?.addEventListener('click', () => {
       panel.style.display = 'none';
+      const tab = document.getElementById('sp-tab');
+      if (tab) tab.style.display = '';
     });
 
     document.getElementById('sp-done-btn')?.addEventListener('click', () => {
