@@ -4,12 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <meta name="apple-mobile-web-app-title" content="Madplan">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="SmartPlate">
+  <meta name="theme-color" content="#2d7a2d">
   <link rel="apple-touch-icon" href="icon.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="icon.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="icon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="icon.png">
   <link rel="manifest" href="manifest.json">
-  <title>Ugentlig Madplan</title>
+  <title>SmartPlate</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
@@ -617,6 +620,10 @@ renderWeekGrid();
 renderFavourites();
 renderHistory();
 renderGrocery();
+
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js').catch(() => {});
+}
 </script>
 </body>
 </html>

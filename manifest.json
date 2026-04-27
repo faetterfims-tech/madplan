@@ -1,19 +1,31 @@
 {
-  "name": "Ugentlig Madplan",
-  "short_name": "Madplan",
-  "description": "Ugentlig madplanlægger med AI og Bilka ToGo indkøbsliste",
-  "start_url": "/madplan/",
-  "scope": "/madplan/",
+  "name": "SmartPlate",
+  "short_name": "SmartPlate",
+  "description": "Familiens komplette indkøbsassistent",
+  "start_url": "/",
+  "scope": "/",
   "display": "standalone",
-  "background_color": "#ffffff",
+  "background_color": "#2d7a2d",
   "theme_color": "#2d7a2d",
   "orientation": "portrait",
   "icons": [
     {
-      "src": "https://faetterfims-tech.github.io/madplan/icon.png",
+      "src": "icon.png",
       "sizes": "192x192",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
+    },
+    {
+      "src": "icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ]
 }
