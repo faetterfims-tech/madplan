@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "SmartPlate — Bilka ToGo",
+  "short_name": "SmartPlate",
+  "version": "1.0.0",
+  "description": "Eksporter din SmartPlate indkøbsliste direkte til Bilka ToGo",
+  "permissions": ["tabs", "scripting", "storage", "activeTab"],
+  "host_permissions": [
+    "https://smartplate.dk/*",
+    "https://www.bilkatogo.dk/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "SmartPlate indkøb"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.bilkatogo.dk/*"],
+      "js": ["content-bilka.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}

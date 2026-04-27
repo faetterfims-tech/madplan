@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<title>SmartPlate</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { width: 320px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f5f5f5; }
+
+  .header { background: #2d7a2d; color: white; padding: 14px 16px; display: flex; align-items: center; gap: 10px; }
+  .header-title { font-size: 17px; font-weight: 700; }
+  .header-sub { font-size: 12px; opacity: .8; margin-top: 1px; }
+
+  .section { background: white; margin: 8px; border-radius: 10px; overflow: hidden; }
+  .section-title { font-size: 11px; font-weight: 600; color: #999; text-transform: uppercase; letter-spacing: .05em; padding: 10px 14px 4px; }
+
+  .btn { width: 100%; padding: 12px 14px; border: none; background: none; cursor: pointer; font-size: 14px; font-family: inherit; text-align: left; display: flex; align-items: center; gap: 10px; border-bottom: 1px solid #f0f0f0; }
+  .btn:last-child { border-bottom: none; }
+  .btn:active { background: #f5f5f5; }
+  .btn-icon { font-size: 20px; width: 28px; text-align: center; }
+  .btn-label { flex: 1; }
+  .btn-label strong { display: block; font-size: 14px; color: #1a1a1a; }
+  .btn-label span { font-size: 12px; color: #999; }
+  .btn-arrow { color: #ccc; font-size: 16px; }
+
+  .status-bar { padding: 10px 14px; display: flex; align-items: center; justify-content: space-between; }
+  .progress { font-size: 13px; color: #444; }
+  .badge { background: #2d7a2d; color: white; border-radius: 99px; padding: 2px 10px; font-size: 12px; font-weight: 600; }
+  .badge.warn { background: #e24b4a; }
+
+  .item-list { max-height: 200px; overflow-y: auto; }
+  .item { display: flex; align-items: center; padding: 8px 14px; border-bottom: 1px solid #f5f5f5; gap: 8px; font-size: 13px; cursor: pointer; }
+  .item:last-child { border-bottom: none; }
+  .item:hover { background: #f9f9f9; }
+  .item-check { color: #2d7a2d; font-size: 15px; width: 18px; flex-shrink: 0; }
+  .item-name { flex: 1; color: #1a1a1a; }
+  .item-name.done { text-decoration: line-through; color: #aaa; }
+  .item-bilka { font-size: 11px; color: #2d7a2d; text-decoration: none; padding: 2px 6px; border: 1px solid #2d7a2d; border-radius: 4px; white-space: nowrap; }
+
+  .empty { padding: 20px 14px; text-align: center; color: #999; font-size: 13px; line-height: 1.6; }
+
+  #sync-status { font-size: 12px; color: #999; padding: 6px 14px 10px; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <div class="header-title">🥗 SmartPlate Indkøb</div>
+    <div class="header-sub" id="header-sub">Henter liste...</div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="status-bar">
+    <span class="progress" id="progress-text">0 varer</span>
+    <span class="badge" id="progress-badge">0/0</span>
+  </div>
+</div>
+
+<div class="section" id="action-section">
+  <button class="btn" id="btn-start-shopping">
+    <span class="btn-icon">🛒</span>
+    <span class="btn-label">
+      <strong>Start indkøb på Bilka ToGo</strong>
+      <span>Åbner søgning for næste vare</span>
+    </span>
+    <span class="btn-arrow">›</span>
+  </button>
+  <button class="btn" id="btn-sync">
+    <span class="btn-icon">↻</span>
+    <span class="btn-label">
+      <strong>Synkroniser fra SmartPlate</strong>
+      <span id="sync-time">Aldrig synkroniseret</span>
+    </span>
+    <span class="btn-arrow">›</span>
+  </button>
+  <button class="btn" id="btn-reset">
+    <span class="btn-icon">🗑</span>
+    <span class="btn-label">
+      <strong>Nulstil indkøb</strong>
+      <span>Start forfra</span>
+    </span>
+    <span class="btn-arrow">›</span>
+  </button>
+</div>
+
+<div class="section">
+  <div class="section-title">Indkøbsliste</div>
+  <div class="item-list" id="item-list">
+    <div class="empty">Ingen liste endnu.<br>Tryk "Synkroniser" for at hente din ugeplan fra SmartPlate.</div>
+  </div>
+</div>
+
+<script src="popup.js"></script>
+</body>
+</html>
