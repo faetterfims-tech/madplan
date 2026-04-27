@@ -222,7 +222,7 @@
     <div class="stat"><div class="stat-val" id="s-planned">0/7</div><div class="stat-lbl">Dage planlagt</div></div>
     <div class="stat"><div class="stat-val" id="s-variety">-</div><div class="stat-lbl">Variation</div></div>
   </div>
-  <button class="btn ai full" onclick="requestNewWeek()">✨ Planlæg uge med AI</button>
+  <button class="btn ai full" onclick="requestNewWeek()">✨ Planlæg uge</button>
   <button class="btn full" style="color:#e24b4a;border-color:#e24b4a;" onclick="clearWeek()">🗑 Ryd ugeplan</button>
   <div id="week-grid"></div>
 </div>
@@ -522,35 +522,99 @@ function toggleCheck(key,el) {
 }
 
 // ── AI REQUESTS ───────────────────────────────────────────
-const BACKEND = 'https://madplan-backend.onrender.com';
+// ── LOKAL OPSKRIFTSDATABASE ───────────────────────────────
+const RECIPE_FILES = [
+  'data/recipes-italian.json',
+  'data/recipes-danish.json'
+];
+
+let recipeDb = [];
+let dbLoaded = false;
+
+async function loadRecipeDb() {
+  if (dbLoaded) return recipeDb;
+  const results = await Promise.all(
+    RECIPE_FILES.map(f => fetch(f).then(r => r.ok ? r.json() : []).catch(() => []))
+  );
+  recipeDb = results.flat();
+  dbLoaded = true;
+  return recipeDb;
+}
+
+function recipeToMeal(r) {
+  return {
+    name: r.name,
+    cost: r.cost,
+    time: r.time + ' min',
+    cuisine: r.cuisine,
+    ingredients: r.ingredients,
+    steps: r.steps || [],
+    portions: r.portions,
+    difficulty: r.difficulty,
+    tags: r.tags || []
+  };
+}
+
+function pickMeals(pool, count, alreadyPicked, liked, disliked) {
+  let available = pool
+    .filter(r => !disliked.includes(r.name) && !alreadyPicked.includes(r.name))
+    .map(r => ({ ...r, _score: (liked.includes(r.name) ? 20 : 0) + Math.random() * 10 }))
+    .sort((a, b) => b._score - a._score);
+
+  const picked = [];
+  const cuisineCount = {};
+  for (const r of available) {
+    if (picked.length >= count) break;
+    const c = r.cuisine || 'andet';
+    if ((cuisineCount[c] || 0) < 3) {
+      picked.push(r);
+      cuisineCount[c] = (cuisineCount[c] || 0) + 1;
+    }
+  }
+  if (picked.length < count) {
+    for (const r of available) {
+      if (picked.length >= count) break;
+      if (!picked.find(p => p.id === r.id)) picked.push(r);
+    }
+  }
+  return picked;
+}
 
 async function requestNewWeek() {
   const btn = document.querySelector('.btn.ai');
   btn.disabled = true;
-  btn.textContent = '⏳ Genererer madplan...';
-
-  const disliked = Object.entries(ratings).filter(([,v])=>v==='disliked').map(([k])=>k);
-  const liked = Object.entries(ratings).filter(([,v])=>v==='liked').map(([k])=>k);
-  const favNames = favourites.map(f=>f.name);
-  const avoid = [...new Set([...recentMeals,...Object.values(weekPlan).filter(Boolean).map(m=>m.name)])].slice(0,14);
+  btn.textContent = '⏳ Henter opskrifter...';
 
   try {
-    const res = await fetch(BACKEND+'/plan', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ disliked, liked: [...favNames,...liked], avoid })
-    });
-    const data = await res.json();
-    if(data.error) throw new Error(data.error);
+    const db = await loadRecipeDb();
+    if (db.length === 0) throw new Error('Ingen opskrifter fundet — tjek at data/-mappen er tilgængelig');
+
+    const disliked = Object.entries(ratings).filter(([,v])=>v==='disliked').map(([k])=>k);
+    const liked = [
+      ...Object.entries(ratings).filter(([,v])=>v==='liked').map(([k])=>k),
+      ...favourites.map(f=>f.name)
+    ];
+    const avoid = [...new Set([...recentMeals, ...Object.values(weekPlan).filter(Boolean).map(m=>m.name)])].slice(0,21);
+
+    let pool = db.filter(r => !avoid.includes(r.name));
+    let picked = pickMeals(pool, 7, [], liked, disliked);
+
+    if (picked.length < 7) {
+      const curWeekNames = picked.map(p => p.name);
+      const extra = db.filter(r => !disliked.includes(r.name));
+      const more = pickMeals(extra, 7 - picked.length, curWeekNames, liked, disliked);
+      picked = [...picked, ...more];
+    }
+
     weekPlan = {};
-    data.plan.forEach(m => { if(m.day) weekPlan[m.day] = m; });
+    DAYS.forEach((day, i) => { if (picked[i]) weekPlan[day] = recipeToMeal(picked[i]); });
     save(); renderWeekGrid(); renderHistory();
   } catch(e) {
-    alert('Fejl: '+e.message);
+    alert('Fejl: ' + e.message);
   }
 
   btn.disabled = false;
-  btn.textContent = '✨ Planlæg uge med AI';
+  btn.textContent = '✨ Planlæg uge';
 }
 
 async function requestSwap(day) {
@@ -558,23 +622,26 @@ async function requestSwap(day) {
   btn.disabled = true;
   btn.textContent = '⏳...';
 
-  const disliked = Object.entries(ratings).filter(([,v])=>v==='disliked').map(([k])=>k);
-  const liked = [...Object.entries(ratings).filter(([,v])=>v==='liked').map(([k])=>k),...favourites.map(f=>f.name)];
-  const currentMeals = DAYS.filter(d=>weekPlan[d]&&d!==day).map(d=>weekPlan[d].name);
-  const budget = BUDGET-totalCost()+(weekPlan[day]?weekPlan[day].cost:0);
-
   try {
-    const res = await fetch(BACKEND+'/swap', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ day, budget, currentMeals, disliked, liked })
-    });
-    const data = await res.json();
-    if(data.error) throw new Error(data.error);
-    weekPlan[day] = data.meal;
+    const db = await loadRecipeDb();
+    if (db.length === 0) throw new Error('Ingen opskrifter fundet');
+
+    const disliked = Object.entries(ratings).filter(([,v])=>v==='disliked').map(([k])=>k);
+    const liked = [
+      ...Object.entries(ratings).filter(([,v])=>v==='liked').map(([k])=>k),
+      ...favourites.map(f=>f.name)
+    ];
+    const curWeekNames = DAYS.filter(d => weekPlan[d] && d !== day).map(d => weekPlan[d].name);
+    const avoid = [...new Set([...recentMeals, ...curWeekNames])];
+
+    const pool = db.filter(r => !avoid.includes(r.name) && !disliked.includes(r.name));
+    const picked = pickMeals(pool, 1, [], liked, disliked);
+
+    if (picked.length === 0) throw new Error('Ingen alternative opskrifter tilgængelige');
+    weekPlan[day] = recipeToMeal(picked[0]);
     save(); renderWeekGrid();
   } catch(e) {
-    alert('Fejl: '+e.message);
+    alert('Fejl: ' + e.message);
   }
 
   btn.disabled = false;

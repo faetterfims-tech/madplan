@@ -1,0 +1,608 @@
+[
+  {
+    "id": "da-001",
+    "name": "Frikadeller med kartofler og brun sovs",
+    "cuisine": "dansk",
+    "cost": 95,
+    "time": 45,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["svinekød", "klassiker", "hverdagsret", "dansk"],
+    "ingredients": [
+      "500 g frikadellekød (blandet svine-/kalv)",
+      "1 æg",
+      "1 løg",
+      "1 dl mælk",
+      "3 spsk mel",
+      "1 tsk salt",
+      "½ tsk peber",
+      "½ tsk allehånde",
+      "Smør til stegning",
+      "1 kg kartofler",
+      "40 g smør (til sovs)",
+      "3 spsk mel (til sovs)",
+      "5 dl oksebouillon",
+      "1 dl fløde",
+      "Salt og peber"
+    ],
+    "steps": [
+      "Riv løget fint og bland med frikadellekød, æg, mel, mælk og krydderier.",
+      "Lad farsen hvile 10 minutter i køleskabet.",
+      "Form frikadeller med en spiseske og steg gyldne i smør, ca. 4 min per side.",
+      "Kog kartoflerne i saltet vand i 20 minutter.",
+      "Smelt smør til sovsen, pisk mel i og tilsæt bouillon lidt ad gangen.",
+      "Lad sovsen simre 5 minutter. Tilsæt fløde og krydr.",
+      "Server frikadeller med kartofler og brun sovs."
+    ]
+  },
+  {
+    "id": "da-002",
+    "name": "Stegt flæsk med persillesovs",
+    "cuisine": "dansk",
+    "cost": 90,
+    "time": 35,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["svinekød", "klassiker", "dansk", "hverdagsret"],
+    "ingredients": [
+      "400 g stegt flæsk (skiver)",
+      "1 kg kartofler",
+      "40 g smør",
+      "3 spsk mel",
+      "5 dl sødmælk",
+      "1 stor bundt frisk persille",
+      "Salt og peber",
+      "Muskatnød"
+    ],
+    "steps": [
+      "Kog kartoflerne i saltet vand i 20 minutter.",
+      "Steg flæskeskiverne sprøde i tør pande på middel-høj varme, ca. 3-4 min per side.",
+      "Smelt smør i gryde, pisk mel i og tilsæt mælk lidt ad gangen under konstant piskning.",
+      "Lad sovsen simre 5 minutter til tyk. Krydr med salt, peber og muskatnød.",
+      "Hak persillen fint og rør i sovsen ved servering.",
+      "Server det sprøde flæsk med kartofler og persillesovs."
+    ]
+  },
+  {
+    "id": "da-003",
+    "name": "Hakkebøf med bløde løg og brun sovs",
+    "cuisine": "dansk",
+    "cost": 120,
+    "time": 35,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["oksekød", "klassiker", "dansk", "hverdagsret"],
+    "ingredients": [
+      "600 g hakket oksekød",
+      "3 løg",
+      "50 g smør",
+      "3 spsk mel",
+      "5 dl oksebouillon",
+      "1 dl fløde",
+      "1 kg kartofler",
+      "Salt og peber",
+      "Rapsolie til stegning"
+    ],
+    "steps": [
+      "Form hakket kød til 4 bøffer. Krydr med salt og peber.",
+      "Steg bøfferne 3-4 min per side i olie på høj varme. Tag op og hvil.",
+      "Skær løg i ringe. Steg i smør på lav varme 15-20 min til gyldne og bløde.",
+      "Drys mel over løgene, rør og tilsæt bouillon lidt ad gangen.",
+      "Tilsæt fløde. Simrer 5 minutter. Krydr.",
+      "Kog kartoflerne. Server bøfferne med løg, sovs og kartofler."
+    ]
+  },
+  {
+    "id": "da-004",
+    "name": "Flæskesteg med rødkål og brunede kartofler",
+    "cuisine": "dansk",
+    "cost": 175,
+    "time": 110,
+    "portions": 6,
+    "difficulty": "mellem",
+    "tags": ["svinekød", "klassiker", "dansk", "weekendret", "festret"],
+    "ingredients": [
+      "1,5 kg svinekam med svær",
+      "2 tsk salt",
+      "1 tsk peber",
+      "5 laurbærblade",
+      "1 kg rødkål (frisk)",
+      "2 æbler",
+      "3 spsk ribsgelé",
+      "2 spsk rødvinseddike",
+      "2 spsk sukker",
+      "1,5 kg kartofler (små)",
+      "80 g smør",
+      "4 spsk sukker (brunede kartofler)"
+    ],
+    "steps": [
+      "Rids svælen med 1 cm mellemrum ned til kødet. Gnid godt med salt og peber.",
+      "Placer stegen med svær opad. Læg laurbærblade i ridser. Steg ved 200°C i 1 time.",
+      "Skær rødkål fint. Svits i smør 5 minutter. Tilsæt eddike, sukker og revet æble.",
+      "Lad rødkålen simre under låg 45 minutter. Rør ribsgelé i til sidst.",
+      "Kog kartoflerne møre. Smelt sukker til karamel i pande. Vend kartofler i til brunede.",
+      "Skær stegen i skiver. Kontrollér at svælen er sprød — grill evt. 5 min ekstra.",
+      "Server flæskesteg med rødkål, brunede kartofler og skysovs fra bradepanden."
+    ]
+  },
+  {
+    "id": "da-005",
+    "name": "Æggekage med bacon og purløg",
+    "cuisine": "dansk",
+    "cost": 100,
+    "time": 20,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["æg", "svinekød", "hurtig", "dansk", "hverdagsret"],
+    "ingredients": [
+      "200 g bacon i skiver",
+      "8 æg",
+      "2 dl sødmælk",
+      "1 bundt purløg",
+      "30 g smør",
+      "Salt og peber",
+      "Rugbrød til servering"
+    ],
+    "steps": [
+      "Steg baconen sprød i en stor ovnfast pande. Tag det meste op, behold lidt fedt.",
+      "Pisk æg og mælk sammen. Krydr med salt og peber.",
+      "Smelt smør i panden ved siden af bacon. Hæld æggemassen i.",
+      "Steg ved middel varme til æggekagen er fast i kanten men let blød i midten.",
+      "Læg baconen oven på og finish under grillen 2-3 minutter.",
+      "Drys hakket purløg over og server direkte fra panden med rugbrød."
+    ]
+  },
+  {
+    "id": "da-006",
+    "name": "Boller i karry",
+    "cuisine": "dansk",
+    "cost": 95,
+    "time": 50,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["svinekød", "klassiker", "dansk", "hverdagsret"],
+    "ingredients": [
+      "500 g frikadellekød",
+      "1 æg",
+      "1 løg",
+      "1 dl mælk",
+      "3 spsk mel",
+      "Salt og peber",
+      "50 g smør",
+      "2 spsk karrypulver",
+      "3 spsk mel",
+      "6 dl kyllingebouillon",
+      "2 dl fløde",
+      "300 g ris"
+    ],
+    "steps": [
+      "Riv løget. Bland frikadellekød med æg, revet løg, mel, mælk, salt og peber.",
+      "Kog 6 dl vand med bouillon op. Form boller med en spiseske og kog dem 8-10 min.",
+      "Tag bollerne op med hulske. Gem bouillonen.",
+      "Smelt smør i gryde, svits karry 1 minut. Pisk mel i, tilsæt bouillon lidt ad gangen.",
+      "Tilsæt fløde. Simrer 5 minutter. Smag til.",
+      "Varm bollerne i karrysovsen. Kog ris efter anvisning.",
+      "Server boller i karry med ris og evt. lidt mango chutney."
+    ]
+  },
+  {
+    "id": "da-007",
+    "name": "Biksemad",
+    "cuisine": "dansk",
+    "cost": 95,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["svinekød", "hurtig", "dansk", "hverdagsret", "restemat"],
+    "ingredients": [
+      "400 g kogt svinekød eller pølser i tern",
+      "1 kg kogte kartofler fra dagen før",
+      "2 løg",
+      "30 g smør",
+      "4 æg",
+      "1 dåse rødbeder (400 g)",
+      "Sennep og ketchup til servering",
+      "Salt og peber",
+      "Rapsolie"
+    ],
+    "steps": [
+      "Skær kartofler, kød og løg i tern.",
+      "Varm olie og smør i stor pande. Steg løgene bløde, ca. 3 minutter.",
+      "Tilsæt kartofler og steg ved høj varme til de får stegeskorpe, ca. 8 minutter.",
+      "Tilsæt kødternene. Steg videre 5 minutter. Krydr med salt og peber.",
+      "Steg spejlæg på separat pande.",
+      "Server biksemaden toppet med spejlæg, rødbeder, sennep og ketchup."
+    ]
+  },
+  {
+    "id": "da-008",
+    "name": "Gule ærter med røget flæsk",
+    "cuisine": "dansk",
+    "cost": 115,
+    "time": 90,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["svinekød", "klassiker", "dansk", "suppe", "vintermad"],
+    "ingredients": [
+      "500 g tørrede gule ærter",
+      "400 g hamburgerryg eller røget nakkefilet",
+      "2 gulerødder",
+      "1 porre",
+      "½ bladselleri",
+      "1 løg",
+      "500 g kartofler",
+      "3 laurbærblade",
+      "1 tsk timian",
+      "Salt og peber",
+      "Sennep til servering"
+    ],
+    "steps": [
+      "Udblød ærterne i koldt vand natten over. Hæld vandet fra.",
+      "Dæk ærterne med frisk vand og kog op. Skum evt. af.",
+      "Tilsæt hamburgerryg, laurbær og timian. Kog ved svag varme 45 minutter.",
+      "Skær grøntsager i stykker og tilsæt. Kog videre 30 minutter.",
+      "Tag kødet op, skær i skiver og læg tilbage.",
+      "Smag til med salt og peber. Server med sennep og rugbrød."
+    ]
+  },
+  {
+    "id": "da-009",
+    "name": "Kylling i flødesovs med champignoner",
+    "cuisine": "dansk",
+    "cost": 145,
+    "time": 40,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["kylling", "hverdagsret", "dansk", "cremet"],
+    "ingredients": [
+      "4 kyllingebrystfileter (ca. 600 g)",
+      "300 g champignoner",
+      "1 løg",
+      "1 dl hvidvin",
+      "3 dl fløde",
+      "1 dl kyllingebouillon",
+      "50 g smør",
+      "1 bundt frisk persille",
+      "Salt og peber",
+      "Ris eller kartofler til servering"
+    ],
+    "steps": [
+      "Krydr kyllingebrysterne med salt og peber. Steg gyldne i smør, 4 min per side. Tag op.",
+      "Skær champignoner i skiver og løg i tern. Svits i samme pande 5 minutter.",
+      "Hæld hvidvinen i og lad koge ind halvt.",
+      "Tilsæt bouillon og fløde. Simrer 5 minutter.",
+      "Læg kyllingen tilbage og varm igennem 8-10 minutter.",
+      "Krydr sovsen. Drys hakket persille over og server med ris eller kartofler."
+    ]
+  },
+  {
+    "id": "da-010",
+    "name": "Hakkebøf Béarnaise",
+    "cuisine": "dansk",
+    "cost": 145,
+    "time": 40,
+    "portions": 4,
+    "difficulty": "svær",
+    "tags": ["oksekød", "klassiker", "dansk", "weekendret"],
+    "ingredients": [
+      "600 g hakket oksekød",
+      "3 æggeblommer",
+      "150 g smør",
+      "2 spsk hvidvinseddike",
+      "1 skalotteløg",
+      "1 bundt frisk estragon",
+      "1 kg kartofler til pommes frites",
+      "Olie til friture",
+      "Salt og peber"
+    ],
+    "steps": [
+      "Form hakket kød til 4 tykke bøffer. Krydr med salt og peber.",
+      "Kog eddike med hakket skalotteløg ind til 1 spsk. Si og køl let af.",
+      "Pisk æggeblommer og eddikereduktion over vandbad til cremet. Hold 60°C.",
+      "Tilsæt smeltet smør i tynd stråle under piskning til tyk sauce. Rør estragon i.",
+      "Skær kartofler i stave og friter ved 175°C til gyldne, ca. 8 minutter.",
+      "Steg bøfferne på meget varm pande, 3-4 min per side. Hvil 3 minutter.",
+      "Server bøf med béarnaisesovs og pommes frites."
+    ]
+  },
+  {
+    "id": "da-011",
+    "name": "Medisterpølse med rødkål og brunede kartofler",
+    "cuisine": "dansk",
+    "cost": 85,
+    "time": 40,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["svinekød", "klassiker", "dansk", "hverdagsret", "vintermad"],
+    "ingredients": [
+      "500 g medisterpølse",
+      "1 glas rødkål (720 g)",
+      "1 kg små kartofler",
+      "4 spsk sukker",
+      "60 g smør",
+      "Salt og peber"
+    ],
+    "steps": [
+      "Kog kartoflerne møre i saltet vand. Afkøl og pil dem.",
+      "Smelt sukker til gylden karamel i en pande med høj kant.",
+      "Tilsæt smørret og vend de pillede kartofler i til de er dækkede og gyldne.",
+      "Steg medisterpølsen i lidt smør på lav-middel varme, ca. 15 minutter. Vend jævnligt.",
+      "Varm rødkålen op i en gryde.",
+      "Server medisterpølsen skåret i skiver med rødkål og brunede kartofler."
+    ]
+  },
+  {
+    "id": "da-012",
+    "name": "Svinemørbrad i flødesovs",
+    "cuisine": "dansk",
+    "cost": 115,
+    "time": 40,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["svinekød", "hverdagsret", "dansk", "cremet"],
+    "ingredients": [
+      "400 g svinemørbrad (2 stk)",
+      "200 g champignoner",
+      "1 løg",
+      "1 dl hvidvin",
+      "3 dl fløde",
+      "1 dl svinebouillon",
+      "50 g smør",
+      "Salt og peber",
+      "1 kg kartofler"
+    ],
+    "steps": [
+      "Skær mørbrad i medallioner og krydr med salt og peber.",
+      "Steg hurtigt gyldne i smør på høj varme, 2 min per side. Tag op.",
+      "Svits champignoner og løg i panden 4 minutter.",
+      "Tilsæt hvidvin og kog ind halvt. Tilsæt bouillon og fløde.",
+      "Simrer 5 minutter. Læg mørbrad tilbage og varm 5 minutter.",
+      "Kog kartofler. Server mørbrad med flødesovs og kartofler."
+    ]
+  },
+  {
+    "id": "da-013",
+    "name": "Tarteletter med høns og asparges",
+    "cuisine": "dansk",
+    "cost": 125,
+    "time": 35,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["kylling", "klassiker", "dansk", "festret"],
+    "ingredients": [
+      "8 tarteletter",
+      "400 g kyllingebryst",
+      "1 dåse hvide asparges (400 g)",
+      "100 g frosne ærter",
+      "40 g smør",
+      "3 spsk mel",
+      "4 dl kyllingebouillon",
+      "1 dl fløde",
+      "Salt, peber og sukker"
+    ],
+    "steps": [
+      "Kog kyllingebrysterne i bouillon til gennemkogte, ca. 15 minutter. Tag op og pil i strimler.",
+      "Gem bouillonen. Varm tarteletterne i ovnen ved 180°C i 8 minutter.",
+      "Smelt smør, pisk mel i. Tilsæt bouillon lidt ad gangen under piskning.",
+      "Tilsæt fløde. Simrer 5 minutter. Krydr med salt, peber og en knivspids sukker.",
+      "Vend kylling, asparges (skåret i stykker) og ærter i sovsen.",
+      "Fyld tarteletterne og server straks."
+    ]
+  },
+  {
+    "id": "da-014",
+    "name": "Forloren hare med flødestuvede grøntsager",
+    "cuisine": "dansk",
+    "cost": 135,
+    "time": 75,
+    "portions": 4,
+    "difficulty": "mellem",
+    "tags": ["svinekød", "klassiker", "dansk", "ovnret"],
+    "ingredients": [
+      "600 g frikadellekød (blandet)",
+      "100 g bacon i skiver",
+      "2 æg",
+      "1 løg",
+      "3 spsk mel",
+      "1 dl mælk",
+      "Salt og peber",
+      "50 g smør",
+      "3 spsk mel (sovs)",
+      "1 dl fløde",
+      "5 dl oksebouillon",
+      "2 gulerødder",
+      "1 kg kartofler"
+    ],
+    "steps": [
+      "Bland frikadellekød med æg, revet løg, mel, mælk, salt og peber.",
+      "Form til en aflang rulle og læg baconskiver rundt om.",
+      "Brun rullen på alle sider i smør i stor gryde.",
+      "Tilsæt bouillon, læg låg på og simrer 45 minutter.",
+      "Tag kødet op og hold varmt. Pisk mel og fløde i stegeskyen.",
+      "Simrer sovsen 5 minutter. Krydr.",
+      "Server skåret i skiver med kartofler, gulerødder og sovs."
+    ]
+  },
+  {
+    "id": "da-015",
+    "name": "Hønsekødssuppe med suppevisk",
+    "cuisine": "dansk",
+    "cost": 145,
+    "time": 90,
+    "portions": 6,
+    "difficulty": "let",
+    "tags": ["kylling", "suppe", "klassiker", "dansk"],
+    "ingredients": [
+      "1 hel kylling (ca. 1,4 kg)",
+      "3 gulerødder",
+      "2 persillerødder",
+      "1 porre",
+      "½ bladselleri",
+      "1 løg",
+      "1 bundt frisk persille",
+      "100 g suppevisk (fine nudler)",
+      "10 peberkorn",
+      "3 laurbærblade",
+      "Salt"
+    ],
+    "steps": [
+      "Læg kyllingen i stor gryde og dæk med koldt vand. Kog op og skum af.",
+      "Tilsæt halvt skårne grøntsager, peberkorn, laurbær og salt.",
+      "Simrer under låg ved svag varme i 60 minutter.",
+      "Tag kyllingen op. Si suppen. Skær kyllingekødet i strimler.",
+      "Skær de resterende gulerødder og porre fint og kog i suppen 10 minutter.",
+      "Tilsæt suppevisk og kog efter anvisning.",
+      "Kom kyllingekød i og server med frisk hakket persille."
+    ]
+  },
+  {
+    "id": "da-016",
+    "name": "Æbleskiver med ribsgelé",
+    "cuisine": "dansk",
+    "cost": 55,
+    "time": 45,
+    "portions": 6,
+    "difficulty": "let",
+    "tags": ["dessert", "dansk", "klassiker", "jul"],
+    "ingredients": [
+      "300 g hvedemel",
+      "4 æg (adskilt)",
+      "4 dl sødmælk",
+      "80 g smør",
+      "2 tsk sukker",
+      "1 tsk kardemomme",
+      "½ tsk salt",
+      "½ tsk bagepulver",
+      "Flormelis til drys",
+      "Ribsgelé til servering"
+    ],
+    "steps": [
+      "Pisk æggeblommer, mel, sukker, kardemomme og salt sammen.",
+      "Tilsæt mælk og smeltet smør. Rør til glat dej.",
+      "Pisk æggehvider stive og vend forsigtigt i dejen.",
+      "Varm æbleskivepanden og smør hvert hul med smør.",
+      "Fyld hullerne ¾ med dej. Vend æbleskiverne med en strikkepind når kanten stivner.",
+      "Steg til gyldne på alle sider, ca. 3-4 minutter total.",
+      "Server straks med flormelis og ribsgelé."
+    ]
+  },
+  {
+    "id": "da-017",
+    "name": "Oksesteg med brun sovs",
+    "cuisine": "dansk",
+    "cost": 175,
+    "time": 100,
+    "portions": 4,
+    "difficulty": "mellem",
+    "tags": ["oksekød", "klassiker", "dansk", "weekendret"],
+    "ingredients": [
+      "1 kg oksesteg (tykkam eller inderlår)",
+      "2 løg",
+      "2 gulerødder",
+      "2 dl rødvin",
+      "3 dl oksebouillon",
+      "3 spsk mel",
+      "50 g smør",
+      "3 laurbærblade",
+      "10 peberkorn",
+      "1 kg kartofler",
+      "Salt og peber"
+    ],
+    "steps": [
+      "Krydr stegen godt med salt og peber. Brun på alle sider i smør i stor gryde.",
+      "Tag stegen op. Svits hakkede løg og gulerødder 5 minutter.",
+      "Tilsæt rødvin og kog op. Tilsæt bouillon, laurbær og peberkorn.",
+      "Læg stegen tilbage og simrer under låg 60-70 minutter (60°C i midten).",
+      "Tag stegen op og hvil 15 minutter under folie.",
+      "Si stegeskyen. Pisk mel og smør sammen og rør i skyen til jævn sovs.",
+      "Skær stegen i tynde skiver. Server med kartofler og brun sovs."
+    ]
+  },
+  {
+    "id": "da-018",
+    "name": "Pandekager med jordbærsyltetøj og flødeskum",
+    "cuisine": "dansk",
+    "cost": 60,
+    "time": 30,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["dessert", "klassiker", "dansk", "sød"],
+    "ingredients": [
+      "200 g hvedemel",
+      "3 æg",
+      "5 dl sødmælk",
+      "2 spsk sukker",
+      "1 tsk vaniljesukker",
+      "En knivspids salt",
+      "60 g smør",
+      "1 glas jordbærsyltetøj (350 g)",
+      "2 dl piskefløde"
+    ],
+    "steps": [
+      "Bland mel, sukker, vaniljesukker og salt. Pisk æg i.",
+      "Tilsæt mælk lidt ad gangen til glat dej. Smelt 40 g smør og rør i.",
+      "Hvil dejen 15 minutter.",
+      "Steg tynde pandekager i smør på middel-høj varme, ca. 1-2 min per side.",
+      "Pisk fløden til let flødeskum med lidt sukker.",
+      "Server pandekager med jordbærsyltetøj og flødeskum."
+    ]
+  },
+  {
+    "id": "da-019",
+    "name": "Grønlangkål med stegt flæsk",
+    "cuisine": "dansk",
+    "cost": 95,
+    "time": 35,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["svinekød", "dansk", "klassiker", "vintermad", "jul"],
+    "ingredients": [
+      "400 g stegt flæsk",
+      "400 g frossen grønkål",
+      "50 g smør",
+      "2 dl fløde",
+      "1 dl sødmælk",
+      "Muskatnød",
+      "Salt og peber",
+      "1 kg kartofler"
+    ],
+    "steps": [
+      "Kog kartoflerne i saltet vand.",
+      "Optø grønkålen og pres vand fra. Hak den fint.",
+      "Smelt smør i gryde og svits grønkålen 5 minutter.",
+      "Tilsæt fløde og mælk. Simrer under låg 10 minutter.",
+      "Krydr med muskatnød, salt og peber.",
+      "Steg flæskeskiverne sprøde i tør pande.",
+      "Server grønlangkål med kartofler og stegt flæsk."
+    ]
+  },
+  {
+    "id": "da-020",
+    "name": "Kyllingelår med rosmarin og citron",
+    "cuisine": "dansk",
+    "cost": 130,
+    "time": 60,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["kylling", "ovnret", "hverdagsret", "dansk"],
+    "ingredients": [
+      "4 kyllingelår (ca. 1 kg)",
+      "2 citroner",
+      "4 fed hvidløg",
+      "2 kviste frisk rosmarin",
+      "2 kviste frisk timian",
+      "3 spsk olivenolie",
+      "1 kg kartofler",
+      "Salt og peber"
+    ],
+    "steps": [
+      "Forvarm ovnen til 200°C.",
+      "Skær kartofler i både og læg i bradepande med olie. Krydr.",
+      "Læg kyllingelårene oven på kartoflerne.",
+      "Pres citronsaft over kyllingen. Læg citronbåde, hvidløg og krydderurter ved.",
+      "Dryp olivenolie over og krydr godt med salt og peber.",
+      "Bag 45-50 minutter til kyllingen er gylden og gennemstegt (75°C i midten).",
+      "Lad hvile 5 minutter og server direkte fra bradepanden."
+    ]
+  }
+]
