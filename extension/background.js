@@ -5,13 +5,12 @@ chrome.runtime.onMessage.addListener((msg, sender, respond) => {
     return true; // async respond
   }
   if (msg.type === 'OPEN_BILKA_SEARCH') {
-    chrome.tabs.query({ url: 'https://www.bilkatogo.dk/*' }, tabs => {
-      const url = `https://www.bilkatogo.dk/search/?query=${encodeURIComponent(msg.query)}`;
-      if (tabs.length > 0) {
-        chrome.tabs.update(tabs[0].id, { url, active: true });
-      } else {
-        chrome.tabs.create({ url });
-      }
+    chrome.storage.local.set({ sp_pending_search: msg.query }, () => {
+      chrome.tabs.query({ url: 'https://www.bilkatogo.dk/*' }, tabs => {
+        const url = 'https://www.bilkatogo.dk/';
+        if (tabs.length > 0) chrome.tabs.update(tabs[0].id, { url, active: true });
+        else chrome.tabs.create({ url });
+      });
     });
     respond({ ok: true });
     return true;

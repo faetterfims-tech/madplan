@@ -130,9 +130,12 @@ document.getElementById('btn-start-shopping').addEventListener('click', () => {
   if (!item) { alert('Ingen varer at handle.'); return; }
 
   const term = parseIngredient(item) || item;
-  chrome.runtime.sendMessage({
-    type: 'OPEN_BILKA_SEARCH',
-    query: term
+  chrome.storage.local.set({ sp_pending_search: term }, () => {
+    chrome.tabs.query({ url: 'https://www.bilkatogo.dk/*' }, tabs => {
+      const url = 'https://www.bilkatogo.dk/';
+      if (tabs.length > 0) chrome.tabs.update(tabs[0].id, { url, active: true });
+      else chrome.tabs.create({ url });
+    });
   });
   window.close();
 });

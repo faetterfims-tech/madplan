@@ -14,86 +14,88 @@ function parseIngredient(str) {
     .trim() || null;
 }
 
-// ── Auto-søgning ────────────────────────────────────────────
-// Sætter søgeterm i Bilka ToGos søgefelt og trigger søgning automatisk.
-// Bilka ToGo er React — vi skal bruge native input setter + React-events.
+// ── Auto-søgning via søgefeltet ─────────────────────────────
+// Finder søgefeltet og trigger søgning med React-kompatible events.
 
-function triggerReactInput(input, value) {
-  const nativeSetter = Object.getOwnPropertyDescriptor(HTMLInputElement.prototype, 'value').set;
-  nativeSetter.call(input, value);
-  input.dispatchEvent(new Event('input',  { bubbles: true }));
-  input.dispatchEvent(new Event('change', { bubbles: true }));
+function findSearchInput() {
+  return document.querySelector('input[type="search"]')
+    || document.querySelector('input[name="query"]')
+    || document.querySelector('input[placeholder*="søg" i]')
+    || document.querySelector('input[placeholder*="Search" i]')
+    || document.querySelector('header input[type="text"]')
+    || document.querySelector('nav input')
+    || document.querySelector('[class*="search" i] input');
 }
 
-function triggerSearch(input) {
-  // Prøv Enter-tast
-  ['keydown','keypress','keyup'].forEach(type => {
-    input.dispatchEvent(new KeyboardEvent(type, {
-      key: 'Enter', code: 'Enter', keyCode: 13,
-      which: 13, bubbles: true, cancelable: true
-    }));
-  });
-  // Prøv form submit
-  const form = input.closest('form');
-  if (form) form.dispatchEvent(new Event('submit', { bubbles: true, cancelable: true }));
-  // Prøv søgeknap-klik
-  const btn = form?.querySelector('button[type="submit"]') ||
-              document.querySelector('button[aria-label*="søg" i]') ||
-              document.querySelector('button[aria-label*="search" i]') ||
-              document.querySelector('[data-testid*="search"] button') ||
-              document.querySelector('.search-button');
+function fireReactInput(el, value) {
+  const setter = Object.getOwnPropertyDescriptor(HTMLInputElement.prototype, 'value').set;
+  setter.call(el, value);
+  el.dispatchEvent(new Event('input',  { bubbles: true }));
+  el.dispatchEvent(new Event('change', { bubbles: true }));
+}
+
+function fireEnter(el) {
+  ['keydown','keypress','keyup'].forEach(t =>
+    el.dispatchEvent(new KeyboardEvent(t, {
+      key:'Enter', code:'Enter', keyCode:13, which:13, bubbles:true, cancelable:true
+    }))
+  );
+  const form = el.closest('form');
+  if (form) form.dispatchEvent(new Event('submit', { bubbles:true, cancelable:true }));
+  const btn = form?.querySelector('button[type="submit"]')
+    || document.querySelector('button[aria-label*="søg" i]')
+    || document.querySelector('button[aria-label*="search" i]');
   if (btn) btn.click();
 }
 
-function findSearchInput() {
-  return document.querySelector('input[type="search"]') ||
-         document.querySelector('input[name="query"]') ||
-         document.querySelector('input[placeholder*="søg" i]') ||
-         document.querySelector('input[placeholder*="Search" i]') ||
-         document.querySelector('header input') ||
-         document.querySelector('nav input') ||
-         document.querySelector('.search input') ||
-         document.querySelector('[class*="search" i] input');
+function autoSearch(term, attempt = 0) {
+  const input = findSearchInput();
+  if (input) {
+    input.focus();
+    fireReactInput(input, term);
+    setTimeout(() => fireEnter(input), 200);
+  } else if (attempt < 25) {
+    setTimeout(() => autoSearch(term, attempt + 1), 300);
+  }
 }
 
-function autoSearch(term) {
-  let attempts = 0;
-  const interval = setInterval(() => {
-    attempts++;
-    const input = findSearchInput();
-    if (input) {
-      clearInterval(interval);
-      input.focus();
-      triggerReactInput(input, term);
-      setTimeout(() => triggerSearch(input), 150);
-    } else if (attempts > 30) {
-      clearInterval(interval);
-    }
-  }, 300);
-}
+// ── Tjek om der er en afventende søgning ────────────────────
+// popup.js gemmer søgetermen i sp_pending_search inden navigation.
 
-// Kør auto-søgning hvis URL har ?query= parameter
-const urlParams = new URLSearchParams(window.location.search);
-const queryParam = urlParams.get('query');
-if (queryParam) {
-  setTimeout(() => autoSearch(queryParam), 800);
-}
+chrome.storage.local.get('sp_pending_search', data => {
+  if (data.sp_pending_search) {
+    const term = data.sp_pending_search;
+    chrome.storage.local.remove('sp_pending_search');
+    setTimeout(() => autoSearch(term), 600);
+  }
+});
 
-// ── SmartPlate panel ────────────────────────────────────────
+// ── SmartPlate-panel ────────────────────────────────────────
 
 function buildPanel() {
   if (document.getElementById('sp-panel')) return;
-  const panel = document.createElement('div');
-  panel.id = 'sp-panel';
-  panel.style.cssText = [
+  const el = document.createElement('div');
+  el.id = 'sp-panel';
+  el.style.cssText = [
     'position:fixed','bottom:16px','right:16px','width:272px',
     'background:#fff','border-radius:14px',
     'box-shadow:0 6px 28px rgba(0,0,0,.22)','z-index:2147483647',
     'font-family:-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif',
-    'font-size:14px','overflow:hidden','color:#1a1a1a'
+    'overflow:hidden','color:#1a1a1a'
   ].join(';');
-  document.body.appendChild(panel);
+  document.body.appendChild(el);
   renderPanel();
+}
+
+function goToNext(allIngs, checkedSet) {
+  const validIdxs = allIngs.reduce((a,ing,i) => parseIngredient(ing) ? [...a,i] : a, []);
+  const nextIdx   = validIdxs.find(i => !checkedSet.has(i));
+  if (nextIdx === undefined) { renderPanel(); return; }
+  const term = parseIngredient(allIngs[nextIdx]);
+  // Gem søgeterm og naviger til forsiden så content scriptet søger automatisk
+  chrome.storage.local.set({ sp_pending_search: term }, () => {
+    window.location.href = 'https://www.bilkatogo.dk/';
+  });
 }
 
 function renderPanel() {
@@ -103,82 +105,69 @@ function renderPanel() {
   chrome.storage.local.get(['sp_ingredients','sp_checked'], data => {
     const allIngs  = data.sp_ingredients || [];
     const checked  = new Set(data.sp_checked || []);
-    const validIdxs = allIngs.reduce((acc,ing,i) => parseIngredient(ing) ? [...acc,i] : acc, []);
-    const done     = validIdxs.filter(i => checked.has(i)).length;
-    const total    = validIdxs.length;
-    const nextIdx  = validIdxs.find(i => !checked.has(i));
+    const validIdx = allIngs.reduce((a,ing,i) => parseIngredient(ing) ? [...a,i] : a, []);
+    const done     = validIdx.filter(i => checked.has(i)).length;
+    const total    = validIdx.length;
+    const nextIdx  = validIdx.find(i => !checked.has(i));
     const allDone  = nextIdx === undefined;
     const curIng   = allDone ? null : allIngs[nextIdx];
     const curName  = curIng ? parseIngredient(curIng) : null;
     const pct      = total ? Math.round(done/total*100) : 0;
 
     panel.innerHTML = `
-      <div id="sp-header" style="background:#2d7a2d;color:#fff;padding:10px 14px;display:flex;justify-content:space-between;align-items:center;cursor:pointer;">
+      <div style="background:#2d7a2d;color:#fff;padding:10px 14px;display:flex;justify-content:space-between;align-items:center;">
         <div>
           <b style="font-size:15px;">🥗 SmartPlate</b>
-          <div style="font-size:11px;opacity:.85;margin-top:1px;">${done}/${total} lagt i kurv</div>
+          <div style="font-size:11px;opacity:.8;margin-top:1px;">${done}/${total} lagt i kurv</div>
         </div>
-        <button id="sp-close" style="background:none;border:none;color:#fff;font-size:22px;line-height:1;cursor:pointer;padding:0;">×</button>
+        <button id="sp-close" style="background:none;border:none;color:#fff;font-size:22px;line-height:1;cursor:pointer;padding:0 2px;">×</button>
       </div>
-      <div style="height:4px;background:#e0e0e0;"><div style="height:4px;background:#2d7a2d;width:${pct}%;transition:width .3s;"></div></div>
+      <div style="height:4px;background:#e0ede0;">
+        <div style="height:4px;background:#2d7a2d;width:${pct}%;transition:width .3s;"></div>
+      </div>
 
       ${allDone ? `
-        <div style="padding:18px;text-align:center;">
-          <div style="font-size:32px;margin-bottom:8px;">🎉</div>
-          <b style="color:#2d7a2d;">Alle varer lagt i kurv!</b>
+        <div style="padding:20px 14px;text-align:center;">
+          <div style="font-size:32px;">🎉</div>
+          <b style="color:#2d7a2d;font-size:15px;">Alle varer lagt i kurv!</b>
           <div style="font-size:12px;color:#999;margin-top:6px;">Gå til kurven og gennemfør bestillingen.</div>
         </div>
       ` : `
         <div style="padding:12px 14px;background:#f2f9f2;border-bottom:1px solid #e8e8e8;">
           <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#2d7a2d;margin-bottom:3px;">Søger nu efter</div>
           <div style="font-size:16px;font-weight:700;">${curName}</div>
-          <div style="font-size:11px;color:#999;margin-top:1px;">${curIng}</div>
+          <div style="font-size:11px;color:#aaa;margin-top:1px;">${curIng}</div>
         </div>
-        <div style="padding:10px 14px 4px;">
-          <button id="sp-done-btn" style="width:100%;padding:10px 14px;background:#2d7a2d;color:#fff;border:none;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;text-align:left;">
+        <div style="padding:10px 14px 2px;">
+          <button id="sp-done-btn" style="width:100%;padding:11px 14px;background:#2d7a2d;color:#fff;border:none;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;">
             ✓ Lagt i kurv — søg næste vare
           </button>
         </div>
       `}
 
-      <div id="sp-list" style="max-height:130px;overflow-y:auto;border-top:1px solid #f0f0f0;">
-        ${validIdxs.map(i => {
-          const name = parseIngredient(allIngs[i]);
+      <div style="max-height:140px;overflow-y:auto;border-top:1px solid #f0f0f0;">
+        ${validIdx.map(i => {
+          const name  = parseIngredient(allIngs[i]);
           const isDone = checked.has(i);
-          const isCur = i === nextIdx;
-          return `<div style="padding:6px 14px;font-size:12px;display:flex;align-items:center;gap:6px;
-            cursor:pointer;border-bottom:1px solid #fafafa;
-            background:${isCur?'#f2f9f2':'transparent'}"
-            data-sp="${i}">
-            <span style="color:${isDone?'#2d7a2d':'#ccc'};width:14px;font-size:13px;">${isDone?'✓':'○'}</span>
+          const isCur  = i === nextIdx;
+          return `<div data-sp="${i}" style="padding:6px 14px;font-size:12px;display:flex;align-items:center;gap:6px;
+            cursor:pointer;border-bottom:1px solid #fafafa;background:${isCur?'#f2f9f2':'#fff'}">
+            <span style="color:${isDone?'#2d7a2d':'#ccc'};width:14px;">${isDone?'✓':'○'}</span>
             <span style="${isDone?'text-decoration:line-through;color:#bbb;':''}${isCur?'font-weight:600;':''}">${name}</span>
           </div>`;
         }).join('')}
-      </div>
-    `;
+      </div>`;
 
-    // Luk
-    document.getElementById('sp-close')?.addEventListener('click', e => {
-      e.stopPropagation();
+    document.getElementById('sp-close')?.addEventListener('click', () => {
       panel.style.display = 'none';
     });
 
-    // Lagt i kurv → næste
     document.getElementById('sp-done-btn')?.addEventListener('click', () => {
       if (nextIdx === undefined) return;
       checked.add(nextIdx);
-      chrome.storage.local.set({ sp_checked: [...checked] }, () => {
-        const newNext = validIdxs.find(i => !checked.has(i));
-        if (newNext !== undefined) {
-          const term = parseIngredient(allIngs[newNext]);
-          window.location.href = `https://www.bilkatogo.dk/search/?query=${encodeURIComponent(term)}`;
-        } else {
-          renderPanel();
-        }
-      });
+      chrome.storage.local.set({ sp_checked: [...checked] }, () => goToNext(allIngs, checked));
     });
 
-    // Manuel kryds af
     panel.querySelectorAll('[data-sp]').forEach(el => {
       el.addEventListener('click', () => {
         const i = parseInt(el.dataset.sp);
@@ -189,11 +178,7 @@ function renderPanel() {
   });
 }
 
-// Vis panel og lyt på storage-ændringer
-setTimeout(buildPanel, 1200);
-
+setTimeout(buildPanel, 1500);
 chrome.storage.onChanged.addListener((changes, area) => {
-  if (area === 'local' && (changes.sp_ingredients || changes.sp_checked)) {
-    renderPanel();
-  }
+  if (area === 'local' && (changes.sp_ingredients || changes.sp_checked)) renderPanel();
 });
