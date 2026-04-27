@@ -7,11 +7,13 @@ function parseIngredient(str) {
   if (SKIP.has(lower)) return null;
 
   return str
-    .replace(/^[\d]+[,\.]?[\d]*\s*(g|kg|dl|cl|ml|l|tsk|spsk|stk|fed|kviste?|bundt|dåser?|glas|pk\.?|nip|liter)\s+/gi, '')
+    .replace(/^[\d]+-[\d]+\s+/, '')  // "2-3 " → fjern talinterval
+    .replace(/^[\d]+[,\.]?[\d]*\s*(g|kg|dl|cl|ml|l|tsk|spsk|stk|fed|kviste?|potter?|bundt|dåser?|glas|pk\.?|nip|liter|skiver?)\s+/gi, '')
     .replace(/^[½¼¾]\s+/, '')
     .replace(/^\d+\s+/, '')
     .replace(/\s*\([^)]*\)/g, '')
-    .replace(/\s+til\s+(servering|stegning|drys|panering|fastgørelse|garnering|dryp)\b.*/gi, '')
+    .replace(/\s+til\s+(servering|stegning|drys|panering|fastgørelse|garnering|dryp|støvning|friture)\b.*/gi, '')
+    .replace(/\s+eller\s+.*$/gi, '')  // "X eller Y" → behold kun X
     .replace(/,\s+i\s+\w+/gi, '')
     .trim() || null;
 }
@@ -20,28 +22,42 @@ function parseIngredient(str) {
 function bilkaNormalize(name) {
   if (!name) return name;
   let n = name.toLowerCase().trim();
+  n = n.replace(/\s+eller\s+.*$/, '');
+  n = n.replace(/\s+fra\s+dagen\s+før$/, '');
   n = n.replace(/^skallen?\s+fra\s+(?:en?\s+|\d+\s+)?/, '');
   n = n.replace(/^skal\s+af\s+\d+\s+/, '');
   n = n.replace(/^saften?\s+(?:af|fra)\s+(?:en?\s+|\d+\s+)?/, '');
   n = n.replace(/^(citron|appelsin|lime|grapefrugt)(saft|skal|zest|er)$/, '$1');
-  n = n.replace(/^citroner$/, 'citron');
-  n = n.replace(/^appelsiner$/, 'appelsin');
-  n = n.replace(/^(?:frisk[et]?|tørret|tørrede?|smeltet|smeltede?|revet|revne?|finthakket|finthakkede?|knust[e]?|skåret|strimlede?|kogt[e]?|flagesalt)\s+/, '');
+  n = n.replace(/^citroner$/, 'citron').replace(/^appelsiner$/, 'appelsin');
+  n = n.replace(/^(?:frisk[et]?|tørret|tørrede?|smeltet|smeltede?|revet|revne?|varm[et]?|stærk[et]?|finthakket|finthakkede?|knust[e]?|skåret|strimlede?|kogt[e]?|rigeligt\s+friskkværnet\s+sort|friskkværnet\s+sort)\s+/, '');
   const map = {
-    'zucchini': 'squash',    'courgette': 'squash',
+    'zucchini': 'squash',         'courgette': 'squash',
     'paprikakrydderi': 'paprika', 'majs': 'majskerner',
-    'pinjekerne': 'pinjekerner', 'pinjekerner': 'pinjekerner',
-    'pecorino': 'parmesan',  'ricottaost': 'ricotta',
-    'ingefærrod': 'ingefær', 'chilipulver': 'chili',
-    'chiliflager': 'chili',  'muskatnød': 'muskat',
-    'floresukker': 'flormelis', 'flormelis': 'flormelis',
-    'bladselleri': 'selleri', 'stængler bladselleri': 'selleri',
-    'hakkede tomater': 'dåse tomater', 'cherrytomater': 'cherrytomater',
-    'tørgær': 'gær', 'laurbærblade': 'laurbær',
-    'oksebouillon': 'bouillon', 'kyllingebouillon': 'bouillon',
-    'grøntsagsbouillon': 'bouillon',
+    'pinjekerne': 'pinjekerner',
+    'pecorino': 'parmesan',       'pecorino romano': 'parmesan',
+    'ricottaost': 'ricotta',      'ingefærrod': 'ingefær',
+    'chilipulver': 'chili',       'chiliflager': 'chili',
+    'muskatnød': 'muskat',        'flormelis': 'flormelis',
+    'floresukker': 'flormelis',   'bladselleri': 'selleri',
+    'stængler bladselleri': 'selleri',
+    'hakkede tomater': 'flåede tomater',
+    'tørgær': 'gær',              'laurbærblade': 'laurbær',
+    'laurbærblad': 'laurbær',
+    'oksebouillon': 'bouillon',   'kyllingebouillon': 'bouillon',
+    'svinebouillon': 'bouillon',  'grøntsagsbouillon': 'bouillon',
+    'suppevisk': 'suppenudler',   'ditalini': 'suppenudler',
+    'guanciale': 'bacon',         'pancetta': 'bacon',
+    'porcinisvampe': 'tørrede svampe', 'porcini': 'tørrede svampe',
+    'arborio': 'risottoris',      'arborioris': 'risottoris',
+    'carnaroliris': 'risottoris',
+    'ladyfingers': 'ladyfingere', 'savoiardi': 'ladyfingere',
+    'kalvescalopper': 'kalvekød', 'kalveskank': 'kalvekød',
+    'kalvekød (schnitzler/scalopper)': 'kalvekød',
+    'espresso': 'espresso kaffe', 'persillerødder': 'persillerod',
+    'flagesalt': 'salt',
+    'peber': null,
   };
-  if (map[n]) n = map[n];
+  if (n in map) { if (map[n] === null) return null; n = map[n]; }
   return n.charAt(0).toUpperCase() + n.slice(1);
 }
 

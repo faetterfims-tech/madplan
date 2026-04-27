@@ -6,50 +6,65 @@ const SKIP = new Set(['salt og peber','salt','peber','vand','tandstikkere til fa
 function bilkaNormalize(name) {
   if (!name) return name;
   let n = name.toLowerCase().trim();
-  // "skallen fra (en) citron" / "skal af 1 citron" → "citron"
+  // "X eller Y" → behold kun første option
+  n = n.replace(/\s+eller\s+.*$/, '');
+  // "fra dagen før" → fjern
+  n = n.replace(/\s+fra\s+dagen\s+før$/, '');
+  // "skallen/skal fra (en) X" → X
   n = n.replace(/^skallen?\s+fra\s+(?:en?\s+|\d+\s+)?/, '');
   n = n.replace(/^skal\s+af\s+\d+\s+/, '');
-  // "saften af/fra X" → "X"
+  // "saften af/fra X" → X
   n = n.replace(/^saften?\s+(?:af|fra)\s+(?:en?\s+|\d+\s+)?/, '');
-  // "citronsaft / citronskal / citronskal" → "citron"
+  // "citronsaft/skal/er" → "citron"
   n = n.replace(/^(citron|appelsin|lime|grapefrugt)(saft|skal|zest|er)$/, '$1');
-  // "citroner (saft og skal)" → allerede strip af parentes, men sikrer "citroner" → "citron"
-  n = n.replace(/^citroner$/, 'citron');
-  n = n.replace(/^appelsiner$/, 'appelsin');
-  // Strip frisk/tørret/revet o.lign. adjektiver foran produktnavnet
-  n = n.replace(/^(?:frisk[et]?|tørret|tørrede?|smeltet|smeltede?|revet|revne?|finthakket|finthakkede?|knust[e]?|skåret|strimlede?|kogt[e]?|flagesalt)\s+/, '');
+  n = n.replace(/^citroner$/, 'citron').replace(/^appelsiner$/, 'appelsin');
+  // Strip ledende adjektiver Bilka ikke bruger i produktnavne
+  n = n.replace(/^(?:frisk[et]?|tørret|tørrede?|smeltet|smeltede?|revet|revne?|varm[et]?|stærk[et]?|finthakket|finthakkede?|knust[e]?|skåret|strimlede?|kogt[e]?|rigeligt\s+friskkværnet\s+sort|friskkværnet\s+sort)\s+/, '');
   // Bilka-specifikke synonymer
   const map = {
-    'zucchini': 'squash',    'courgette': 'squash',
-    'paprikakrydderi': 'paprika',
-    'majs': 'majskerner',
-    'pinjekerne': 'pinjekerner', 'pinjekerner': 'pinjekerner',
-    'pecorino': 'parmesan',
+    'zucchini': 'squash',         'courgette': 'squash',
+    'paprikakrydderi': 'paprika', 'majs': 'majskerner',
+    'pinjekerne': 'pinjekerner',
+    'pecorino': 'parmesan',       'pecorino romano': 'parmesan',
     'ricottaost': 'ricotta',
     'ingefærrod': 'ingefær',
-    'chilipulver': 'chili',  'chiliflager': 'chili',
+    'chilipulver': 'chili',       'chiliflager': 'chili',
     'muskatnød': 'muskat',
-    'floresukker': 'flormelis', 'flormelis': 'flormelis',
-    'bladselleri': 'selleri', 'stængler bladselleri': 'selleri',
-    'hakkede tomater': 'dåse tomater',
-    'cherrytomater': 'cherrytomater',
+    'flormelis': 'flormelis',     'floresukker': 'flormelis',
+    'bladselleri': 'selleri',     'stængler bladselleri': 'selleri',
+    'hakkede tomater': 'flåede tomater',
     'tørgær': 'gær',
-    'laurbærblade': 'laurbær',
-    'oksebouillon': 'bouillon',  'kyllingebouillon': 'bouillon',
-    'grøntsagsbouillon': 'bouillon',
+    'laurbærblade': 'laurbær',    'laurbærblad': 'laurbær',
+    'oksebouillon': 'bouillon',   'kyllingebouillon': 'bouillon',
+    'svinebouillon': 'bouillon',  'grøntsagsbouillon': 'bouillon',
+    'suppevisk': 'suppenudler',   'ditalini': 'suppenudler',
+    'guanciale': 'bacon',         'pancetta': 'bacon',
+    'tørrede svampe': 'tørrede svampe',
+    'porcinisvampe': 'tørrede svampe', 'porcini': 'tørrede svampe',
+    'arborio': 'risottoris',      'arborioris': 'risottoris',
+    'carnaroliris': 'risottoris', 'risottoris': 'risottoris',
+    'ladyfingers': 'ladyfingere', 'savoiardi': 'ladyfingere',
+    'kalvescalopper': 'kalvekød', 'kalveskank': 'kalvekød',
+    'kalvekød (schnitzler/scalopper)': 'kalvekød',
+    'espresso': 'espresso kaffe',
+    'persillerødder': 'persillerod', 'persillerod': 'persillerod',
+    'flagesalt': 'salt',
+    'peber': null, // skip — man har det derhjemme
   };
-  if (map[n]) n = map[n];
+  if (n in map) { if (map[n] === null) return null; n = map[n]; }
   return n.charAt(0).toUpperCase() + n.slice(1);
 }
 
 function parseIngredient(str) {
   if (SKIP.has(str.toLowerCase().trim())) return null;
   return str
-    .replace(/^[\d]+[,\.]?[\d]*\s*(g|kg|dl|cl|ml|l|tsk|spsk|stk|fed|kviste?|bundt|dåser?|glas|pk\.?|nip|liter)\s+/gi, '')
+    .replace(/^[\d]+-[\d]+\s+/, '')  // "2-3 " → fjern talinterval
+    .replace(/^[\d]+[,\.]?[\d]*\s*(g|kg|dl|cl|ml|l|tsk|spsk|stk|fed|kviste?|potter?|bundt|dåser?|glas|pk\.?|nip|liter|skiver?)\s+/gi, '')
     .replace(/^[½¼¾]\s+/, '')
     .replace(/^\d+\s+/, '')
     .replace(/\s*\([^)]*\)/g, '')
-    .replace(/\s+til\s+(servering|stegning|drys|panering|fastgørelse|garnering|dryp)\b.*/gi, '')
+    .replace(/\s+til\s+(servering|stegning|drys|panering|fastgørelse|garnering|dryp|støvning|friture)\b.*/gi, '')
+    .replace(/\s+eller\s+.*$/gi, '')  // "X eller Y" → behold kun X
     .replace(/,\s+i\s+\w+/gi, '')
     .trim() || null;
 }

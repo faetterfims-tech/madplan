@@ -230,8 +230,84 @@
 <div id="grocery-view" class="view">
   <div style="height:12px;"></div>
   <button class="btn primary full" onclick="window.open('https://www.bilkatogo.dk','_blank')">🛒 Åbn Bilka ToGo</button>
+  <button class="btn full" style="border:2px solid var(--green);color:var(--green);font-weight:600;" onclick="openExtGuide()">🧩 Installer Chrome-udvidelse til automatisk indkøb</button>
   <button class="btn full" onclick="resetChecks()">↺ Nulstil afkrydsninger</button>
   <div id="grocery-list"><div class="hint">Planlæg måltider for at se din indkøbsliste.</div></div>
+</div>
+
+<!-- Chrome-udvidelse guide modal -->
+<div id="ext-guide-overlay" onclick="closeExtGuide()" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:8000;overflow-y:auto;-webkit-overflow-scrolling:touch;"></div>
+<div id="ext-guide-modal" style="display:none;position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);width:min(420px,94vw);max-height:90vh;overflow-y:auto;background:#fff;border-radius:18px;box-shadow:0 12px 48px rgba(0,0,0,.3);z-index:8001;">
+  <div style="background:var(--green);color:#fff;padding:16px 18px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:1;">
+    <div>
+      <div style="font-size:17px;font-weight:700;">🧩 Chrome-udvidelse</div>
+      <div style="font-size:12px;opacity:.8;margin-top:1px;">SmartPlate × Bilka ToGo — automatisk indkøb</div>
+    </div>
+    <button onclick="closeExtGuide()" style="background:none;border:none;color:#fff;font-size:26px;line-height:1;cursor:pointer;padding:0 2px;">×</button>
+  </div>
+  <div style="padding:18px;">
+    <p style="font-size:13px;color:#555;margin-bottom:18px;line-height:1.6;">Udvidelsen sender din indkøbsliste til Bilka ToGo og søger automatisk efter hver vare — du trykker bare ét klik per vare.</p>
+
+    <div style="display:flex;flex-direction:column;gap:14px;">
+
+      <!-- Trin 1 -->
+      <div style="display:flex;gap:12px;align-items:flex-start;">
+        <div style="min-width:32px;height:32px;background:var(--green);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px;">1</div>
+        <div>
+          <div style="font-weight:700;font-size:14px;margin-bottom:4px;">Download filer fra GitHub</div>
+          <p style="font-size:13px;color:#555;margin-bottom:8px;line-height:1.5;">Hent SmartPlate som ZIP-fil og pak den ud på din computer.</p>
+          <a href="https://github.com/faetterfims-tech/madplan/archive/refs/heads/main.zip" target="_blank" style="display:inline-block;background:var(--green);color:#fff;padding:8px 14px;border-radius:8px;font-size:13px;font-weight:600;text-decoration:none;">⬇️ Download ZIP-fil</a>
+        </div>
+      </div>
+
+      <!-- Trin 2 -->
+      <div style="display:flex;gap:12px;align-items:flex-start;">
+        <div style="min-width:32px;height:32px;background:var(--green);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px;">2</div>
+        <div>
+          <div style="font-weight:700;font-size:14px;margin-bottom:4px;">Åbn Chrome-udvidelser</div>
+          <p style="font-size:13px;color:#555;margin-bottom:8px;line-height:1.5;">Kopier adressen nedenfor og sæt den ind i Chrome-adresselinjen.</p>
+          <div style="background:#f5f5f5;border-radius:8px;padding:8px 12px;font-size:13px;font-family:monospace;display:flex;align-items:center;justify-content:space-between;gap:8px;">
+            <span>chrome://extensions</span>
+            <button onclick="navigator.clipboard.writeText('chrome://extensions').then(()=>{this.textContent='✓';setTimeout(()=>this.textContent='Kopier',1500)})" style="background:var(--green);color:#fff;border:none;border-radius:6px;padding:4px 10px;font-size:12px;cursor:pointer;white-space:nowrap;">Kopier</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Trin 3 -->
+      <div style="display:flex;gap:12px;align-items:flex-start;">
+        <div style="min-width:32px;height:32px;background:var(--green);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px;">3</div>
+        <div>
+          <div style="font-weight:700;font-size:14px;margin-bottom:4px;">Slå udviklertilstand til</div>
+          <p style="font-size:13px;color:#555;line-height:1.5;">Øverst til højre på siden er der en kontakt ved siden af <strong>"Udviklertilstand"</strong> — slå den til (bliver blå).</p>
+        </div>
+      </div>
+
+      <!-- Trin 4 -->
+      <div style="display:flex;gap:12px;align-items:flex-start;">
+        <div style="min-width:32px;height:32px;background:var(--green);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px;">4</div>
+        <div>
+          <div style="font-weight:700;font-size:14px;margin-bottom:4px;">Indlæs udvidelsen</div>
+          <p style="font-size:13px;color:#555;line-height:1.5;">Klik på <strong>"Indlæs ikke-pakket"</strong>.<br>Naviger til den udpakkede mappe og vælg mappen <strong style="font-family:monospace;">madplan-main/extension</strong>.</p>
+        </div>
+      </div>
+
+      <!-- Trin 5 -->
+      <div style="display:flex;gap:12px;align-items:flex-start;background:#f2f9f2;border-radius:12px;padding:12px;">
+        <div style="min-width:32px;height:32px;background:var(--green);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px;">✓</div>
+        <div>
+          <div style="font-weight:700;font-size:14px;margin-bottom:4px;color:var(--green);">Klart! Sådan bruger du det</div>
+          <ol style="font-size:13px;color:#555;line-height:1.8;margin:0;padding-left:16px;">
+            <li>Åbn <strong>smartplate.dk</strong> med din ugeplan</li>
+            <li>Klik på 🧩 <strong>SmartPlate-ikonet</strong> i Chrome-værktøjslinjen</li>
+            <li>Tryk <strong>"Synkroniser fra SmartPlate"</strong></li>
+            <li>Tryk <strong>"Start indkøb på Bilka ToGo"</strong></li>
+            <li>Udvidelsen søger automatisk — tryk ✓ for hver vare</li>
+          </ol>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </div>
 
 <div id="favourites-view" class="view">
@@ -478,6 +554,16 @@ function clearRating(name) { delete ratings[name]; save(); renderHistory(); rend
 
 // ── GROCERY ───────────────────────────────────────────────
 function resetChecks() { checkedItems.clear(); renderGrocery(); }
+function openExtGuide() {
+  document.getElementById('ext-guide-modal').style.display='block';
+  document.getElementById('ext-guide-overlay').style.display='block';
+  document.body.style.overflow='hidden';
+}
+function closeExtGuide() {
+  document.getElementById('ext-guide-modal').style.display='none';
+  document.getElementById('ext-guide-overlay').style.display='none';
+  document.body.style.overflow='';
+}
 function renderGrocery() {
   const c = document.getElementById('grocery-list');
   const planned = DAYS.filter(d=>weekPlan[d]);

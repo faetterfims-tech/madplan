@@ -83,10 +83,10 @@
     "tags": ["pasta", "svinekød", "hurtig", "klassiker"],
     "ingredients": [
       "400 g spaghetti",
-      "200 g pancetta eller bacon i tern",
+      "200 g bacon i tern",
       "4 æg",
       "2 æggeblommer",
-      "100 g revet pecorino romano",
+      "100 g revet parmesan",
       "50 g revet parmesan",
       "Rigeligt friskkværnet sort peber",
       "Salt"
@@ -142,9 +142,9 @@
     "difficulty": "mellem",
     "tags": ["risotto", "svampe", "vegetar", "weekendret"],
     "ingredients": [
-      "350 g arborio- eller carnaroliris",
+      "350 g risottoris",
       "300 g blandede svampe (champignon, shiitake, portobello)",
-      "30 g tørrede porcinisvampe",
+      "30 g tørrede svampe",
       "1 liter varm grøntsagsbouillon",
       "1 løg",
       "3 fed hvidløg",
@@ -179,7 +179,7 @@
       "400 g penne",
       "2 dåser hakkede tomater (à 400 g)",
       "4 fed hvidløg",
-      "2-3 røde chili (eller chiliflager efter smag)",
+      "2 røde chili",
       "4 spsk olivenolie",
       "Frisk persille",
       "Salt",
@@ -245,7 +245,7 @@
       "1 løg",
       "3 fed hvidløg",
       "100 g grønne bønner",
-      "100 g små pasta (ditalini eller lignende)",
+      "100 g suppenudler",
       "1,5 liter grøntsagsbouillon",
       "50 g parmesan",
       "Frisk basilikum",
@@ -337,7 +337,7 @@
     "difficulty": "let",
     "tags": ["kalvekød", "hurtig", "festret"],
     "ingredients": [
-      "8 kalvescalopper (ca. 600 g)",
+      "600 g kalvekød (schnitzler/scalopper)",
       "8 skiver prosciutto",
       "16 friske salvieblade",
       "2 dl hvidvin",
@@ -367,7 +367,7 @@
     "tags": ["pasta", "vegetar", "hurtig", "sommer"],
     "ingredients": [
       "400 g farfalle",
-      "2 potter frisk basilikum",
+      "2 potter basilikum",
       "60 g pinjekerner",
       "80 g revet parmesan",
       "2 fed hvidløg",
@@ -395,13 +395,13 @@
     "tags": ["pasta", "svinekød", "klassiker"],
     "ingredients": [
       "400 g rigatoni",
-      "200 g guanciale eller bacon",
+      "200 g bacon",
       "1 dåse hakkede tomater (400 g)",
       "1 løg",
       "2 fed hvidløg",
       "1 dl hvidvin",
       "1 tsk chiliflager",
-      "100 g revet pecorino",
+      "100 g revet parmesan",
       "2 spsk olivenolie",
       "Salt og peber"
     ],
@@ -425,7 +425,7 @@
     "difficulty": "let",
     "tags": ["pasta", "bønner", "vegetar", "suppe", "billig"],
     "ingredients": [
-      "200 g ditalini eller brokkolipasta",
+      "200 g suppenudler",
       "2 dåser hvide bønner (à 400 g)",
       "1 dåse hakkede tomater (400 g)",
       "1 løg",
@@ -492,7 +492,7 @@
       "6 spsk olivenolie",
       "Flagesalt",
       "Frisk rosmarin",
-      "Cherrytomater eller oliven (valgfrit)"
+      "Cherrytomater (valgfrit)"
     ],
     "steps": [
       "Bland mel, gær og salt. Tilsæt vand og 4 spsk olivenolie.",
@@ -575,9 +575,9 @@
       "250 g mascarpone",
       "3 æg (adskilt)",
       "75 g sukker",
-      "2 dl stærk espresso (afkølet)",
-      "2 spsk rom eller amaretto",
-      "24 ladyfingers (savoiardi-kiks)",
+      "2 dl espresso (afkølet)",
+      "2 spsk rom",
+      "24 ladyfingere",
       "Kakaopulver til drys"
     ],
     "steps": [
