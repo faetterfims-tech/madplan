@@ -555,28 +555,48 @@ function recipeToMeal(r) {
   };
 }
 
-function pickMeals(pool, count, alreadyPicked, liked, disliked) {
-  let available = pool
-    .filter(r => !disliked.includes(r.name) && !alreadyPicked.includes(r.name))
-    .map(r => ({ ...r, _score: (liked.includes(r.name) ? 20 : 0) + Math.random() * 10 }))
-    .sort((a, b) => b._score - a._score);
+function canonicalIngName(ing) {
+  return ing
+    .replace(/^[\d]+[,.]?[\d]*\s*(g|kg|dl|cl|ml|l|tsk|spsk|stk|fed|kviste?|bundt|dåser?|glas|pk\.?|nip|liter)\s+/gi, '')
+    .replace(/^[½¼¾]\s+/, '')
+    .replace(/^\d+\s+/, '')
+    .replace(/\s*\([^)]*\)/g, '')
+    .replace(/\s+til\s+(servering|stegning|drys|panering|fastgørelse|garnering|dryp)\b.*/gi, '')
+    .replace(/,.*$/, '')
+    .toLowerCase()
+    .trim();
+}
 
+function pickMeals(pool, count, alreadyPicked, liked, disliked) {
+  let available = pool.filter(r => !disliked.includes(r.name) && !alreadyPicked.includes(r.name));
+  const pickedIngredients = new Set();
   const picked = [];
   const cuisineCount = {};
-  for (const r of available) {
-    if (picked.length >= count) break;
-    const c = r.cuisine || 'andet';
-    if ((cuisineCount[c] || 0) < 3) {
-      picked.push(r);
-      cuisineCount[c] = (cuisineCount[c] || 0) + 1;
+
+  while (picked.length < count && available.length > 0) {
+    // Score inkl. bonus per delt ingrediens med allerede valgte retter
+    const scored = available.map(r => {
+      const ings = (r.ingredients || []).map(canonicalIngName).filter(Boolean);
+      const overlap = ings.filter(n => pickedIngredients.has(n)).length;
+      return {
+        ...r,
+        _score: (liked.includes(r.name) ? 20 : 0) + overlap * 4 + Math.random() * 10,
+        _ings: ings
+      };
+    }).sort((a, b) => b._score - a._score);
+
+    let chosen = null;
+    for (const r of scored) {
+      if ((cuisineCount[r.cuisine || 'andet'] || 0) < 3) { chosen = r; break; }
     }
+    if (!chosen) chosen = scored[0];
+
+    picked.push(chosen);
+    cuisineCount[chosen.cuisine || 'andet'] = (cuisineCount[chosen.cuisine || 'andet'] || 0) + 1;
+    chosen._ings.forEach(n => pickedIngredients.add(n));
+    available = available.filter(r => r.id !== chosen.id);
   }
-  if (picked.length < count) {
-    for (const r of available) {
-      if (picked.length >= count) break;
-      if (!picked.find(p => p.id === r.id)) picked.push(r);
-    }
-  }
+
   return picked;
 }
 
