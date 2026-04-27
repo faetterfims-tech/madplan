@@ -16,8 +16,27 @@ function parseIngredient(str) {
     .trim() || null;
 }
 
+// Konverterer ingrediensnavn til et søgeord Bilka faktisk forstår
+function bilkaNormalize(name) {
+  if (!name) return name;
+  let n = name.toLowerCase().trim();
+  n = n.replace(/^skallen?\s+fra\s+(?:en?\s+|\d+\s+)?/, '');
+  n = n.replace(/^saften?\s+(?:af|fra)\s+(?:en?\s+|\d+\s+)?/, '');
+  n = n.replace(/^(citron|appelsin|lime|grapefrugt)(saft|skal|zest)$/, '$1');
+  n = n.replace(/^(?:frisk[et]?|tørret|tørrede?|smeltet|smeltede?|revet|revne?|finthakket|finthakkede?|knust[e]?|skåret|strimlede?|kogt[e]?)\s+/, '');
+  const map = {
+    'zucchini': 'squash', 'courgette': 'squash',
+    'paprikakrydderi': 'paprika', 'majs': 'majskerner',
+    'pinjekerne': 'pinjekerner', 'pecorino': 'parmesan',
+    'ricottaost': 'ricotta', 'ingefærrod': 'ingefær',
+    'chilipulver': 'chili', 'chiliflager': 'chili',
+  };
+  if (map[n]) n = map[n];
+  return n.charAt(0).toUpperCase() + n.slice(1);
+}
+
 function bilkaUrl(ingredient) {
-  const term = parseIngredient(ingredient);
+  const term = bilkaNormalize(parseIngredient(ingredient));
   if (!term) return null;
   return `https://www.bilkatogo.dk/search/?query=${encodeURIComponent(term)}`;
 }
@@ -129,7 +148,7 @@ document.getElementById('btn-start-shopping').addEventListener('click', () => {
   const item = nextIndex >= 0 ? ingredients[nextIndex] : ingredients[0];
   if (!item) { alert('Ingen varer at handle.'); return; }
 
-  const term = parseIngredient(item) || item;
+  const term = bilkaNormalize(parseIngredient(item) || item);
   chrome.storage.local.set({ sp_pending_search: term }, () => {
     chrome.tabs.query({ url: 'https://www.bilkatogo.dk/*' }, tabs => {
       const url = 'https://www.bilkatogo.dk/';

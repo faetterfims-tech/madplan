@@ -2,6 +2,34 @@
 
 const SKIP = new Set(['salt og peber','salt','peber','vand','tandstikkere til fastgørelse','tandstikkere']);
 
+// Konverterer ingrediensnavn til et søgeord Bilka faktisk forstår
+function bilkaNormalize(name) {
+  if (!name) return name;
+  let n = name.toLowerCase().trim();
+  // "skallen fra (en) citron" → "citron"
+  n = n.replace(/^skallen?\s+fra\s+(?:en?\s+|\d+\s+)?/, '');
+  // "saften af/fra X" → "X"
+  n = n.replace(/^saften?\s+(?:af|fra)\s+(?:en?\s+|\d+\s+)?/, '');
+  // "citronsaft", "citronskal", "citronskal" → "citron"
+  n = n.replace(/^(citron|appelsin|lime|grapefrugt)(saft|skal|zest)$/, '$1');
+  // Strip adjektiver Bilka ikke bruger i produktnavne
+  n = n.replace(/^(?:frisk[et]?|tørret|tørrede?|smeltet|smeltede?|revet|revne?|finthakket|finthakkede?|knust[e]?|skåret|strimlede?|kogt[e]?)\s+/, '');
+  // Bilka-specifikke synonymer
+  const map = {
+    'zucchini': 'squash', 'courgette': 'squash',
+    'paprikakrydderi': 'paprika',
+    'majs': 'majskerner',
+    'pinjekerne': 'pinjekerner',
+    'pecorino': 'parmesan',
+    'ricottaost': 'ricotta',
+    'ingefærrod': 'ingefær',
+    'chilipulver': 'chili',
+    'chiliflager': 'chili',
+  };
+  if (map[n]) n = map[n];
+  return n.charAt(0).toUpperCase() + n.slice(1);
+}
+
 function parseIngredient(str) {
   if (SKIP.has(str.toLowerCase().trim())) return null;
   return str
@@ -113,7 +141,7 @@ function goToNext(allIngs, checkedSet) {
   const validIdxs = allIngs.reduce((a,ing,i) => parseIngredient(ing) ? [...a,i] : a, []);
   const nextIdx   = validIdxs.find(i => !checkedSet.has(i));
   if (nextIdx === undefined) { renderPanel(); return; }
-  const term = parseIngredient(allIngs[nextIdx]);
+  const term = bilkaNormalize(parseIngredient(allIngs[nextIdx]));
   // Gem søgeterm og naviger til forsiden så content scriptet søger automatisk
   chrome.storage.local.set({ sp_pending_search: term }, () => {
     window.location.href = 'https://www.bilkatogo.dk/';
@@ -133,7 +161,7 @@ function renderPanel() {
     const nextIdx  = validIdx.find(i => !checked.has(i));
     const allDone  = nextIdx === undefined;
     const curIng   = allDone ? null : allIngs[nextIdx];
-    const curName  = curIng ? parseIngredient(curIng) : null;
+    const curName  = curIng ? bilkaNormalize(parseIngredient(curIng)) : null;
     const pct      = total ? Math.round(done/total*100) : 0;
 
     panel.innerHTML = `

@@ -482,16 +482,16 @@ function renderGrocery() {
   const c = document.getElementById('grocery-list');
   const planned = DAYS.filter(d=>weekPlan[d]);
   if(!planned.length) { c.innerHTML='<div class="hint">Planlæg måltider for at se din indkøbsliste.</div>'; return; }
-  const seen = new Map();
-  planned.forEach(d=>{ weekPlan[d].ingredients.forEach(i=>{ seen.set(i.toLowerCase(),i); }); });
-  const items = [...seen.values()];
+  const raw = [];
+  planned.forEach(d => { weekPlan[d].ingredients.forEach(i => raw.push(i)); });
+  const items = consolidateIngredients(raw);
   const cats = {Kød:[],Grøntsager:[],Mejeri:[],Tørvarer:[],Andet:[]};
   items.forEach(i=>{
     const l=i.toLowerCase();
-    if(l.match(/kød|kylling|laks|oksekød|hakket|pepperoni|kyllingelår|kyllingebryst/)) cats.Kød.push(i);
-    else if(l.match(/løg|gulerod|broccoli|peberfrugt|champignon|salat|tomat|bønner|kartof|selleri|spinat/)) cats.Grøntsager.push(i);
-    else if(l.match(/ost|creme|mozzarella|parmesan|cheddar|smør|fløde|mælk|yoghurt|kokosmælk/)) cats.Mejeri.push(i);
-    else if(l.match(/spaghetti|ris|pasta|mel|brød|dej|linser|naan|tacoskaller|bouillon/)) cats.Tørvarer.push(i);
+    if(l.match(/kød|kylling|laks|oksekød|hakket|pepperoni|kyllingelår|kyllingebryst|svinekød|bacon|pølse|æg/)) cats.Kød.push(i);
+    else if(l.match(/løg|gulerod|broccoli|peberfrugt|champignon|salat|tomat|bønner|kartof|selleri|spinat|squash|zucchini|aubergine|purløg|hvidløg|ingefær|citron|appelsin|lime|persille|basilikum|timian|rosmarin|koriander|dild|avocado|majs|ærter|porre|blomkål|rosenkål|spidskål|rødkål|agurk|radise|fennikel/)) cats.Grøntsager.push(i);
+    else if(l.match(/ost|creme|mozzarella|parmesan|cheddar|smør|fløde|mælk|yoghurt|kokosmælk|ricotta|mascarpone|skyr|cremefraiche/)) cats.Mejeri.push(i);
+    else if(l.match(/spaghetti|ris|pasta|mel|brød|dej|linser|naan|tacoskaller|bouillon|olie|eddike|soya|worcester|hoisin|tomat|dåse|hermetisk|konserves/)) cats.Tørvarer.push(i);
     else cats.Andet.push(i);
   });
   let html='';
@@ -553,6 +553,52 @@ function recipeToMeal(r) {
     difficulty: r.difficulty,
     tags: r.tags || []
   };
+}
+
+function consolidateIngredients(rawList) {
+  const SKIP = new Set(['salt og peber','salt','peber','vand','tandstikkere til fastgørelse','tandstikkere']);
+  const FRACS = { '½': 0.5, '¼': 0.25, '¾': 0.75 };
+  const UNITS = 'kg|g|liter|l|dl|cl|ml|spsk|tsk|stk|fed|kviste?|bundt|dåser?|glas|pk\\.?|nip';
+  function parseIng(str) {
+    if (SKIP.has(str.toLowerCase().trim())) return null;
+    const clean = str.replace(/\s*\([^)]*\)/g,'').replace(/\s+til\s+(servering|stegning|drys|panering|fastgørelse|garnering|dryp)\b.*/gi,'').replace(/,.*$/,'').trim();
+    let m;
+    m = clean.match(new RegExp(`^([\\d]+[,.]?[\\d]*)\\s*(${UNITS})\\s+(.+)$`,'i'));
+    if (m) return { amount: parseFloat(m[1].replace(',','.')), unit: m[2].toLowerCase(), name: m[3].trim() };
+    m = clean.match(new RegExp(`^([½¼¾])\\s*(${UNITS})\\s+(.+)$`,'i'));
+    if (m) return { amount: FRACS[m[1]], unit: m[2].toLowerCase(), name: m[3].trim() };
+    m = clean.match(/^([\d]+[,.]?[\d]*)\s+(.+)$/);
+    if (m) return { amount: parseFloat(m[1].replace(',','.')), unit: '', name: m[2].trim() };
+    m = clean.match(/^([½¼¾])\s+(.+)$/);
+    if (m) return { amount: FRACS[m[1]], unit: '', name: m[2].trim() };
+    return { amount: null, unit: null, name: clean };
+  }
+  function toBase(a, u) {
+    const x = (u||'').toLowerCase();
+    if (x==='kg') return { amount: a*1000, unit: 'g' };
+    if (x==='l'||x==='liter') return { amount: a*1000, unit: 'ml' };
+    if (x==='dl') return { amount: a*100, unit: 'ml' };
+    if (x==='cl') return { amount: a*10, unit: 'ml' };
+    return { amount: a, unit: x };
+  }
+  function fmt(a, u) {
+    if (u==='g'&&a>=1000) return `${+(a/1000).toFixed(2).replace(/\.?0+$/,'')} kg`;
+    if (u==='ml'&&a>=1000) return `${+(a/1000).toFixed(2).replace(/\.?0+$/,'')} l`;
+    if (u==='ml'&&a>=100) return `${+(a/100).toFixed(1).replace(/\.?0+$/,'')} dl`;
+    const d = Number.isInteger(a) ? a : parseFloat(a.toFixed(1));
+    return u ? `${d} ${u}` : `${d}`;
+  }
+  const groups = new Map();
+  rawList.forEach(ing => {
+    const p = parseIng(ing); if (!p) return;
+    const key = p.name.toLowerCase().trim();
+    if (!groups.has(key)) groups.set(key, { name: p.name, amount: null, unit: null });
+    const g = groups.get(key); if (p.amount === null) return;
+    const base = toBase(p.amount, p.unit||'');
+    if (g.amount===null) { g.amount=base.amount; g.unit=base.unit; }
+    else if (g.unit===base.unit) g.amount+=base.amount;
+  });
+  return [...groups.values()].map(g => g.amount!==null ? `${fmt(g.amount,g.unit)} ${g.name}` : g.name);
 }
 
 function canonicalIngName(ing) {
