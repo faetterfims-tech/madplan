@@ -6,25 +6,37 @@ const SKIP = new Set(['salt og peber','salt','peber','vand','tandstikkere til fa
 function bilkaNormalize(name) {
   if (!name) return name;
   let n = name.toLowerCase().trim();
-  // "skallen fra (en) citron" → "citron"
+  // "skallen fra (en) citron" / "skal af 1 citron" → "citron"
   n = n.replace(/^skallen?\s+fra\s+(?:en?\s+|\d+\s+)?/, '');
+  n = n.replace(/^skal\s+af\s+\d+\s+/, '');
   // "saften af/fra X" → "X"
   n = n.replace(/^saften?\s+(?:af|fra)\s+(?:en?\s+|\d+\s+)?/, '');
-  // "citronsaft", "citronskal", "citronskal" → "citron"
-  n = n.replace(/^(citron|appelsin|lime|grapefrugt)(saft|skal|zest)$/, '$1');
-  // Strip adjektiver Bilka ikke bruger i produktnavne
-  n = n.replace(/^(?:frisk[et]?|tørret|tørrede?|smeltet|smeltede?|revet|revne?|finthakket|finthakkede?|knust[e]?|skåret|strimlede?|kogt[e]?)\s+/, '');
+  // "citronsaft / citronskal / citronskal" → "citron"
+  n = n.replace(/^(citron|appelsin|lime|grapefrugt)(saft|skal|zest|er)$/, '$1');
+  // "citroner (saft og skal)" → allerede strip af parentes, men sikrer "citroner" → "citron"
+  n = n.replace(/^citroner$/, 'citron');
+  n = n.replace(/^appelsiner$/, 'appelsin');
+  // Strip frisk/tørret/revet o.lign. adjektiver foran produktnavnet
+  n = n.replace(/^(?:frisk[et]?|tørret|tørrede?|smeltet|smeltede?|revet|revne?|finthakket|finthakkede?|knust[e]?|skåret|strimlede?|kogt[e]?|flagesalt)\s+/, '');
   // Bilka-specifikke synonymer
   const map = {
-    'zucchini': 'squash', 'courgette': 'squash',
+    'zucchini': 'squash',    'courgette': 'squash',
     'paprikakrydderi': 'paprika',
     'majs': 'majskerner',
-    'pinjekerne': 'pinjekerner',
+    'pinjekerne': 'pinjekerner', 'pinjekerner': 'pinjekerner',
     'pecorino': 'parmesan',
     'ricottaost': 'ricotta',
     'ingefærrod': 'ingefær',
-    'chilipulver': 'chili',
-    'chiliflager': 'chili',
+    'chilipulver': 'chili',  'chiliflager': 'chili',
+    'muskatnød': 'muskat',
+    'floresukker': 'flormelis', 'flormelis': 'flormelis',
+    'bladselleri': 'selleri', 'stængler bladselleri': 'selleri',
+    'hakkede tomater': 'dåse tomater',
+    'cherrytomater': 'cherrytomater',
+    'tørgær': 'gær',
+    'laurbærblade': 'laurbær',
+    'oksebouillon': 'bouillon',  'kyllingebouillon': 'bouillon',
+    'grøntsagsbouillon': 'bouillon',
   };
   if (map[n]) n = map[n];
   return n.charAt(0).toUpperCase() + n.slice(1);
@@ -197,13 +209,13 @@ function renderPanel() {
 
       <div style="max-height:140px;overflow-y:auto;border-top:1px solid #f0f0f0;">
         ${validIdx.map(i => {
-          const name  = parseIngredient(allIngs[i]);
           const isDone = checked.has(i);
           const isCur  = i === nextIdx;
+          // Vis fuld konsolideret streng inkl. mængde ("4 løg", "500 g oksekød")
           return `<div data-sp="${i}" style="padding:6px 14px;font-size:12px;display:flex;align-items:center;gap:6px;
             cursor:pointer;border-bottom:1px solid #fafafa;background:${isCur?'#f2f9f2':'#fff'}">
             <span style="color:${isDone?'#2d7a2d':'#ccc'};width:14px;">${isDone?'✓':'○'}</span>
-            <span style="${isDone?'text-decoration:line-through;color:#bbb;':''}${isCur?'font-weight:600;':''}">${name}</span>
+            <span style="${isDone?'text-decoration:line-through;color:#bbb;':''}${isCur?'font-weight:600;':''}">${allIngs[i]}</span>
           </div>`;
         }).join('')}
       </div>`;

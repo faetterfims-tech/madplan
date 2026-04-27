@@ -21,15 +21,25 @@ function bilkaNormalize(name) {
   if (!name) return name;
   let n = name.toLowerCase().trim();
   n = n.replace(/^skallen?\s+fra\s+(?:en?\s+|\d+\s+)?/, '');
+  n = n.replace(/^skal\s+af\s+\d+\s+/, '');
   n = n.replace(/^saften?\s+(?:af|fra)\s+(?:en?\s+|\d+\s+)?/, '');
-  n = n.replace(/^(citron|appelsin|lime|grapefrugt)(saft|skal|zest)$/, '$1');
-  n = n.replace(/^(?:frisk[et]?|tørret|tørrede?|smeltet|smeltede?|revet|revne?|finthakket|finthakkede?|knust[e]?|skåret|strimlede?|kogt[e]?)\s+/, '');
+  n = n.replace(/^(citron|appelsin|lime|grapefrugt)(saft|skal|zest|er)$/, '$1');
+  n = n.replace(/^citroner$/, 'citron');
+  n = n.replace(/^appelsiner$/, 'appelsin');
+  n = n.replace(/^(?:frisk[et]?|tørret|tørrede?|smeltet|smeltede?|revet|revne?|finthakket|finthakkede?|knust[e]?|skåret|strimlede?|kogt[e]?|flagesalt)\s+/, '');
   const map = {
-    'zucchini': 'squash', 'courgette': 'squash',
+    'zucchini': 'squash',    'courgette': 'squash',
     'paprikakrydderi': 'paprika', 'majs': 'majskerner',
-    'pinjekerne': 'pinjekerner', 'pecorino': 'parmesan',
-    'ricottaost': 'ricotta', 'ingefærrod': 'ingefær',
-    'chilipulver': 'chili', 'chiliflager': 'chili',
+    'pinjekerne': 'pinjekerner', 'pinjekerner': 'pinjekerner',
+    'pecorino': 'parmesan',  'ricottaost': 'ricotta',
+    'ingefærrod': 'ingefær', 'chilipulver': 'chili',
+    'chiliflager': 'chili',  'muskatnød': 'muskat',
+    'floresukker': 'flormelis', 'flormelis': 'flormelis',
+    'bladselleri': 'selleri', 'stængler bladselleri': 'selleri',
+    'hakkede tomater': 'dåse tomater', 'cherrytomater': 'cherrytomater',
+    'tørgær': 'gær', 'laurbærblade': 'laurbær',
+    'oksebouillon': 'bouillon', 'kyllingebouillon': 'bouillon',
+    'grøntsagsbouillon': 'bouillon',
   };
   if (map[n]) n = map[n];
   return n.charAt(0).toUpperCase() + n.slice(1);
@@ -79,10 +89,11 @@ function render() {
   }
 
   list.innerHTML = ingredients.map((ing, i) => {
-    const name = parseIngredient(ing);
-    if (!name) return ''; // skip salt og peber etc.
+    if (!parseIngredient(ing)) return ''; // skip salt og peber etc.
     const isDone = checkedSet.has(i);
     const url = bilkaUrl(ing);
+    // Vis den konsoliderede streng direkte (inkl. mængde: "4 løg", "500 g oksekød")
+    const name = ing;
     return `
       <div class="item" data-index="${i}">
         <span class="item-check">${isDone ? '✓' : '○'}</span>
