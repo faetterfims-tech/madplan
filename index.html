@@ -716,73 +716,81 @@ function canonicalIngName(ing) {
     .trim();
 }
 
-// Baggrundsingredienservarer der godt må gentages (olie, løg, mel osv.)
+// Ingredienser der er OK at bruge i flere retter (basale fødevarer)
 const PANTRY_INGS = new Set([
   'olie','mel','smør','salt','peber','hvidløg','løg','mælk','vand','sukker','æg',
   'eddike','fløde','creme fraiche','bouillon','oksebouillon','kyllingebouillon',
-  'grøntsagsbouillon','sojasauce','tomatpuré','oregano','paprika','spidskommen',
-  'karry','timian','rosmarin','basilikum','dild','persille','laurbær','muskat','chili',
-  'hvidvin','rødvin','citronsaft','citron','olie','rapsolie','olivenolie','sesamolie'
+  'grøntsagsbouillon','fiskebouillon','sojasauce','tomatpuré','oregano','paprika',
+  'spidskommen','karry','timian','rosmarin','basilikum','dild','persille','laurbær',
+  'muskat','chili','hvidvin','rødvin','citronsaft','citron','rapsolie','olivenolie',
+  'sesamolie','ketchup','sennep','mayonnaise','salt og peber'
 ]);
 
-// Præference-bonus per køkken — dansk og klassiske retter foretrækkes
-const CUISINE_BONUS = {
-  'dansk': 18, 'nordisk': 12, 'italiensk': 10, 'vegetarisk': 4,
-  'asiatisk': 3, 'mexicansk': 2, 'middelhavs': 6, 'indisk': 3, 'amerikansk': 3
-};
+// Score én ret ud fra liked-status og gentagelse af hoved-ingredienser
+function scoreRecipe(r, liked, pickedMainIngs) {
+  const mainIngs = (r.ingredients || []).map(canonicalIngName)
+    .filter(n => n && !PANTRY_INGS.has(n));
+  const repeat = mainIngs.filter(n => pickedMainIngs.has(n)).length;
+  return {
+    ...r,
+    _score: (liked.includes(r.name) ? 20 : 0) + Math.random() * 10 - repeat * 20,
+    _mainIngs: mainIngs
+  };
+}
 
 function pickMeals(pool, count, alreadyPicked, liked, disliked) {
-  let available = pool.filter(r => !disliked.includes(r.name) && !alreadyPicked.includes(r.name));
-  const pickedMainIngs = new Set(); // Hoved-ingredienser allerede valgt
-  const pickedTags = new Set();     // Tags allerede repræsenteret
-  const picked = [];
-  const cuisineCount = {};
+  const avail = pool.filter(r => !disliked.includes(r.name) && !alreadyPicked.includes(r.name));
 
-  while (picked.length < count && available.length > 0) {
-    const scored = available.map(r => {
-      const ings = (r.ingredients || []).map(canonicalIngName).filter(Boolean);
-      const mainIngs = ings.filter(n => !PANTRY_INGS.has(n));
-      const tags = r.tags || [];
+  // ── Slot-baseret ugeplanlægning ─────────────────────────────
+  // Garanter altid 3 danske dage. De resterende 4 pladser fordeles på
+  // forskellige fremmedkøkkener — max 1 af hvert.
+  const FOREIGN = ['nordisk', 'italiensk', 'asiatisk', 'mexicansk', 'vegetarisk', 'middelhavs', 'indisk', 'amerikansk'];
+  const nDanish  = Math.max(2, Math.round(count * 0.43)); // ~3 ud af 7
+  const nForeign = count - nDanish;
 
-      // Straf for gentagelse af hoved-ingredienser (rejer, avocado, tacosskaller osv.)
-      const mainIngRepeat = mainIngs.filter(n => pickedMainIngs.has(n)).length;
+  // Vælg tilfældige fremmedkøkkener (ingen dubletter)
+  const shuffledForeign = [...FOREIGN].sort(() => Math.random() - 0.5).slice(0, nForeign);
 
-      // Straf for ens tagkategorier (tacos, salat, suppe, curry...)
-      const tagRepeat = tags.filter(t => pickedTags.has(t)).length;
+  // Byg endelig plan og bland rækkefølgen
+  const cuisinePlan = [
+    ...Array(nDanish).fill('dansk'),
+    ...shuffledForeign
+  ].sort(() => Math.random() - 0.5);
 
-      // Præference for danske og kendte køkkener
-      const cuisineBonus = CUISINE_BONUS[r.cuisine] || 0;
+  const usedIds     = new Set();
+  const pickedMainIngs = new Set();
+  const picked      = [];
 
-      // Liked/favorit-bonus
-      const likedBonus = liked.includes(r.name) ? 25 : 0;
+  // Find bedste tilgængelige opskrift fra en given cuisine
+  const getBest = (cuisine) =>
+    avail
+      .filter(r => !usedIds.has(r.id) && r.cuisine === cuisine)
+      .map(r => scoreRecipe(r, liked, pickedMainIngs))
+      .sort((a, b) => b._score - a._score)[0] || null;
 
-      // Lille tilfældighedsfaktor for variation
-      const rand = Math.random() * 8;
+  // Fallback: bed om HVILKEN SOM HELST cuisine vi ikke har overskredet
+  const getAny = (usedCuisines) => {
+    const all = avail
+      .filter(r => !usedIds.has(r.id))
+      .map(r => scoreRecipe(r, liked, pickedMainIngs))
+      .filter(r => (usedCuisines[r.cuisine] || 0) < 2)
+      .sort((a, b) => b._score - a._score);
+    return all[0] || avail.filter(r => !usedIds.has(r.id)).map(r => scoreRecipe(r, liked, pickedMainIngs)).sort((a, b) => b._score - a._score)[0] || null;
+  };
 
-      const score = likedBonus + cuisineBonus + rand
-        - mainIngRepeat * 18   // Stærk straf for samme hoved-ingrediens
-        - tagRepeat * 7;       // Straf for samme ret-type
+  for (const targetCuisine of cuisinePlan) {
+    if (picked.length >= count) break;
 
-      return { ...r, _score: score, _ings: ings, _mainIngs: mainIngs };
-    }).sort((a, b) => b._score - a._score);
+    const usedCuisines = {};
+    picked.forEach(r => { usedCuisines[r.cuisine] = (usedCuisines[r.cuisine] || 0) + 1; });
 
-    // Max 2 af samme køkken per uge — relax til 3 kun hvis ingen anden mulighed
-    let chosen = null;
-    for (const r of scored) {
-      if ((cuisineCount[r.cuisine || 'andet'] || 0) < 2) { chosen = r; break; }
-    }
-    if (!chosen) {
-      for (const r of scored) {
-        if ((cuisineCount[r.cuisine || 'andet'] || 0) < 3) { chosen = r; break; }
-      }
-    }
-    if (!chosen) chosen = scored[0];
+    let chosen = getBest(targetCuisine);
+    if (!chosen) chosen = getAny(usedCuisines); // Fallback hvis cuisine-pulje er tom
+    if (!chosen) break;
 
     picked.push(chosen);
-    cuisineCount[chosen.cuisine || 'andet'] = (cuisineCount[chosen.cuisine || 'andet'] || 0) + 1;
+    usedIds.add(chosen.id);
     chosen._mainIngs.forEach(n => pickedMainIngs.add(n));
-    (chosen.tags || []).forEach(t => pickedTags.add(t));
-    available = available.filter(r => r.id !== chosen.id);
   }
 
   return picked;
@@ -902,7 +910,7 @@ function showDone(msg) {
   el.style.display = 'flex';
 }
 
-showDone('Madplansalgoritme opdateret — klik "Planlæg uge" for ny varieret uge');
+showDone('Algoritme genbygget — garanteret 3 dage dansk + 4 varierede køkkener');
 
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('/sw.js').catch(() => {});
