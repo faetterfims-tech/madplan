@@ -75,6 +75,9 @@ function formatTime(ts) {
 // ── State ──────────────────────────────────────────────────
 
 let ingredients = [];
+let prices = [];
+let totalPrice = 0;
+let weekCost = 0;
 let checkedSet = new Set();
 let syncedAt = null;
 
@@ -93,10 +96,12 @@ function render() {
 
   const badge = document.getElementById('progress-badge');
   badge.textContent = `${done}/${total}`;
-  badge.className = `badge${done === total && total > 0 ? '' : ''}`;
 
   document.getElementById('sync-time').textContent =
     syncedAt ? `Sidst: ${formatTime(syncedAt)}` : 'Aldrig synkroniseret';
+
+  // Budget-sektion
+  renderBudget();
 
   const list = document.getElementById('item-list');
   if (ingredients.length === 0) {
@@ -105,15 +110,18 @@ function render() {
   }
 
   list.innerHTML = ingredients.map((ing, i) => {
-    if (!parseIngredient(ing)) return ''; // skip salt og peber etc.
+    if (!parseIngredient(ing)) return '';
     const isDone = checkedSet.has(i);
     const url = bilkaUrl(ing);
-    // Vis den konsoliderede streng direkte (inkl. mængde: "4 løg", "500 g oksekød")
-    const name = ing;
+    const price = prices[i];
+    const priceTag = (price != null && price > 0)
+      ? `<span class="item-price">~${price} kr</span>`
+      : '';
     return `
       <div class="item" data-index="${i}">
         <span class="item-check">${isDone ? '✓' : '○'}</span>
-        <span class="item-name ${isDone ? 'done' : ''}">${name}</span>
+        <span class="item-name ${isDone ? 'done' : ''}">${ing}</span>
+        ${priceTag}
         ${url ? `<a class="item-bilka" href="${url}" target="_blank" onclick="event.stopPropagation()">Bilka</a>` : ''}
       </div>`;
   }).join('');
@@ -129,6 +137,37 @@ function render() {
   });
 }
 
+function renderBudget() {
+  const section = document.getElementById('budget-section');
+  if (totalPrice === 0 && weekCost === 0) {
+    section.style.display = 'none';
+    return;
+  }
+  section.style.display = 'block';
+
+  const estimated = totalPrice;
+  const plan = weekCost;
+
+  // Brug enten madplanens kostpris eller estimeret som reference
+  const reference = plan > 0 ? plan : estimated;
+  const pct = reference > 0 ? Math.min(100, Math.round((estimated / reference) * 100)) : 0;
+  const barColor = pct > 110 ? '#e24b4a' : pct > 90 ? '#f0a500' : '#2d7a2d';
+
+  let budgetText = '';
+  if (estimated > 0) budgetText += `Estimeret indkøb: <strong>~${estimated} kr</strong>`;
+  if (plan > 0) budgetText += `&ensp;·&ensp;Madplan: <strong>${plan} kr</strong>`;
+
+  section.innerHTML = `
+    <div class="section-title">Budget</div>
+    <div class="budget-text">${budgetText}</div>
+    ${reference > 0 ? `
+    <div class="budget-bar-wrap">
+      <div class="budget-bar" style="width:${pct}%;background:${barColor}"></div>
+    </div>
+    <div class="budget-hint">${pct}% af madplanens budget</div>` : ''}
+  `;
+}
+
 // ── Gem og hent state ──────────────────────────────────────
 
 function saveState() {
@@ -138,12 +177,18 @@ function saveState() {
 }
 
 function loadState() {
-  chrome.storage.local.get(['sp_ingredients', 'sp_synced_at', 'sp_checked'], data => {
-    ingredients = data.sp_ingredients || [];
-    syncedAt = data.sp_synced_at || null;
-    checkedSet = new Set(data.sp_checked || []);
-    render();
-  });
+  chrome.storage.local.get(
+    ['sp_ingredients', 'sp_ingredient_prices', 'sp_total_price', 'sp_week_cost', 'sp_synced_at', 'sp_checked'],
+    data => {
+      ingredients = data.sp_ingredients || [];
+      prices      = data.sp_ingredient_prices || [];
+      totalPrice  = data.sp_total_price || 0;
+      weekCost    = data.sp_week_cost || 0;
+      syncedAt    = data.sp_synced_at || null;
+      checkedSet  = new Set(data.sp_checked || []);
+      render();
+    }
+  );
 }
 
 // ── Knapper ────────────────────────────────────────────────
@@ -170,7 +215,6 @@ document.getElementById('btn-sync').addEventListener('click', async () => {
 });
 
 document.getElementById('btn-start-shopping').addEventListener('click', () => {
-  // Find første vare der ikke er krydset af
   const nextIndex = ingredients.findIndex((ing, i) => !checkedSet.has(i) && parseIngredient(ing));
   const item = nextIndex >= 0 ? ingredients[nextIndex] : ingredients[0];
   if (!item) { alert('Ingen varer at handle.'); return; }
