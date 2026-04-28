@@ -716,33 +716,72 @@ function canonicalIngName(ing) {
     .trim();
 }
 
+// Baggrundsingredienservarer der godt må gentages (olie, løg, mel osv.)
+const PANTRY_INGS = new Set([
+  'olie','mel','smør','salt','peber','hvidløg','løg','mælk','vand','sukker','æg',
+  'eddike','fløde','creme fraiche','bouillon','oksebouillon','kyllingebouillon',
+  'grøntsagsbouillon','sojasauce','tomatpuré','oregano','paprika','spidskommen',
+  'karry','timian','rosmarin','basilikum','dild','persille','laurbær','muskat','chili',
+  'hvidvin','rødvin','citronsaft','citron','olie','rapsolie','olivenolie','sesamolie'
+]);
+
+// Præference-bonus per køkken — dansk og klassiske retter foretrækkes
+const CUISINE_BONUS = {
+  'dansk': 18, 'nordisk': 12, 'italiensk': 10, 'vegetarisk': 4,
+  'asiatisk': 3, 'mexicansk': 2, 'middelhavs': 6, 'indisk': 3, 'amerikansk': 3
+};
+
 function pickMeals(pool, count, alreadyPicked, liked, disliked) {
   let available = pool.filter(r => !disliked.includes(r.name) && !alreadyPicked.includes(r.name));
-  const pickedIngredients = new Set();
+  const pickedMainIngs = new Set(); // Hoved-ingredienser allerede valgt
+  const pickedTags = new Set();     // Tags allerede repræsenteret
   const picked = [];
   const cuisineCount = {};
 
   while (picked.length < count && available.length > 0) {
-    // Score inkl. bonus per delt ingrediens med allerede valgte retter
     const scored = available.map(r => {
       const ings = (r.ingredients || []).map(canonicalIngName).filter(Boolean);
-      const overlap = ings.filter(n => pickedIngredients.has(n)).length;
-      return {
-        ...r,
-        _score: (liked.includes(r.name) ? 20 : 0) + overlap * 4 + Math.random() * 10,
-        _ings: ings
-      };
+      const mainIngs = ings.filter(n => !PANTRY_INGS.has(n));
+      const tags = r.tags || [];
+
+      // Straf for gentagelse af hoved-ingredienser (rejer, avocado, tacosskaller osv.)
+      const mainIngRepeat = mainIngs.filter(n => pickedMainIngs.has(n)).length;
+
+      // Straf for ens tagkategorier (tacos, salat, suppe, curry...)
+      const tagRepeat = tags.filter(t => pickedTags.has(t)).length;
+
+      // Præference for danske og kendte køkkener
+      const cuisineBonus = CUISINE_BONUS[r.cuisine] || 0;
+
+      // Liked/favorit-bonus
+      const likedBonus = liked.includes(r.name) ? 25 : 0;
+
+      // Lille tilfældighedsfaktor for variation
+      const rand = Math.random() * 8;
+
+      const score = likedBonus + cuisineBonus + rand
+        - mainIngRepeat * 18   // Stærk straf for samme hoved-ingrediens
+        - tagRepeat * 7;       // Straf for samme ret-type
+
+      return { ...r, _score: score, _ings: ings, _mainIngs: mainIngs };
     }).sort((a, b) => b._score - a._score);
 
+    // Max 2 af samme køkken per uge — relax til 3 kun hvis ingen anden mulighed
     let chosen = null;
     for (const r of scored) {
-      if ((cuisineCount[r.cuisine || 'andet'] || 0) < 3) { chosen = r; break; }
+      if ((cuisineCount[r.cuisine || 'andet'] || 0) < 2) { chosen = r; break; }
+    }
+    if (!chosen) {
+      for (const r of scored) {
+        if ((cuisineCount[r.cuisine || 'andet'] || 0) < 3) { chosen = r; break; }
+      }
     }
     if (!chosen) chosen = scored[0];
 
     picked.push(chosen);
     cuisineCount[chosen.cuisine || 'andet'] = (cuisineCount[chosen.cuisine || 'andet'] || 0) + 1;
-    chosen._ings.forEach(n => pickedIngredients.add(n));
+    chosen._mainIngs.forEach(n => pickedMainIngs.add(n));
+    (chosen.tags || []).forEach(t => pickedTags.add(t));
     available = available.filter(r => r.id !== chosen.id);
   }
 
@@ -863,7 +902,7 @@ function showDone(msg) {
   el.style.display = 'flex';
 }
 
-showDone('Ingredienser er rettet — alle Bilka-inkompatible navne er opdateret');
+showDone('Madplansalgoritme opdateret — klik "Planlæg uge" for ny varieret uge');
 
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('/sw.js').catch(() => {});
