@@ -1,0 +1,619 @@
+[
+  {
+    "id": "as-001",
+    "name": "Kylling Teriyaki med jasminris",
+    "cuisine": "asiatisk",
+    "cost": 105,
+    "time": 30,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["kylling", "japansk", "hverdagsret", "asiatisk"],
+    "ingredients": [
+      "600 g kyllingebryst",
+      "300 g jasminris",
+      "4 spsk sojasauce",
+      "2 spsk honning",
+      "1 spsk hvidvinseddike",
+      "2 fed hvidløg",
+      "1 tsk ingefær",
+      "1 spsk sesamolie",
+      "3 forårsløg",
+      "1 spsk sesamfrø"
+    ],
+    "steps": [
+      "Kog jasminris efter pakkens anvisning.",
+      "Bland sojasauce, honning, eddike, presset hvidløg og ingefær til teriyaki-marinade.",
+      "Skær kylling i strimler og steg gyldne i sesamolie ca. 5 min.",
+      "Hæld marinaden over kyllingen og lad den karamellisere ved middel varme i 3-4 min.",
+      "Server over ris, drys med hakket forårsløg og sesamfrø."
+    ]
+  },
+  {
+    "id": "as-002",
+    "name": "Grøn Thai Karry med kylling",
+    "cuisine": "asiatisk",
+    "cost": 140,
+    "time": 35,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["kylling", "thai", "karry", "kokosmælk", "asiatisk"],
+    "ingredients": [
+      "600 g kyllingebryst",
+      "1 dåse kokosmælk (400 ml)",
+      "2 spsk grøn karrypasta",
+      "2 peberfrugter",
+      "300 g jasminris",
+      "3 forårsløg",
+      "2 fed hvidløg",
+      "1 tsk ingefær",
+      "2 spsk sojasauce",
+      "1 spsk sesamolie",
+      "1 bundt frisk koriander"
+    ],
+    "steps": [
+      "Kog jasminris efter anvisning.",
+      "Steg karrypasta i sesamolie 1 min til det dufter.",
+      "Tilsæt presset hvidløg, ingefær og kylling skåret i stykker — steg 4 min.",
+      "Hæld kokosmælk i og lad simre 10 min.",
+      "Tilsæt peberfrugt i strimler og sojasauce. Simre 5 min.",
+      "Server over ris, drys med forårsløg og koriander."
+    ]
+  },
+  {
+    "id": "as-003",
+    "name": "Pad Thai med rejer",
+    "cuisine": "asiatisk",
+    "cost": 120,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "mellem",
+    "tags": ["rejer", "thai", "nudler", "asiatisk"],
+    "ingredients": [
+      "300 g rejer",
+      "200 g risnudler",
+      "4 æg",
+      "4 forårsløg",
+      "60 g saltede jordnødder",
+      "3 spsk sojasauce",
+      "2 spsk hoisin sauce",
+      "1 spsk sesamolie",
+      "2 fed hvidløg",
+      "1 lime",
+      "1 tsk chiliflager"
+    ],
+    "steps": [
+      "Udblød risnudler i koldt vand 20 min, dræn.",
+      "Steg rejer i sesamolie 2 min. Sæt til side.",
+      "Rør æg i samme pande, scramble let.",
+      "Tilsæt nudler, sojasauce, hoisin og hvidløg. Vend grundigt.",
+      "Kom rejer tilbage, tilsæt hakket forårsløg og chiliflager.",
+      "Server med limebåd, grofthakkede jordnødder og ekstra forårsløg."
+    ]
+  },
+  {
+    "id": "as-004",
+    "name": "Kinesisk stegt ris med kylling",
+    "cuisine": "asiatisk",
+    "cost": 95,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["kylling", "kinesisk", "ris", "hverdagsret", "asiatisk"],
+    "ingredients": [
+      "400 g kyllingebryst",
+      "300 g jasminris",
+      "3 æg",
+      "150 g frosne ærter",
+      "2 gulerødder",
+      "4 spsk sojasauce",
+      "1 spsk sesamolie",
+      "3 forårsløg",
+      "2 fed hvidløg",
+      "Salt og peber"
+    ],
+    "steps": [
+      "Kog ris dagen før eller lad dem køle helt af — kolde ris giver bedst resultat.",
+      "Steg kylling i tern i sesamolie. Sæt til side.",
+      "Steg gulerødder i skiver og hvidløg 2 min.",
+      "Skub grøntsagerne til siden, tilsæt æg og scramble.",
+      "Tilsæt kolde ris, ærter og kylling. Vend kraftigt ved høj varme.",
+      "Hæld sojasauce over, smag til. Server med forårsløg."
+    ]
+  },
+  {
+    "id": "as-005",
+    "name": "Oksekød stir-fry med nudler",
+    "cuisine": "asiatisk",
+    "cost": 130,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["oksekød", "kinesisk", "nudler", "asiatisk"],
+    "ingredients": [
+      "500 g hakket oksekød",
+      "250 g æggenudler",
+      "1 broccoli",
+      "2 peberfrugter",
+      "4 spsk sojasauce",
+      "2 spsk hoisin sauce",
+      "1 spsk sesamolie",
+      "2 fed hvidløg",
+      "1 tsk ingefær",
+      "Salt og peber"
+    ],
+    "steps": [
+      "Kog æggenudler efter anvisning, dræn.",
+      "Brun oksekød i sesamolie ved høj varme. Sæt til side.",
+      "Steg broccoli i buketter og peberfrugt i strimler 3 min.",
+      "Tilsæt hvidløg og ingefær, steg 1 min.",
+      "Kom oksekød og nudler tilbage. Hæld sojasauce og hoisin over.",
+      "Vend grundigt ved høj varme 2 min og server."
+    ]
+  },
+  {
+    "id": "as-006",
+    "name": "Tom Kha — Thai kokossuppe med kylling",
+    "cuisine": "asiatisk",
+    "cost": 125,
+    "time": 30,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["suppe", "thai", "kokosmælk", "kylling", "asiatisk"],
+    "ingredients": [
+      "400 g kyllingebryst",
+      "1 dåse kokosmælk (400 ml)",
+      "300 g champignoner",
+      "6 dl kyllingebouillon",
+      "3 forårsløg",
+      "2 fed hvidløg",
+      "1 tsk ingefær",
+      "1 citron",
+      "2 spsk sojasauce",
+      "1 bundt frisk koriander",
+      "1 tsk chiliflager"
+    ],
+    "steps": [
+      "Bring bouillon og kokosmælk i kog.",
+      "Tilsæt presset hvidløg, ingefær og kylling i strimler.",
+      "Lad simre 10 min.",
+      "Tilsæt champignoner i skiver og sojasauce. Simre 5 min.",
+      "Smag til med citronsaft, tilsæt chiliflager.",
+      "Server med forårsløg og koriander."
+    ]
+  },
+  {
+    "id": "as-007",
+    "name": "Kylling med cashewnødder",
+    "cuisine": "asiatisk",
+    "cost": 145,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["kylling", "kinesisk", "nødder", "asiatisk"],
+    "ingredients": [
+      "600 g kyllingebryst",
+      "100 g cashewnødder",
+      "2 peberfrugter",
+      "1 løg",
+      "4 spsk sojasauce",
+      "2 spsk hoisin sauce",
+      "1 spsk sesamolie",
+      "2 fed hvidløg",
+      "1 tsk ingefær",
+      "300 g jasminris"
+    ],
+    "steps": [
+      "Kog jasminris efter anvisning.",
+      "Steg kylling i tern i sesamolie ved høj varme til gyldne. Sæt til side.",
+      "Steg løg og peberfrugt i strimler 3 min.",
+      "Tilsæt hvidløg og ingefær, steg 1 min.",
+      "Tilsæt sojasauce, hoisin og kylling. Vend godt.",
+      "Kom cashewnødder i og server straks over ris."
+    ]
+  },
+  {
+    "id": "as-008",
+    "name": "Japansk ramen med svinekød",
+    "cuisine": "asiatisk",
+    "cost": 125,
+    "time": 35,
+    "portions": 4,
+    "difficulty": "mellem",
+    "tags": ["svinekød", "japansk", "suppe", "nudler", "asiatisk"],
+    "ingredients": [
+      "400 g svinemørbrad",
+      "200 g æggenudler",
+      "1 liter kyllingebouillon",
+      "4 æg",
+      "4 forårsløg",
+      "4 spsk sojasauce",
+      "1 spsk sesamolie",
+      "2 fed hvidløg",
+      "1 tsk ingefær",
+      "200 g champignoner"
+    ],
+    "steps": [
+      "Kog æggene blødkogte i 7 min, afkøl i koldt vand og pil.",
+      "Bring bouillon i kog med sojasauce, hvidløg og ingefær.",
+      "Skær svinemørbrad i skiver og steg gyldne i sesamolie.",
+      "Kog nudler efter anvisning, dræn.",
+      "Steg champignoner til gyldne.",
+      "Anret nudler i dybe skåle, hæld varm bouillon over. Læg kød, champignoner og halveret æg på. Drys med forårsløg."
+    ]
+  },
+  {
+    "id": "as-009",
+    "name": "Sød og sur kylling",
+    "cuisine": "asiatisk",
+    "cost": 130,
+    "time": 30,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["kylling", "kinesisk", "hverdagsret", "asiatisk"],
+    "ingredients": [
+      "600 g kyllingebryst",
+      "1 dåse ananas i stykker (400 g)",
+      "2 peberfrugter",
+      "1 løg",
+      "3 spsk rødvinseddike",
+      "3 spsk sukker",
+      "3 spsk sojasauce",
+      "2 spsk tomatpuré",
+      "2 spsk mel",
+      "300 g jasminris",
+      "1 spsk sesamolie"
+    ],
+    "steps": [
+      "Kog jasminris efter anvisning.",
+      "Vend kylling i tern i mel. Steg sprøde i sesamolie. Sæt til side.",
+      "Steg løg og peberfrugt i strimler 3 min.",
+      "Bland eddike, sukker, sojasauce, tomatpuré og 1 dl ananassaft fra dåsen.",
+      "Hæld saucen og ananasstykker i panden. Lad simre 3 min.",
+      "Tilsæt kyllingen og server over ris."
+    ]
+  },
+  {
+    "id": "as-010",
+    "name": "Bibimbap — koreansk risret",
+    "cuisine": "asiatisk",
+    "cost": 115,
+    "time": 35,
+    "portions": 4,
+    "difficulty": "mellem",
+    "tags": ["oksekød", "koreansk", "ris", "asiatisk"],
+    "ingredients": [
+      "400 g hakket oksekød",
+      "300 g jasminris",
+      "200 g spinat",
+      "2 gulerødder",
+      "4 æg",
+      "4 spsk sojasauce",
+      "2 spsk sesamolie",
+      "1 tsk chiliflager",
+      "1 spsk sukker",
+      "2 fed hvidløg",
+      "1 spsk sesamfrø"
+    ],
+    "steps": [
+      "Kog jasminris efter anvisning.",
+      "Brun hakket oksekød med hvidløg, sojasauce og sukker. Sæt til side.",
+      "Blancher spinat 1 min, klem vand fra og vend med lidt sesamolie.",
+      "Steg gulerødder i julienne i sesamolie 2 min.",
+      "Steg æggene som spejlæg med blød blomme.",
+      "Anret ris i skåle, læg kød, spinat og gulerødder rundt om. Placer spejlæg i midten. Drys med chili og sesamfrø."
+    ]
+  },
+  {
+    "id": "as-011",
+    "name": "Tofu stir-fry med grøntsager",
+    "cuisine": "asiatisk",
+    "cost": 115,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["vegetar", "tofu", "asiatisk", "grøntsager"],
+    "ingredients": [
+      "400 g fast tofu",
+      "1 broccoli",
+      "2 peberfrugter",
+      "300 g champignoner",
+      "4 spsk sojasauce",
+      "2 spsk hoisin sauce",
+      "2 spsk sesamolie",
+      "2 fed hvidløg",
+      "1 tsk ingefær",
+      "300 g jasminris",
+      "1 spsk sesamfrø"
+    ],
+    "steps": [
+      "Kog jasminris efter anvisning.",
+      "Pres vand ud af tofu og skær i tern. Steg gyldne i 1 spsk sesamolie. Sæt til side.",
+      "Steg broccoli i buketter, peberfrugt i strimler og champignoner 4 min.",
+      "Tilsæt hvidløg og ingefær, steg 1 min.",
+      "Kom tofu tilbage, hæld sojasauce og hoisin over. Vend forsigtigt.",
+      "Server over ris, drys med sesamfrø."
+    ]
+  },
+  {
+    "id": "as-012",
+    "name": "Asiatisk laksegryde med kokosmælk",
+    "cuisine": "asiatisk",
+    "cost": 145,
+    "time": 30,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["laks", "thai", "kokosmælk", "fisk", "asiatisk"],
+    "ingredients": [
+      "500 g laks",
+      "1 dåse kokosmælk (400 ml)",
+      "300 g jasminris",
+      "2 fed hvidløg",
+      "1 tsk ingefær",
+      "3 forårsløg",
+      "1 citron",
+      "2 spsk rød karrypasta",
+      "2 spsk sojasauce",
+      "1 bundt frisk koriander"
+    ],
+    "steps": [
+      "Kok jasminris efter anvisning.",
+      "Steg karrypasta i en gryde 1 min. Tilsæt hvidløg og ingefær.",
+      "Hæld kokosmælk og sojasauce i. Bring i kog.",
+      "Skær laks i store stykker og læg forsigtigt i gryden.",
+      "Lad simre 8 min til laksen er netop gennemkogt.",
+      "Smag til med citronsaft. Server over ris med forårsløg og koriander."
+    ]
+  },
+  {
+    "id": "as-013",
+    "name": "Mongolsk oksekød med peberfrugter",
+    "cuisine": "asiatisk",
+    "cost": 125,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["oksekød", "kinesisk", "asiatisk", "hverdagsret"],
+    "ingredients": [
+      "500 g hakket oksekød",
+      "2 peberfrugter",
+      "4 forårsløg",
+      "4 spsk sojasauce",
+      "2 spsk honning",
+      "1 spsk sesamolie",
+      "2 fed hvidløg",
+      "1 tsk ingefær",
+      "300 g jasminris",
+      "1 spsk sesamfrø"
+    ],
+    "steps": [
+      "Kok jasminris efter anvisning.",
+      "Brun hakket oksekød ved høj varme i sesamolie til det er sprødt. Sæt til side.",
+      "Steg peberfrugt i strimler og hvidløg 2 min.",
+      "Bland sojasauce, honning og ingefær. Hæld over panden.",
+      "Tilsæt oksekødet og vend grundigt.",
+      "Server over ris med forårsløg og sesamfrø."
+    ]
+  },
+  {
+    "id": "as-014",
+    "name": "Butter Chicken",
+    "cuisine": "asiatisk",
+    "cost": 125,
+    "time": 35,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["kylling", "indisk", "karry", "asiatisk"],
+    "ingredients": [
+      "600 g kyllingebryst",
+      "1 dåse flåede tomater (400 g)",
+      "2 dl fløde",
+      "50 g smør",
+      "1 løg",
+      "2 fed hvidløg",
+      "1 tsk ingefær",
+      "2 tsk karrypulver",
+      "1 tsk garam masala",
+      "300 g jasminris",
+      "Salt og peber"
+    ],
+    "steps": [
+      "Kog jasminris efter anvisning.",
+      "Brun kylling i tern i smør. Sæt til side.",
+      "Steg hakket løg gyldent i samme gryde, ca. 5 min.",
+      "Tilsæt hvidløg, ingefær, karry og garam masala. Steg 1 min.",
+      "Tilsæt flåede tomater og lad simre 10 min.",
+      "Blend saucen glat. Tilsæt fløde og kylling. Simre 8 min.",
+      "Smag til og server over ris."
+    ]
+  },
+  {
+    "id": "as-015",
+    "name": "Koreansk bulgogi-inspireret svinekød",
+    "cuisine": "asiatisk",
+    "cost": 100,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["svinekød", "koreansk", "asiatisk", "hverdagsret"],
+    "ingredients": [
+      "500 g svinemørbrad",
+      "300 g jasminris",
+      "4 spsk sojasauce",
+      "2 spsk sukker",
+      "1 spsk sesamolie",
+      "2 fed hvidløg",
+      "1 tsk ingefær",
+      "3 forårsløg",
+      "1 peberfrugt",
+      "1 spsk sesamfrø"
+    ],
+    "steps": [
+      "Kog jasminris efter anvisning.",
+      "Skær svinemørbrad i tynde skiver.",
+      "Bland sojasauce, sukker, sesamolie, presset hvidløg og ingefær til marinade.",
+      "Vend kødet i marinaden og lad hvile 10 min.",
+      "Steg kød og peberfrugt ved høj varme 5-6 min.",
+      "Server over ris med forårsløg og sesamfrø."
+    ]
+  },
+  {
+    "id": "as-016",
+    "name": "Asiatisk nudelsalat med rejer",
+    "cuisine": "asiatisk",
+    "cost": 110,
+    "time": 20,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["rejer", "salat", "nudler", "asiatisk", "sommerret"],
+    "ingredients": [
+      "250 g rejer",
+      "200 g risnudler",
+      "1 agurk",
+      "2 gulerødder",
+      "4 forårsløg",
+      "1 lime",
+      "3 spsk sojasauce",
+      "1 spsk sesamolie",
+      "1 tsk ingefær",
+      "1 tsk chiliflager",
+      "50 g saltede jordnødder"
+    ],
+    "steps": [
+      "Udblød risnudler i kogende vand 5 min, dræn og skyl koldt.",
+      "Skær agurk i strimler og gulerødder i julienne.",
+      "Bland sojasauce, limesaft, sesamolie, ingefær og chiliflager til dressing.",
+      "Bland nudler, grøntsager, rejer og forårsløg.",
+      "Hæld dressing over og vend forsigtigt.",
+      "Server drysset med grofthakkede jordnødder."
+    ]
+  },
+  {
+    "id": "as-017",
+    "name": "Thai grøntsagskarry (vegansk)",
+    "cuisine": "asiatisk",
+    "cost": 115,
+    "time": 30,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["vegansk", "thai", "karry", "kokosmælk", "asiatisk"],
+    "ingredients": [
+      "400 g fast tofu",
+      "1 dåse kokosmælk (400 ml)",
+      "2 spsk rød karrypasta",
+      "1 broccoli",
+      "2 peberfrugter",
+      "300 g jasminris",
+      "2 fed hvidløg",
+      "1 tsk ingefær",
+      "2 spsk sojasauce",
+      "1 lime",
+      "1 bundt frisk koriander"
+    ],
+    "steps": [
+      "Kog jasminris efter anvisning.",
+      "Steg tofu i tern til gyldne. Sæt til side.",
+      "Steg karrypasta 1 min. Tilsæt hvidløg og ingefær.",
+      "Hæld kokosmælk og sojasauce i. Bring i kog.",
+      "Tilsæt broccoli og peberfrugt. Simre 8 min.",
+      "Smag til med limesaft. Server over ris med tofu og koriander."
+    ]
+  },
+  {
+    "id": "as-018",
+    "name": "Vietnamesisk pho-inspireret suppe",
+    "cuisine": "asiatisk",
+    "cost": 110,
+    "time": 30,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["suppe", "vietnamesisk", "nudler", "asiatisk"],
+    "ingredients": [
+      "400 g hakket oksekød",
+      "200 g risnudler",
+      "1 liter oksebouillon",
+      "3 forårsløg",
+      "2 fed hvidløg",
+      "1 tsk ingefær",
+      "3 spsk sojasauce",
+      "1 citron",
+      "1 tsk chiliflager",
+      "1 bundt frisk koriander"
+    ],
+    "steps": [
+      "Udblød risnudler i kogende vand 5 min, dræn.",
+      "Bring bouillon i kog med sojasauce, hvidløg og ingefær.",
+      "Form oksekødet til små boller og kog dem i bouillonen 5 min.",
+      "Smag til med citronsaft og chiliflager.",
+      "Anret nudler i dybe skåle og hæld varm suppe over.",
+      "Server med forårsløg og koriander."
+    ]
+  },
+  {
+    "id": "as-019",
+    "name": "Japansk katsu curry med kylling",
+    "cuisine": "asiatisk",
+    "cost": 120,
+    "time": 40,
+    "portions": 4,
+    "difficulty": "mellem",
+    "tags": ["kylling", "japansk", "karry", "asiatisk"],
+    "ingredients": [
+      "600 g kyllingebryst",
+      "100 g rasp",
+      "2 æg",
+      "50 g hvedemel",
+      "1 løg",
+      "2 gulerødder",
+      "2 spsk karrypulver",
+      "3 dl kyllingebouillon",
+      "2 spsk sojasauce",
+      "1 spsk sukker",
+      "300 g jasminris",
+      "Rapsolie til stegning",
+      "Salt og peber"
+    ],
+    "steps": [
+      "Kok jasminris efter anvisning.",
+      "Bank kyllingebrysterne flade. Krydr med salt og peber.",
+      "Vend i mel, derefter i sammenpisket æg, derefter i rasp.",
+      "Steg gyldenbrune i rigeligt olie ca. 4 min per side. Lad hvile.",
+      "Steg løg og gulerødder i tern bløde. Tilsæt karry og steg 1 min.",
+      "Hæld bouillon, sojasauce og sukker i. Simre 10 min til tyk sauce.",
+      "Skær kylling i skiver og server over ris med karrysauce."
+    ]
+  },
+  {
+    "id": "as-020",
+    "name": "Kylling Tikka Masala",
+    "cuisine": "asiatisk",
+    "cost": 140,
+    "time": 40,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["kylling", "indisk", "karry", "asiatisk"],
+    "ingredients": [
+      "600 g kyllingebryst",
+      "1 dåse flåede tomater (400 g)",
+      "2 dl fløde",
+      "1 dl yoghurt naturel",
+      "1 løg",
+      "2 fed hvidløg",
+      "1 tsk ingefær",
+      "2 tsk garam masala",
+      "1 tsk karrypulver",
+      "1 tsk paprika",
+      "50 g smør",
+      "300 g jasminris",
+      "Salt og peber"
+    ],
+    "steps": [
+      "Kok jasminris efter anvisning.",
+      "Marinér kylling i yoghurt, halvdelen af garam masala og ingefær i 15 min.",
+      "Grill kylling på en varm pande til der er stegeskorpe. Sæt til side.",
+      "Steg løg gyldent i smør. Tilsæt hvidløg, karry, paprika og resten af garam masala.",
+      "Tilsæt flåede tomater og lad simre 10 min.",
+      "Blend saucen glat, tilsæt fløde og kylling. Simre 8 min.",
+      "Server over ris."
+    ]
+  }
+]

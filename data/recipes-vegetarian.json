@@ -1,0 +1,573 @@
+[
+  {
+    "id": "vg-001",
+    "name": "Grøntsagscurry med Kokosmælk",
+    "cuisine": "vegetarisk",
+    "cost": 90,
+    "time": 30,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["vegetar", "curry", "sund"],
+    "ingredients": [
+      "1 dåse kokosmælk",
+      "2 peberfrugter",
+      "1 blomkål",
+      "2 løg",
+      "3 fed hvidløg",
+      "2 tsk karry",
+      "200 g ris",
+      "1 dåse flåede tomater",
+      "2 spsk olie"
+    ],
+    "steps": [
+      "Hak løg og hvidløg og svits i olie.",
+      "Tilsæt karry og rør 1 minut.",
+      "Skær blomkål og peberfrugter i stykker og tilsæt.",
+      "Hæld tomater og kokosmælk i og rør.",
+      "Lad simre 20 minutter til grøntsager er møre.",
+      "Kog ris og server curry over."
+    ]
+  },
+  {
+    "id": "vg-002",
+    "name": "Pasta med Tomatsauce og Mozzarella",
+    "cuisine": "vegetarisk",
+    "cost": 75,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["pasta", "hurtig", "hverdags"],
+    "ingredients": [
+      "400 g pasta",
+      "2 dåser flåede tomater",
+      "2 løg",
+      "4 fed hvidløg",
+      "1 tsk basilikum",
+      "200 g mozzarella",
+      "2 spsk olie",
+      "50 g revet parmesan"
+    ],
+    "steps": [
+      "Kog pasta efter anvisning.",
+      "Svits hakket løg og hvidløg i olie.",
+      "Tilsæt tomater og basilikum og lad simre 15 minutter.",
+      "Bland pasta i sauce.",
+      "Riv mozzarella i stykker og læg på toppen.",
+      "Drys parmesan over og server straks."
+    ]
+  },
+  {
+    "id": "vg-003",
+    "name": "Ovnbagte Grøntsager med Feta",
+    "cuisine": "vegetarisk",
+    "cost": 85,
+    "time": 40,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["ovnret", "sund", "vegetar"],
+    "ingredients": [
+      "3 peberfrugter",
+      "2 squash",
+      "1 aubergine",
+      "2 løg",
+      "200 g feta",
+      "4 fed hvidløg",
+      "3 spsk olie",
+      "1 tsk oregano",
+      "4 stk tortillaer"
+    ],
+    "steps": [
+      "Skær alle grøntsager i tern.",
+      "Bland med olie, hvidløg og oregano.",
+      "Fordel på bageplade og bag 25 minutter ved 200°C.",
+      "Smulder feta over grøntsagerne.",
+      "Bag 5 minutter mere.",
+      "Server med tortillaer."
+    ]
+  },
+  {
+    "id": "vg-004",
+    "name": "Linsesuppe med Grøntsager",
+    "cuisine": "vegetarisk",
+    "cost": 70,
+    "time": 35,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["suppe", "budget", "vinter"],
+    "ingredients": [
+      "300 g røde linser",
+      "2 gulerødder",
+      "2 løg",
+      "3 fed hvidløg",
+      "1 tsk spidskommen",
+      "1 tsk paprika",
+      "8 dl grøntsagsbouillon",
+      "1 dåse flåede tomater",
+      "2 spsk olie"
+    ],
+    "steps": [
+      "Svits hakket løg, hvidløg og gulerødder i olie.",
+      "Tilsæt spidskommen og paprika.",
+      "Tilsæt linser, tomater og bouillon.",
+      "Kog op og lad simre 25 minutter.",
+      "Blend halvdelen af suppen og bland tilbage.",
+      "Krydr med salt og server."
+    ]
+  },
+  {
+    "id": "vg-005",
+    "name": "Grønkålssalat med Quinoa",
+    "cuisine": "vegetarisk",
+    "cost": 80,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["salat", "sund", "hurtig"],
+    "ingredients": [
+      "200 g quinoa",
+      "200 g grønkål",
+      "1 dåse kikærter",
+      "2 gulerødder",
+      "1 citron",
+      "3 spsk olie",
+      "2 fed hvidløg",
+      "100 g feta"
+    ],
+    "steps": [
+      "Kog quinoa efter anvisning og afkøl.",
+      "Snit grønkål fint og massér med lidt olie.",
+      "Riv gulerødder groft.",
+      "Bland quinoa, grønkål, gulerødder og kikærter.",
+      "Lav dressing af citronsaft, olie, hvidløg og salt.",
+      "Hæld dressing over salaten og smulder feta på toppen."
+    ]
+  },
+  {
+    "id": "vg-006",
+    "name": "Risotto med Grøntsager",
+    "cuisine": "vegetarisk",
+    "cost": 95,
+    "time": 40,
+    "portions": 4,
+    "difficulty": "medium",
+    "tags": ["risotto", "hverdags", "cremet"],
+    "ingredients": [
+      "300 g risottoris",
+      "1 løg",
+      "2 fed hvidløg",
+      "2 dl hvidvin",
+      "8 dl grøntsagsbouillon",
+      "200 g champignoner",
+      "100 g revet parmesan",
+      "50 g smør",
+      "2 spsk olie"
+    ],
+    "steps": [
+      "Svits hakket løg og hvidløg i olie.",
+      "Tilsæt ris og rør 2 minutter.",
+      "Hæld vin i og rør til optaget.",
+      "Tilsæt bouillon lidt ad gangen under jævnlig omrøring.",
+      "Steg champignoner ved siden af og vend i risottoen.",
+      "Rør smør og parmesan i og server straks."
+    ]
+  },
+  {
+    "id": "vg-007",
+    "name": "Kikærtegryde med Spinat",
+    "cuisine": "vegetarisk",
+    "cost": 75,
+    "time": 30,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["gryde", "sund", "budget"],
+    "ingredients": [
+      "2 dåser kikærter",
+      "200 g frossen spinat",
+      "1 dåse flåede tomater",
+      "2 løg",
+      "3 fed hvidløg",
+      "1 tsk spidskommen",
+      "1 tsk paprika",
+      "200 g ris",
+      "1 dl creme fraiche"
+    ],
+    "steps": [
+      "Svits løg og hvidløg i en gryde.",
+      "Tilsæt spidskommen og paprika og rør.",
+      "Tilsæt kikærter og tomater og lad simre 15 minutter.",
+      "Tilsæt spinat og varm igennem.",
+      "Kog ris ved siden af.",
+      "Server kikærtegryde over ris med creme fraiche."
+    ]
+  },
+  {
+    "id": "vg-008",
+    "name": "Vegetarisk Lasagne",
+    "cuisine": "vegetarisk",
+    "cost": 100,
+    "time": 60,
+    "portions": 4,
+    "difficulty": "medium",
+    "tags": ["ovnret", "hverdags", "familie"],
+    "ingredients": [
+      "12 stk lasagneplader",
+      "2 squash",
+      "1 aubergine",
+      "2 dåser flåede tomater",
+      "2 løg",
+      "3 fed hvidløg",
+      "500 ml mælk",
+      "50 g smør",
+      "200 g revet cheddar"
+    ],
+    "steps": [
+      "Skær squash og aubergine i tern og steg med løg og hvidløg.",
+      "Tilsæt tomater og lad simre 15 minutter.",
+      "Lav bechamel: smelt smør, tilsæt mel og mælk og rør til tyk sauce.",
+      "Læg lasagne: plader, grøntsagssauce, bechamel. Gentag.",
+      "Drys ost på toppen.",
+      "Bag 40 minutter ved 180°C."
+    ]
+  },
+  {
+    "id": "vg-009",
+    "name": "Tomatsuppe med Brød",
+    "cuisine": "vegetarisk",
+    "cost": 65,
+    "time": 30,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["suppe", "hurtig", "budget"],
+    "ingredients": [
+      "3 dåser flåede tomater",
+      "2 løg",
+      "4 fed hvidløg",
+      "5 dl grøntsagsbouillon",
+      "1 tsk sukker",
+      "1 tsk basilikum",
+      "1 dl fløde",
+      "4 skiver rugbrød",
+      "2 spsk olie"
+    ],
+    "steps": [
+      "Svits løg og hvidløg i olie.",
+      "Tilsæt tomater, bouillon og sukker.",
+      "Lad simre 15 minutter.",
+      "Blend suppen glat.",
+      "Rør fløde i og varm op igen.",
+      "Krydr med basilikum og server med rugbrød."
+    ]
+  },
+  {
+    "id": "vg-010",
+    "name": "Pandekager med Grøntsagsfyld",
+    "cuisine": "vegetarisk",
+    "cost": 80,
+    "time": 35,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["pandekage", "frokost", "familie"],
+    "ingredients": [
+      "300 g mel",
+      "4 æg",
+      "5 dl mælk",
+      "2 peberfrugter",
+      "2 løg",
+      "200 g champignoner",
+      "200 g revet cheddar",
+      "2 spsk olie"
+    ],
+    "steps": [
+      "Pisk mel, æg og mælk til en glat dej.",
+      "Hak løg, peberfrugter og champignoner og svits.",
+      "Steg pandekager i en pande med lidt smør.",
+      "Fordel grøntsagsfyld på pandekagerne.",
+      "Drys ost over.",
+      "Rul pandekagerne og server."
+    ]
+  },
+  {
+    "id": "vg-011",
+    "name": "Hummus med Pitabrød og Grøntsager",
+    "cuisine": "vegetarisk",
+    "cost": 70,
+    "time": 20,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["snack", "vegetar", "hurtig"],
+    "ingredients": [
+      "2 dåser kikærter",
+      "2 spsk tahini",
+      "1 citron",
+      "2 fed hvidløg",
+      "3 spsk olie",
+      "4 stk pitabrød",
+      "2 gulerødder",
+      "1 agurk"
+    ],
+    "steps": [
+      "Blend kikærter, tahini, citronsaft og hvidløg glat.",
+      "Tilsæt olie og blend igen.",
+      "Krydr med salt.",
+      "Skær gulerødder og agurk i stave.",
+      "Rist pitabrød.",
+      "Server hummus med pitabrød og grøntsagsstave."
+    ]
+  },
+  {
+    "id": "vg-012",
+    "name": "Grøntsagssuppe med Pasta",
+    "cuisine": "vegetarisk",
+    "cost": 70,
+    "time": 35,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["suppe", "hverdags", "budget"],
+    "ingredients": [
+      "3 gulerødder",
+      "3 stængler selleri",
+      "2 løg",
+      "200 g pasta",
+      "1 dåse flåede tomater",
+      "8 dl grøntsagsbouillon",
+      "3 fed hvidløg",
+      "50 g revet parmesan",
+      "2 spsk olie"
+    ],
+    "steps": [
+      "Hak gulerødder, selleri, løg og hvidløg.",
+      "Svits i olie i en stor gryde.",
+      "Tilsæt tomater og bouillon og kog op.",
+      "Tilsæt pasta og kog til mør.",
+      "Krydr med salt.",
+      "Server med revet parmesan."
+    ]
+  },
+  {
+    "id": "vg-013",
+    "name": "Fyldte Peberfrugter med Ris",
+    "cuisine": "vegetarisk",
+    "cost": 90,
+    "time": 50,
+    "portions": 4,
+    "difficulty": "medium",
+    "tags": ["ovnret", "vegetar", "hverdags"],
+    "ingredients": [
+      "4 peberfrugter",
+      "200 g ris",
+      "1 dåse flåede tomater",
+      "1 løg",
+      "2 fed hvidløg",
+      "1 tsk paprika",
+      "1 tsk oregano",
+      "200 g mozzarella",
+      "2 spsk olie"
+    ],
+    "steps": [
+      "Kog ris.",
+      "Svits løg og hvidløg, tilsæt tomater og krydderier.",
+      "Bland sauce med ris.",
+      "Skær toppen af peberfrugterne og fjern kerne.",
+      "Fyl peberfrugterne med risblandingen.",
+      "Læg ost på toppen og bag 30 minutter ved 180°C."
+    ]
+  },
+  {
+    "id": "vg-014",
+    "name": "Æggestegt Ris med Grøntsager",
+    "cuisine": "vegetarisk",
+    "cost": 65,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["ris", "hurtig", "hverdags"],
+    "ingredients": [
+      "400 g ris",
+      "4 æg",
+      "200 g frosne grøntsager",
+      "3 fed hvidløg",
+      "3 spsk sojasauce",
+      "1 tsk sesamolie",
+      "4 forårsløg",
+      "2 spsk olie"
+    ],
+    "steps": [
+      "Kog ris og afkøl (gerne dagen før).",
+      "Steg æg i wok og bræk dem i stykker.",
+      "Tilsæt hvidløg og grøntsager og steg 3 minutter.",
+      "Tilsæt ris og steg ved høj varme.",
+      "Hæld sojasauce og sesamolie over.",
+      "Drys med hakket forårsløg og server."
+    ]
+  },
+  {
+    "id": "vg-015",
+    "name": "Spinatfrikadeller med Kartofler",
+    "cuisine": "vegetarisk",
+    "cost": 80,
+    "time": 40,
+    "portions": 4,
+    "difficulty": "medium",
+    "tags": ["frikadeller", "vegetar", "hverdags"],
+    "ingredients": [
+      "300 g frossen spinat",
+      "200 g ricotta",
+      "2 æg",
+      "100 g mel",
+      "1 kg kartofler",
+      "50 g revet parmesan",
+      "2 fed hvidløg",
+      "2 spsk olie"
+    ],
+    "steps": [
+      "Optø spinat og klem vand ud.",
+      "Bland spinat, ricotta, æg, mel og parmesan.",
+      "Form frikadeller og steg i olie 3-4 minutter per side.",
+      "Kog kartofler i saltet vand.",
+      "Svits hvidløg kort i lidt olie.",
+      "Server frikadeller med kartofler og hvidløgsolie."
+    ]
+  },
+  {
+    "id": "vg-016",
+    "name": "Champignonsuppe med Fløde",
+    "cuisine": "vegetarisk",
+    "cost": 80,
+    "time": 30,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["suppe", "cremet", "hurtig"],
+    "ingredients": [
+      "500 g champignoner",
+      "2 løg",
+      "3 fed hvidløg",
+      "5 dl grøntsagsbouillon",
+      "2 dl fløde",
+      "50 g smør",
+      "1 tsk timian",
+      "4 skiver brød"
+    ],
+    "steps": [
+      "Svits løg og hvidløg i smør.",
+      "Tilsæt skivede champignoner og steg til gyldne.",
+      "Hæld bouillon i og lad simre 10 minutter.",
+      "Blend suppen glat.",
+      "Rør fløde og timian i.",
+      "Server med ristede brødskiver."
+    ]
+  },
+  {
+    "id": "vg-017",
+    "name": "Vegetarisk Dhal",
+    "cuisine": "vegetarisk",
+    "cost": 65,
+    "time": 35,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["dhal", "budget", "vegetar"],
+    "ingredients": [
+      "300 g røde linser",
+      "1 dåse kokosmælk",
+      "1 dåse flåede tomater",
+      "2 løg",
+      "3 fed hvidløg",
+      "2 tsk karry",
+      "1 tsk gurkemeje",
+      "200 g ris",
+      "2 spsk olie"
+    ],
+    "steps": [
+      "Svits løg og hvidløg i olie.",
+      "Tilsæt karry og gurkemeje og rør 1 minut.",
+      "Tilsæt linser, tomater og kokosmælk.",
+      "Lad simre 25 minutter til linser er møre.",
+      "Kog ris ved siden af.",
+      "Server dhal over ris."
+    ]
+  },
+  {
+    "id": "vg-018",
+    "name": "Aubergine med Tomatsauce og Ost",
+    "cuisine": "vegetarisk",
+    "cost": 85,
+    "time": 45,
+    "portions": 4,
+    "difficulty": "medium",
+    "tags": ["ovnret", "vegetar", "hverdags"],
+    "ingredients": [
+      "2 auberginer",
+      "2 dåser flåede tomater",
+      "2 løg",
+      "3 fed hvidløg",
+      "200 g mozzarella",
+      "50 g revet parmesan",
+      "1 tsk oregano",
+      "3 spsk olie"
+    ],
+    "steps": [
+      "Skær aubergine i skiver og steg i olie til gyldne.",
+      "Svits løg og hvidløg, tilsæt tomater og oregano.",
+      "Lad tomatsauce simre 10 minutter.",
+      "Læg aubergineskiver i ovnfad og hæld sauce over.",
+      "Fordel mozzarella og parmesan på toppen.",
+      "Bag 20 minutter ved 200°C."
+    ]
+  },
+  {
+    "id": "vg-019",
+    "name": "Kartoffelsuppe med Creme Fraiche",
+    "cuisine": "vegetarisk",
+    "cost": 60,
+    "time": 35,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["suppe", "budget", "vinter"],
+    "ingredients": [
+      "1 kg kartofler",
+      "2 løg",
+      "3 fed hvidløg",
+      "8 dl grøntsagsbouillon",
+      "1 dl creme fraiche",
+      "1 tsk timian",
+      "50 g smør",
+      "4 skiver brød"
+    ],
+    "steps": [
+      "Skær kartofler, løg og hvidløg i tern.",
+      "Svits løg og hvidløg i smør.",
+      "Tilsæt kartofler og bouillon.",
+      "Lad simre 20 minutter til kartofler er møre.",
+      "Blend suppen glat.",
+      "Server med creme fraiche og ristede brødstykker."
+    ]
+  },
+  {
+    "id": "vg-020",
+    "name": "Grøntsagspizzaer",
+    "cuisine": "vegetarisk",
+    "cost": 95,
+    "time": 40,
+    "portions": 4,
+    "difficulty": "medium",
+    "tags": ["pizza", "familie", "hygge"],
+    "ingredients": [
+      "400 g pizzadej (færdigkøbt)",
+      "1 dåse flåede tomater",
+      "2 peberfrugter",
+      "200 g champignoner",
+      "200 g mozzarella",
+      "1 løg",
+      "2 fed hvidløg",
+      "1 tsk oregano",
+      "2 spsk olie"
+    ],
+    "steps": [
+      "Rul pizzadej ud på en bageform.",
+      "Blend tomater med hvidløg og olie til sauce.",
+      "Smør tomatssauce på dejbunden.",
+      "Fordel skivede peberfrugter, champignoner og løg.",
+      "Riv mozzarella over og drys med oregano.",
+      "Bag 20-25 minutter ved 220°C."
+    ]
+  }
+]

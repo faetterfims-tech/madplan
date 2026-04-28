@@ -1,0 +1,529 @@
+[
+  {
+    "id": "qu-001",
+    "name": "Pasta Aglio e Olio",
+    "cuisine": "italiensk",
+    "cost": 60,
+    "time": 15,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["hurtig", "pasta", "hverdags"],
+    "ingredients": [
+      "400 g spaghetti",
+      "6 fed hvidløg",
+      "1 tsk chili",
+      "8 spsk olie",
+      "50 g revet parmesan",
+      "1 bundt persille"
+    ],
+    "steps": [
+      "Kog pasta i saltet vand.",
+      "Svits hakket hvidløg og chili i olie ved lav varme.",
+      "Gem 1 dl pastavand og hæld pasta af.",
+      "Bland pasta med hvidløgsolien og pastavand.",
+      "Hak persille og bland i.",
+      "Server straks med revet parmesan."
+    ]
+  },
+  {
+    "id": "qu-002",
+    "name": "Røræg med Bacon og Toast",
+    "cuisine": "dansk",
+    "cost": 65,
+    "time": 15,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["hurtig", "æg", "morgenmad"],
+    "ingredients": [
+      "8 æg",
+      "200 g bacon",
+      "8 skiver toastbrød",
+      "2 spsk smør",
+      "1 dl mælk",
+      "4 forårsløg"
+    ],
+    "steps": [
+      "Steg bacon sprødt og læg til side.",
+      "Pisk æg med mælk og salt.",
+      "Smelt smør på panden og hæld æggemassen i.",
+      "Rør forsigtigt til ægget er blidt samlet.",
+      "Rist brød.",
+      "Server røræg med bacon og forårsløg på toast."
+    ]
+  },
+  {
+    "id": "qu-003",
+    "name": "Kyllingefilet med Salat",
+    "cuisine": "dansk",
+    "cost": 90,
+    "time": 20,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["hurtig", "sund", "kylling"],
+    "ingredients": [
+      "4 stk kyllingefilet",
+      "1 stk salat",
+      "2 tomater",
+      "1 agurk",
+      "4 spsk olie",
+      "2 spsk eddike",
+      "1 tsk sennep",
+      "2 spsk olie"
+    ],
+    "steps": [
+      "Krydr kyllingefilet med salt og peber.",
+      "Steg i olie 5-6 minutter per side til gennemstegt.",
+      "Snit salat, skær tomater og agurk.",
+      "Bland olie, eddike og sennep til dressing.",
+      "Anret salat i skåle.",
+      "Skær kylling i skiver og læg på salaten med dressing."
+    ]
+  },
+  {
+    "id": "qu-004",
+    "name": "Wraps med Tun og Grøntsager",
+    "cuisine": "dansk",
+    "cost": 75,
+    "time": 15,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["hurtig", "frokost", "tun"],
+    "ingredients": [
+      "4 dåser tun",
+      "4 stk tortillaer",
+      "1 stk salat",
+      "2 tomater",
+      "1 agurk",
+      "1 dl mayonnaise",
+      "1 tsk sennep"
+    ],
+    "steps": [
+      "Dræn tun og bland med mayonnaise og sennep.",
+      "Snit salat og skær tomater og agurk.",
+      "Læg en tortilla flad og fordel tunsalat.",
+      "Tilsæt salat, tomat og agurk.",
+      "Rul wrappen stramt.",
+      "Skær over på midten og server."
+    ]
+  },
+  {
+    "id": "qu-005",
+    "name": "Rejecocktail med Brød",
+    "cuisine": "dansk",
+    "cost": 110,
+    "time": 15,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["hurtig", "rejer", "frokost"],
+    "ingredients": [
+      "400 g rejer",
+      "1 dl mayonnaise",
+      "2 spsk ketchup",
+      "1 citron",
+      "1 stk salat",
+      "8 skiver rugbrød",
+      "1 agurk"
+    ],
+    "steps": [
+      "Bland mayonnaise og ketchup til cocktailsauce.",
+      "Tilsæt lidt citronsaft og rør.",
+      "Blend rejer med saucen.",
+      "Snit salat og skær agurk.",
+      "Anret salat på rugbrød.",
+      "Top med rejeblandingen og server."
+    ]
+  },
+  {
+    "id": "qu-006",
+    "name": "Pasta med Pesto og Tomater",
+    "cuisine": "italiensk",
+    "cost": 70,
+    "time": 15,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["hurtig", "pasta", "vegetar"],
+    "ingredients": [
+      "400 g pasta",
+      "1 glas pesto",
+      "300 g cherrytomater",
+      "50 g revet parmesan",
+      "3 spsk olie",
+      "2 fed hvidløg"
+    ],
+    "steps": [
+      "Kog pasta i saltet vand.",
+      "Halver tomater og steg med hvidløg i olie 5 minutter.",
+      "Hæld pasta af og gem lidt pastavand.",
+      "Bland pasta med pesto og et par skefulde pastavand.",
+      "Tilsæt tomater og rør.",
+      "Server med revet parmesan."
+    ]
+  },
+  {
+    "id": "qu-007",
+    "name": "Ærtesuppe på Dåse med Rugbrød",
+    "cuisine": "dansk",
+    "cost": 50,
+    "time": 10,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["hurtig", "suppe", "budget"],
+    "ingredients": [
+      "2 dåser ærtesuppe",
+      "400 g hamburgerryg",
+      "8 skiver rugbrød",
+      "2 spsk smør",
+      "1 løg"
+    ],
+    "steps": [
+      "Hæld ærtesuppe i en gryde.",
+      "Tilsæt lidt vand og varm op.",
+      "Skær hamburgerryg i tern og tilsæt suppen.",
+      "Hak løg og svits i smør.",
+      "Tilsæt løg til suppen.",
+      "Server med rugbrød."
+    ]
+  },
+  {
+    "id": "qu-008",
+    "name": "Lynstegt Kylling med Ris og Sojasauce",
+    "cuisine": "asiatisk",
+    "cost": 85,
+    "time": 20,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["hurtig", "kylling", "ris"],
+    "ingredients": [
+      "600 g kyllingefilet",
+      "300 g ris",
+      "3 spsk sojasauce",
+      "2 fed hvidløg",
+      "1 tsk ingefær",
+      "2 forårsløg",
+      "2 spsk olie"
+    ],
+    "steps": [
+      "Kog ris efter anvisning.",
+      "Skær kylling i strimler.",
+      "Steg kylling i olie ved høj varme.",
+      "Tilsæt hvidløg, ingefær og sojasauce.",
+      "Rør rundt og steg 2 minutter mere.",
+      "Server over ris med hakket forårsløg."
+    ]
+  },
+  {
+    "id": "qu-009",
+    "name": "Hurtig Bolognese",
+    "cuisine": "italiensk",
+    "cost": 90,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["hurtig", "pasta", "hverdags"],
+    "ingredients": [
+      "400 g spaghetti",
+      "500 g hakket oksekød",
+      "1 dåse flåede tomater",
+      "1 løg",
+      "3 fed hvidløg",
+      "1 tsk oregano",
+      "50 g revet parmesan"
+    ],
+    "steps": [
+      "Kog spaghetti i saltet vand.",
+      "Brun oksekød med løg og hvidløg.",
+      "Tilsæt tomater og oregano.",
+      "Lad sauce simre 10 minutter.",
+      "Bland spaghetti med sauce.",
+      "Server med revet parmesan."
+    ]
+  },
+  {
+    "id": "qu-010",
+    "name": "Tortilla Pizza",
+    "cuisine": "italiensk",
+    "cost": 80,
+    "time": 15,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["hurtig", "pizza", "familie"],
+    "ingredients": [
+      "4 stk store tortillaer",
+      "1 dåse flåede tomater",
+      "200 g mozzarella",
+      "150 g pepperoni",
+      "1 tsk oregano",
+      "2 fed hvidløg"
+    ],
+    "steps": [
+      "Læg tortillaer på bageplader.",
+      "Blend tomater med hvidløg og oregano.",
+      "Smør tomatssauce på tortillaerne.",
+      "Fordel pepperoni og riv mozzarella over.",
+      "Bag 10 minutter ved 220°C.",
+      "Server straks."
+    ]
+  },
+  {
+    "id": "qu-011",
+    "name": "Kyllingesuppe fra Pose",
+    "cuisine": "dansk",
+    "cost": 60,
+    "time": 15,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["hurtig", "suppe", "budget"],
+    "ingredients": [
+      "2 poser kyllingesuppe",
+      "300 g kyllingefilet",
+      "2 gulerødder",
+      "100 g suppenudler",
+      "1 løg"
+    ],
+    "steps": [
+      "Kog vand som anvist på poserne.",
+      "Hæld suppe-pulver i og rør.",
+      "Skær kylling i tern og tilsæt.",
+      "Hak gulerødder og løg og tilsæt.",
+      "Tilsæt nudler og kog 5 minutter.",
+      "Server straks."
+    ]
+  },
+  {
+    "id": "qu-012",
+    "name": "Stegt Flæsk med Persillesovs og Kartofler",
+    "cuisine": "dansk",
+    "cost": 95,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["hurtig", "klassisk", "dansk"],
+    "ingredients": [
+      "600 g stegt flæsk (skiver)",
+      "1 kg kartofler",
+      "50 g smør",
+      "4 spsk mel",
+      "6 dl mælk",
+      "1 bundt persille"
+    ],
+    "steps": [
+      "Kog kartofler i saltet vand.",
+      "Steg flæsket sprødt på panden.",
+      "Smelt smør i en gryde, tilsæt mel og rør.",
+      "Tilsæt mælk lidt ad gangen under omrøring til sovsen tykner.",
+      "Hak persille og rør i sovsen.",
+      "Server flæsk med kartofler og persillesovs."
+    ]
+  },
+  {
+    "id": "qu-013",
+    "name": "Grillet Ost og Skinkesandwich",
+    "cuisine": "dansk",
+    "cost": 60,
+    "time": 15,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["hurtig", "sandwich", "hverdags"],
+    "ingredients": [
+      "8 skiver toastbrød",
+      "200 g skiveskåret skinke",
+      "200 g revet cheddar",
+      "2 spsk smør",
+      "1 tsk sennep"
+    ],
+    "steps": [
+      "Smør ydersiderne af brødskiverne med smør.",
+      "Smør indersiden med sennep.",
+      "Læg skinke og ost på en skive.",
+      "Læg den anden skive på.",
+      "Steg sandwich i en pande 3 minutter per side.",
+      "Server straks mens osten er smeltet."
+    ]
+  },
+  {
+    "id": "qu-014",
+    "name": "Hurtig Oksegryde",
+    "cuisine": "dansk",
+    "cost": 110,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["hurtig", "gryde", "oksekød"],
+    "ingredients": [
+      "500 g hakket oksekød",
+      "1 løg",
+      "3 fed hvidløg",
+      "1 dåse flåede tomater",
+      "1 dl fløde",
+      "1 tsk paprika",
+      "200 g pasta"
+    ],
+    "steps": [
+      "Brun oksekød med løg og hvidløg.",
+      "Tilsæt paprika og tomater.",
+      "Kog pasta ved siden af.",
+      "Rør fløde i oksekødssaucen.",
+      "Lad simre 10 minutter.",
+      "Server sauce over pasta."
+    ]
+  },
+  {
+    "id": "qu-015",
+    "name": "Lynstegt Laks med Agurksalat",
+    "cuisine": "dansk",
+    "cost": 120,
+    "time": 20,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["hurtig", "laks", "sund"],
+    "ingredients": [
+      "4 stk laksefilet",
+      "1 agurk",
+      "1 dl creme fraiche",
+      "1 spsk eddike",
+      "1 tsk dild",
+      "1 kg kartofler",
+      "2 spsk smør"
+    ],
+    "steps": [
+      "Kog kartofler.",
+      "Skær agurk i tynde skiver.",
+      "Bland agurk med creme fraiche, eddike og dild.",
+      "Krydr laks med salt og peber.",
+      "Steg laks i smør 3-4 minutter per side.",
+      "Server laks med agurksalat og kartofler."
+    ]
+  },
+  {
+    "id": "qu-016",
+    "name": "Quinoasalat med Grøntsager",
+    "cuisine": "vegetarisk",
+    "cost": 75,
+    "time": 20,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["hurtig", "salat", "sund"],
+    "ingredients": [
+      "300 g quinoa",
+      "1 peberfrugt",
+      "1 agurk",
+      "1 dåse kikærter",
+      "1 citron",
+      "4 spsk olie",
+      "100 g feta"
+    ],
+    "steps": [
+      "Kog quinoa og afkøl.",
+      "Skær peberfrugt og agurk i tern.",
+      "Bland quinoa med grøntsager og kikærter.",
+      "Lav dressing af citronsaft og olie.",
+      "Hæld dressing over og rør.",
+      "Smulder feta over og server."
+    ]
+  },
+  {
+    "id": "qu-017",
+    "name": "Spejlæg med Brød og Tomat",
+    "cuisine": "dansk",
+    "cost": 40,
+    "time": 10,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["hurtig", "æg", "morgenmad"],
+    "ingredients": [
+      "8 æg",
+      "4 tomater",
+      "8 skiver rugbrød",
+      "2 spsk smør",
+      "1 tsk oregano"
+    ],
+    "steps": [
+      "Halvér tomater og steg i smør med oregano.",
+      "Steg spejlæg i smør til hviden er stivnet.",
+      "Rist rugbrød.",
+      "Anret rugbrød på tallerkener.",
+      "Læg spejlæg og tomater på.",
+      "Krydr med salt og server."
+    ]
+  },
+  {
+    "id": "qu-018",
+    "name": "Grøntsags Wok med Nudler",
+    "cuisine": "asiatisk",
+    "cost": 80,
+    "time": 20,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["hurtig", "wok", "vegetar"],
+    "ingredients": [
+      "400 g wok-nudler",
+      "300 g frosne wok-grøntsager",
+      "3 fed hvidløg",
+      "3 spsk sojasauce",
+      "1 tsk sesamolie",
+      "2 forårsløg",
+      "2 spsk olie"
+    ],
+    "steps": [
+      "Kog nudler efter anvisning og dræn.",
+      "Varm olie i wok ved høj varme.",
+      "Tilsæt hvidløg og grøntsager og steg 5 minutter.",
+      "Tilsæt nudler og rør.",
+      "Hæld sojasauce og sesamolie over.",
+      "Top med hakket forårsløg og server."
+    ]
+  },
+  {
+    "id": "qu-019",
+    "name": "Bøf med Kartoffelmos",
+    "cuisine": "dansk",
+    "cost": 125,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["hurtig", "bøf", "hverdags"],
+    "ingredients": [
+      "4 stk bøffer",
+      "1 kg kartofler",
+      "100 ml mælk",
+      "50 g smør",
+      "1 løg",
+      "2 spsk olie"
+    ],
+    "steps": [
+      "Kog kartofler til møre.",
+      "Mos kartofler med smør og mælk.",
+      "Steg løg til gyldne og sæt til side.",
+      "Krydr bøffer med salt og peber.",
+      "Steg bøffer 3-4 minutter per side.",
+      "Server bøf med kartoffelmos og stegte løg."
+    ]
+  },
+  {
+    "id": "qu-020",
+    "name": "Kylling i Fad med Citron",
+    "cuisine": "dansk",
+    "cost": 100,
+    "time": 35,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["hurtig", "kylling", "ovnret"],
+    "ingredients": [
+      "4 stk kyllingelår",
+      "1 citron",
+      "4 fed hvidløg",
+      "1 tsk paprika",
+      "1 tsk timian",
+      "3 spsk olie",
+      "1 kg kartofler"
+    ],
+    "steps": [
+      "Skær kartofler i tern og fordel i et ovnfad.",
+      "Læg kyllingelår oven på.",
+      "Pres citronsaft over og fordel hvidløgsskiver.",
+      "Drys paprika og timian over og hæld olie på.",
+      "Bag 30 minutter ved 200°C til kylling er gennemstegt.",
+      "Server direkte fra fadet."
+    ]
+  }
+]

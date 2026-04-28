@@ -1,0 +1,576 @@
+[
+  {
+    "id": "mx-001",
+    "name": "Klassisk Tacos med Oksekød",
+    "cuisine": "mexicansk",
+    "cost": 105,
+    "time": 30,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["hverdags", "familie", "tacos"],
+    "ingredients": [
+      "500 g hakket oksekød",
+      "8 stk tacosskaller",
+      "1 dåse flåede tomater",
+      "2 tsk spidskommen",
+      "2 tsk paprika",
+      "1 tsk hvidløgspulver",
+      "200 g revet cheddar",
+      "1 dl creme fraiche",
+      "1 stk salat"
+    ],
+    "steps": [
+      "Brun hakket oksekød på panden ved høj varme.",
+      "Tilsæt spidskommen, paprika og hvidløgspulver og rør rundt.",
+      "Hæld flåede tomater i og lad det simre 10 minutter.",
+      "Varm tacosskallerne i ovnen ved 180°C i 5 minutter.",
+      "Snit salat og riv cheddar.",
+      "Fyl tacosskaller med kød, salat, ost og creme fraiche."
+    ]
+  },
+  {
+    "id": "mx-002",
+    "name": "Kyllingeburrito med Ris og Bønner",
+    "cuisine": "mexicansk",
+    "cost": 110,
+    "time": 35,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["hverdags", "burrito", "kylling"],
+    "ingredients": [
+      "600 g kyllingefilet",
+      "4 stk store tortillaer",
+      "200 g ris",
+      "1 dåse kidneybønner",
+      "1 tsk spidskommen",
+      "1 tsk paprika",
+      "200 g revet cheddar",
+      "1 dl salsa",
+      "1 dl creme fraiche"
+    ],
+    "steps": [
+      "Kog ris efter anvisning på pakken.",
+      "Skær kylling i strimler og steg med spidskommen og paprika.",
+      "Varm bønner i en gryde og mos let.",
+      "Læg en tortilla flad og fordel ris, kylling og bønner.",
+      "Drys med ost og tilsæt salsa og creme fraiche.",
+      "Rul burrito stramt og skær over på midten."
+    ]
+  },
+  {
+    "id": "mx-003",
+    "name": "Nachos med Ost og Salsa",
+    "cuisine": "mexicansk",
+    "cost": 85,
+    "time": 20,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["snack", "hygge", "vegetar"],
+    "ingredients": [
+      "200 g tortillachips",
+      "300 g revet cheddar",
+      "1 dåse flåede tomater",
+      "1 løg",
+      "2 fed hvidløg",
+      "1 tsk spidskommen",
+      "1 dl creme fraiche",
+      "1 avocado"
+    ],
+    "steps": [
+      "Blend tomater, løg og hvidløg til salsa og krydr med spidskommen.",
+      "Fordel chips på en bageform og drys med ost.",
+      "Bag ved 200°C i 8-10 minutter til osten er smeltet.",
+      "Mos avocado med salt og peber til guacamole.",
+      "Tag nachos ud og fordel salsa, guacamole og creme fraiche.",
+      "Server straks mens osten stadig er varm."
+    ]
+  },
+  {
+    "id": "mx-004",
+    "name": "Fajitas med Kylling og Peberfrugt",
+    "cuisine": "mexicansk",
+    "cost": 115,
+    "time": 30,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["hverdags", "fajitas", "kylling"],
+    "ingredients": [
+      "600 g kyllingefilet",
+      "3 stk peberfrugter (blandet farve)",
+      "2 løg",
+      "8 stk tortillaer",
+      "2 tsk paprika",
+      "1 tsk spidskommen",
+      "2 spsk olie",
+      "1 dl creme fraiche",
+      "200 g revet cheddar"
+    ],
+    "steps": [
+      "Skær kylling i strimler og krydr med paprika og spidskommen.",
+      "Skær peberfrugter og løg i strimler.",
+      "Steg kylling på pande ved høj varme i 5 minutter.",
+      "Tilsæt peberfrugter og løg og steg 5 minutter mere.",
+      "Varm tortillaerne i en tør pande.",
+      "Fyl tortillaerne med kyllingblandingen, ost og creme fraiche."
+    ]
+  },
+  {
+    "id": "mx-005",
+    "name": "Mexicansk Chili Con Carne",
+    "cuisine": "mexicansk",
+    "cost": 100,
+    "time": 45,
+    "portions": 4,
+    "difficulty": "medium",
+    "tags": ["gryde", "vinter", "stærk"],
+    "ingredients": [
+      "500 g hakket oksekød",
+      "2 dåser kidneybønner",
+      "1 dåse flåede tomater",
+      "2 løg",
+      "3 fed hvidløg",
+      "2 tsk paprika",
+      "1 tsk spidskommen",
+      "1 tsk chili",
+      "200 g ris"
+    ],
+    "steps": [
+      "Hak løg og hvidløg og svits i gryde.",
+      "Tilsæt hakket oksekød og brun grundigt.",
+      "Krydr med paprika, spidskommen og chili.",
+      "Tilsæt tomater og bønner og lad simre 25 minutter.",
+      "Kog ris ved siden af.",
+      "Server chili over ris."
+    ]
+  },
+  {
+    "id": "mx-006",
+    "name": "Quesadillas med Kylling og Ost",
+    "cuisine": "mexicansk",
+    "cost": 95,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["hurtig", "hverdags", "quesadilla"],
+    "ingredients": [
+      "500 g kyllingefilet",
+      "8 stk tortillaer",
+      "300 g revet cheddar",
+      "1 peberfrugt",
+      "1 løg",
+      "1 tsk paprika",
+      "1 dl creme fraiche",
+      "1 dl salsa"
+    ],
+    "steps": [
+      "Steg kylling i strimler med paprika og sæt til side.",
+      "Svits hakket løg og peberfrugt på panden.",
+      "Læg en tortilla på panden, fordel ost, kylling og grøntsager.",
+      "Dæk med en tortilla og tryk let ned.",
+      "Steg 2-3 minutter per side til sprød og gylden.",
+      "Skær i trekanter og server med salsa og creme fraiche."
+    ]
+  },
+  {
+    "id": "mx-007",
+    "name": "Tacobowl med Oksekød og Guacamole",
+    "cuisine": "mexicansk",
+    "cost": 120,
+    "time": 35,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["bowl", "sund", "oksekød"],
+    "ingredients": [
+      "500 g hakket oksekød",
+      "200 g ris",
+      "2 avocadoer",
+      "1 dåse majs",
+      "1 dåse kidneybønner",
+      "1 tsk spidskommen",
+      "1 tsk paprika",
+      "1 citron",
+      "1 stk salat"
+    ],
+    "steps": [
+      "Kog ris efter anvisning.",
+      "Brun oksekød med spidskommen og paprika.",
+      "Mos avocado med citronsaft og salt.",
+      "Varm majs og bønner.",
+      "Anret ris i en skål, top med oksekød, majs, bønner og salatblade.",
+      "Tilsæt guacamole og server."
+    ]
+  },
+  {
+    "id": "mx-008",
+    "name": "Enchiladas med Kylling",
+    "cuisine": "mexicansk",
+    "cost": 115,
+    "time": 40,
+    "portions": 4,
+    "difficulty": "medium",
+    "tags": ["ovnret", "kylling", "hverdags"],
+    "ingredients": [
+      "600 g kyllingefilet",
+      "8 stk tortillaer",
+      "2 dåser flåede tomater",
+      "2 løg",
+      "3 fed hvidløg",
+      "1 tsk spidskommen",
+      "1 tsk paprika",
+      "300 g revet cheddar",
+      "1 dl creme fraiche"
+    ],
+    "steps": [
+      "Kog kylling og trevl den fra hinanden.",
+      "Blend tomater, løg og hvidløg til sauce og krydr med spidskommen og paprika.",
+      "Bland kylling med halvdelen af tomatssauce.",
+      "Rul kyllingfyld i tortillaer og læg i et ovnfad.",
+      "Hæld resten af saucen over og drys med ost.",
+      "Bag ved 200°C i 20 minutter og server med creme fraiche."
+    ]
+  },
+  {
+    "id": "mx-009",
+    "name": "Mexicansk Tomatsuppe",
+    "cuisine": "mexicansk",
+    "cost": 75,
+    "time": 30,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["suppe", "vegetar", "hurtig"],
+    "ingredients": [
+      "2 dåser flåede tomater",
+      "1 løg",
+      "3 fed hvidløg",
+      "1 tsk paprika",
+      "1 tsk spidskommen",
+      "5 dl grøntsagsbouillon",
+      "1 dåse majs",
+      "100 g tortillachips",
+      "1 dl creme fraiche"
+    ],
+    "steps": [
+      "Svits hakket løg og hvidløg i en gryde.",
+      "Tilsæt tomater, paprika og spidskommen.",
+      "Hæld bouillon i og lad simre 15 minutter.",
+      "Blend suppen glat med en stavblender.",
+      "Tilsæt majs og varm igennem.",
+      "Server med chips og creme fraiche."
+    ]
+  },
+  {
+    "id": "mx-010",
+    "name": "Mexicansk Oksebøf med Krydderbønner",
+    "cuisine": "mexicansk",
+    "cost": 140,
+    "time": 35,
+    "portions": 4,
+    "difficulty": "medium",
+    "tags": ["bøf", "oksekød", "weekend"],
+    "ingredients": [
+      "4 stk oksebøffer",
+      "2 dåser kidneybønner",
+      "1 løg",
+      "3 fed hvidløg",
+      "1 tsk paprika",
+      "1 tsk spidskommen",
+      "2 spsk tomatpuré",
+      "200 g ris",
+      "2 spsk olie"
+    ],
+    "steps": [
+      "Krydr bøfferne med paprika, spidskommen og salt.",
+      "Steg bøfferne på varm pande 3-4 minutter per side.",
+      "Svits løg og hvidløg i en gryde.",
+      "Tilsæt bønner, tomatpuré og 2 dl vand og lad simre.",
+      "Kog ris ved siden af.",
+      "Server bøf over ris med krydderbønner."
+    ]
+  },
+  {
+    "id": "mx-011",
+    "name": "Grøntsags Tacos med Majs og Avocado",
+    "cuisine": "mexicansk",
+    "cost": 90,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["vegetar", "tacos", "sund"],
+    "ingredients": [
+      "8 stk tacosskaller",
+      "2 avocadoer",
+      "1 dåse majs",
+      "1 peberfrugt",
+      "1 løg",
+      "1 citron",
+      "1 tsk paprika",
+      "1 dl creme fraiche",
+      "1 stk salat"
+    ],
+    "steps": [
+      "Mos avocado med citronsaft og salt til guacamole.",
+      "Hak løg og peberfrugt fint og bland med majs.",
+      "Krydr grøntsagsblandingen med paprika.",
+      "Varm tacosskaller i ovnen ved 180°C i 5 minutter.",
+      "Snit salat.",
+      "Fyl skaller med guacamole, grøntsager, salat og creme fraiche."
+    ]
+  },
+  {
+    "id": "mx-012",
+    "name": "Mexicansk Kyllingsuppe",
+    "cuisine": "mexicansk",
+    "cost": 100,
+    "time": 40,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["suppe", "kylling", "vinter"],
+    "ingredients": [
+      "600 g kyllingefilet",
+      "1 løg",
+      "3 fed hvidløg",
+      "1 dåse flåede tomater",
+      "1 dåse majs",
+      "1 tsk paprika",
+      "1 tsk spidskommen",
+      "8 dl kyllingebouillon",
+      "100 g tortillachips"
+    ],
+    "steps": [
+      "Skær kylling i tern og brun i en stor gryde.",
+      "Tilsæt hakket løg og hvidløg og svits.",
+      "Krydr med paprika og spidskommen.",
+      "Tilsæt tomater, majs og bouillon.",
+      "Lad simre 20 minutter til kylling er mør.",
+      "Server med tortillachips ovenpå."
+    ]
+  },
+  {
+    "id": "mx-013",
+    "name": "Bønneburgere med Mexicansk Smag",
+    "cuisine": "mexicansk",
+    "cost": 90,
+    "time": 30,
+    "portions": 4,
+    "difficulty": "medium",
+    "tags": ["vegetar", "burger", "bønner"],
+    "ingredients": [
+      "2 dåser kidneybønner",
+      "1 løg",
+      "2 fed hvidløg",
+      "1 æg",
+      "4 spsk mel",
+      "1 tsk paprika",
+      "1 tsk spidskommen",
+      "4 stk burgerboller",
+      "1 stk salat"
+    ],
+    "steps": [
+      "Mos bønner groft med en gaffel.",
+      "Blend løg og hvidløg fint og bland i bønnemassen.",
+      "Tilsæt æg, mel, paprika og spidskommen.",
+      "Form 4 burgere og steg 4 minutter per side på pande.",
+      "Rist burgerboller.",
+      "Samling: bolle, salatblade, bønneburger og din favorit dip."
+    ]
+  },
+  {
+    "id": "mx-014",
+    "name": "Mexicansk Ristede Grøntsager med Tortilla",
+    "cuisine": "mexicansk",
+    "cost": 80,
+    "time": 30,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["vegetar", "sund", "hurtig"],
+    "ingredients": [
+      "3 peberfrugter",
+      "2 zucchini",
+      "2 løg",
+      "3 fed hvidløg",
+      "1 tsk paprika",
+      "1 tsk spidskommen",
+      "8 stk tortillaer",
+      "200 g revet cheddar",
+      "1 dl creme fraiche"
+    ],
+    "steps": [
+      "Skær alle grøntsager i strimler.",
+      "Bland med hvidløg, paprika og spidskommen.",
+      "Rist på bageplade ved 220°C i 20 minutter.",
+      "Varm tortillaer i en tør pande.",
+      "Fordel grøntsager på tortillaerne og drys med ost.",
+      "Rul og server med creme fraiche."
+    ]
+  },
+  {
+    "id": "mx-015",
+    "name": "Mexicansk Risengrød (Arroz con Leche)",
+    "cuisine": "mexicansk",
+    "cost": 40,
+    "time": 40,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["dessert", "sød", "budget"],
+    "ingredients": [
+      "200 g ris",
+      "1 liter mælk",
+      "6 spsk sukker",
+      "1 tsk kanel",
+      "1 citron",
+      "1 tsk vaniljesukker"
+    ],
+    "steps": [
+      "Kog ris i 5 dl vand til det er halvt kogt.",
+      "Tilsæt mælk og sukker og rør godt.",
+      "Tilsæt citronskal og vaniljesukker.",
+      "Lad simre under jævnlig omrøring i 25 minutter.",
+      "Tag citronskal ud.",
+      "Server drysset med kanel."
+    ]
+  },
+  {
+    "id": "mx-016",
+    "name": "Hakket Kylling i Tacos med Majs",
+    "cuisine": "mexicansk",
+    "cost": 100,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["hverdags", "tacos", "kylling"],
+    "ingredients": [
+      "500 g hakket kylling",
+      "8 stk tacosskaller",
+      "1 dåse majs",
+      "2 tsk paprika",
+      "1 tsk spidskommen",
+      "2 fed hvidløg",
+      "1 dl salsa",
+      "1 dl creme fraiche",
+      "200 g revet cheddar"
+    ],
+    "steps": [
+      "Steg hakket kylling med hvidløg til gennemstegt.",
+      "Tilsæt paprika, spidskommen og majs.",
+      "Rør rundt og lad simre 5 minutter.",
+      "Varm tacosskaller i ovnen.",
+      "Fyl skaller med kyllingblanding, ost, salsa og creme fraiche.",
+      "Server straks."
+    ]
+  },
+  {
+    "id": "mx-017",
+    "name": "Mexicansk Pasta",
+    "cuisine": "mexicansk",
+    "cost": 90,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["pasta", "hurtig", "hverdags"],
+    "ingredients": [
+      "400 g pasta",
+      "500 g hakket oksekød",
+      "1 dåse flåede tomater",
+      "1 løg",
+      "2 fed hvidløg",
+      "1 tsk paprika",
+      "1 tsk spidskommen",
+      "200 g revet cheddar",
+      "1 dl creme fraiche"
+    ],
+    "steps": [
+      "Kog pasta efter anvisning.",
+      "Brun oksekød med løg og hvidløg.",
+      "Tilsæt paprika, spidskommen og tomater.",
+      "Lad sauce simre 10 minutter.",
+      "Vend pasta i saucen.",
+      "Server med revet ost og en klat creme fraiche."
+    ]
+  },
+  {
+    "id": "mx-018",
+    "name": "Tacos med Rejer",
+    "cuisine": "mexicansk",
+    "cost": 130,
+    "time": 20,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["fisk", "tacos", "hurtig"],
+    "ingredients": [
+      "400 g rejer",
+      "8 stk tacosskaller",
+      "1 avocado",
+      "1 citron",
+      "1 tsk paprika",
+      "1 tsk hvidløgspulver",
+      "1 dl creme fraiche",
+      "1 stk salat",
+      "2 spsk olie"
+    ],
+    "steps": [
+      "Krydr rejer med paprika og hvidløgspulver.",
+      "Steg rejer i olie 2-3 minutter.",
+      "Mos avocado med citronsaft og salt.",
+      "Varm tacosskaller i ovnen.",
+      "Snit salat.",
+      "Fyl skaller med rejer, guacamole, salat og creme fraiche."
+    ]
+  },
+  {
+    "id": "mx-019",
+    "name": "Mexicansk Omelette",
+    "cuisine": "mexicansk",
+    "cost": 70,
+    "time": 20,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["æg", "hurtig", "morgenmad"],
+    "ingredients": [
+      "8 æg",
+      "1 peberfrugt",
+      "1 løg",
+      "1 dåse majs",
+      "1 tsk paprika",
+      "200 g revet cheddar",
+      "1 dl creme fraiche",
+      "2 spsk olie"
+    ],
+    "steps": [
+      "Hak løg og peberfrugt og svits i olien.",
+      "Tilsæt majs og paprika og steg 2 minutter.",
+      "Pisk æg og hæld over grøntsagerne.",
+      "Drys ost på toppen.",
+      "Steg til æggemassen er stivnet og ost smeltet.",
+      "Server med creme fraiche."
+    ]
+  },
+  {
+    "id": "mx-020",
+    "name": "Mexicansk Linsegryde",
+    "cuisine": "mexicansk",
+    "cost": 75,
+    "time": 35,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["vegetar", "gryde", "budget"],
+    "ingredients": [
+      "300 g røde linser",
+      "1 dåse flåede tomater",
+      "2 løg",
+      "3 fed hvidløg",
+      "1 tsk paprika",
+      "1 tsk spidskommen",
+      "8 dl grøntsagsbouillon",
+      "200 g ris",
+      "1 dl creme fraiche"
+    ],
+    "steps": [
+      "Svits hakket løg og hvidløg i en gryde.",
+      "Tilsæt paprika og spidskommen og rør 1 minut.",
+      "Tilsæt linser, tomater og bouillon.",
+      "Lad simre 20 minutter til linser er møre.",
+      "Kog ris ved siden af.",
+      "Server linsegryde over ris med creme fraiche."
+    ]
+  }
+]

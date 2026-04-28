@@ -1,0 +1,565 @@
+[
+  {
+    "id": "no-001",
+    "name": "Svenska köttbullar med flødesauce",
+    "cuisine": "nordisk",
+    "cost": 110,
+    "time": 40,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["svinekød", "svensk", "klassiker", "nordisk"],
+    "ingredients": [
+      "500 g hakket svinekød",
+      "1 æg",
+      "1 dl sødmælk",
+      "2 spsk mel",
+      "1 løg",
+      "1 tsk allehånde",
+      "3 dl kyllingebouillon",
+      "2 dl fløde",
+      "2 spsk smør",
+      "1 kg kartofler",
+      "Salt og peber"
+    ],
+    "steps": [
+      "Riv løg fint. Bland med svinekød, æg, mælk, mel, allehånde, salt og peber.",
+      "Lad farsen hvile 10 min. Form til små boller med våde hænder.",
+      "Steg gyldne i smør alle veje rundt, ca. 8 min. Sæt til side.",
+      "Kog kartofler i saltet vand.",
+      "Hæld bouillon i panden, skrab stegeskorpen fri. Tilsæt fløde og lad simre 5 min.",
+      "Læg kødbollerne i saucen. Server med kartofler og ribsgelé."
+    ]
+  },
+  {
+    "id": "no-002",
+    "name": "Norsk lakssuppe med dild",
+    "cuisine": "nordisk",
+    "cost": 145,
+    "time": 30,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["laks", "norsk", "suppe", "nordisk", "fisk"],
+    "ingredients": [
+      "500 g laks",
+      "500 g kartofler",
+      "2 gulerødder",
+      "1 porre",
+      "1 liter grøntsagsbouillon",
+      "2 dl fløde",
+      "1 bundt frisk dild",
+      "1 citron",
+      "Salt og peber"
+    ],
+    "steps": [
+      "Skær kartofler og gulerødder i tern, porre i ringe.",
+      "Bring bouillon i kog. Tilsæt kartofler og gulerødder, kog 10 min.",
+      "Tilsæt porre og fløde, kog 5 min.",
+      "Skær laks i store stykker og læg i suppen. Simre 5 min.",
+      "Smag til med citronsaft, salt og peber.",
+      "Server med frisk dild og godt brød."
+    ]
+  },
+  {
+    "id": "no-003",
+    "name": "Kåldolmer — svenske kålrouletter",
+    "cuisine": "nordisk",
+    "cost": 105,
+    "time": 60,
+    "portions": 4,
+    "difficulty": "mellem",
+    "tags": ["svinekød", "svensk", "kål", "nordisk"],
+    "ingredients": [
+      "1 hvidkål",
+      "500 g hakket svinekød",
+      "200 g jasminris",
+      "1 æg",
+      "1 løg",
+      "2 dl kyllingebouillon",
+      "2 spsk smør",
+      "2 spsk sirup",
+      "Salt og peber"
+    ],
+    "steps": [
+      "Kog ris halvt færdige. Kog kålblade bløde 3 min, dræn.",
+      "Bland svinekød, halvkogte ris, æg, revet løg, salt og peber.",
+      "Læg fars på kålblade og rul stramt. Fastgør med tandstik.",
+      "Brun rullerne i smør alle veje. Læg i bradepande.",
+      "Hæld bouillon over og dryp med sirup. Bag ved 200°C i 30 min.",
+      "Server med kogte kartofler og brun sovs."
+    ]
+  },
+  {
+    "id": "no-004",
+    "name": "Janssons fristelse",
+    "cuisine": "nordisk",
+    "cost": 90,
+    "time": 55,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["vegetar", "svensk", "klassiker", "nordisk", "kartofler"],
+    "ingredients": [
+      "1 kg kartofler",
+      "2 løg",
+      "1 dåse ansjoser (50 g)",
+      "4 dl fløde",
+      "2 spsk smør",
+      "Salt og peber"
+    ],
+    "steps": [
+      "Forvarm ovn til 200°C.",
+      "Skær kartofler i tynde strimler (som tændstikker). Skær løg i tynde ringe.",
+      "Smør et ildfast fad. Læg skiftevis kartofler, løg og ansjosstykker.",
+      "Hæld fløde over. Drys med ansjoslagen.",
+      "Bag 40-45 min til kartofler er møre og toppen er gylden.",
+      "Server som tilbehør eller hovedret med godt brød."
+    ]
+  },
+  {
+    "id": "no-005",
+    "name": "Finsk laksgryde med kartofler",
+    "cuisine": "nordisk",
+    "cost": 150,
+    "time": 35,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["laks", "finsk", "nordisk", "fisk"],
+    "ingredients": [
+      "600 g laks",
+      "800 g kartofler",
+      "1 løg",
+      "6 dl kyllingebouillon",
+      "2 dl fløde",
+      "30 g smør",
+      "1 bundt frisk dild",
+      "Salt og peber"
+    ],
+    "steps": [
+      "Skær kartofler og løg i tern.",
+      "Smelt smør i gryde, svits løg blødt.",
+      "Tilsæt kartofler og bouillon. Kog 15 min til kartofler er næsten møre.",
+      "Skær laks i store tern og læg i gryden.",
+      "Hæld fløde i og lad simre 6 min.",
+      "Smag til. Server med frisk dild og rugbrød."
+    ]
+  },
+  {
+    "id": "no-006",
+    "name": "Nordisk fiskefrikadeller",
+    "cuisine": "nordisk",
+    "cost": 120,
+    "time": 35,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["fisk", "torsk", "nordisk", "hverdagsret"],
+    "ingredients": [
+      "600 g torskefilet",
+      "1 æg",
+      "1 dl sødmælk",
+      "3 spsk hvedemel",
+      "1 løg",
+      "1 bundt frisk dild",
+      "2 spsk smør",
+      "1 kg kartofler",
+      "Salt og peber"
+    ],
+    "steps": [
+      "Hak torsk fint eller blend groft. Riv løg.",
+      "Bland torsk, æg, mælk, mel, dild, salt og peber til en fast fars.",
+      "Kog kartofler i saltet vand.",
+      "Form fiskefrikadeller med en spiseske og steg gyldne i smør, ca. 3 min per side.",
+      "Server med kartofler, remoulade og citronbåd."
+    ]
+  },
+  {
+    "id": "no-007",
+    "name": "Svensk ærtesuppe med bacon",
+    "cuisine": "nordisk",
+    "cost": 80,
+    "time": 50,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["suppe", "svensk", "nordisk", "bacon"],
+    "ingredients": [
+      "400 g tørrede gule ærter",
+      "200 g bacon i skiver",
+      "1 løg",
+      "2 gulerødder",
+      "1 porre",
+      "1 liter grøntsagsbouillon",
+      "1 tsk timian",
+      "Salt og peber"
+    ],
+    "steps": [
+      "Udblød ærter natten over. Dræn.",
+      "Skær bacon i strimler og steg sprøde. Sæt til side.",
+      "Svits løg, gulerødder og porre i baconfedtet.",
+      "Tilsæt ærter, bouillon og timian. Kog 40 min til ærterne er møre.",
+      "Blend halvt for en cremet konsistens. Smag til.",
+      "Server med bacon og godt brød."
+    ]
+  },
+  {
+    "id": "no-008",
+    "name": "Laks med sennepssauce og kartofler",
+    "cuisine": "nordisk",
+    "cost": 140,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["laks", "nordisk", "hverdagsret", "fisk"],
+    "ingredients": [
+      "4 laksefileter (ca. 600 g)",
+      "1 kg kartofler",
+      "2 spsk dijonsennep",
+      "2 dl fløde",
+      "1 løg",
+      "30 g smør",
+      "1 bundt frisk dild",
+      "Salt og peber"
+    ],
+    "steps": [
+      "Kog kartofler i saltet vand.",
+      "Krydr laks med salt og peber. Steg i smør 3 min per side. Sæt til side.",
+      "Svits hakket løg i samme pande.",
+      "Tilsæt fløde og sennep. Lad simre 3 min.",
+      "Smag til med salt og peber.",
+      "Server laks med kartofler og sennepssauce, drys med dild."
+    ]
+  },
+  {
+    "id": "no-009",
+    "name": "Rodfrugtsgryde med lammekød",
+    "cuisine": "nordisk",
+    "cost": 160,
+    "time": 70,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["lam", "nordisk", "vinter", "gryde"],
+    "ingredients": [
+      "600 g lammekød i tern",
+      "3 gulerødder",
+      "2 pastinakker",
+      "500 g kartofler",
+      "1 løg",
+      "5 dl oksebouillon",
+      "2 kviste rosmarin",
+      "2 fed hvidløg",
+      "2 spsk rapsolie",
+      "Salt og peber"
+    ],
+    "steps": [
+      "Brun lam i tern i rapsolie ved høj varme. Sæt til side.",
+      "Svits løg og hvidløg i samme gryde.",
+      "Tilsæt gulerødder, pastinakker og kartofler i store stykker.",
+      "Hæld bouillon over og læg rosmarin i.",
+      "Simre ved lav varme 50 min til kødet er mørt.",
+      "Smag til og server direkte fra gryden."
+    ]
+  },
+  {
+    "id": "no-010",
+    "name": "Hasselback kartofler med laks og creme fraiche",
+    "cuisine": "nordisk",
+    "cost": 135,
+    "time": 60,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["laks", "kartofler", "nordisk", "ovnret"],
+    "ingredients": [
+      "8 mellemstore kartofler",
+      "400 g røget laks",
+      "2 dl creme fraiche 18%",
+      "1 bundt frisk dild",
+      "2 spsk smør",
+      "1 citron",
+      "Salt og peber"
+    ],
+    "steps": [
+      "Forvarm ovn til 200°C.",
+      "Snit kartofler i tynde skiver, men skær ikke helt igennem.",
+      "Drys med salt, peber og smørflager. Bag 45 min til sprøde.",
+      "Rør creme fraiche med hakket dild og citronsaft.",
+      "Anret varme kartofler med røget laks og dildcreme fraiche.",
+      "Server med en grøn salat."
+    ]
+  },
+  {
+    "id": "no-011",
+    "name": "Pyttipanna — svensk biks",
+    "cuisine": "nordisk",
+    "cost": 85,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["svinekød", "svensk", "restemat", "hverdagsret", "nordisk"],
+    "ingredients": [
+      "400 g kogt svinekød",
+      "800 g kartofler",
+      "2 løg",
+      "200 g bacon i skiver",
+      "4 æg",
+      "2 spsk rapsolie",
+      "Salt og peber"
+    ],
+    "steps": [
+      "Skær kartofler og kød i tern. Hak løg.",
+      "Steg bacon sprødt, sæt til side.",
+      "Steg kartofler i rapsolie til gyldne, ca. 10 min.",
+      "Tilsæt løg og steg 3 min. Tilsæt kød og bacon.",
+      "Krydr med salt og peber, vend godt.",
+      "Server med spejlæg på toppen og rødbeder ved siden af."
+    ]
+  },
+  {
+    "id": "no-012",
+    "name": "Grønkålssuppe med pølse",
+    "cuisine": "nordisk",
+    "cost": 85,
+    "time": 30,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["suppe", "grønkål", "nordisk", "pølse"],
+    "ingredients": [
+      "400 g grønkål",
+      "400 g medisterpølse",
+      "2 kartofler",
+      "1 løg",
+      "1 liter grøntsagsbouillon",
+      "2 dl fløde",
+      "2 fed hvidløg",
+      "Salt og peber"
+    ],
+    "steps": [
+      "Skær pølse i skiver og steg gyldne. Sæt til side.",
+      "Svits hakket løg og hvidløg.",
+      "Tilsæt kartofler i tern og bouillon. Kog 10 min.",
+      "Tilsæt grønkål og fløde. Kog 5 min.",
+      "Blend suppen halvt for cremet konsistens.",
+      "Server med pølseskiver og godt brød."
+    ]
+  },
+  {
+    "id": "no-013",
+    "name": "Ovnbagt torsk med sennep og urter",
+    "cuisine": "nordisk",
+    "cost": 120,
+    "time": 30,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["torsk", "fisk", "nordisk", "ovnret"],
+    "ingredients": [
+      "600 g torskefilet",
+      "2 spsk dijonsennep",
+      "2 spsk smør",
+      "1 citron",
+      "1 bundt frisk persille",
+      "1 kg kartofler",
+      "Salt og peber"
+    ],
+    "steps": [
+      "Forvarm ovn til 200°C. Kog kartofler.",
+      "Læg torskefileter i et smurt ildfast fad.",
+      "Bland sennep med blødt smør og hakket persille.",
+      "Smør blandingen over fisken. Krydr med salt og peber.",
+      "Bag 15 min til fisken flager.",
+      "Server med kartofler og citronbåd."
+    ]
+  },
+  {
+    "id": "no-014",
+    "name": "Nordisk kylling med rodfrugter",
+    "cuisine": "nordisk",
+    "cost": 130,
+    "time": 65,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["kylling", "nordisk", "ovnret", "rodfrugter"],
+    "ingredients": [
+      "1 hel kylling (ca. 1,4 kg)",
+      "4 gulerødder",
+      "2 pastinakker",
+      "500 g kartofler",
+      "1 løg",
+      "3 fed hvidløg",
+      "2 spsk rapsolie",
+      "1 tsk timian",
+      "Salt og peber"
+    ],
+    "steps": [
+      "Forvarm ovn til 200°C.",
+      "Skær grøntsager i store stykker og fordel i bradepande.",
+      "Gnid kylling med olie, timian, salt og peber.",
+      "Læg kylling ovenpå grøntsagerne.",
+      "Steg 55-60 min til kylling er gennemstegt og skin er sprødt.",
+      "Lad hvile 10 min inden servering."
+    ]
+  },
+  {
+    "id": "no-015",
+    "name": "Røget laks-pasta med creme fraiche",
+    "cuisine": "nordisk",
+    "cost": 135,
+    "time": 20,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["laks", "pasta", "nordisk", "hurtig"],
+    "ingredients": [
+      "300 g røget laks",
+      "400 g pasta",
+      "2 dl creme fraiche 18%",
+      "1 løg",
+      "2 fed hvidløg",
+      "1 bundt frisk dild",
+      "1 citron",
+      "Salt og peber"
+    ],
+    "steps": [
+      "Kog pasta al dente. Gem 1 dl pastavand.",
+      "Svits hakket løg og hvidløg blødt.",
+      "Tilsæt creme fraiche og lad simre 2 min.",
+      "Tilsæt pasta og riv laks i stykker over.",
+      "Tilsæt lidt pastavand hvis saucen er for tyk.",
+      "Server med hakket dild og citronsaft."
+    ]
+  },
+  {
+    "id": "no-016",
+    "name": "Kyllingesuppe med grøntsager",
+    "cuisine": "nordisk",
+    "cost": 110,
+    "time": 50,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["kylling", "suppe", "nordisk", "hverdagsret"],
+    "ingredients": [
+      "4 kyllingelår",
+      "3 gulerødder",
+      "2 pastinakker",
+      "1 porre",
+      "1 løg",
+      "100 g suppenudler",
+      "1 liter grøntsagsbouillon",
+      "1 bundt frisk persille",
+      "Salt og peber"
+    ],
+    "steps": [
+      "Bring bouillon i kog. Tilsæt kyllingelår og kog 30 min.",
+      "Tag kylling op, pil kødet og hak groft.",
+      "Tilsæt gulerødder og pastinakker i tern til bouillonen. Kog 10 min.",
+      "Tilsæt porre, løg og suppenudler. Kog 5 min.",
+      "Kom kyllingekødet tilbage. Smag til.",
+      "Server med frisk persille og godt brød."
+    ]
+  },
+  {
+    "id": "no-017",
+    "name": "Oksekødsgryde med rodfrugter",
+    "cuisine": "nordisk",
+    "cost": 155,
+    "time": 90,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["oksekød", "gryde", "nordisk", "vinter"],
+    "ingredients": [
+      "600 g oksekød i tern",
+      "3 gulerødder",
+      "2 pastinakker",
+      "500 g kartofler",
+      "1 løg",
+      "3 dl rødvin",
+      "4 dl oksebouillon",
+      "2 fed hvidløg",
+      "2 spsk rapsolie",
+      "Salt og peber"
+    ],
+    "steps": [
+      "Brun oksekød i rapsolie ved høj varme. Sæt til side.",
+      "Svits løg og hvidløg i samme gryde.",
+      "Hæld rødvin i og lad det koge ind til halvdelen.",
+      "Tilsæt bouillon, kød og grøntsager i store tern.",
+      "Simre ved lav varme 70-80 min til kødet er mørt.",
+      "Smag til og server med godt brød."
+    ]
+  },
+  {
+    "id": "no-018",
+    "name": "Laks med citron og asparges",
+    "cuisine": "nordisk",
+    "cost": 145,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["laks", "asparges", "nordisk", "fisk"],
+    "ingredients": [
+      "4 laksefileter (ca. 600 g)",
+      "400 g asparges",
+      "1 kg kartofler",
+      "2 spsk smør",
+      "1 citron",
+      "Salt og peber"
+    ],
+    "steps": [
+      "Kog kartofler i saltet vand.",
+      "Bræk den træede del af aspargeserne. Blancher 3 min i kogende vand.",
+      "Krydr laks med salt, peber og citronskal.",
+      "Steg i smør 3 min per side til gyldne.",
+      "Server laks og asparges med kartofler, citronbåd og smør."
+    ]
+  },
+  {
+    "id": "no-019",
+    "name": "Svinekam i ovn med rodfrugter",
+    "cuisine": "nordisk",
+    "cost": 155,
+    "time": 75,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["svinekød", "nordisk", "søndagsret", "ovnret"],
+    "ingredients": [
+      "800 g svinekam uden ben",
+      "4 gulerødder",
+      "2 pastinakker",
+      "500 g kartofler",
+      "1 løg",
+      "3 dl kyllingebouillon",
+      "2 spsk dijonsennep",
+      "1 spsk honning",
+      "Salt og peber"
+    ],
+    "steps": [
+      "Forvarm ovn til 200°C.",
+      "Rids svinekammen. Gnid med sennep, honning, salt og peber.",
+      "Skær grøntsager i store stykker og fordel i bradepande.",
+      "Læg kød oven på grøntsagerne. Hæld bouillon i.",
+      "Steg 50-60 min til kød er gennemstegt (70°C indvendig).",
+      "Lad hvile 10 min. Server med stegesky og grøntsager."
+    ]
+  },
+  {
+    "id": "no-020",
+    "name": "Persillesovs med kogt skinke",
+    "cuisine": "nordisk",
+    "cost": 100,
+    "time": 30,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["svinekød", "dansk", "klassiker", "nordisk"],
+    "ingredients": [
+      "600 g kogt skinke i skiver",
+      "1 kg kartofler",
+      "40 g smør",
+      "3 spsk hvedemel",
+      "5 dl sødmælk",
+      "1 stor bundt frisk persille",
+      "Salt og peber"
+    ],
+    "steps": [
+      "Kog kartofler i saltet vand.",
+      "Smelt smør, pisk mel i og steg 1 min.",
+      "Tilsæt mælk lidt ad gangen under konstant piskning.",
+      "Lad sovsen simre 5 min. Tilsæt finthakket persille.",
+      "Smag til med salt og peber.",
+      "Server skinke med persillesovs og kogte kartofler."
+    ]
+  }
+]

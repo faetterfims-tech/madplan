@@ -1,0 +1,552 @@
+[
+  {
+    "id": "fi-001",
+    "name": "Ovnbagt Torsk med Grøntsager",
+    "cuisine": "dansk",
+    "cost": 110,
+    "time": 35,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["fisk", "sund", "hverdags"],
+    "ingredients": [
+      "600 g torskefilet",
+      "3 gulerødder",
+      "2 løg",
+      "3 fed hvidløg",
+      "1 citron",
+      "3 spsk olie",
+      "1 tsk timian",
+      "1 kg kartofler"
+    ],
+    "steps": [
+      "Skær kartofler og gulerødder i tern og fordel i ovnfad.",
+      "Hæld olie over og krydr med timian.",
+      "Bag grøntsager 20 minutter ved 200°C.",
+      "Læg torskefileter oven på grøntsagerne.",
+      "Pres citron over og krydr med salt.",
+      "Bag 12-15 minutter til fisk er gennemstegt."
+    ]
+  },
+  {
+    "id": "fi-002",
+    "name": "Fiskefilet med Remoulade og Kartofler",
+    "cuisine": "dansk",
+    "cost": 100,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["fisk", "klassisk", "dansk"],
+    "ingredients": [
+      "600 g fiskefilet (rødspætte)",
+      "1 dl remoulade",
+      "1 kg kartofler",
+      "100 g mel",
+      "2 æg",
+      "100 g rasp",
+      "3 spsk olie"
+    ],
+    "steps": [
+      "Kog kartofler i saltet vand.",
+      "Vend fiskestykker i mel, æg og rasp.",
+      "Steg i olie 3-4 minutter per side til gyldne.",
+      "Lad fisk dryppe af på køkkenrulle.",
+      "Anret fisk og kartofler på tallerkener.",
+      "Server med remoulade."
+    ]
+  },
+  {
+    "id": "fi-003",
+    "name": "Laks med Spinat og Flødesauce",
+    "cuisine": "dansk",
+    "cost": 140,
+    "time": 30,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["laks", "cremet", "hverdags"],
+    "ingredients": [
+      "4 stk laksefilet",
+      "300 g frossen spinat",
+      "2 dl fløde",
+      "2 fed hvidløg",
+      "1 citron",
+      "50 g smør",
+      "1 kg kartofler"
+    ],
+    "steps": [
+      "Kog kartofler.",
+      "Steg laks i smør 4 minutter per side og sæt til side.",
+      "Svits hvidløg i samme pande.",
+      "Tilsæt spinat og fløde og lad simre 5 minutter.",
+      "Krydr sauce med citronsaft og salt.",
+      "Server laks med fløde-spinatsauce og kartofler."
+    ]
+  },
+  {
+    "id": "fi-004",
+    "name": "Fiskefrikadeller med Kartoffelsalat",
+    "cuisine": "dansk",
+    "cost": 95,
+    "time": 35,
+    "portions": 4,
+    "difficulty": "medium",
+    "tags": ["fiskefrikadeller", "klassisk", "dansk"],
+    "ingredients": [
+      "600 g fiskefars",
+      "2 æg",
+      "4 spsk mel",
+      "1 dl mælk",
+      "1 kg kartofler",
+      "1 dl mayonnaise",
+      "1 tsk dild",
+      "3 spsk smør"
+    ],
+    "steps": [
+      "Bland fiskefars, æg, mel og mælk til en fast masse.",
+      "Form frikadeller og steg i smør 4 minutter per side.",
+      "Kog kartofler og skær i skiver.",
+      "Bland kartofler med mayonnaise og dild.",
+      "Krydr kartoffelsalat med salt.",
+      "Server fiskefrikadeller med kartoffelsalat."
+    ]
+  },
+  {
+    "id": "fi-005",
+    "name": "Tunbøf med Ris og Sojasauce",
+    "cuisine": "asiatisk",
+    "cost": 130,
+    "time": 20,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["tun", "hurtig", "sund"],
+    "ingredients": [
+      "4 stk tunbøffer",
+      "300 g ris",
+      "3 spsk sojasauce",
+      "1 tsk sesamolie",
+      "2 fed hvidløg",
+      "1 tsk ingefær",
+      "2 forårsløg",
+      "2 spsk olie"
+    ],
+    "steps": [
+      "Kog ris.",
+      "Bland sojasauce, sesamolie, hvidløg og ingefær til marinade.",
+      "Krydr tunbøffer med salt og pensl med halvdelen af marinaden.",
+      "Steg tun i olie 2 minutter per side (rosa i midten).",
+      "Hæld resten af marinaden over.",
+      "Server over ris med hakket forårsløg."
+    ]
+  },
+  {
+    "id": "fi-006",
+    "name": "Pasta med Rejer og Hvidvin",
+    "cuisine": "italiensk",
+    "cost": 135,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["pasta", "rejer", "hurtig"],
+    "ingredients": [
+      "400 g spaghetti",
+      "400 g rejer",
+      "3 fed hvidløg",
+      "2 dl hvidvin",
+      "1 dl fløde",
+      "1 citron",
+      "1 bundt persille",
+      "3 spsk smør"
+    ],
+    "steps": [
+      "Kog pasta i saltet vand.",
+      "Svits hvidløg i smør.",
+      "Tilsæt rejer og steg 2 minutter.",
+      "Hæld hvidvin i og lad fordampe halvt.",
+      "Rør fløde og citronsaft i.",
+      "Bland pasta i saucen og server med hakket persille."
+    ]
+  },
+  {
+    "id": "fi-007",
+    "name": "Laksesalat med Avocado",
+    "cuisine": "dansk",
+    "cost": 130,
+    "time": 20,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["salat", "sund", "laks"],
+    "ingredients": [
+      "400 g røget laks",
+      "2 avocadoer",
+      "1 stk salat",
+      "2 tomater",
+      "1 agurk",
+      "1 citron",
+      "4 spsk olie",
+      "8 skiver rugbrød"
+    ],
+    "steps": [
+      "Snit salat og fordel i skåle.",
+      "Skær tomater og agurk i tern.",
+      "Halver avocadoer og fjern sten.",
+      "Skær avocado i skiver.",
+      "Fordel laks, avocado, tomat og agurk over salat.",
+      "Bland citron og olie til dressing og hæld over."
+    ]
+  },
+  {
+    "id": "fi-008",
+    "name": "Fiskesuppe med Grøntsager",
+    "cuisine": "dansk",
+    "cost": 115,
+    "time": 35,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["suppe", "fisk", "vinter"],
+    "ingredients": [
+      "600 g fiskefilet (torsk eller laks)",
+      "2 gulerødder",
+      "2 løg",
+      "3 fed hvidløg",
+      "5 dl fiskebouillon",
+      "2 dl fløde",
+      "1 tsk dild",
+      "1 citron"
+    ],
+    "steps": [
+      "Hak løg, hvidløg og gulerødder og svits i en gryde.",
+      "Hæld bouillon i og kog op.",
+      "Skær fisk i tern og tilsæt.",
+      "Lad simre 10 minutter.",
+      "Rør fløde og dild i.",
+      "Smag til med citronsaft og server."
+    ]
+  },
+  {
+    "id": "fi-009",
+    "name": "Rejerisotto",
+    "cuisine": "italiensk",
+    "cost": 145,
+    "time": 40,
+    "portions": 4,
+    "difficulty": "medium",
+    "tags": ["risotto", "rejer", "hverdags"],
+    "ingredients": [
+      "300 g risottoris",
+      "400 g rejer",
+      "1 løg",
+      "2 fed hvidløg",
+      "2 dl hvidvin",
+      "8 dl fiskebouillon",
+      "50 g smør",
+      "50 g revet parmesan"
+    ],
+    "steps": [
+      "Svits hakket løg og hvidløg i smør.",
+      "Tilsæt ris og rør 2 minutter.",
+      "Hæld vin i og rør til optaget.",
+      "Tilsæt bouillon lidt ad gangen under jævnlig omrøring.",
+      "Tilsæt rejer de sidste 5 minutter.",
+      "Rør parmesan og ekstra smør i og server."
+    ]
+  },
+  {
+    "id": "fi-010",
+    "name": "Ovnbagt Laks med Senneps-Dildglasur",
+    "cuisine": "dansk",
+    "cost": 135,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["laks", "ovnret", "sund"],
+    "ingredients": [
+      "4 stk laksefilet",
+      "3 spsk sennep",
+      "2 spsk honning",
+      "1 tsk dild",
+      "1 citron",
+      "1 kg kartofler",
+      "50 g smør"
+    ],
+    "steps": [
+      "Kog kartofler.",
+      "Bland sennep, honning og dild til glasur.",
+      "Læg laks på bageplade og pensl med glasur.",
+      "Bag 15 minutter ved 200°C.",
+      "Mos kartofler med smør og mælk.",
+      "Server laks med kartoffelmos og citronsaft."
+    ]
+  },
+  {
+    "id": "fi-011",
+    "name": "Stegt Rødspætte med Butter og Kapers",
+    "cuisine": "dansk",
+    "cost": 110,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["rødspætte", "klassisk", "dansk"],
+    "ingredients": [
+      "4 stk rødspættefileter",
+      "100 g mel",
+      "100 g smør",
+      "2 spsk kapers",
+      "1 citron",
+      "1 kg kartofler",
+      "1 bundt persille"
+    ],
+    "steps": [
+      "Kog kartofler.",
+      "Vend rødspætte i mel og krydr med salt.",
+      "Steg i smør 3 minutter per side til gylden.",
+      "Tilsæt kapers og citronsaft til panden.",
+      "Lad smørret blive gyldent (beurre noisette).",
+      "Server rødspætte med kartofler, kapers og smør."
+    ]
+  },
+  {
+    "id": "fi-012",
+    "name": "Fiskeburger med Remoulade",
+    "cuisine": "dansk",
+    "cost": 105,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["burger", "fisk", "hverdags"],
+    "ingredients": [
+      "4 stk fiskefileter",
+      "4 stk burgerboller",
+      "100 g rasp",
+      "2 æg",
+      "1 dl remoulade",
+      "1 stk salat",
+      "2 tomater",
+      "3 spsk olie"
+    ],
+    "steps": [
+      "Dyp fiskefileter i piskede æg og vend i rasp.",
+      "Steg i olie 3-4 minutter per side til sprød.",
+      "Rist burgerboller.",
+      "Smør bunde med remoulade.",
+      "Læg salatblade og tomatskiver på.",
+      "Læg fiskefilet på og luk bollen."
+    ]
+  },
+  {
+    "id": "fi-013",
+    "name": "Laks med Asparges og Hollandaise",
+    "cuisine": "dansk",
+    "cost": 155,
+    "time": 30,
+    "portions": 4,
+    "difficulty": "medium",
+    "tags": ["laks", "forår", "weekend"],
+    "ingredients": [
+      "4 stk laksefilet",
+      "500 g asparges",
+      "1 glas hollandaisesauce",
+      "1 citron",
+      "2 spsk smør",
+      "1 kg kartofler"
+    ],
+    "steps": [
+      "Kog kartofler.",
+      "Knæk bunden af aspargeserne og kog dem 4 minutter.",
+      "Steg laks i smør 4 minutter per side.",
+      "Varm hollandaisesauce.",
+      "Anret laks og asparges på tallerkener.",
+      "Hæld hollandaise over og server med citron og kartofler."
+    ]
+  },
+  {
+    "id": "fi-014",
+    "name": "Torskefilet med Tomatsalsa",
+    "cuisine": "middelhavs",
+    "cost": 115,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["torsk", "sund", "hurtig"],
+    "ingredients": [
+      "600 g torskefilet",
+      "4 tomater",
+      "1 løg",
+      "2 fed hvidløg",
+      "1 citron",
+      "1 bundt persille",
+      "3 spsk olie",
+      "200 g ris"
+    ],
+    "steps": [
+      "Kog ris.",
+      "Hak tomater, løg og hvidløg til salsa.",
+      "Bland salsa med citronsaft, olie og hakket persille.",
+      "Krydr torsk med salt og peber.",
+      "Steg torsk i olie 4 minutter per side.",
+      "Server torsk med ris og tomatsalsa."
+    ]
+  },
+  {
+    "id": "fi-015",
+    "name": "Rejetacos med Avocado",
+    "cuisine": "mexicansk",
+    "cost": 130,
+    "time": 20,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["tacos", "rejer", "hurtig"],
+    "ingredients": [
+      "400 g rejer",
+      "8 stk tacosskaller",
+      "2 avocadoer",
+      "1 citron",
+      "1 tsk paprika",
+      "1 dl creme fraiche",
+      "1 stk salat",
+      "2 spsk olie"
+    ],
+    "steps": [
+      "Krydr rejer med paprika og steg i olie 2-3 minutter.",
+      "Mos avocado med citronsaft og salt.",
+      "Varm tacosskaller i ovnen.",
+      "Snit salat.",
+      "Fyl skaller med guacamole, rejer og salat.",
+      "Top med creme fraiche og server."
+    ]
+  },
+  {
+    "id": "fi-016",
+    "name": "Fiskefilet i Karry med Ris",
+    "cuisine": "asiatisk",
+    "cost": 110,
+    "time": 30,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["fisk", "karry", "asiatisk"],
+    "ingredients": [
+      "600 g fiskefilet",
+      "1 dåse kokosmælk",
+      "2 tsk karry",
+      "1 løg",
+      "2 fed hvidløg",
+      "200 g ris",
+      "1 citron",
+      "2 spsk olie"
+    ],
+    "steps": [
+      "Kog ris.",
+      "Svits hakket løg og hvidløg i olie.",
+      "Tilsæt karry og rør 1 minut.",
+      "Hæld kokosmælk i og lad simre 5 minutter.",
+      "Skær fisk i stykker og tilsæt saucen.",
+      "Lad simre 8 minutter og server over ris med citron."
+    ]
+  },
+  {
+    "id": "fi-017",
+    "name": "Norsk Laksesuppe",
+    "cuisine": "nordisk",
+    "cost": 130,
+    "time": 30,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["suppe", "laks", "nordisk"],
+    "ingredients": [
+      "500 g laksfilet",
+      "3 kartofler",
+      "2 gulerødder",
+      "1 løg",
+      "5 dl fiskebouillon",
+      "2 dl fløde",
+      "1 tsk dild",
+      "50 g smør"
+    ],
+    "steps": [
+      "Svits hakket løg i smør.",
+      "Skær kartofler og gulerødder i tern og tilsæt.",
+      "Hæld bouillon i og kog op.",
+      "Lad simre 15 minutter til grøntsager er møre.",
+      "Skær laks i tern og tilsæt med fløde.",
+      "Lad simre 5 minutter og server med dild."
+    ]
+  },
+  {
+    "id": "fi-018",
+    "name": "Makrel på Rugbrød",
+    "cuisine": "dansk",
+    "cost": 55,
+    "time": 10,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["hurtig", "frokost", "budget"],
+    "ingredients": [
+      "2 dåser makrel i tomat",
+      "8 skiver rugbrød",
+      "1 løg",
+      "1 agurk",
+      "1 citron",
+      "2 spsk creme fraiche"
+    ],
+    "steps": [
+      "Åbn makrel og dræn let.",
+      "Hak løg fint.",
+      "Skær agurk i skiver.",
+      "Rist rugbrød (valgfrit).",
+      "Fordel makrel på rugbrød.",
+      "Top med løg, agurk og creme fraiche og server med citron."
+    ]
+  },
+  {
+    "id": "fi-019",
+    "name": "Laks med Honning-Sennepsglasur",
+    "cuisine": "dansk",
+    "cost": 135,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["laks", "hurtig", "sund"],
+    "ingredients": [
+      "4 stk laksefilet",
+      "3 spsk honning",
+      "2 spsk sennep",
+      "2 fed hvidløg",
+      "1 tsk timian",
+      "500 g broccolibuketter",
+      "1 kg kartofler"
+    ],
+    "steps": [
+      "Kog kartofler og damp broccoli.",
+      "Bland honning, sennep, hvidløg og timian.",
+      "Pensl laks med glazuren.",
+      "Bag laks 15 minutter ved 200°C.",
+      "Anret laks med broccoli og kartofler.",
+      "Server med ekstra sennep."
+    ]
+  },
+  {
+    "id": "fi-020",
+    "name": "Dampet Torsk med Persillesovs",
+    "cuisine": "dansk",
+    "cost": 110,
+    "time": 30,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["torsk", "klassisk", "sund"],
+    "ingredients": [
+      "600 g torskefilet",
+      "1 bundt persille",
+      "50 g smør",
+      "4 spsk mel",
+      "5 dl mælk",
+      "1 citron",
+      "1 kg kartofler"
+    ],
+    "steps": [
+      "Kog kartofler.",
+      "Damp torsk 10-12 minutter over kogende vand.",
+      "Smelt smør, tilsæt mel og rør til en jævning.",
+      "Tilsæt mælk under omrøring til sovsen tykner.",
+      "Hak persille og rør i sovsen med citronsaft.",
+      "Server torsk med persillesovs og kartofler."
+    ]
+  }
+]
