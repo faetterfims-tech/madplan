@@ -1,4 +1,4 @@
-[
+﻿[
   {
     "id": "da-001",
     "name": "Frikadeller med kartofler og brun sovs",
@@ -52,13 +52,13 @@
       "5 dl sødmælk",
       "1 stor bundt frisk persille",
       "Salt og peber",
-      "Muskatnød"
+      "1 nip muskat"
     ],
     "steps": [
       "Kog kartoflerne i saltet vand i 20 minutter.",
       "Steg flæskeskiverne sprøde i tør pande på middel-høj varme, ca. 3-4 min per side.",
       "Smelt smør i gryde, pisk mel i og tilsæt mælk lidt ad gangen under konstant piskning.",
-      "Lad sovsen simre 5 minutter til tyk. Krydr med salt, peber og muskatnød.",
+      "Lad sovsen simre 5 minutter til tyk. Krydr med salt, peber og muskat.",
       "Hak persillen fint og rør i sovsen ved servering.",
       "Server det sprøde flæsk med kartofler og persillesovs."
     ]
@@ -105,7 +105,7 @@
       "1,5 kg svinekam med svær",
       "2 tsk salt",
       "1 tsk peber",
-      "5 laurbærblade",
+      "5 laurbær",
       "1 kg rødkål (frisk)",
       "2 æbler",
       "3 spsk ribsgelé",
@@ -117,7 +117,7 @@
     ],
     "steps": [
       "Rids svælen med 1 cm mellemrum ned til kødet. Gnid godt med salt og peber.",
-      "Placer stegen med svær opad. Læg laurbærblade i ridser. Steg ved 200°C i 1 time.",
+      "Placer stegen med svær opad. Læg laurbær i ridser. Steg ved 200°C i 1 time.",
       "Skær rødkål fint. Svits i smør 5 minutter. Tilsæt eddike, sukker og revet æble.",
       "Lad rødkålen simre under låg 45 minutter. Rør ribsgelé i til sidst.",
       "Kog kartoflerne møre. Smelt sukker til karamel i pande. Vend kartofler i til brunede.",
@@ -228,10 +228,10 @@
       "400 g hamburgerryg",
       "2 gulerødder",
       "1 porre",
-      "½ bladselleri",
+      "2 stængler selleri",
       "1 løg",
       "500 g kartofler",
-      "3 laurbærblade",
+      "3 laurbær",
       "1 tsk timian",
       "Salt og peber",
       "Sennep til servering"
@@ -425,7 +425,7 @@
   },
   {
     "id": "da-015",
-    "name": "Hønsekødssuppe med suppevisk",
+    "name": "Hønsekødssuppe med nudler",
     "cuisine": "dansk",
     "cost": 145,
     "time": 90,
@@ -435,14 +435,14 @@
     "ingredients": [
       "1 hel kylling (ca. 1,4 kg)",
       "3 gulerødder",
-      "2 persillerødder",
+      "2 persillerod",
       "1 porre",
-      "½ bladselleri",
+      "2 stængler selleri",
       "1 løg",
-      "1 bundt frisk persille",
+      "1 bundt persille",
       "100 g suppenudler",
       "10 peberkorn",
-      "3 laurbærblade",
+      "3 laurbær",
       "Salt"
     ],
     "steps": [
@@ -451,7 +451,7 @@
       "Simrer under låg ved svag varme i 60 minutter.",
       "Tag kyllingen op. Si suppen. Skær kyllingekødet i strimler.",
       "Skær de resterende gulerødder og porre fint og kog i suppen 10 minutter.",
-      "Tilsæt suppevisk og kog efter anvisning.",
+      "Tilsæt suppenudler og kog efter anvisning.",
       "Kom kyllingekød i og server med frisk hakket persille."
     ]
   },
@@ -503,7 +503,7 @@
       "3 dl oksebouillon",
       "3 spsk mel",
       "50 g smør",
-      "3 laurbærblade",
+      "3 laurbær",
       "10 peberkorn",
       "1 kg kartofler",
       "Salt og peber"
@@ -562,7 +562,7 @@
       "50 g smør",
       "2 dl fløde",
       "1 dl sødmælk",
-      "Muskatnød",
+      "1 nip muskat",
       "Salt og peber",
       "1 kg kartofler"
     ],
@@ -571,7 +571,7 @@
       "Optø grønkålen og pres vand fra. Hak den fint.",
       "Smelt smør i gryde og svits grønkålen 5 minutter.",
       "Tilsæt fløde og mælk. Simrer under låg 10 minutter.",
-      "Krydr med muskatnød, salt og peber.",
+      "Krydr med muskat, salt og peber.",
       "Steg flæskeskiverne sprøde i tør pande.",
       "Server grønlangkål med kartofler og stegt flæsk."
     ]

@@ -208,6 +208,16 @@
 </head>
 <body>
 
+<!-- COMPLETION SIGNAL -->
+<div id="done-signal" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:99999;background:rgba(0,0,0,0.7);align-items:center;justify-content:center;">
+  <div style="background:#cc0000;width:340px;height:340px;border-radius:18px;display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 0 60px rgba(255,0,0,0.8);">
+    <div style="font-size:80px;">✅</div>
+    <div style="color:#fff;font-size:32px;font-weight:900;margin-top:16px;">FÆRDIG</div>
+    <div style="color:#ffcccc;font-size:15px;margin-top:8px;text-align:center;padding:0 24px;" id="done-msg">Opgave afsluttet</div>
+    <button onclick="document.getElementById('done-signal').style.display='none'" style="margin-top:24px;padding:12px 32px;background:#fff;color:#cc0000;font-weight:700;font-size:16px;border:none;border-radius:8px;cursor:pointer;">Luk</button>
+  </div>
+</div>
+
 <!-- TOP BAR -->
 <div class="topbar">
   <div class="topbar-title">🥗 Ugentlig Madplan</div>
@@ -846,6 +856,14 @@ renderWeekGrid();
 renderFavourites();
 renderHistory();
 renderGrocery();
+
+function showDone(msg) {
+  const el = document.getElementById('done-signal');
+  if (msg) document.getElementById('done-msg').textContent = msg;
+  el.style.display = 'flex';
+}
+
+showDone('Ingredienser er rettet — alle Bilka-inkompatible navne er opdateret');
 
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('/sw.js').catch(() => {});

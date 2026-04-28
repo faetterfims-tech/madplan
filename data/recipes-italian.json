@@ -1,4 +1,4 @@
-[
+﻿[
   {
     "id": "it-001",
     "name": "Spaghetti Bolognese",
@@ -16,7 +16,7 @@
       "1 løg",
       "3 fed hvidløg",
       "2 gulerødder",
-      "2 stængler bladselleri",
+      "2 stængler selleri",
       "1,5 dl rødvin",
       "1 tsk tørret oregano",
       "1 tsk tørret basilikum",
@@ -25,7 +25,7 @@
       "Frisk parmesan til servering"
     ],
     "steps": [
-      "Hak løg, hvidløg, gulerødder og bladselleri fint.",
+      "Hak løg, hvidløg, gulerødder og selleri fint.",
       "Varm olivenolie i en stor gryde over middel varme. Svits grøntsagerne i 5 minutter.",
       "Tilsæt hakket oksekød og brun det godt. Krydr med salt og peber.",
       "Hæld rødvinen i og lad den koge ind i 2 minutter.",
@@ -56,7 +56,7 @@
       "7 dl sødmælk",
       "150 g revet mozzarella",
       "50 g revet parmesan",
-      "1 tsk muskatnød",
+      "1 tsk muskat",
       "1 tsk oregano",
       "Salt og peber",
       "Olivenolie"
@@ -65,7 +65,7 @@
       "Hak løg og hvidløg. Svits i olivenolie, tilsæt hakket kød og brun.",
       "Tilsæt tomater, tomatpuré og oregano. Simrer 20 minutter. Krydr.",
       "Smelt smør i gryde, pisk mel i. Tilsæt mælk lidt ad gangen under piskning.",
-      "Lad bechamelsauce simre 5 minutter. Krydr med muskatnød, salt og peber.",
+      "Lad bechamelsauce simre 5 minutter. Krydr med muskat, salt og peber.",
       "Forvarm ovnen til 200°C.",
       "Smør et ovnfast fad. Læg lag: bolognese, lasagneplader, bechamel. Gentag.",
       "Afslut med bechamel og drys mozzarella og parmesan over.",
@@ -93,7 +93,7 @@
     ],
     "steps": [
       "Kog spaghetti al dente i rigeligt saltet vand. Gem 2 dl pastavand.",
-      "Steg pancetta sprød i en stor pande uden olie.",
+      "Steg bacon sprød i en stor pande uden olie.",
       "Pisk æg, æggeblommer og ost sammen. Krydr med sort peber.",
       "Tag panden af varmen. Tilsæt den varme pasta og vend rundt.",
       "Hæld æggeblandingen over og vend hurtigt. Tilsæt lidt pastavand for cremet konsistens.",
@@ -111,13 +111,13 @@
     "tags": ["pizza", "vegetar", "klassiker", "weekendret"],
     "ingredients": [
       "500 g pizzamel (type 00)",
-      "7 g tørgær",
+      "7 g gær",
       "3 dl lunkent vand",
       "2 tsk salt",
       "2 spsk olivenolie",
       "1 dåse flåede tomater (400 g)",
       "250 g frisk mozzarella",
-      "Frisk basilikum",
+      "1 bundt basilikum",
       "Salt og peber",
       "Olivenolie til dryp"
     ],
@@ -211,7 +211,7 @@
       "1 dåse hakkede tomater (400 g)",
       "2 fed hvidløg",
       "200 g mozzarella",
-      "Frisk basilikum",
+      "1 bundt basilikum",
       "Olivenolie",
       "Salt og peber",
       "Mel til panering"
@@ -240,24 +240,24 @@
       "1 dåse hakkede tomater (400 g)",
       "1 dåse hvide bønner (400 g)",
       "2 gulerødder",
-      "2 stængler bladselleri",
-      "1 zucchini",
+      "2 stængler selleri",
+      "1 squash",
       "1 løg",
       "3 fed hvidløg",
       "100 g grønne bønner",
       "100 g suppenudler",
       "1,5 liter grøntsagsbouillon",
       "50 g parmesan",
-      "Frisk basilikum",
+      "1 bundt basilikum",
       "3 spsk olivenolie",
       "Salt og peber"
     ],
     "steps": [
       "Skær alle grøntsager i tern. Hak løg og hvidløg.",
       "Svits løg og hvidløg i olivenolie i stor gryde 3 minutter.",
-      "Tilsæt gulerødder og bladselleri. Svits 5 minutter.",
+      "Tilsæt gulerødder og selleri. Svits 5 minutter.",
       "Tilsæt tomater, bouillon og kryderier. Kog op.",
-      "Tilsæt zucchini og grønne bønner. Simrer 15 minutter.",
+      "Tilsæt squash og grønne bønner. Simrer 15 minutter.",
       "Tilsæt bønner og pasta. Kog til pasta er al dente.",
       "Justér smag med salt og peber. Server med parmesan og basilikum."
     ]
@@ -277,7 +277,7 @@
       "4 fed hvidløg",
       "1 løg",
       "1 tsk sukker",
-      "Frisk basilikum",
+      "1 bundt basilikum",
       "3 spsk olivenolie",
       "Salt og peber",
       "Revet parmesan til servering"
@@ -303,14 +303,14 @@
     "ingredients": [
       "4 skiver kalveskank (ca. 4 cm tykke)",
       "2 gulerødder",
-      "2 stængler bladselleri",
+      "2 stængler selleri",
       "1 løg",
       "3 fed hvidløg",
       "1 dåse hakkede tomater (400 g)",
       "2 dl hvidvin",
       "3 dl kyllingebouillon",
-      "Skal af 1 citron",
-      "Skal af 1 appelsin",
+      "1 citron",
+      "1 appelsin",
       "Frisk persille",
       "Mel til støvning",
       "3 spsk olivenolie",
@@ -337,8 +337,8 @@
     "difficulty": "let",
     "tags": ["kalvekød", "hurtig", "festret"],
     "ingredients": [
-      "600 g kalvekød (schnitzler/scalopper)",
-      "8 skiver prosciutto",
+      "600 g kalvekød",
+      "8 skiver skinke",
       "16 friske salvieblade",
       "2 dl hvidvin",
       "60 g smør",
@@ -347,10 +347,10 @@
       "Tandstikkere til fastgørelse"
     ],
     "steps": [
-      "Bank kalvescalopperne flade. Krydr let med peber (prosciuttoen er salt).",
-      "Læg 1 skive prosciutto og 2 salvieblade på hver scalop.",
+      "Bank kalvestykkerne flade. Krydr med salt og peber.",
+      "Læg 1 skive skinke og 2 salvieblade på hvert stykke.",
       "Fæst med tandstikkere. Rul evt. scalopperne let.",
-      "Steg i olie og halvdelen af smørret, prosciuttosiden nedad, 2 min.",
+      "Steg i olie og halvdelen af smørret, skinkesiden nedad, 2 min.",
       "Vend og steg 1 minut mere. Tag op og hold varm.",
       "Deglaser panden med hvidvin. Lad koge ind halvt.",
       "Rør resten af smørret i saucen. Hæld over saltimbocca. Server straks."
@@ -406,13 +406,13 @@
       "Salt og peber"
     ],
     "steps": [
-      "Skær guanciale i tern. Steg sprød i olivenolie. Tag op.",
-      "Svits hakket løg og hvidløg i fedtet fra guanciale.",
+      "Skær bacon i tern. Steg sprød i olivenolie. Tag op.",
+      "Svits hakket løg og hvidløg i fedtet fra bacon.",
       "Tilsæt chiliflager og hvidvin. Lad koge ind.",
       "Tilsæt tomater. Simrer 15 minutter. Krydr.",
       "Kog rigatoni al dente. Gem lidt pastavand.",
-      "Vend pasta og guanciale i saucen. Tilsæt pastavand efter behov.",
-      "Server med generøst revet pecorino."
+      "Vend pasta og bacon i saucen. Tilsæt pastavand efter behov.",
+      "Server med generøst revet parmesan."
     ]
   },
   {
@@ -433,7 +433,7 @@
       "2 kviste rosmarin",
       "1 liter grøntsagsbouillon",
       "4 spsk olivenolie",
-      "Parmesan",
+      "50 g revet parmesan",
       "Salt og peber"
     ],
     "steps": [
@@ -486,13 +486,13 @@
     "tags": ["brød", "vegetar", "bagt"],
     "ingredients": [
       "500 g hvedemel",
-      "7 g tørgær",
+      "7 g gær",
       "3,5 dl lunkent vand",
       "2 tsk salt",
       "6 spsk olivenolie",
-      "Flagesalt",
-      "Frisk rosmarin",
-      "Cherrytomater (valgfrit)"
+      "salt",
+      "2 kviste rosmarin",
+      "150 g cherrytomater"
     ],
     "steps": [
       "Bland mel, gær og salt. Tilsæt vand og 4 spsk olivenolie.",
@@ -514,10 +514,10 @@
     "difficulty": "let",
     "tags": ["forret", "vegetar", "hurtig", "sommer"],
     "ingredients": [
-      "1 flute eller ciabatta",
+      "1 flute",
       "4 modne tomater",
       "3 fed hvidløg",
-      "Frisk basilikum",
+      "1 bundt basilikum",
       "4 spsk olivenolie",
       "1 spsk balsamicoeddike",
       "Salt og peber"
@@ -540,22 +540,22 @@
     "difficulty": "let",
     "tags": ["pasta", "vegetar", "grøntsager", "sund", "sommer"],
     "ingredients": [
-      "400 g tagliatelle eller linguine",
-      "1 zucchini",
+      "400 g pasta",
+      "1 squash",
       "200 g asparges",
       "150 g frosne ærter",
       "200 g cherrytomater",
       "3 fed hvidløg",
       "1,5 dl fløde",
       "80 g revet parmesan",
-      "Frisk basilikum",
+      "1 bundt basilikum",
       "3 spsk olivenolie",
       "Salt og peber"
     ],
     "steps": [
-      "Skær zucchini og asparges i mundrette stykker.",
+      "Skær squash og asparges i mundrette stykker.",
       "Kog pasta al dente. Gem 1 dl pastavand.",
-      "Svits hvidløg i olie. Tilsæt zucchini og asparges 3 minutter.",
+      "Svits hvidløg i olie. Tilsæt squash og asparges 3 minutter.",
       "Tilsæt cherrytomater og ærter. Varm igennem.",
       "Tilsæt fløde og halvdelen af parmesanen. Krydr.",
       "Vend pasta i saucen. Tilsæt pastavand for konsistens.",

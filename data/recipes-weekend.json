@@ -1,7 +1,7 @@
-[
+﻿[
   {
     "id": "we-001",
-    "name": "Slow-cooked Svinekæber med Kartoffelmos",
+    "name": "Slow-cooked Svinebov med Kartoffelmos",
     "cuisine": "dansk",
     "cost": 145,
     "time": 180,
@@ -9,7 +9,7 @@
     "difficulty": "medium",
     "tags": ["weekend", "slow-cook", "svinekød"],
     "ingredients": [
-      "800 g svinekæber",
+      "800 g svinebov",
       "2 løg",
       "4 fed hvidløg",
       "3 dl rødvin",
@@ -20,12 +20,12 @@
       "100 ml fløde"
     ],
     "steps": [
-      "Brun svinekæber grundigt på alle sider i en gryde.",
+      "Brun svinebov grundigt på alle sider i en gryde.",
       "Tilsæt hakket løg, hvidløg og gulerødder og svits 5 minutter.",
       "Hæld rødvin og bouillon i og tilsæt timian.",
-      "Lad simre under låg i 2,5 time til kæber er møre.",
+      "Lad simre under låg i 2,5 time til kødet er mørt.",
       "Kog kartofler og mos med fløde og smør.",
-      "Sigt saucen og server kæber med mos og reduceret sauce."
+      "Sigt saucen og server kødet med mos og reduceret sauce."
     ]
   },
   {
@@ -140,7 +140,7 @@
   },
   {
     "id": "we-006",
-    "name": "Hummer-Pasta",
+    "name": "Rejepasta i Hvidvinssauce",
     "cuisine": "italiensk",
     "cost": 220,
     "time": 45,
@@ -148,7 +148,7 @@
     "difficulty": "medium",
     "tags": ["weekend", "luksus", "pasta"],
     "ingredients": [
-      "2 stk kogte hummerhaler",
+      "600 g rejer",
       "400 g pasta",
       "2 dl fløde",
       "2 dl hvidvin",
@@ -162,7 +162,7 @@
       "Svits hvidløg i smør.",
       "Tilsæt hvidvin og lad koge ind til halvt.",
       "Tilsæt fløde og lad simre 5 minutter.",
-      "Tilsæt hummerkød og varm igennem.",
+      "Tilsæt rejer og varm igennem.",
       "Bland med pasta og server med citronsaft og persille."
     ]
   },
@@ -237,7 +237,7 @@
       "1 dl mælk",
       "2 tsk bagepulver",
       "1 tsk vaniljesukker",
-      "1 l vaniljesovs (færdigkøbt)"
+      "1 l vaniljesovs"
     ],
     "steps": [
       "Pisk æg og sukker til det er lyst og luftigt.",
@@ -333,7 +333,7 @@
   },
   {
     "id": "we-013",
-    "name": "Kalvecuvette med Grøntsager",
+    "name": "Oksesteg med Grøntsager",
     "cuisine": "dansk",
     "cost": 200,
     "time": 90,
@@ -341,7 +341,7 @@
     "difficulty": "medium",
     "tags": ["weekend", "kalvekød", "ovnret"],
     "ingredients": [
-      "800 g kalvecuvette",
+      "800 g okseinderlår",
       "4 fed hvidløg",
       "2 gulerødder",
       "2 løg",
@@ -351,7 +351,7 @@
       "50 g smør"
     ],
     "steps": [
-      "Brun kalvecuvette på alle sider.",
+      "Brun okseinderlår på alle sider.",
       "Læg i ovnfad med grøntsager og hvidløg.",
       "Hæld bouillon i og drys timian.",
       "Bag 70 minutter ved 160°C.",
