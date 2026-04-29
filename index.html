@@ -620,15 +620,7 @@ function toggleCheck(key,el) {
 // ── AI REQUESTS ───────────────────────────────────────────
 // ── LOKAL OPSKRIFTSDATABASE ───────────────────────────────
 const RECIPE_FILES = [
-  'data/recipes-italian.json',
-  'data/recipes-danish.json',
-  'data/recipes-asian.json',
-  'data/recipes-nordic.json',
-  'data/recipes-mexican.json',
-  'data/recipes-vegetarian.json',
-  'data/recipes-quick.json',
-  'data/recipes-fish.json',
-  'data/recipes-weekend.json'
+  'data/recipes-classics.json'
 ];
 
 let recipeDb = [];
@@ -910,7 +902,7 @@ function showDone(msg) {
   el.style.display = 'flex';
 }
 
-showDone('Ingredienspriser tilføjet — se pris per vare i Chrome-pluginnet. Klik Synkroniser!');
+showDone('20 ægte opskrifter fra Valdemarsro klar — batch 1 af 5. Madplan kører nu på rigtige opskrifter!');
 
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('/sw.js').catch(() => {});
