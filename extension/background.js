@@ -268,6 +268,14 @@ const PRICE_TABLE = {
   'kokosfløde':         [22, 400, 'ml'],
   // c021-c040
   'peberkorn':          [3, 1, 'flat'],
+  // c041-c060
+  'brødskiver':         [22, 1, 'flat'],
+  'grønne bønner':      [22, 300, 'g'],
+  'basmati ris':        [28, 1000, 'g'],
+  'salvie':             [6, 1, 'flat'],
+  'soja':               [5, 1, 'flat'],
+  'svinekoteletter':    [65, 500, 'g'],
+  'oksekød':            [90, 500, 'g'],
 };
 
 // Beregn pris for én konsolideret ingrediens-streng
