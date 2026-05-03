@@ -276,6 +276,22 @@ const PRICE_TABLE = {
   'soja':               [5, 1, 'flat'],
   'svinekoteletter':    [65, 500, 'g'],
   'oksekød':            [90, 500, 'g'],
+  // c061-c100
+  'kylling':            [78, 600, 'g'],
+  'oksemørbrad':        [140, 500, 'g'],
+  'suppehøne':          [95, 1400, 'g'],
+  'kærnemælk':          [12, 500, 'ml'],
+  'æblemost':           [12, 500, 'ml'],
+  'mørk øl':            [22, 500, 'ml'],
+  'balsamico':          [6, 1, 'flat'],
+  'kalvefond':          [4, 1, 'flat'],
+  'oksefond':           [4, 1, 'flat'],
+  'portvin':            [15, 100, 'ml'],
+  'ribsgele':           [18, 1, 'flat'],
+  'five spice':         [4, 1, 'flat'],
+  'bønnespirer':        [12, 200, 'g'],
+  'mynte':              [8, 1, 'flat'],
+  'peanuts':            [25, 100, 'g'],
 };
 
 // Beregn pris for én konsolideret ingrediens-streng
