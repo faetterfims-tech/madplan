@@ -103,7 +103,7 @@ const PRICE_TABLE = {
   'spinat':             [30, 200, 'g'],
   'grønkål':            [28, 1, 'flat'],
   'spidskål':           [22, 1, 'flat'],
-  'rødkål':             [28, 1000, 'g'],
+  'rødkål':             [28, 1, 'flat'],
   'salat':              [22, 1, 'stk'],
   'porre':              [10, 1, 'stk'],
   'selleri':            [26, 1, 'stk'],
@@ -246,7 +246,6 @@ const PRICE_TABLE = {
   'rød chili':          [6, 1, 'stk'],
   'chili':              [6, 1, 'stk'],
   'rødbeder':           [22, 500, 'g'],
-  'rødkål':             [28, 1, 'flat'],
   'saltmandler':        [35, 100, 'g'],
   // c011-c020
   'grahamsmel':         [5, 1, 'flat'],
@@ -267,16 +266,8 @@ const PRICE_TABLE = {
   'mangosalsa':         [15, 1, 'flat'],
   'majsstivelse':       [4, 1, 'flat'],
   'kokosfløde':         [22, 400, 'ml'],
-  'kokosmælk':          [22, 400, 'ml'],
-  'æbler':              [5, 1, 'stk'],
-  'æble':               [5, 1, 'stk'],
-  'ærter':              [18, 400, 'g'],
-  'grønne ærter':       [18, 400, 'g'],
-  'rosmarin':           [3, 1, 'flat'],
-  'persille':           [6, 1, 'flat'],
-  'dild':               [5, 1, 'flat'],
-  'basilikum':          [8, 1, 'flat'],
-  'purløg':             [6, 1, 'flat'],
+  // c021-c040
+  'peberkorn':          [3, 1, 'flat'],
 };
 
 // Beregn pris for én konsolideret ingrediens-streng
