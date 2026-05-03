@@ -248,7 +248,11 @@ const PRICE_TABLE = {
   'rødbeder':           [22, 500, 'g'],
   'rødkål':             [28, 1, 'flat'],
   'saltmandler':        [35, 100, 'g'],
-  // c011-c015
+  // c011-c020
+  'grahamsmel':         [5, 1, 'flat'],
+  'knoldselleri':       [35, 1, 'stk'],
+  'chilipulver':        [4, 1, 'flat'],
+  'majskerner':         [16, 340, 'g'],
   'grøntsagsbouillon':  [4, 1, 'flat'],
   'hønsebouillon':      [4, 1, 'flat'],
   'oksebouillon':       [4, 1, 'flat'],
