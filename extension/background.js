@@ -97,6 +97,7 @@ const PRICE_TABLE = {
   'aubergine':          [22, 1, 'stk'],
   'broccoli':           [28, 1, 'stk'],
   'blomkål':            [32, 1, 'stk'],
+  'champignon':         [40, 500, 'g'],
   'champignoner':       [40, 500, 'g'],
   'blandede svampe':    [40, 500, 'g'],
   'tørrede svampe':     [42, 25, 'g'],
@@ -343,6 +344,8 @@ function estimatePrice(ingString) {
     else if (unit === 'dl') baseAmount = amount * 100;
     else if (unit === 'cl') baseAmount = amount * 10;
     else if (unit !== 'ml') return priceKr;
+  } else if (perUnit === 'stk') {
+    if (['g', 'kg', 'ml', 'l', 'liter', 'dl', 'cl'].includes(unit)) return priceKr;
   }
   // stk: brug amount direkte
 

@@ -1,342 +1,382 @@
-[
-  {
-    "id": "c061",
-    "name": "Farsbrød med brun sovs og kartofler",
-    "cuisine": "dansk",
-    "cost": 90,
-    "time": 70,
-    "portions": 6,
-    "difficulty": "medium",
-    "tags": ["hverdagsret", "søndagsmad", "klassiker"],
-    "ingredients": [
-      "800 g hakket svinekød",
-      "2 stk løg",
-      "2 fed hvidløg",
-      "2 dl mælk",
-      "1 dl piskefløde",
-      "2 stk æg",
-      "20 g havregryn",
-      "2 tsk tørret timian",
-      "4 spsk rasp",
-      "12 skiver bacon",
-      "400 g kartofler",
-      "250 g gulerødder",
-      "2 dl grøntsagsbouillon",
-      "1 dl piskefløde",
-      "1 tsk worcestershire sauce",
-      "2 spsk hvedemel",
-      "1 nip salt",
-      "1 nip peber"
-    ],
-    "steps": [
-      "Kom hakket svinekød, finthakkede løg og hvidløg, mælk, fløde, æg, havregryn, timian, salt og peber i en stor skål. Pisk det hele godt sammen med en håndmikser i ca. 3 minutter, så farsen bliver luftig og ensartet.",
-      "Form farsen til et aflangt brød midt i et stort ovnfast fad. Drys rasp over toppen og læg baconskiverne hen over farsbrødet som et dækkende lag. Fordel kartofler og gulerødder i grove tern langs siderne.",
-      "Bag farsbrødet i forvarmet ovn ved 180 grader varmluft i 40-45 minutter, til en stegetermometer viser ca. 75 grader i midten. Vend rodfrugterne et par gange undervejs.",
-      "Tag farsbrødet ud og hæld stegeskyen i en lille gryde. Pisk hvedemel ud i lidt koldt vand og rør jævningen i stegeskyen. Tilsæt grøntsagsbouillon, piskefløde og worcestershire sauce og kog sovsen igennem i 3 minutter under omrøring. Smag til med salt og peber.",
-      "Skær farsbrødet i tykke skiver og server med de ovnbagte rodfrugter og den brune sovs ved siden af."
-    ]
-  },
-  {
-    "id": "c062",
-    "name": "Lakseburger med remoulade",
-    "cuisine": "dansk",
-    "cost": 95,
-    "time": 40,
-    "portions": 4,
-    "difficulty": "medium",
-    "tags": ["hverdagsret", "burger", "fisk"],
-    "ingredients": [
-      "500 g laksefilet",
-      "2 stk æg",
-      "2 stk forårsløg",
-      "20 g sesamfrø",
-      "100 g rasp",
-      "4 stk burgerboller",
-      "1 stk avocado",
-      "80 g rucola",
-      "2 spsk mayonnaise",
-      "1 dl creme fraiche",
-      "2 spsk syltede agurker",
-      "1 tsk karry",
-      "1 spsk olivenolie",
-      "1 nip salt",
-      "1 nip peber"
-    ],
-    "steps": [
-      "Hak laksen fint med en skarp kniv. Bland laksefars med æg, finthakkede forårsløg, sesamfrø og rasp. Krydr med salt og peber og form til 4 jævne bøffer.",
-      "Varm olien op på en pande ved middelvarme. Steg laksebøfferne 3 minutter på hver side, til de er gyldne udenpå og netop gennemstegte i midten.",
-      "Rør remoulade: bland mayonnaise, cremefraiche, hakkede syltede agurker og karry. Smag til med salt og peber.",
-      "Rist burgerbollerne let. Smør bund og top med remoulade, læg rucola nederst, derefter laksebøffen og skiver af avocado. Server straks."
-    ]
-  },
-  {
-    "id": "c063",
-    "name": "Linsesuppe med grøntsager og bacon",
-    "cuisine": "dansk",
-    "cost": 65,
-    "time": 50,
-    "portions": 4,
-    "difficulty": "let",
-    "tags": ["hverdagsret", "suppe", "budget"],
-    "ingredients": [
-      "75 g bacon",
-      "2 stk løg",
-      "3 fed hvidløg",
-      "2 stk bladselleri",
-      "100 g squash",
-      "3 spsk tomatpuré",
-      "400 g hakkede tomater",
-      "1 tsk stødt spidskommen",
-      "1 tsk stødt koriander",
-      "1 tsk gurkemeje",
-      "1 tsk røget paprika",
-      "1 tsk ingefær",
-      "1 liter grøntsagsbouillon",
-      "400 g kikærter",
-      "75 g røde linser",
-      "2 spsk olivenolie",
-      "1 nip salt",
-      "1 nip peber"
-    ],
-    "steps": [
-      "Skær baconet i tern og steg det sprødt i en stor gryde. Tag baconet op og sæt til side. Rist spidskommen og koriander i det tilbageværende fedt i 30 sekunder, tilsæt olivenolie, løg og hvidløg og sauter til løgene er bløde.",
-      "Tilsæt bladselleri i tern, grovrevet squash, tomatpuré, hakkede tomater, gurkemeje, ingefær og røget paprika og rør det godt sammen. Hæld grøntsagsbouillonen i og tilsæt drænede kikærter samt de røde linser.",
-      "Bring suppen i kog, læg låg på og lad den simre ved svag varme i 25 minutter, til linserne er møre og suppen er cremet. Rør jævnligt undervejs.",
-      "Smag til med salt og peber. Server varm med det sprøde bacon drysset over og godt brød til."
-    ]
-  },
-  {
-    "id": "c064",
-    "name": "Ovnkylling i flødesauce",
-    "cuisine": "dansk",
-    "cost": 100,
-    "time": 60,
-    "portions": 4,
-    "difficulty": "medium",
-    "tags": ["hverdagsret", "kylling", "ovnret"],
-    "ingredients": [
-      "600 g kyllingefilet",
-      "600 g kartofler",
-      "1 stk blomkål",
-      "100 g bacon",
-      "250 g champignoner",
-      "2 stk porre",
-      "1 stk løg",
-      "2 fed hvidløg",
-      "2 spsk hvedemel",
-      "1 dl hvidvin",
-      "1 dl grøntsagsbouillon",
-      "3 dl piskefløde",
-      "1 tsk tørret timian",
-      "1 spsk olivenolie",
-      "1 nip salt",
-      "1 nip peber"
-    ],
-    "steps": [
-      "Skær kartoflerne i tern og kog dem i letsaltet vand i 6 minutter. Tilsæt blomkålsbuketter og kog 2 minutter mere, hæld vandet fra. Steg baconet sprødt på en pande, tag det op og hak det groft. Rist champignonerne ved høj varme til gyldne.",
-      "Vend kyllingefileterne i mel, salt og peber og brun dem hurtigt på alle sider på panden. Smør et stort ovnfast fad og fordel de forkogte kartofler og blomkål heri. Læg kyllingen oven på grøntsagerne.",
-      "Fordel løg, hvidløg, champignon, bacon og porreskiver i fadet rundt om kyllingen. Hæld hvidvin, bouillon og piskefløde over det hele. Drys timian over og krydr med salt og peber.",
-      "Bag retten i ovnen ved 200 grader i ca. 30 minutter, til kyllingen er gennemstegt og saucen er cremet. Server direkte fra fadet."
-    ]
-  },
-  {
-    "id": "c065",
-    "name": "One pot pasta med kylling og bacon",
-    "cuisine": "italiensk",
-    "cost": 85,
-    "time": 30,
-    "portions": 4,
-    "difficulty": "let",
-    "tags": ["hverdagsret", "pasta", "hurtigret"],
-    "ingredients": [
-      "400 g penne",
-      "2 stk kyllingebryst",
-      "75 g bacon",
-      "2 stk løg",
-      "3 fed hvidløg",
-      "100 g cherrytomater",
-      "1 stk squash",
-      "2 tsk tørret timian",
-      "1 tsk tørret oregano",
-      "1 liter grøntsagsbouillon",
-      "1 dl piskefløde",
-      "50 g parmesan",
-      "1 nip salt",
-      "1 nip peber"
-    ],
-    "steps": [
-      "Skær kyllingebrysterne i strimler og baconet i tern. Bring grøntsagsbouillonen i kog i en stor gryde og kom kyllingestykkerne i. Skru ned for varmen og lad kyllingen simre i 8 minutter.",
-      "Tilsæt bacon, pasta, finthakkede løg og hvidløg, cherrytomater i halve, grovrevet squash, timian og oregano. Rør godt rundt og bring det i kog igen.",
-      "Læg låg på gryden og lad retten simre ved svag varme i 10-12 minutter, til pastaen er al dente. Rør ind imellem.",
-      "Rør fløden i, smag til med salt og peber og server straks med friskrevet parmesan drysset over."
-    ]
-  },
-  {
-    "id": "c066",
-    "name": "Svinekoteletter med kartoffelsalat",
-    "cuisine": "dansk",
-    "cost": 80,
-    "time": 50,
-    "portions": 4,
-    "difficulty": "let",
-    "tags": ["hverdagsret", "klassiker", "svinekød"],
-    "ingredients": [
-      "4 stk svinekoteletter",
-      "1 kg kartofler",
-      "2 dl creme fraiche",
-      "2 spsk mayonnaise",
-      "2 tsk dijonsennep",
-      "1 tsk sukker",
-      "1 bundt purløg",
-      "250 g champignoner",
-      "1 stk løg",
-      "1 spsk smør",
-      "1 spsk olivenolie",
-      "1 nip salt",
-      "1 nip peber"
-    ],
-    "steps": [
-      "Kog kartoflerne med skræl i letsaltet vand til de er møre. Hæld vandet fra og lad dem køle. Pil skrællen af og skær dem i tern.",
-      "Rør dressingen: bland creme fraiche, mayonnaise, dijonsennep, sukker, salt og peber. Vend de kolde kartoffeltern i dressingen og drys fintklippet purløg over.",
-      "Dup koteletterne tørre og krydr med salt og peber. Varm smør og olie op på en pande ved middelvarme og brun koteletterne 3-4 minutter på hver side, til de er gyldne og gennemstegte. Lad dem hvile 3 minutter.",
-      "Steg champignoner og løgskiver på samme pande ved høj varme til gyldne. Server koteletterne med champignon og løg ovenpå og kartoffelsalaten ved siden af."
-    ]
-  },
-  {
-    "id": "c067",
-    "name": "Fiskefrikadeller med stuvet spinat",
-    "cuisine": "dansk",
-    "cost": 90,
-    "time": 55,
-    "portions": 4,
-    "difficulty": "medium",
-    "tags": ["hverdagsret", "fisk", "klassiker"],
-    "ingredients": [
-      "300 g torskefilet",
-      "300 g laksefilet",
-      "1 stk rødløg",
-      "1 stk squash",
-      "2 stk æg",
-      "1 bundt frisk dild",
-      "3 spsk hvedemel",
-      "1 dl piskefløde",
-      "1 spsk smør",
-      "1 spsk olivenolie",
-      "400 g spinat",
-      "20 g smør",
-      "2 spsk hvedemel",
-      "2 dl mælk",
-      "1 dl piskefløde",
-      "1 nip muskatnød",
-      "1 nip salt",
-      "1 nip peber"
-    ],
-    "steps": [
-      "Hak rødløg og squash meget fint. Blend torsk og laks kort til en grov fars. Bland fiskefars med løg, squash, æg, klippet dild, hvedemel og fløde. Krydr med salt og peber og stil farsen i køleskabet i 30 minutter.",
-      "Form fiskefrikadeller med to skeer og steg dem i smør og olie på en pande ved middelvarme — 3-4 minutter på hver side til de er gyldne og gennemstegte. Hold dem varme.",
-      "Smelt smør til stuvningen i en gryde, pisk hvedemel i og tilsæt mælk og fløde lidt ad gangen under konstant piskning. Kog saucen igennem i 3 minutter.",
-      "Tilsæt spinaten i saucen og rør til den falder sammen. Smag til med muskatnød, salt og peber. Server fiskefrikadellerne med den cremede stuvede spinat."
-    ]
-  },
-  {
-    "id": "c068",
-    "name": "Kyllingesalat med avocado og bacon",
-    "cuisine": "amerikansk",
-    "cost": 95,
-    "time": 35,
-    "portions": 4,
-    "difficulty": "let",
-    "tags": ["hverdagsret", "salat", "kylling"],
-    "ingredients": [
-      "2 stk kyllingebryst",
-      "1 tsk røget paprika",
-      "150 g bacon",
-      "4 stk æg",
-      "200 g cherrytomater",
-      "1 stk salat",
-      "2 stk avocado",
-      "1 dl olivenolie",
-      "3 spsk balsamicoeddike",
-      "2 tsk dijonsennep",
-      "1 tsk honning",
-      "1 bundt purløg",
-      "1 nip salt",
-      "1 nip peber"
-    ],
-    "steps": [
-      "Krydr kyllingebrysterne med salt, peber og røget paprika. Bag dem på en bageplade ved 225 grader i ca. 20 minutter til gennemstegte. Lad hvile og skær i skiver.",
-      "Kog æggene i 8 minutter, køl dem og skær i kvarte. Steg baconet sprødt og hak det groft.",
-      "Pisk vinaigretten: olivenolie, balsamicoeddike, dijonsennep og honning. Smag til med salt og peber.",
-      "Anret grofthakket salat på et fad. Fordel kyllingeskiver, æg i kvarte, halverede cherrytomater, avocadotern og sprødt bacon over. Dryp vinaigretten over og drys med fintklippet purløg."
-    ]
-  },
-  {
-    "id": "c069",
-    "name": "Pølseret med ris og grøntsager",
-    "cuisine": "dansk",
-    "cost": 60,
-    "time": 35,
-    "portions": 4,
-    "difficulty": "let",
-    "tags": ["hverdagsret", "budget", "børnevenlig"],
-    "ingredients": [
-      "6 stk wienerpølser",
-      "2 stk løg",
-      "1 fed hvidløg",
-      "1 tsk sød paprika",
-      "3 spsk tomatpuré",
-      "2 spsk ketchup",
-      "1 nip chiliflager",
-      "400 g kartofler",
-      "2 dl mælk",
-      "1 dl piskefløde",
-      "1 tsk eddike",
-      "3 dl basmatiris",
-      "1 spsk olivenolie",
-      "1 bundt purløg",
-      "1 nip salt",
-      "1 nip peber"
-    ],
-    "steps": [
-      "Kog risene efter anvisning på pakken. Skær pølserne i skiver og kartoflerne i tern. Kog kartoflerne møre i letsaltet vand og hæld vandet fra.",
-      "Sauter finthakkede løg og hvidløg i olie ved middelvarme til løgene er bløde. Tilsæt pølseskiver og paprika og rør rundt i et par minutter.",
-      "Tilsæt tomatpuré, ketchup og chiliflager. Kom de kogte kartofler og mælk i og lad det simre i 3-4 minutter.",
-      "Rør fløden i og smag til med eddike, salt og peber. Server pølseretten over ris med fintklippet purløg drysset over."
-    ]
-  },
-  {
-    "id": "c070",
-    "name": "Oksestrimler i wok med nudler",
-    "cuisine": "asiatisk",
-    "cost": 110,
-    "time": 30,
-    "portions": 4,
-    "difficulty": "let",
-    "tags": ["hverdagsret", "wok", "hurtigret"],
-    "ingredients": [
-      "400 g oksekød",
-      "1 spsk sojasauce",
-      "1 spsk sukker",
-      "1 spsk fishsauce",
-      "4 fed hvidløg",
-      "1 spsk ingefær",
-      "1 spsk sesamfrø",
-      "1 spsk sesamolie",
-      "200 g nudler",
-      "200 g broccoli",
-      "2 stk gulerødder",
-      "300 g spidskål",
-      "1 stk lime",
-      "1 stk rød peberfrugt",
-      "20 g saltede peanuts",
-      "3 stk forårsløg",
-      "1 nip salt"
-    ],
-    "steps": [
-      "Skær oksekødet i tynde strimler på tværs af fibrene. Rør marinade af sojasauce, sukker, fishsauce, finthakket hvidløg, revet ingefær og sesamfrø. Vend marinaden ind i kødstrimlerne.",
-      "Kog nudlerne efter anvisning på pakken, hæld dem fra og sæt til side. Rør dressing af sesamolie, limesaft og limeskal, fishsauce og sukker.",
-      "Varm en wok ved meget høj varme. Lynsteg oksekødstrimlerne i 1-2 minutter til de netop er gennemstegte. Tag dem ud og sæt til side.",
-      "Steg broccoli i buketter, fintstrimlet gulerod, peberfrugt og spidskål i den varme wok i ét minut, så de bevarer bid. Kom nudlerne i og vend det hele. Hæld dressingen over og anret med oksekødet. Drys med hakkede peanuts og fintsnittede forårsløg."
-    ]
-  }
+﻿[
+    {
+        "id":  "c061",
+        "name":  "Farsbrød med brun sovs og kartofler",
+        "cuisine":  "dansk",
+        "cost":  155,
+        "time":  70,
+        "portions":  6,
+        "difficulty":  "medium",
+        "tags":  [
+                     "hverdagsret",
+                     "søndagsmad",
+                     "klassiker"
+                 ],
+        "ingredients":  [
+                            "800 g hakket svinekød",
+                            "2 stk løg",
+                            "2 fed hvidløg",
+                            "2 dl mælk",
+                            "1 dl piskefløde",
+                            "2 stk æg",
+                            "20 g havregryn",
+                            "2 tsk tørret timian",
+                            "4 spsk rasp",
+                            "12 skiver bacon",
+                            "400 g kartofler",
+                            "250 g gulerødder",
+                            "2 dl grøntsagsbouillon",
+                            "1 dl piskefløde",
+                            "1 tsk worcestershire sauce",
+                            "2 spsk hvedemel",
+                            "1 nip salt",
+                            "1 nip peber"
+                        ],
+        "steps":  [
+                      "Kom hakket svinekød, finthakkede løg og hvidløg, mælk, fløde, æg, havregryn, timian, salt og peber i en stor skål. Pisk det hele godt sammen med en håndmikser i ca. 3 minutter, så farsen bliver luftig og ensartet.",
+                      "Form farsen til et aflangt brød midt i et stort ovnfast fad. Drys rasp over toppen og læg baconskiverne hen over farsbrødet som et dækkende lag. Fordel kartofler og gulerødder i grove tern langs siderne.",
+                      "Bag farsbrødet i forvarmet ovn ved 180 grader varmluft i 40-45 minutter, til en stegetermometer viser ca. 75 grader i midten. Vend rodfrugterne et par gange undervejs.",
+                      "Tag farsbrødet ud og hæld stegeskyen i en lille gryde. Pisk hvedemel ud i lidt koldt vand og rør jævningen i stegeskyen. Tilsæt grøntsagsbouillon, piskefløde og worcestershire sauce og kog sovsen igennem i 3 minutter under omrøring. Smag til med salt og peber.",
+                      "Skær farsbrødet i tykke skiver og server med de ovnbagte rodfrugter og den brune sovs ved siden af."
+                  ]
+    },
+    {
+        "id":  "c062",
+        "name":  "Lakseburger med remoulade",
+        "cuisine":  "dansk",
+        "cost":  160,
+        "time":  40,
+        "portions":  4,
+        "difficulty":  "medium",
+        "tags":  [
+                     "hverdagsret",
+                     "burger",
+                     "fisk"
+                 ],
+        "ingredients":  [
+                            "500 g laksefilet",
+                            "2 stk æg",
+                            "2 stk forårsløg",
+                            "20 g sesamfrø",
+                            "100 g rasp",
+                            "4 stk burgerboller",
+                            "1 stk avocado",
+                            "80 g rucola",
+                            "2 spsk mayonnaise",
+                            "1 dl creme fraiche",
+                            "2 spsk syltede agurker",
+                            "1 tsk karry",
+                            "1 spsk olivenolie",
+                            "1 nip salt",
+                            "1 nip peber"
+                        ],
+        "steps":  [
+                      "Hak laksen fint med en skarp kniv. Bland laksefars med æg, finthakkede forårsløg, sesamfrø og rasp. Krydr med salt og peber og form til 4 jævne bøffer.",
+                      "Varm olien op på en pande ved middelvarme. Steg laksebøfferne 3 minutter på hver side, til de er gyldne udenpå og netop gennemstegte i midten.",
+                      "Rør remoulade: bland mayonnaise, cremefraiche, hakkede syltede agurker og karry. Smag til med salt og peber.",
+                      "Rist burgerbollerne let. Smør bund og top med remoulade, læg rucola nederst, derefter laksebøffen og skiver af avocado. Server straks."
+                  ]
+    },
+    {
+        "id":  "c063",
+        "name":  "Linsesuppe med grøntsager og bacon",
+        "cuisine":  "dansk",
+        "cost":  110,
+        "time":  50,
+        "portions":  4,
+        "difficulty":  "let",
+        "tags":  [
+                     "hverdagsret",
+                     "suppe",
+                     "budget"
+                 ],
+        "ingredients":  [
+                            "75 g bacon",
+                            "2 stk løg",
+                            "3 fed hvidløg",
+                            "2 stk bladselleri",
+                            "100 g squash",
+                            "3 spsk tomatpuré",
+                            "400 g hakkede tomater",
+                            "1 tsk stødt spidskommen",
+                            "1 tsk stødt koriander",
+                            "1 tsk gurkemeje",
+                            "1 tsk røget paprika",
+                            "1 tsk ingefær",
+                            "1 liter grøntsagsbouillon",
+                            "400 g kikærter",
+                            "75 g røde linser",
+                            "2 spsk olivenolie",
+                            "1 nip salt",
+                            "1 nip peber"
+                        ],
+        "steps":  [
+                      "Skær baconet i tern og steg det sprødt i en stor gryde. Tag baconet op og sæt til side. Rist spidskommen og koriander i det tilbageværende fedt i 30 sekunder, tilsæt olivenolie, løg og hvidløg og sauter til løgene er bløde.",
+                      "Tilsæt bladselleri i tern, grovrevet squash, tomatpuré, hakkede tomater, gurkemeje, ingefær og røget paprika og rør det godt sammen. Hæld grøntsagsbouillonen i og tilsæt drænede kikærter samt de røde linser.",
+                      "Bring suppen i kog, læg låg på og lad den simre ved svag varme i 25 minutter, til linserne er møre og suppen er cremet. Rør jævnligt undervejs.",
+                      "Smag til med salt og peber. Server varm med det sprøde bacon drysset over og godt brød til."
+                  ]
+    },
+    {
+        "id":  "c064",
+        "name":  "Ovnkylling i flødesauce",
+        "cuisine":  "dansk",
+        "cost":  170,
+        "time":  60,
+        "portions":  4,
+        "difficulty":  "medium",
+        "tags":  [
+                     "hverdagsret",
+                     "kylling",
+                     "ovnret"
+                 ],
+        "ingredients":  [
+                            "600 g kyllingefilet",
+                            "600 g kartofler",
+                            "1 stk blomkål",
+                            "100 g bacon",
+                            "250 g champignoner",
+                            "2 stk porre",
+                            "1 stk løg",
+                            "2 fed hvidløg",
+                            "2 spsk hvedemel",
+                            "1 dl hvidvin",
+                            "1 dl grøntsagsbouillon",
+                            "3 dl piskefløde",
+                            "1 tsk tørret timian",
+                            "1 spsk olivenolie",
+                            "1 nip salt",
+                            "1 nip peber"
+                        ],
+        "steps":  [
+                      "Skær kartoflerne i tern og kog dem i letsaltet vand i 6 minutter. Tilsæt blomkålsbuketter og kog 2 minutter mere, hæld vandet fra. Steg baconet sprødt på en pande, tag det op og hak det groft. Rist champignonerne ved høj varme til gyldne.",
+                      "Vend kyllingefileterne i mel, salt og peber og brun dem hurtigt på alle sider på panden. Smør et stort ovnfast fad og fordel de forkogte kartofler og blomkål heri. Læg kyllingen oven på grøntsagerne.",
+                      "Fordel løg, hvidløg, champignon, bacon og porreskiver i fadet rundt om kyllingen. Hæld hvidvin, bouillon og piskefløde over det hele. Drys timian over og krydr med salt og peber.",
+                      "Bag retten i ovnen ved 200 grader i ca. 30 minutter, til kyllingen er gennemstegt og saucen er cremet. Server direkte fra fadet."
+                  ]
+    },
+    {
+        "id":  "c065",
+        "name":  "One pot pasta med kylling og bacon",
+        "cuisine":  "italiensk",
+        "cost":  145,
+        "time":  30,
+        "portions":  4,
+        "difficulty":  "let",
+        "tags":  [
+                     "hverdagsret",
+                     "pasta",
+                     "hurtigret"
+                 ],
+        "ingredients":  [
+                            "400 g penne",
+                            "2 stk kyllingebryst",
+                            "75 g bacon",
+                            "2 stk løg",
+                            "3 fed hvidløg",
+                            "100 g cherrytomater",
+                            "1 stk squash",
+                            "2 tsk tørret timian",
+                            "1 tsk tørret oregano",
+                            "1 liter grøntsagsbouillon",
+                            "1 dl piskefløde",
+                            "50 g parmesan",
+                            "1 nip salt",
+                            "1 nip peber"
+                        ],
+        "steps":  [
+                      "Skær kyllingebrysterne i strimler og baconet i tern. Bring grøntsagsbouillonen i kog i en stor gryde og kom kyllingestykkerne i. Skru ned for varmen og lad kyllingen simre i 8 minutter.",
+                      "Tilsæt bacon, pasta, finthakkede løg og hvidløg, cherrytomater i halve, grovrevet squash, timian og oregano. Rør godt rundt og bring det i kog igen.",
+                      "Læg låg på gryden og lad retten simre ved svag varme i 10-12 minutter, til pastaen er al dente. Rør ind imellem.",
+                      "Rør fløden i, smag til med salt og peber og server straks med friskrevet parmesan drysset over."
+                  ]
+    },
+    {
+        "id":  "c066",
+        "name":  "Svinekoteletter med kartoffelsalat",
+        "cuisine":  "dansk",
+        "cost":  135,
+        "time":  50,
+        "portions":  4,
+        "difficulty":  "let",
+        "tags":  [
+                     "hverdagsret",
+                     "klassiker",
+                     "svinekød"
+                 ],
+        "ingredients":  [
+                            "4 stk svinekoteletter",
+                            "1 kg kartofler",
+                            "2 dl creme fraiche",
+                            "2 spsk mayonnaise",
+                            "2 tsk dijonsennep",
+                            "1 tsk sukker",
+                            "1 bundt purløg",
+                            "250 g champignoner",
+                            "1 stk løg",
+                            "1 spsk smør",
+                            "1 spsk olivenolie",
+                            "1 nip salt",
+                            "1 nip peber"
+                        ],
+        "steps":  [
+                      "Kog kartoflerne med skræl i letsaltet vand til de er møre. Hæld vandet fra og lad dem køle. Pil skrællen af og skær dem i tern.",
+                      "Rør dressingen: bland creme fraiche, mayonnaise, dijonsennep, sukker, salt og peber. Vend de kolde kartoffeltern i dressingen og drys fintklippet purløg over.",
+                      "Dup koteletterne tørre og krydr med salt og peber. Varm smør og olie op på en pande ved middelvarme og brun koteletterne 3-4 minutter på hver side, til de er gyldne og gennemstegte. Lad dem hvile 3 minutter.",
+                      "Steg champignoner og løgskiver på samme pande ved høj varme til gyldne. Server koteletterne med champignon og løg ovenpå og kartoffelsalaten ved siden af."
+                  ]
+    },
+    {
+        "id":  "c067",
+        "name":  "Fiskefrikadeller med stuvet spinat",
+        "cuisine":  "dansk",
+        "cost":  155,
+        "time":  55,
+        "portions":  4,
+        "difficulty":  "medium",
+        "tags":  [
+                     "hverdagsret",
+                     "fisk",
+                     "klassiker"
+                 ],
+        "ingredients":  [
+                            "300 g torskefilet",
+                            "300 g laksefilet",
+                            "1 stk rødløg",
+                            "1 stk squash",
+                            "2 stk æg",
+                            "1 bundt frisk dild",
+                            "3 spsk hvedemel",
+                            "1 dl piskefløde",
+                            "1 spsk smør",
+                            "1 spsk olivenolie",
+                            "400 g spinat",
+                            "20 g smør",
+                            "2 spsk hvedemel",
+                            "2 dl mælk",
+                            "1 dl piskefløde",
+                            "1 nip muskatnød",
+                            "1 nip salt",
+                            "1 nip peber"
+                        ],
+        "steps":  [
+                      "Hak rødløg og squash meget fint. Blend torsk og laks kort til en grov fars. Bland fiskefars med løg, squash, æg, klippet dild, hvedemel og fløde. Krydr med salt og peber og stil farsen i køleskabet i 30 minutter.",
+                      "Form fiskefrikadeller med to skeer og steg dem i smør og olie på en pande ved middelvarme — 3-4 minutter på hver side til de er gyldne og gennemstegte. Hold dem varme.",
+                      "Smelt smør til stuvningen i en gryde, pisk hvedemel i og tilsæt mælk og fløde lidt ad gangen under konstant piskning. Kog saucen igennem i 3 minutter.",
+                      "Tilsæt spinaten i saucen og rør til den falder sammen. Smag til med muskatnød, salt og peber. Server fiskefrikadellerne med den cremede stuvede spinat."
+                  ]
+    },
+    {
+        "id":  "c068",
+        "name":  "Kyllingesalat med avocado og bacon",
+        "cuisine":  "amerikansk",
+        "cost":  160,
+        "time":  35,
+        "portions":  4,
+        "difficulty":  "let",
+        "tags":  [
+                     "hverdagsret",
+                     "salat",
+                     "kylling"
+                 ],
+        "ingredients":  [
+                            "2 stk kyllingebryst",
+                            "1 tsk røget paprika",
+                            "150 g bacon",
+                            "4 stk æg",
+                            "200 g cherrytomater",
+                            "1 stk salat",
+                            "2 stk avocado",
+                            "1 dl olivenolie",
+                            "3 spsk balsamicoeddike",
+                            "2 tsk dijonsennep",
+                            "1 tsk honning",
+                            "1 bundt purløg",
+                            "1 nip salt",
+                            "1 nip peber"
+                        ],
+        "steps":  [
+                      "Krydr kyllingebrysterne med salt, peber og røget paprika. Bag dem på en bageplade ved 225 grader i ca. 20 minutter til gennemstegte. Lad hvile og skær i skiver.",
+                      "Kog æggene i 8 minutter, køl dem og skær i kvarte. Steg baconet sprødt og hak det groft.",
+                      "Pisk vinaigretten: olivenolie, balsamicoeddike, dijonsennep og honning. Smag til med salt og peber.",
+                      "Anret grofthakket salat på et fad. Fordel kyllingeskiver, æg i kvarte, halverede cherrytomater, avocadotern og sprødt bacon over. Dryp vinaigretten over og drys med fintklippet purløg."
+                  ]
+    },
+    {
+        "id":  "c069",
+        "name":  "Pølseret med ris og grøntsager",
+        "cuisine":  "dansk",
+        "cost":  100,
+        "time":  35,
+        "portions":  4,
+        "difficulty":  "let",
+        "tags":  [
+                     "hverdagsret",
+                     "budget",
+                     "børnevenlig"
+                 ],
+        "ingredients":  [
+                            "6 stk wienerpølser",
+                            "2 stk løg",
+                            "1 fed hvidløg",
+                            "1 tsk sød paprika",
+                            "3 spsk tomatpuré",
+                            "2 spsk ketchup",
+                            "1 nip chiliflager",
+                            "400 g kartofler",
+                            "2 dl mælk",
+                            "1 dl piskefløde",
+                            "1 tsk eddike",
+                            "3 dl basmatiris",
+                            "1 spsk olivenolie",
+                            "1 bundt purløg",
+                            "1 nip salt",
+                            "1 nip peber"
+                        ],
+        "steps":  [
+                      "Kog risene efter anvisning på pakken. Skær pølserne i skiver og kartoflerne i tern. Kog kartoflerne møre i letsaltet vand og hæld vandet fra.",
+                      "Sauter finthakkede løg og hvidløg i olie ved middelvarme til løgene er bløde. Tilsæt pølseskiver og paprika og rør rundt i et par minutter.",
+                      "Tilsæt tomatpuré, ketchup og chiliflager. Kom de kogte kartofler og mælk i og lad det simre i 3-4 minutter.",
+                      "Rør fløden i og smag til med eddike, salt og peber. Server pølseretten over ris med fintklippet purløg drysset over."
+                  ]
+    },
+    {
+        "id":  "c070",
+        "name":  "Oksestrimler i wok med nudler",
+        "cuisine":  "asiatisk",
+        "cost":  185,
+        "time":  30,
+        "portions":  4,
+        "difficulty":  "let",
+        "tags":  [
+                     "hverdagsret",
+                     "wok",
+                     "hurtigret"
+                 ],
+        "ingredients":  [
+                            "400 g oksekød",
+                            "1 spsk sojasauce",
+                            "1 spsk sukker",
+                            "1 spsk fishsauce",
+                            "4 fed hvidløg",
+                            "1 spsk ingefær",
+                            "1 spsk sesamfrø",
+                            "1 spsk sesamolie",
+                            "200 g nudler",
+                            "200 g broccoli",
+                            "2 stk gulerødder",
+                            "300 g spidskål",
+                            "1 stk lime",
+                            "1 stk rød peberfrugt",
+                            "20 g saltede peanuts",
+                            "3 stk forårsløg",
+                            "1 nip salt"
+                        ],
+        "steps":  [
+                      "Skær oksekødet i tynde strimler på tværs af fibrene. Rør marinade af sojasauce, sukker, fishsauce, finthakket hvidløg, revet ingefær og sesamfrø. Vend marinaden ind i kødstrimlerne.",
+                      "Kog nudlerne efter anvisning på pakken, hæld dem fra og sæt til side. Rør dressing af sesamolie, limesaft og limeskal, fishsauce og sukker.",
+                      "Varm en wok ved meget høj varme. Lynsteg oksekødstrimlerne i 1-2 minutter til de netop er gennemstegte. Tag dem ud og sæt til side.",
+                      "Steg broccoli i buketter, fintstrimlet gulerod, peberfrugt og spidskål i den varme wok i ét minut, så de bevarer bid. Kom nudlerne i og vend det hele. Hæld dressingen over og anret med oksekødet. Drys med hakkede peanuts og fintsnittede forårsløg."
+                  ]
+    }
 ]

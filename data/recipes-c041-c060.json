@@ -1,656 +1,737 @@
-[
-  {
-    "id": "c041",
-    "name": "Cremet tomatsuppe med ostebrød",
-    "cuisine": "dansk",
-    "cost": 75,
-    "time": 45,
-    "portions": 4,
-    "difficulty": "let",
-    "tags": ["suppe", "hverdagsret", "vegetarisk"],
-    "ingredients": [
-      "2 stk løg",
-      "2 fed hvidløg",
-      "1 stk porre",
-      "1 tsk sød paprika",
-      "1 tsk stødt spidskommen",
-      "1 tsk karry",
-      "3 stk kartofler",
-      "3 stk gulerødder",
-      "1200 g flåede tomater",
-      "100 g koncentreret tomatpuré",
-      "1 tsk tørret timian",
-      "1 liter grøntsagsbouillon",
-      "100 g suppenudler",
-      "50 ml piskefløde",
-      "2 spsk olivenolie",
-      "1 tsk salt",
-      "8 stk brødskiver",
-      "125 g mozzarella"
-    ],
-    "steps": [
-      "Hak løg, hvidløg og porre fint. Varm olien i en stor gryde og svits grøntsagerne ved middel varme, til de er bløde. Tilsæt paprika, spidskommen og karry og lad det stege med i et par minutter, til krydderierne dufter.",
-      "Riv kartofler og gulerødder groft og kom dem i gryden sammen med flåede tomater, tomatpuré, timian og grøntsagsbouillon. Rør godt rundt og lad suppen simre under låg i 15–20 minutter.",
-      "Blend suppen til en jævn, cremet konsistens med en stavblender. Rør piskefløde i og smag til med salt og peber. Tilsæt suppenudlerne og lad dem koge med i 5–8 minutter, til de er møre.",
-      "Skær mozzarella i skiver og læg dem på brødskiverne. Bag ostebrødene i ovnen ved 200 grader varmluft i 5–7 minutter, til osten er smeltet og let gylden.",
-      "Hæld suppen i dybe tallerkener og server med de varme ostebrød ved siden af."
-    ]
-  },
-  {
-    "id": "c042",
-    "name": "Ovnbagt laks med honning og sennep",
-    "cuisine": "dansk",
-    "cost": 110,
-    "time": 30,
-    "portions": 4,
-    "difficulty": "let",
-    "tags": ["fisk", "hverdagsret", "ovnret"],
-    "ingredients": [
-      "600 g laks",
-      "3 spsk olivenolie",
-      "2 spsk honning",
-      "2 spsk sennep",
-      "2 tsk røget paprika",
-      "2 tsk tørret timian",
-      "1 fed hvidløg",
-      "1 tsk salt",
-      "300 g grønne bønner",
-      "20 g sesamfrø",
-      "3 dl basmati ris",
-      "5 dl vand",
-      "75 g spinat",
-      "3 fed hvidløg",
-      "1 tsk olivenolie"
-    ],
-    "steps": [
-      "Forvarm ovnen til 175 grader varmluft. Smør et ovnfast fad og fordel de grønne bønner i bunden. Drys bønnerne med sesamfrø og læg laksen ovenpå.",
-      "Rør olivenolie, honning, sennep, røget paprika, timian og presset hvidløg sammen i en lille skål. Pensl laksen generøst med marinaden og krydr med salt og peber.",
-      "Bag laksen i ovnen i 12–15 minutter, til fisken er let uigennemsigtig i midten og falder let fra hinanden.",
-      "Sauter hvidløg i olie i en gryde ved lav varme. Tilsæt vand, ris og salt, rør rundt og bring det langsomt i kog. Kog under låg ved svag varme i 10 minutter, tag så gryden af varmen og lad risen hvile 10 minutter. Vend finthakket spinat i risen inden servering.",
-      "Anret risen på tallerkener og læg laks og grønne bønner ved siden af."
-    ]
-  },
-  {
-    "id": "c043",
-    "name": "Kylling med pesto og mozzarella i ovn",
-    "cuisine": "italiensk",
-    "cost": 100,
-    "time": 40,
-    "portions": 4,
-    "difficulty": "let",
-    "tags": ["kylling", "ovnret", "hverdagsret"],
-    "ingredients": [
-      "4 stk kyllingebryst",
-      "4 spsk grøn pesto",
-      "125 g mozzarella",
-      "2 spsk olivenolie",
-      "1 tsk salt",
-      "8 stk parmaskinke",
-      "8 stk friske salvieblade",
-      "1 stk citron",
-      "400 g pasta"
-    ],
-    "steps": [
-      "Forvarm ovnen til 200 grader varmluft. Bank kyllingefileterne let flade med en kødhammer eller kagerullen. Krydr begge sider med salt og peber.",
-      "Smør et generøst lag pesto på oversiden af hvert kyllingebryst. Læg en skive mozzarella og to salvieblade oven på pestoen. Rul kyllingen stramt og bind en tandstik om den, så fyldet holder sig inden i.",
-      "Brun kyllingerullerne på alle sider i olivenolie på en pande ved middelhøj varme i 2–3 minutter. Læg dem i et ovnfast fad og bag videre i ovnen i 15–18 minutter, til kyllingen er gennemstegt.",
-      "Kog pastaen al dente efter pakningens anvisning. Hæld vandet fra og vend pastaen med lidt olivenolie, salt og peber.",
-      "Tag kyllingen ud og lad den hvile 3 minutter inden servering. Skær rullerne i skiver og server med pastaen og citronbåde."
-    ]
-  },
-  {
-    "id": "c044",
-    "name": "Chili con carne",
-    "cuisine": "mexicansk",
-    "cost": 90,
-    "time": 50,
-    "portions": 4,
-    "difficulty": "let",
-    "tags": ["oksekød", "hverdagsret", "simremad"],
-    "ingredients": [
-      "350 g hakket oksekød",
-      "2 stk løg",
-      "2 fed hvidløg",
-      "1 tsk stødt spidskommen",
-      "1 tsk stødt kanel",
-      "1 tsk stødt koriander",
-      "1 tsk chiliflager",
-      "400 g hakkede tomater",
-      "3 spsk koncentreret tomatpuré",
-      "100 ml oksebouillon",
-      "2 dåser kidneybønner",
-      "40 g mørk chokolade",
-      "3 spsk olivenolie",
-      "1 tsk salt",
-      "150 g cheddar",
-      "3 dl basmatiris"
-    ],
-    "steps": [
-      "Varm oliven i en stor pande eller gryde ved lav-middel varme. Tilsæt spidskommen, kanel, koriander og chiliflager og steg krydderierne under omrøring i et par minutter. Tilsæt hakket hvidløg og løg og sauté, til løgene er bløde.",
-      "Skru op for varmen, kom oksekødet i og brun det godt af under omrøring. Tilsæt hakkede tomater, tomatpuré og oksebouillon. Rør godt rundt, læg låg på og lad retten simre i 25–30 minutter.",
-      "Skyl og dræn kidneybønnerne og tilsæt dem. Lad alt varme igennem i 5 minutter og smag til med salt og peber. Tilsæt evt. mere chili, hvis der ønskes mere kraft.",
-      "Tag gryden af varmen. Bræk chokoladen i stykker og rør halvdelen i retten, smag til med resten til ønsket sødme og dybde.",
-      "Kog risen efter pakningens anvisning. Server chili con carne med ris og riv cheddar over retten."
-    ]
-  },
-  {
-    "id": "c045",
-    "name": "Teriyaki kylling med ris og grøntsager",
-    "cuisine": "asiatisk",
-    "cost": 95,
-    "time": 35,
-    "portions": 4,
-    "difficulty": "let",
-    "tags": ["kylling", "hverdagsret", "asiatisk"],
-    "ingredients": [
-      "400 g kyllingefilet",
-      "6 spsk teriyakisauce",
-      "2 spsk soja",
-      "2 fed hvidløg",
-      "2 spsk brun farin",
-      "3 tsk majsstivelse",
-      "2 tsk ingefær",
-      "2 tsk riseddike",
-      "50 ml vand",
-      "1 spsk sesamolie",
-      "300 g basmati ris",
-      "150 g edamamebønner",
-      "1 stk broccoli",
-      "2 stk forårsløg",
-      "1 spsk sesamfrø",
-      "1 stk lime"
-    ],
-    "steps": [
-      "Kog risen efter pakningens anvisning og hold den varm under låg. Bland teriyakisauce, soja, presset hvidløg, brun farin, fintrevet ingefær, riseddike og vand i en skål. Sigt majsstivelse i og pisk til en jævn marinade.",
-      "Skær kyllingefileten i tern. Steg kyllingestykkerne i sesamolie på en pande ved høj varme i 3–4 minutter, til de er gyldenbrune. Skru ned til lav varme og hæld marinaden over. Vend jævnligt og lad kyllingen simre i 8–10 minutter, til marinaden er tyknet og kyllingen gennemstegt.",
-      "Skær broccoli i buketter og blancher dem i kogende letsaltet vand i 1 minut. Tilsæt edamamebønner, rør rundt i 30 sekunder og hæld vandet fra. Grøntsagerne skal stadig have bid.",
-      "Anret risen i dybe tallerkener. Fordel kyllingen og grøntsagerne over risen og dryp teriyaki-saucen fra panden over retten.",
-      "Drys med sesamfrø og fintsnittede forårsløg. Server lime i både til at presse over retten."
-    ]
-  },
-  {
-    "id": "c046",
-    "name": "Kartoffelsuppe med bacon",
-    "cuisine": "dansk",
-    "cost": 55,
-    "time": 35,
-    "portions": 4,
-    "difficulty": "let",
-    "tags": ["suppe", "hverdagsret", "simremad"],
-    "ingredients": [
-      "1000 g kartofler",
-      "3 stk porre",
-      "1200 ml grøntsagsbouillon",
-      "1 nip vaniljepulver",
-      "50 ml piskefløde",
-      "1 stk appelsin",
-      "1 spsk olivenolie",
-      "1 tsk salt",
-      "3 stk rugbrødsskiver",
-      "3 spsk græskarkerner",
-      "3 skiver bacon",
-      "1 tsk frisk timian"
-    ],
-    "steps": [
-      "Skær kartofler i tern og porre i ringe. Varm olivenolien i en stor gryde og sauter kartofler og porrer i et par minutter under jævnlig omrøring.",
-      "Tilsæt grøntsagsbouillon og et nip vaniljepulver. Læg låget på og lad suppen koge ved middel varme i 20 minutter, til kartoflerne er gennemkogte og møre.",
-      "Blend suppen med en stavblender. Tilsæt piskefløde og blend igen til suppen er luftig og cremet. Justér konsistensen med lidt ekstra bouillon og smag til med salt, peber og saften fra en halv appelsin.",
-      "Steg baconskiverne sprøde på en tør pande. Skær rugbrødet i små tern og rist dem i smør til de er gyldne og sprøde. Rist græskarkernerne på den tørre pande i et minut.",
-      "Hæld suppen i varme skåle og top med de sprøde rugbrødstern, ristede græskarkerner, sprødristet bacon og friske timiankviste."
-    ]
-  },
-  {
-    "id": "c047",
-    "name": "Pasta med kødsauce",
-    "cuisine": "italiensk",
-    "cost": 75,
-    "time": 35,
-    "portions": 4,
-    "difficulty": "let",
-    "tags": ["pasta", "oksekød", "hverdagsret"],
-    "ingredients": [
-      "400 g hakket oksekød",
-      "2 stk løg",
-      "3 fed hvidløg",
-      "400 g hakkede tomater",
-      "2 spsk koncentreret tomatpuré",
-      "1 tsk tørret oregano",
-      "1 tsk tørret timian",
-      "100 ml oksebouillon",
-      "2 spsk olivenolie",
-      "1 tsk salt",
-      "400 g spaghetti",
-      "50 g parmesan"
-    ],
-    "steps": [
-      "Hak løg og hvidløg fint. Varm olien i en bred pande og svits løg og hvidløg ved middel varme i 3–4 minutter, til de er bløde og let gyldne.",
-      "Skru op for varmen og brun oksekødet godt af. Brug en ske til at bryde farsen i mindre stykker mens det steger, til al kødsaft er fordampet og kødet er smukt brunet.",
-      "Tilsæt tomatpuré og steg med i et minut. Hæld hakkede tomater og bouillon over og rør oregano og timian i. Lad saucen simre ved lav varme i 15 minutter, til den er tyknet og fyldig. Smag til med salt og peber.",
-      "Kog spaghettien al dente i rigeligt saltet vand efter pakningens anvisning. Gem en kop kogevand inden du hælder vandet fra.",
-      "Vend pastaen i saucen og tilsæt lidt pastavand, hvis saucen er for tyk. Server med friskrevet parmesan over."
-    ]
-  },
-  {
-    "id": "c048",
-    "name": "Laks med citronsmørsauce og kartofler",
-    "cuisine": "dansk",
-    "cost": 120,
-    "time": 30,
-    "portions": 4,
-    "difficulty": "let",
-    "tags": ["fisk", "hverdagsret", "klassiker"],
-    "ingredients": [
-      "4 stk laksefilet",
-      "3 fed hvidløg",
-      "1 spsk kapers",
-      "150 ml grøntsagsbouillon",
-      "1 stk citron",
-      "50 g smør",
-      "2 spsk persille",
-      "1 tsk olivenolie",
-      "1 tsk salt",
-      "800 g kartofler"
-    ],
-    "steps": [
-      "Kog kartoflerne i letsaltet vand i 15–20 minutter, til de er møre. Krydr laksefileterne på begge sider med salt og peber.",
-      "Bag laksen i forvarmet ovn på et bagepapirbeklædt fad ved 175 grader varmluft i 12–15 minutter, til fisken er let uigennemsigtig i midten og falder let fra hinanden.",
-      "Mens laksen er i ovnen: svits finthakket hvidløg i lidt olivenolie på en pande ved middel varme, til det er blødt. Tilsæt kapers, bouillon, revet citronskal og citronsaft og lad det simre til det er kogt godt ind.",
-      "Tag panden af varmen og pisk det kolde smør i lidt ad gangen, til saucen er blank og cremet. Smag til med salt og peber.",
-      "Hæld citronsmørsaucen over de bagte laksefileter og drys med finthakket persille. Server med de kogte kartofler."
-    ]
-  },
-  {
-    "id": "c049",
-    "name": "Cremet kyllingepasta med soltørrede tomater",
-    "cuisine": "italiensk",
-    "cost": 105,
-    "time": 35,
-    "portions": 4,
-    "difficulty": "let",
-    "tags": ["pasta", "kylling", "hverdagsret"],
-    "ingredients": [
-      "4 stk kyllingebryst",
-      "30 g hvedemel",
-      "2 stk løg",
-      "4 fed hvidløg",
-      "75 g soltørrede tomater i olie",
-      "2 tsk tørret oregano",
-      "1 tsk tørret timian",
-      "200 ml hønsebouillon",
-      "250 ml piskefløde",
-      "15 g koncentreret tomatpuré",
-      "100 g parmesan",
-      "1 håndfuld frisk basilikum",
-      "2 spsk olivenolie",
-      "10 g smør",
-      "1 tsk salt",
-      "400 g pasta"
-    ],
-    "steps": [
-      "Dup kyllingebrysterne tørre med køkkenrulle og vend dem i hvedemel blandet med salt og peber på alle sider. Varm en stor pande op med olie og smør og brun kyllingen 2 minutter på hver side ved middelhøj varme. Tag kyllingen fra panden.",
-      "Steg finthakkede soltørrede tomater, løg og hvidløg i olien fra kyllingen i 3–4 minutter, til løgene er bløde. Tilsæt oregano og timian og rør rundt.",
-      "Hæld hønsebouillon, piskefløde og tomatpuré over. Læg kyllingen tilbage på panden og lad det simre ved lav varme i 12–15 minutter, til kyllingen er gennemstegt. Kog pastaen al dente i saltet vand i samme tidsrum.",
-      "Rør friskrevet parmesan og basilikumblade i saucen og smag til med salt og peber. Saucen skal være fyldig og cremet.",
-      "Hæld vandet fra pastaen og vend den i saucen. Server straks med ekstra parmesan."
-    ]
-  },
-  {
-    "id": "c050",
-    "name": "Blomkålscurry med linser",
-    "cuisine": "vegetarisk",
-    "cost": 70,
-    "time": 45,
-    "portions": 4,
-    "difficulty": "let",
-    "tags": ["vegetarisk", "curry", "hverdagsret"],
-    "ingredients": [
-      "1 stk blomkål",
-      "1 stk rødløg",
-      "3 fed hvidløg",
-      "1 tsk ingefær",
-      "1 tsk karry",
-      "2 tsk garam masala",
-      "1 tsk stødt spidskommen",
-      "1 tsk stødt koriander",
-      "50 g gurkemeje",
-      "100 ml røde linser",
-      "200 ml grøntsagsbouillon",
-      "400 ml kokosmælk",
-      "400 g hakkede tomater",
-      "1 stk citron",
-      "200 ml græsk yoghurt 10%",
-      "100 g spinat",
-      "1 spsk olivenolie",
-      "1 tsk salt",
-      "25 g saltede mandler"
-    ],
-    "steps": [
-      "Rist alle krydderier — karry, garam masala, spidskommen, koriander og gurkemeje — på en tør pande ved høj varme under omrøring i 30 sekunder, til de dufter. Skru ned, tilsæt olie og svits finthakket løg og hvidløg, til løgene er bløde.",
-      "Tilsæt fintrevet ingefær, røde linser, grøntsagsbouillon, hakkede tomater og kokosmælk. Rør godt rundt, læg låg på og lad det simre i 20 minutter.",
-      "Skær blomkålen i buketter og tilsæt dem i gryden. Lad det simre videre i 10 minutter, til blomkålen er mør men stadig har lidt bid.",
-      "Rør revet citronskal, citronsaft og yoghurt i og smag til med salt og peber. Tilsæt spinatblade og rør dem i retten, de falder hurtigt sammen.",
-      "Server curryen med ris eller brød og drys med grofthakkede saltede mandler."
-    ]
-  },
-  {
-    "id": "c051",
-    "name": "Kalkunschnitzel med champignonsauce",
-    "cuisine": "dansk",
-    "cost": 100,
-    "time": 35,
-    "portions": 4,
-    "difficulty": "let",
-    "tags": ["kalkun", "hverdagsret", "klassiker"],
-    "ingredients": [
-      "500 g kalkunschnitzel",
-      "4 spsk hvedemel",
-      "1 tsk salt",
-      "40 g smør",
-      "1 stk citron",
-      "225 g champignoner",
-      "200 ml hønsebouillon",
-      "100 ml piskefløde",
-      "1 spsk majsstivelse",
-      "800 g kartofler",
-      "300 g frosne ærter"
-    ],
-    "steps": [
-      "Rids schnitzlerne let i overfladen og vend dem i mel rørt med salt og peber på begge sider. Kog kartoflerne i letsaltet vand i 15–18 minutter, til de er møre.",
-      "Smelt smørret på en pande ved middelhøj varme. Steg schnitzlerne 4–5 minutter på den første side og 3 minutter på den anden. Pres citronsaft over og læg schnitzlerne til side på varmt fad.",
-      "Skær champignonerne i kvarte og steg dem ved kraftig varme på den samme pande i 2 minutter. Tilsæt hønsebouillon og piskefløde og lad det koge i 2–3 minutter.",
-      "Rør majsstivelse ud i 2 spsk koldt vand og hæld jævningen i saucen under omrøring. Lad saucen koge 1 minut og smag til med salt og peber.",
-      "Rist ærterne i smør ved høj varme i 1 minut. Server schnitzlerne med champignonsauce, kartofler og de smørristede ærter."
-    ]
-  },
-  {
-    "id": "c052",
-    "name": "Hjemmelavet pizza med tomatsauce og mozzarella",
-    "cuisine": "italiensk",
-    "cost": 65,
-    "time": 80,
-    "portions": 4,
-    "difficulty": "medium",
-    "tags": ["pizza", "weekend", "familievenlig"],
-    "ingredients": [
-      "25 g gær",
-      "300 ml vand",
-      "3 spsk olivenolie",
-      "1 tsk salt",
-      "500 g hvedemel",
-      "400 g hakkede tomater",
-      "100 ml olivenolie",
-      "1 spsk koncentreret tomatpuré",
-      "1 fed hvidløg",
-      "1 håndfuld frisk basilikum",
-      "1 tsk salt",
-      "250 g mozzarella"
-    ],
-    "steps": [
-      "Opløs gæren i lunkent vand i en skål. Tilsæt olivenolie, salt og en tredjedel af melet og rør til en jævn masse. Tilsæt resten af melet lidt ad gangen og ælt dejen på bordet i 8–10 minutter, til den er glat og smidig. Læg dejen i en oliesmurt skål og dæk til. Lad den hæve et lunt sted i 45–60 minutter.",
-      "Blend hakkede tomater, olivenolie, tomatpuré, hvidløg, basilikum, salt og peber til en jævn pizzasauce. Smag til og juster krydringen.",
-      "Forvarm ovnen til 250 grader. Del dejen i to og rul hvert stykke ud til en tynd, rund pizza på et bagepapirbeklædt bageplade.",
-      "Fordel et tyndt lag kold pizzasauce på bundene. Riv mozzarella i stykker og fordel den over saucen. Krydr med salt, peber og lidt olivenolie.",
-      "Bag pizzaerne én ad gangen i den varme ovn i 8–10 minutter, til bunden er sprød og osten er boblende gylden. Server straks med friske basilikumblade."
-    ]
-  },
-  {
-    "id": "c053",
-    "name": "Svinekoteletter i fad med champignon og fløde",
-    "cuisine": "dansk",
-    "cost": 90,
-    "time": 50,
-    "portions": 4,
-    "difficulty": "let",
-    "tags": ["svinekød", "hverdagsret", "ovnret"],
-    "ingredients": [
-      "4 stk svinekoteletter",
-      "100 g bacon",
-      "2 stk løg",
-      "2 fed hvidløg",
-      "500 g champignoner",
-      "400 g hakkede tomater",
-      "250 ml piskefløde",
-      "1 tsk sød paprika",
-      "1 tsk røget paprika",
-      "2 tsk tørret timian",
-      "1 spsk smør",
-      "1 tsk salt",
-      "3 dl basmati ris"
-    ],
-    "steps": [
-      "Steg baconskiverne sprøde på en pande og læg dem på køkkenrulle. Krydr koteletterne med salt og peber og brun dem hurtigt i smør, et halvt minut på hver side. Læg koteletterne til side.",
-      "Skær champignonerne i kvarte og steg dem med finthakkede løg og timian ved høj varme på den samme pande, til løgene er bløde og champignonerne har fået farve.",
-      "Tilsæt finthakket hvidløg, paprika, hakket bacon, hakkede tomater og piskefløde. Rør godt rundt og lad saucen koge i 8–10 minutter, til den er tyknet. Smag til med salt og peber.",
-      "Hæld saucen i et smurt ovnfast fad og læg koteletterne ned i saucen. Bag i forvarmet ovn ved 175 grader i 15–20 minutter, til koteletterne er gennemstegte.",
-      "Kog risen imens efter pakningens anvisning. Server koteletter og sauce over risen med et drys frisk timian."
-    ]
-  },
-  {
-    "id": "c054",
-    "name": "Wok med oksekød og grøntsager",
-    "cuisine": "asiatisk",
-    "cost": 110,
-    "time": 30,
-    "portions": 4,
-    "difficulty": "let",
-    "tags": ["oksekød", "wok", "hverdagsret", "asiatisk"],
-    "ingredients": [
-      "400 g entrecote",
-      "1 spsk soja",
-      "1 spsk sukker",
-      "1 spsk fishsauce",
-      "4 fed hvidløg",
-      "1 spsk ingefær",
-      "20 g sesamfrø",
-      "1 spsk sesamolie",
-      "100 g broccoli",
-      "2 stk gulerødder",
-      "300 g spidskål",
-      "100 g spinat",
-      "200 g nudler",
-      "1 stk lime",
-      "20 g saltede peanuts",
-      "3 stk forårsløg"
-    ],
-    "steps": [
-      "Skær entrecoten i tynde strimler på tværs af kødfiberen. Bland soja, sukker, fishsauce, presset hvidløg, fintrevet ingefær og sesamfrø til en marinade og vend oksekødet i den.",
-      "Kog nudlerne efter pakningens anvisning og skyl dem i koldt vand. Rør en simpel dressing af sesamolie, limesaft, revet limeskal, fishsauce, sukker og finthakket chili.",
-      "Varm en wok ved høj varme og lynsteg oksekødsstrimlerne i 2–3 minutter, til de kun lige er gennemstegte. Tag kødet af varmen og sæt til side.",
-      "Steg fintstrimlet gulerødder, broccolibuketter og spidskål i wokken i ét minut ved høj varme — grøntsagerne skal bevare sprødheden. Tilsæt nudler og rør alt sammen.",
-      "Anret nudlerne og grøntsagerne i en stor skål og læg oksekødet over. Vend dressingen i og drys med grofthakkede peanuts og fintsnittede forårsløg. Server med lime i både."
-    ]
-  },
-  {
-    "id": "c055",
-    "name": "Pasta med pesto og kylling",
-    "cuisine": "italiensk",
-    "cost": 90,
-    "time": 30,
-    "portions": 4,
-    "difficulty": "let",
-    "tags": ["pasta", "kylling", "hverdagsret"],
-    "ingredients": [
-      "500 g pasta",
-      "400 g kyllingefilet",
-      "150 g spinat",
-      "1 håndfuld frisk basilikum",
-      "75 g parmesan",
-      "30 g pinjekerner",
-      "2 fed hvidløg",
-      "50 ml olivenolie",
-      "1 stk citron",
-      "1 spsk olivenolie",
-      "1 tsk salt",
-      "25 g parmesan"
-    ],
-    "steps": [
-      "Blend spinat, basilikum, friskrevet parmesan, pinjekerner, hvidløg og olivenolie til en cremet pesto. Smag til med revet citronskal, citronsaft, salt og peber.",
-      "Skær kyllingefileterne i strimler og krydr med salt og peber. Steg dem i olivenolie på en pande ved middelhøj varme i 5–7 minutter, til de er gyldenbrune og gennemstegte. Læg til side.",
-      "Kog pastaen al dente i rigeligt saltet vand. Gem 2 dl af kogevandet inden du hælder vandet fra.",
-      "Vend den varme pasta med pestoen ved lav varme. Tilsæt lidt pastavand og rør til saucen er jævn og cremet. Smag til med salt og peber.",
-      "Fordel pastaen på tallerkener og læg de stegte kyllingestrimler over. Server med friskrevet parmesan og ristede pinjekerner."
-    ]
-  },
-  {
-    "id": "c056",
-    "name": "Svinemørbrad i gryde med champignon og fløde",
-    "cuisine": "dansk",
-    "cost": 110,
-    "time": 50,
-    "portions": 4,
-    "difficulty": "let",
-    "tags": ["svinekød", "hverdagsret", "simremad"],
-    "ingredients": [
-      "450 g svinemørbrad",
-      "100 g bacon",
-      "200 g champignoner",
-      "3 stk løg",
-      "2 spsk sød paprika",
-      "1 tsk røget paprika",
-      "75 g koncentreret tomatpuré",
-      "400 g hakkede tomater",
-      "2 stk rød peberfrugt",
-      "250 ml piskefløde",
-      "100 ml vand",
-      "1 spsk olivenolie",
-      "1 tsk salt",
-      "3 dl basmati ris",
-      "1 håndfuld persille"
-    ],
-    "steps": [
-      "Skær svinemørbraden i tern og bacon i strimler. Steg baconet i en sauterpande, til det er let sprødt. Tag baconet af og sæt til side.",
-      "Steg champignoner og finthakkede løg i olien fra bacon ved middelhøj varme, til løgene er bløde og champignonerne er gyldne.",
-      "Skru op for varmen og brun mørbradternene hurtigt på alle sider. Tilsæt paprika, tomatpuré, hakkede tomater, vand og det stegte bacon. Rør godt rundt.",
-      "Læg låg på og simr ved lav varme i 15 minutter. Tilsæt peberfrugt skåret i tern og piskefløde og kog retten i yderligere 5 minutter uden låg, til saucen er cremet. Smag til med salt og peber.",
-      "Kog risen imens efter pakningens anvisning. Server gryderetten over risen med et drys grofthakket persille."
-    ]
-  },
-  {
-    "id": "c057",
-    "name": "Blomkålssuppe",
-    "cuisine": "vegetarisk",
-    "cost": 50,
-    "time": 30,
-    "portions": 4,
-    "difficulty": "let",
-    "tags": ["suppe", "vegetarisk", "hverdagsret"],
-    "ingredients": [
-      "1 stk blomkål",
-      "1 fed hvidløg",
-      "1 tsk ingefær",
-      "1000 ml grøntsagsbouillon",
-      "1 nip vaniljepulver",
-      "50 ml piskefløde",
-      "1 nip muskatnød",
-      "1 stk citron",
-      "2 spsk olivenolie",
-      "1 tsk salt",
-      "30 g valnødder",
-      "1 spsk hampefrø",
-      "1 tsk frisk timian"
-    ],
-    "steps": [
-      "Skær blomkålen i grove stykker. Kom dem i en gryde med knust hvidløg, finthakket ingefær, grøntsagsbouillon, vaniljepulver og olivenolie.",
-      "Bring gryden i kog og læg låget på. Kog ved middel varme i 8–10 minutter, til blomkålen er gennemblød.",
-      "Hæld piskefløde i og blend suppen med en stavblender, til den er helt cremet og luftig. Juster konsistensen med ekstra bouillon, hvis suppen er for tyk.",
-      "Smag til med citronsaft, revet muskatnød, salt og friskkværnet peber. Suppen skal have en frisk, mild smag med et hint af syre.",
-      "Hæld suppen i varme skåle og drys med grofthakkede valnødder, hampefrø og frisk timian inden servering."
-    ]
-  },
-  {
-    "id": "c058",
-    "name": "Kylling i tomatsauce med pasta",
-    "cuisine": "italiensk",
-    "cost": 95,
-    "time": 40,
-    "portions": 4,
-    "difficulty": "let",
-    "tags": ["kylling", "pasta", "hverdagsret"],
-    "ingredients": [
-      "400 g kyllingefilet",
-      "70 g hakket svinekød",
-      "1 stk løg",
-      "3 fed hvidløg",
-      "50 g soltørrede tomater i olie",
-      "1 tsk fennikelfrø",
-      "300 g squash",
-      "400 ml grøntsagsbouillon",
-      "400 g hakkede tomater",
-      "500 g gnocchi",
-      "125 g mozzarella",
-      "50 g parmesan",
-      "1 spsk olivenolie",
-      "1 tsk salt",
-      "1 håndfuld frisk basilikum"
-    ],
-    "steps": [
-      "Steg hakket svinekød og finthakket løg i olivenolie ved middel varme i en sauterpande, til løgene er bløde. Tilsæt kylling skåret i tern, skru op for varmen og brun kødet hurtigt.",
-      "Tilsæt presset hvidløg, finthakkede soltørrede tomater, fennikelfrø og groftrrevet squash. Steg med i 2 minutter under omrøring.",
-      "Hæld grøntsagsbouillon og hakkede tomater over. Tilsæt gnocchi og rør forsigtigt. Smag til med salt og peber og lad det simre i 5 minutter.",
-      "Riv mozzarella i stykker og fordel den over retten sammen med friskrevet parmesan. Bag i ovnen ved 180 grader i 15–20 minutter, til osten er smeltet og gylden.",
-      "Tag fadet ud af ovnen og drys med friske basilikumblade og ekstra parmesan inden servering."
-    ]
-  },
-  {
-    "id": "c059",
-    "name": "Rødspættefileter med persillesauce og kartofler",
-    "cuisine": "dansk",
-    "cost": 95,
-    "time": 45,
-    "portions": 4,
-    "difficulty": "let",
-    "tags": ["fisk", "klassiker", "hverdagsret"],
-    "ingredients": [
-      "4 stk rødspættefileter",
-      "1 stk æg",
-      "200 ml rugmel",
-      "1 tsk salt",
-      "2 spsk smør",
-      "2 spsk hvedemel",
-      "500 ml mælk",
-      "1 stk citron",
-      "2 håndfulde persille",
-      "1000 g kartofler"
-    ],
-    "steps": [
-      "Kog kartoflerne i letsaltet vand i 15–20 minutter, til de er møre. Gem lidt kartoffelvand til persillesaucen.",
-      "Pisk ægget let i en dyb tallerken. Bland rugmel med salt og peber i en anden tallerken. Vend rødspættefileterne i æg og derefter i rugmelsblandingen. Lad dem hvile 5 minutter.",
-      "Smelt smør på en pande til det bruser. Steg fileterne ved middel varme i 4–5 minutter på den første side og 3–4 minutter på den anden, til de er gyldne og sprøde.",
-      "Smelt smør i en gryde og pisk hvedemelet i til en klump. Tilsæt mælk lidt ad gangen under konstant omrøring og pisk til en jævn sauce. Kog saucen igennem i 3 minutter. Smag til med citronsaft, revet citronskal, salt og peber og rør finthakket persille i.",
-      "Server de stegte rødspætter med kogte kartofler, persillesauce og ekstra citron."
-    ]
-  },
-  {
-    "id": "c060",
-    "name": "Oksekødsgryde med kartofler og gulerødder",
-    "cuisine": "dansk",
-    "cost": 105,
-    "time": 180,
-    "portions": 4,
-    "difficulty": "medium",
-    "tags": ["oksekød", "simremad", "weekend"],
-    "ingredients": [
-      "450 g skært oksekød",
-      "2 spsk hvedemel",
-      "2 stk løg",
-      "4 fed hvidløg",
-      "1 stk rød chili",
-      "2 tsk stødt spidskommen",
-      "1 tsk tørret oregano",
-      "200 ml oksebouillon",
-      "400 g hakkede tomater",
-      "1000 g kartofler",
-      "2 stk gulerødder",
-      "1 spsk smør",
-      "1 spsk olivenolie",
-      "1 tsk salt"
-    ],
-    "steps": [
-      "Skær oksekødet i tern på ca. 3 cm. Bland mel, spidskommen, oregano, halvdelen af den finthakkede chili og lidt salt i en skål og vend kødet i blandingen.",
-      "Svits finthakkede løg og hvidløg i olie og smør i en stor gryde ved middel varme i 3–4 minutter, til løgene er bløde. Tilsæt det meldyppede oksekød og brun det godt af ved høj varme.",
-      "Hæld oksebouillon og hakkede tomater over og rør godt rundt. Bring gryden i kog, skru ned til lav varme og lad gryden simre under låg i 1,5–2 timer, til kødet er helt mørt. Rør jævnligt undervejs.",
-      "Skær kartofler og gulerødder i store tern. Tilsæt dem i gryden og lad det simre videre i 20–25 minutter, til grøntsagerne er møre.",
-      "Smag til med salt, peber og mere chili efter smag. Server gryden rygende varm med godt brød."
-    ]
-  }
+﻿[
+    {
+        "id":  "c041",
+        "name":  "Cremet tomatsuppe med ostebrød",
+        "cuisine":  "dansk",
+        "cost":  130,
+        "time":  45,
+        "portions":  4,
+        "difficulty":  "let",
+        "tags":  [
+                     "suppe",
+                     "hverdagsret",
+                     "vegetarisk"
+                 ],
+        "ingredients":  [
+                            "2 stk løg",
+                            "2 fed hvidløg",
+                            "1 stk porre",
+                            "1 tsk sød paprika",
+                            "1 tsk stødt spidskommen",
+                            "1 tsk karry",
+                            "3 stk kartofler",
+                            "3 stk gulerødder",
+                            "1200 g flåede tomater",
+                            "100 g koncentreret tomatpuré",
+                            "1 tsk tørret timian",
+                            "1 liter grøntsagsbouillon",
+                            "100 g suppenudler",
+                            "50 ml piskefløde",
+                            "2 spsk olivenolie",
+                            "1 tsk salt",
+                            "8 stk brødskiver",
+                            "125 g mozzarella"
+                        ],
+        "steps":  [
+                      "Hak løg, hvidløg og porre fint. Varm olien i en stor gryde og svits grøntsagerne ved middel varme, til de er bløde. Tilsæt paprika, spidskommen og karry og lad det stege med i et par minutter, til krydderierne dufter.",
+                      "Riv kartofler og gulerødder groft og kom dem i gryden sammen med flåede tomater, tomatpuré, timian og grøntsagsbouillon. Rør godt rundt og lad suppen simre under låg i 15–20 minutter.",
+                      "Blend suppen til en jævn, cremet konsistens med en stavblender. Rør piskefløde i og smag til med salt og peber. Tilsæt suppenudlerne og lad dem koge med i 5–8 minutter, til de er møre.",
+                      "Skær mozzarella i skiver og læg dem på brødskiverne. Bag ostebrødene i ovnen ved 200 grader varmluft i 5–7 minutter, til osten er smeltet og let gylden.",
+                      "Hæld suppen i dybe tallerkener og server med de varme ostebrød ved siden af."
+                  ]
+    },
+    {
+        "id":  "c042",
+        "name":  "Ovnbagt laks med honning og sennep",
+        "cuisine":  "dansk",
+        "cost":  185,
+        "time":  30,
+        "portions":  4,
+        "difficulty":  "let",
+        "tags":  [
+                     "fisk",
+                     "hverdagsret",
+                     "ovnret"
+                 ],
+        "ingredients":  [
+                            "600 g laks",
+                            "3 spsk olivenolie",
+                            "2 spsk honning",
+                            "2 spsk sennep",
+                            "2 tsk røget paprika",
+                            "2 tsk tørret timian",
+                            "1 fed hvidløg",
+                            "1 tsk salt",
+                            "300 g grønne bønner",
+                            "20 g sesamfrø",
+                            "3 dl basmati ris",
+                            "5 dl vand",
+                            "75 g spinat",
+                            "3 fed hvidløg",
+                            "1 tsk olivenolie"
+                        ],
+        "steps":  [
+                      "Forvarm ovnen til 175 grader varmluft. Smør et ovnfast fad og fordel de grønne bønner i bunden. Drys bønnerne med sesamfrø og læg laksen ovenpå.",
+                      "Rør olivenolie, honning, sennep, røget paprika, timian og presset hvidløg sammen i en lille skål. Pensl laksen generøst med marinaden og krydr med salt og peber.",
+                      "Bag laksen i ovnen i 12–15 minutter, til fisken er let uigennemsigtig i midten og falder let fra hinanden.",
+                      "Sauter hvidløg i olie i en gryde ved lav varme. Tilsæt vand, ris og salt, rør rundt og bring det langsomt i kog. Kog under låg ved svag varme i 10 minutter, tag så gryden af varmen og lad risen hvile 10 minutter. Vend finthakket spinat i risen inden servering.",
+                      "Anret risen på tallerkener og læg laks og grønne bønner ved siden af."
+                  ]
+    },
+    {
+        "id":  "c043",
+        "name":  "Kylling med pesto og mozzarella i ovn",
+        "cuisine":  "italiensk",
+        "cost":  170,
+        "time":  40,
+        "portions":  4,
+        "difficulty":  "let",
+        "tags":  [
+                     "kylling",
+                     "ovnret",
+                     "hverdagsret"
+                 ],
+        "ingredients":  [
+                            "4 stk kyllingebryst",
+                            "4 spsk grøn pesto",
+                            "125 g mozzarella",
+                            "2 spsk olivenolie",
+                            "1 tsk salt",
+                            "8 stk parmaskinke",
+                            "8 stk friske salvieblade",
+                            "1 stk citron",
+                            "400 g pasta"
+                        ],
+        "steps":  [
+                      "Forvarm ovnen til 200 grader varmluft. Bank kyllingefileterne let flade med en kødhammer eller kagerullen. Krydr begge sider med salt og peber.",
+                      "Smør et generøst lag pesto på oversiden af hvert kyllingebryst. Læg en skive mozzarella og to salvieblade oven på pestoen. Rul kyllingen stramt og bind en tandstik om den, så fyldet holder sig inden i.",
+                      "Brun kyllingerullerne på alle sider i olivenolie på en pande ved middelhøj varme i 2–3 minutter. Læg dem i et ovnfast fad og bag videre i ovnen i 15–18 minutter, til kyllingen er gennemstegt.",
+                      "Kog pastaen al dente efter pakningens anvisning. Hæld vandet fra og vend pastaen med lidt olivenolie, salt og peber.",
+                      "Tag kyllingen ud og lad den hvile 3 minutter inden servering. Skær rullerne i skiver og server med pastaen og citronbåde."
+                  ]
+    },
+    {
+        "id":  "c044",
+        "name":  "Chili con carne",
+        "cuisine":  "mexicansk",
+        "cost":  155,
+        "time":  50,
+        "portions":  4,
+        "difficulty":  "let",
+        "tags":  [
+                     "oksekød",
+                     "hverdagsret",
+                     "simremad"
+                 ],
+        "ingredients":  [
+                            "350 g hakket oksekød",
+                            "2 stk løg",
+                            "2 fed hvidløg",
+                            "1 tsk stødt spidskommen",
+                            "1 tsk stødt kanel",
+                            "1 tsk stødt koriander",
+                            "1 tsk chiliflager",
+                            "400 g hakkede tomater",
+                            "3 spsk koncentreret tomatpuré",
+                            "100 ml oksebouillon",
+                            "2 dåser kidneybønner",
+                            "40 g mørk chokolade",
+                            "3 spsk olivenolie",
+                            "1 tsk salt",
+                            "150 g cheddar",
+                            "3 dl basmatiris"
+                        ],
+        "steps":  [
+                      "Varm oliven i en stor pande eller gryde ved lav-middel varme. Tilsæt spidskommen, kanel, koriander og chiliflager og steg krydderierne under omrøring i et par minutter. Tilsæt hakket hvidløg og løg og sauté, til løgene er bløde.",
+                      "Skru op for varmen, kom oksekødet i og brun det godt af under omrøring. Tilsæt hakkede tomater, tomatpuré og oksebouillon. Rør godt rundt, læg låg på og lad retten simre i 25–30 minutter.",
+                      "Skyl og dræn kidneybønnerne og tilsæt dem. Lad alt varme igennem i 5 minutter og smag til med salt og peber. Tilsæt evt. mere chili, hvis der ønskes mere kraft.",
+                      "Tag gryden af varmen. Bræk chokoladen i stykker og rør halvdelen i retten, smag til med resten til ønsket sødme og dybde.",
+                      "Kog risen efter pakningens anvisning. Server chili con carne med ris og riv cheddar over retten."
+                  ]
+    },
+    {
+        "id":  "c045",
+        "name":  "Teriyaki kylling med ris og grøntsager",
+        "cuisine":  "asiatisk",
+        "cost":  160,
+        "time":  35,
+        "portions":  4,
+        "difficulty":  "let",
+        "tags":  [
+                     "kylling",
+                     "hverdagsret",
+                     "asiatisk"
+                 ],
+        "ingredients":  [
+                            "400 g kyllingefilet",
+                            "6 spsk teriyakisauce",
+                            "2 spsk soja",
+                            "2 fed hvidløg",
+                            "2 spsk brun farin",
+                            "3 tsk majsstivelse",
+                            "2 tsk ingefær",
+                            "2 tsk riseddike",
+                            "50 ml vand",
+                            "1 spsk sesamolie",
+                            "300 g basmati ris",
+                            "150 g edamamebønner",
+                            "1 stk broccoli",
+                            "2 stk forårsløg",
+                            "1 spsk sesamfrø",
+                            "1 stk lime"
+                        ],
+        "steps":  [
+                      "Kog risen efter pakningens anvisning og hold den varm under låg. Bland teriyakisauce, soja, presset hvidløg, brun farin, fintrevet ingefær, riseddike og vand i en skål. Sigt majsstivelse i og pisk til en jævn marinade.",
+                      "Skær kyllingefileten i tern. Steg kyllingestykkerne i sesamolie på en pande ved høj varme i 3–4 minutter, til de er gyldenbrune. Skru ned til lav varme og hæld marinaden over. Vend jævnligt og lad kyllingen simre i 8–10 minutter, til marinaden er tyknet og kyllingen gennemstegt.",
+                      "Skær broccoli i buketter og blancher dem i kogende letsaltet vand i 1 minut. Tilsæt edamamebønner, rør rundt i 30 sekunder og hæld vandet fra. Grøntsagerne skal stadig have bid.",
+                      "Anret risen i dybe tallerkener. Fordel kyllingen og grøntsagerne over risen og dryp teriyaki-saucen fra panden over retten.",
+                      "Drys med sesamfrø og fintsnittede forårsløg. Server lime i både til at presse over retten."
+                  ]
+    },
+    {
+        "id":  "c046",
+        "name":  "Kartoffelsuppe med bacon",
+        "cuisine":  "dansk",
+        "cost":  95,
+        "time":  35,
+        "portions":  4,
+        "difficulty":  "let",
+        "tags":  [
+                     "suppe",
+                     "hverdagsret",
+                     "simremad"
+                 ],
+        "ingredients":  [
+                            "1000 g kartofler",
+                            "3 stk porre",
+                            "1200 ml grøntsagsbouillon",
+                            "1 nip vaniljepulver",
+                            "50 ml piskefløde",
+                            "1 stk appelsin",
+                            "1 spsk olivenolie",
+                            "1 tsk salt",
+                            "3 stk rugbrødsskiver",
+                            "3 spsk græskarkerner",
+                            "3 skiver bacon",
+                            "1 tsk frisk timian"
+                        ],
+        "steps":  [
+                      "Skær kartofler i tern og porre i ringe. Varm olivenolien i en stor gryde og sauter kartofler og porrer i et par minutter under jævnlig omrøring.",
+                      "Tilsæt grøntsagsbouillon og et nip vaniljepulver. Læg låget på og lad suppen koge ved middel varme i 20 minutter, til kartoflerne er gennemkogte og møre.",
+                      "Blend suppen med en stavblender. Tilsæt piskefløde og blend igen til suppen er luftig og cremet. Justér konsistensen med lidt ekstra bouillon og smag til med salt, peber og saften fra en halv appelsin.",
+                      "Steg baconskiverne sprøde på en tør pande. Skær rugbrødet i små tern og rist dem i smør til de er gyldne og sprøde. Rist græskarkernerne på den tørre pande i et minut.",
+                      "Hæld suppen i varme skåle og top med de sprøde rugbrødstern, ristede græskarkerner, sprødristet bacon og friske timiankviste."
+                  ]
+    },
+    {
+        "id":  "c047",
+        "name":  "Pasta med kødsauce",
+        "cuisine":  "italiensk",
+        "cost":  130,
+        "time":  35,
+        "portions":  4,
+        "difficulty":  "let",
+        "tags":  [
+                     "pasta",
+                     "oksekød",
+                     "hverdagsret"
+                 ],
+        "ingredients":  [
+                            "400 g hakket oksekød",
+                            "2 stk løg",
+                            "3 fed hvidløg",
+                            "400 g hakkede tomater",
+                            "2 spsk koncentreret tomatpuré",
+                            "1 tsk tørret oregano",
+                            "1 tsk tørret timian",
+                            "100 ml oksebouillon",
+                            "2 spsk olivenolie",
+                            "1 tsk salt",
+                            "400 g spaghetti",
+                            "50 g parmesan"
+                        ],
+        "steps":  [
+                      "Hak løg og hvidløg fint. Varm olien i en bred pande og svits løg og hvidløg ved middel varme i 3–4 minutter, til de er bløde og let gyldne.",
+                      "Skru op for varmen og brun oksekødet godt af. Brug en ske til at bryde farsen i mindre stykker mens det steger, til al kødsaft er fordampet og kødet er smukt brunet.",
+                      "Tilsæt tomatpuré og steg med i et minut. Hæld hakkede tomater og bouillon over og rør oregano og timian i. Lad saucen simre ved lav varme i 15 minutter, til den er tyknet og fyldig. Smag til med salt og peber.",
+                      "Kog spaghettien al dente i rigeligt saltet vand efter pakningens anvisning. Gem en kop kogevand inden du hælder vandet fra.",
+                      "Vend pastaen i saucen og tilsæt lidt pastavand, hvis saucen er for tyk. Server med friskrevet parmesan over."
+                  ]
+    },
+    {
+        "id":  "c048",
+        "name":  "Laks med citronsmørsauce og kartofler",
+        "cuisine":  "dansk",
+        "cost":  205,
+        "time":  30,
+        "portions":  4,
+        "difficulty":  "let",
+        "tags":  [
+                     "fisk",
+                     "hverdagsret",
+                     "klassiker"
+                 ],
+        "ingredients":  [
+                            "4 stk laksefilet",
+                            "3 fed hvidløg",
+                            "1 spsk kapers",
+                            "150 ml grøntsagsbouillon",
+                            "1 stk citron",
+                            "50 g smør",
+                            "2 spsk persille",
+                            "1 tsk olivenolie",
+                            "1 tsk salt",
+                            "800 g kartofler"
+                        ],
+        "steps":  [
+                      "Kog kartoflerne i letsaltet vand i 15–20 minutter, til de er møre. Krydr laksefileterne på begge sider med salt og peber.",
+                      "Bag laksen i forvarmet ovn på et bagepapirbeklædt fad ved 175 grader varmluft i 12–15 minutter, til fisken er let uigennemsigtig i midten og falder let fra hinanden.",
+                      "Mens laksen er i ovnen: svits finthakket hvidløg i lidt olivenolie på en pande ved middel varme, til det er blødt. Tilsæt kapers, bouillon, revet citronskal og citronsaft og lad det simre til det er kogt godt ind.",
+                      "Tag panden af varmen og pisk det kolde smør i lidt ad gangen, til saucen er blank og cremet. Smag til med salt og peber.",
+                      "Hæld citronsmørsaucen over de bagte laksefileter og drys med finthakket persille. Server med de kogte kartofler."
+                  ]
+    },
+    {
+        "id":  "c049",
+        "name":  "Cremet kyllingepasta med soltørrede tomater",
+        "cuisine":  "italiensk",
+        "cost":  180,
+        "time":  35,
+        "portions":  4,
+        "difficulty":  "let",
+        "tags":  [
+                     "pasta",
+                     "kylling",
+                     "hverdagsret"
+                 ],
+        "ingredients":  [
+                            "4 stk kyllingebryst",
+                            "30 g hvedemel",
+                            "2 stk løg",
+                            "4 fed hvidløg",
+                            "75 g soltørrede tomater i olie",
+                            "2 tsk tørret oregano",
+                            "1 tsk tørret timian",
+                            "200 ml hønsebouillon",
+                            "250 ml piskefløde",
+                            "15 g koncentreret tomatpuré",
+                            "100 g parmesan",
+                            "1 håndfuld frisk basilikum",
+                            "2 spsk olivenolie",
+                            "10 g smør",
+                            "1 tsk salt",
+                            "400 g pasta"
+                        ],
+        "steps":  [
+                      "Dup kyllingebrysterne tørre med køkkenrulle og vend dem i hvedemel blandet med salt og peber på alle sider. Varm en stor pande op med olie og smør og brun kyllingen 2 minutter på hver side ved middelhøj varme. Tag kyllingen fra panden.",
+                      "Steg finthakkede soltørrede tomater, løg og hvidløg i olien fra kyllingen i 3–4 minutter, til løgene er bløde. Tilsæt oregano og timian og rør rundt.",
+                      "Hæld hønsebouillon, piskefløde og tomatpuré over. Læg kyllingen tilbage på panden og lad det simre ved lav varme i 12–15 minutter, til kyllingen er gennemstegt. Kog pastaen al dente i saltet vand i samme tidsrum.",
+                      "Rør friskrevet parmesan og basilikumblade i saucen og smag til med salt og peber. Saucen skal være fyldig og cremet.",
+                      "Hæld vandet fra pastaen og vend den i saucen. Server straks med ekstra parmesan."
+                  ]
+    },
+    {
+        "id":  "c050",
+        "name":  "Blomkålscurry med linser",
+        "cuisine":  "vegetarisk",
+        "cost":  120,
+        "time":  45,
+        "portions":  4,
+        "difficulty":  "let",
+        "tags":  [
+                     "vegetarisk",
+                     "curry",
+                     "hverdagsret"
+                 ],
+        "ingredients":  [
+                            "1 stk blomkål",
+                            "1 stk rødløg",
+                            "3 fed hvidløg",
+                            "1 tsk ingefær",
+                            "1 tsk karry",
+                            "2 tsk garam masala",
+                            "1 tsk stødt spidskommen",
+                            "1 tsk stødt koriander",
+                            "50 g gurkemeje",
+                            "100 ml røde linser",
+                            "200 ml grøntsagsbouillon",
+                            "400 ml kokosmælk",
+                            "400 g hakkede tomater",
+                            "1 stk citron",
+                            "200 ml græsk yoghurt 10%",
+                            "100 g spinat",
+                            "1 spsk olivenolie",
+                            "1 tsk salt",
+                            "25 g saltede mandler"
+                        ],
+        "steps":  [
+                      "Rist alle krydderier — karry, garam masala, spidskommen, koriander og gurkemeje — på en tør pande ved høj varme under omrøring i 30 sekunder, til de dufter. Skru ned, tilsæt olie og svits finthakket løg og hvidløg, til løgene er bløde.",
+                      "Tilsæt fintrevet ingefær, røde linser, grøntsagsbouillon, hakkede tomater og kokosmælk. Rør godt rundt, læg låg på og lad det simre i 20 minutter.",
+                      "Skær blomkålen i buketter og tilsæt dem i gryden. Lad det simre videre i 10 minutter, til blomkålen er mør men stadig har lidt bid.",
+                      "Rør revet citronskal, citronsaft og yoghurt i og smag til med salt og peber. Tilsæt spinatblade og rør dem i retten, de falder hurtigt sammen.",
+                      "Server curryen med ris eller brød og drys med grofthakkede saltede mandler."
+                  ]
+    },
+    {
+        "id":  "c051",
+        "name":  "Kalkunschnitzel med champignonsauce",
+        "cuisine":  "dansk",
+        "cost":  170,
+        "time":  35,
+        "portions":  4,
+        "difficulty":  "let",
+        "tags":  [
+                     "kalkun",
+                     "hverdagsret",
+                     "klassiker"
+                 ],
+        "ingredients":  [
+                            "500 g kalkunschnitzel",
+                            "4 spsk hvedemel",
+                            "1 tsk salt",
+                            "40 g smør",
+                            "1 stk citron",
+                            "225 g champignoner",
+                            "200 ml hønsebouillon",
+                            "100 ml piskefløde",
+                            "1 spsk majsstivelse",
+                            "800 g kartofler",
+                            "300 g frosne ærter"
+                        ],
+        "steps":  [
+                      "Rids schnitzlerne let i overfladen og vend dem i mel rørt med salt og peber på begge sider. Kog kartoflerne i letsaltet vand i 15–18 minutter, til de er møre.",
+                      "Smelt smørret på en pande ved middelhøj varme. Steg schnitzlerne 4–5 minutter på den første side og 3 minutter på den anden. Pres citronsaft over og læg schnitzlerne til side på varmt fad.",
+                      "Skær champignonerne i kvarte og steg dem ved kraftig varme på den samme pande i 2 minutter. Tilsæt hønsebouillon og piskefløde og lad det koge i 2–3 minutter.",
+                      "Rør majsstivelse ud i 2 spsk koldt vand og hæld jævningen i saucen under omrøring. Lad saucen koge 1 minut og smag til med salt og peber.",
+                      "Rist ærterne i smør ved høj varme i 1 minut. Server schnitzlerne med champignonsauce, kartofler og de smørristede ærter."
+                  ]
+    },
+    {
+        "id":  "c052",
+        "name":  "Hjemmelavet pizza med tomatsauce og mozzarella",
+        "cuisine":  "italiensk",
+        "cost":  110,
+        "time":  80,
+        "portions":  4,
+        "difficulty":  "medium",
+        "tags":  [
+                     "pizza",
+                     "weekend",
+                     "familievenlig"
+                 ],
+        "ingredients":  [
+                            "25 g gær",
+                            "300 ml vand",
+                            "3 spsk olivenolie",
+                            "1 tsk salt",
+                            "500 g hvedemel",
+                            "400 g hakkede tomater",
+                            "100 ml olivenolie",
+                            "1 spsk koncentreret tomatpuré",
+                            "1 fed hvidløg",
+                            "1 håndfuld frisk basilikum",
+                            "1 tsk salt",
+                            "250 g mozzarella"
+                        ],
+        "steps":  [
+                      "Opløs gæren i lunkent vand i en skål. Tilsæt olivenolie, salt og en tredjedel af melet og rør til en jævn masse. Tilsæt resten af melet lidt ad gangen og ælt dejen på bordet i 8–10 minutter, til den er glat og smidig. Læg dejen i en oliesmurt skål og dæk til. Lad den hæve et lunt sted i 45–60 minutter.",
+                      "Blend hakkede tomater, olivenolie, tomatpuré, hvidløg, basilikum, salt og peber til en jævn pizzasauce. Smag til og juster krydringen.",
+                      "Forvarm ovnen til 250 grader. Del dejen i to og rul hvert stykke ud til en tynd, rund pizza på et bagepapirbeklædt bageplade.",
+                      "Fordel et tyndt lag kold pizzasauce på bundene. Riv mozzarella i stykker og fordel den over saucen. Krydr med salt, peber og lidt olivenolie.",
+                      "Bag pizzaerne én ad gangen i den varme ovn i 8–10 minutter, til bunden er sprød og osten er boblende gylden. Server straks med friske basilikumblade."
+                  ]
+    },
+    {
+        "id":  "c053",
+        "name":  "Svinekoteletter i fad med champignon og fløde",
+        "cuisine":  "dansk",
+        "cost":  155,
+        "time":  50,
+        "portions":  4,
+        "difficulty":  "let",
+        "tags":  [
+                     "svinekød",
+                     "hverdagsret",
+                     "ovnret"
+                 ],
+        "ingredients":  [
+                            "4 stk svinekoteletter",
+                            "100 g bacon",
+                            "2 stk løg",
+                            "2 fed hvidløg",
+                            "500 g champignoner",
+                            "400 g hakkede tomater",
+                            "250 ml piskefløde",
+                            "1 tsk sød paprika",
+                            "1 tsk røget paprika",
+                            "2 tsk tørret timian",
+                            "1 spsk smør",
+                            "1 tsk salt",
+                            "3 dl basmati ris"
+                        ],
+        "steps":  [
+                      "Steg baconskiverne sprøde på en pande og læg dem på køkkenrulle. Krydr koteletterne med salt og peber og brun dem hurtigt i smør, et halvt minut på hver side. Læg koteletterne til side.",
+                      "Skær champignonerne i kvarte og steg dem med finthakkede løg og timian ved høj varme på den samme pande, til løgene er bløde og champignonerne har fået farve.",
+                      "Tilsæt finthakket hvidløg, paprika, hakket bacon, hakkede tomater og piskefløde. Rør godt rundt og lad saucen koge i 8–10 minutter, til den er tyknet. Smag til med salt og peber.",
+                      "Hæld saucen i et smurt ovnfast fad og læg koteletterne ned i saucen. Bag i forvarmet ovn ved 175 grader i 15–20 minutter, til koteletterne er gennemstegte.",
+                      "Kog risen imens efter pakningens anvisning. Server koteletter og sauce over risen med et drys frisk timian."
+                  ]
+    },
+    {
+        "id":  "c054",
+        "name":  "Wok med oksekød og grøntsager",
+        "cuisine":  "asiatisk",
+        "cost":  185,
+        "time":  30,
+        "portions":  4,
+        "difficulty":  "let",
+        "tags":  [
+                     "oksekød",
+                     "wok",
+                     "hverdagsret",
+                     "asiatisk"
+                 ],
+        "ingredients":  [
+                            "400 g entrecote",
+                            "1 spsk soja",
+                            "1 spsk sukker",
+                            "1 spsk fishsauce",
+                            "4 fed hvidløg",
+                            "1 spsk ingefær",
+                            "20 g sesamfrø",
+                            "1 spsk sesamolie",
+                            "100 g broccoli",
+                            "2 stk gulerødder",
+                            "300 g spidskål",
+                            "100 g spinat",
+                            "200 g nudler",
+                            "1 stk lime",
+                            "20 g saltede peanuts",
+                            "3 stk forårsløg"
+                        ],
+        "steps":  [
+                      "Skær entrecoten i tynde strimler på tværs af kødfiberen. Bland soja, sukker, fishsauce, presset hvidløg, fintrevet ingefær og sesamfrø til en marinade og vend oksekødet i den.",
+                      "Kog nudlerne efter pakningens anvisning og skyl dem i koldt vand. Rør en simpel dressing af sesamolie, limesaft, revet limeskal, fishsauce, sukker og finthakket chili.",
+                      "Varm en wok ved høj varme og lynsteg oksekødsstrimlerne i 2–3 minutter, til de kun lige er gennemstegte. Tag kødet af varmen og sæt til side.",
+                      "Steg fintstrimlet gulerødder, broccolibuketter og spidskål i wokken i ét minut ved høj varme — grøntsagerne skal bevare sprødheden. Tilsæt nudler og rør alt sammen.",
+                      "Anret nudlerne og grøntsagerne i en stor skål og læg oksekødet over. Vend dressingen i og drys med grofthakkede peanuts og fintsnittede forårsløg. Server med lime i både."
+                  ]
+    },
+    {
+        "id":  "c055",
+        "name":  "Pasta med pesto og kylling",
+        "cuisine":  "italiensk",
+        "cost":  155,
+        "time":  30,
+        "portions":  4,
+        "difficulty":  "let",
+        "tags":  [
+                     "pasta",
+                     "kylling",
+                     "hverdagsret"
+                 ],
+        "ingredients":  [
+                            "500 g pasta",
+                            "400 g kyllingefilet",
+                            "150 g spinat",
+                            "1 håndfuld frisk basilikum",
+                            "75 g parmesan",
+                            "30 g pinjekerner",
+                            "2 fed hvidløg",
+                            "50 ml olivenolie",
+                            "1 stk citron",
+                            "1 spsk olivenolie",
+                            "1 tsk salt",
+                            "25 g parmesan"
+                        ],
+        "steps":  [
+                      "Blend spinat, basilikum, friskrevet parmesan, pinjekerner, hvidløg og olivenolie til en cremet pesto. Smag til med revet citronskal, citronsaft, salt og peber.",
+                      "Skær kyllingefileterne i strimler og krydr med salt og peber. Steg dem i olivenolie på en pande ved middelhøj varme i 5–7 minutter, til de er gyldenbrune og gennemstegte. Læg til side.",
+                      "Kog pastaen al dente i rigeligt saltet vand. Gem 2 dl af kogevandet inden du hælder vandet fra.",
+                      "Vend den varme pasta med pestoen ved lav varme. Tilsæt lidt pastavand og rør til saucen er jævn og cremet. Smag til med salt og peber.",
+                      "Fordel pastaen på tallerkener og læg de stegte kyllingestrimler over. Server med friskrevet parmesan og ristede pinjekerner."
+                  ]
+    },
+    {
+        "id":  "c056",
+        "name":  "Svinemørbrad i gryde med champignon og fløde",
+        "cuisine":  "dansk",
+        "cost":  185,
+        "time":  50,
+        "portions":  4,
+        "difficulty":  "let",
+        "tags":  [
+                     "svinekød",
+                     "hverdagsret",
+                     "simremad"
+                 ],
+        "ingredients":  [
+                            "450 g svinemørbrad",
+                            "100 g bacon",
+                            "200 g champignoner",
+                            "3 stk løg",
+                            "2 spsk sød paprika",
+                            "1 tsk røget paprika",
+                            "75 g koncentreret tomatpuré",
+                            "400 g hakkede tomater",
+                            "2 stk rød peberfrugt",
+                            "250 ml piskefløde",
+                            "100 ml vand",
+                            "1 spsk olivenolie",
+                            "1 tsk salt",
+                            "3 dl basmati ris",
+                            "1 håndfuld persille"
+                        ],
+        "steps":  [
+                      "Skær svinemørbraden i tern og bacon i strimler. Steg baconet i en sauterpande, til det er let sprødt. Tag baconet af og sæt til side.",
+                      "Steg champignoner og finthakkede løg i olien fra bacon ved middelhøj varme, til løgene er bløde og champignonerne er gyldne.",
+                      "Skru op for varmen og brun mørbradternene hurtigt på alle sider. Tilsæt paprika, tomatpuré, hakkede tomater, vand og det stegte bacon. Rør godt rundt.",
+                      "Læg låg på og simr ved lav varme i 15 minutter. Tilsæt peberfrugt skåret i tern og piskefløde og kog retten i yderligere 5 minutter uden låg, til saucen er cremet. Smag til med salt og peber.",
+                      "Kog risen imens efter pakningens anvisning. Server gryderetten over risen med et drys grofthakket persille."
+                  ]
+    },
+    {
+        "id":  "c057",
+        "name":  "Blomkålssuppe",
+        "cuisine":  "vegetarisk",
+        "cost":  85,
+        "time":  30,
+        "portions":  4,
+        "difficulty":  "let",
+        "tags":  [
+                     "suppe",
+                     "vegetarisk",
+                     "hverdagsret"
+                 ],
+        "ingredients":  [
+                            "1 stk blomkål",
+                            "1 fed hvidløg",
+                            "1 tsk ingefær",
+                            "1000 ml grøntsagsbouillon",
+                            "1 nip vaniljepulver",
+                            "50 ml piskefløde",
+                            "1 nip muskatnød",
+                            "1 stk citron",
+                            "2 spsk olivenolie",
+                            "1 tsk salt",
+                            "30 g valnødder",
+                            "1 spsk hampefrø",
+                            "1 tsk frisk timian"
+                        ],
+        "steps":  [
+                      "Skær blomkålen i grove stykker. Kom dem i en gryde med knust hvidløg, finthakket ingefær, grøntsagsbouillon, vaniljepulver og olivenolie.",
+                      "Bring gryden i kog og læg låget på. Kog ved middel varme i 8–10 minutter, til blomkålen er gennemblød.",
+                      "Hæld piskefløde i og blend suppen med en stavblender, til den er helt cremet og luftig. Juster konsistensen med ekstra bouillon, hvis suppen er for tyk.",
+                      "Smag til med citronsaft, revet muskatnød, salt og friskkværnet peber. Suppen skal have en frisk, mild smag med et hint af syre.",
+                      "Hæld suppen i varme skåle og drys med grofthakkede valnødder, hampefrø og frisk timian inden servering."
+                  ]
+    },
+    {
+        "id":  "c058",
+        "name":  "Kylling i tomatsauce med pasta",
+        "cuisine":  "italiensk",
+        "cost":  160,
+        "time":  40,
+        "portions":  4,
+        "difficulty":  "let",
+        "tags":  [
+                     "kylling",
+                     "pasta",
+                     "hverdagsret"
+                 ],
+        "ingredients":  [
+                            "400 g kyllingefilet",
+                            "70 g hakket svinekød",
+                            "1 stk løg",
+                            "3 fed hvidløg",
+                            "50 g soltørrede tomater i olie",
+                            "1 tsk fennikelfrø",
+                            "300 g squash",
+                            "400 ml grøntsagsbouillon",
+                            "400 g hakkede tomater",
+                            "500 g gnocchi",
+                            "125 g mozzarella",
+                            "50 g parmesan",
+                            "1 spsk olivenolie",
+                            "1 tsk salt",
+                            "1 håndfuld frisk basilikum"
+                        ],
+        "steps":  [
+                      "Steg hakket svinekød og finthakket løg i olivenolie ved middel varme i en sauterpande, til løgene er bløde. Tilsæt kylling skåret i tern, skru op for varmen og brun kødet hurtigt.",
+                      "Tilsæt presset hvidløg, finthakkede soltørrede tomater, fennikelfrø og groftrrevet squash. Steg med i 2 minutter under omrøring.",
+                      "Hæld grøntsagsbouillon og hakkede tomater over. Tilsæt gnocchi og rør forsigtigt. Smag til med salt og peber og lad det simre i 5 minutter.",
+                      "Riv mozzarella i stykker og fordel den over retten sammen med friskrevet parmesan. Bag i ovnen ved 180 grader i 15–20 minutter, til osten er smeltet og gylden.",
+                      "Tag fadet ud af ovnen og drys med friske basilikumblade og ekstra parmesan inden servering."
+                  ]
+    },
+    {
+        "id":  "c059",
+        "name":  "Rødspættefileter med persillesauce og kartofler",
+        "cuisine":  "dansk",
+        "cost":  160,
+        "time":  45,
+        "portions":  4,
+        "difficulty":  "let",
+        "tags":  [
+                     "fisk",
+                     "klassiker",
+                     "hverdagsret"
+                 ],
+        "ingredients":  [
+                            "4 stk rødspættefileter",
+                            "1 stk æg",
+                            "200 ml rugmel",
+                            "1 tsk salt",
+                            "2 spsk smør",
+                            "2 spsk hvedemel",
+                            "500 ml mælk",
+                            "1 stk citron",
+                            "2 håndfulde persille",
+                            "1000 g kartofler"
+                        ],
+        "steps":  [
+                      "Kog kartoflerne i letsaltet vand i 15–20 minutter, til de er møre. Gem lidt kartoffelvand til persillesaucen.",
+                      "Pisk ægget let i en dyb tallerken. Bland rugmel med salt og peber i en anden tallerken. Vend rødspættefileterne i æg og derefter i rugmelsblandingen. Lad dem hvile 5 minutter.",
+                      "Smelt smør på en pande til det bruser. Steg fileterne ved middel varme i 4–5 minutter på den første side og 3–4 minutter på den anden, til de er gyldne og sprøde.",
+                      "Smelt smør i en gryde og pisk hvedemelet i til en klump. Tilsæt mælk lidt ad gangen under konstant omrøring og pisk til en jævn sauce. Kog saucen igennem i 3 minutter. Smag til med citronsaft, revet citronskal, salt og peber og rør finthakket persille i.",
+                      "Server de stegte rødspætter med kogte kartofler, persillesauce og ekstra citron."
+                  ]
+    },
+    {
+        "id":  "c060",
+        "name":  "Oksekødsgryde med kartofler og gulerødder",
+        "cuisine":  "dansk",
+        "cost":  180,
+        "time":  180,
+        "portions":  4,
+        "difficulty":  "medium",
+        "tags":  [
+                     "oksekød",
+                     "simremad",
+                     "weekend"
+                 ],
+        "ingredients":  [
+                            "450 g skært oksekød",
+                            "2 spsk hvedemel",
+                            "2 stk løg",
+                            "4 fed hvidløg",
+                            "1 stk rød chili",
+                            "2 tsk stødt spidskommen",
+                            "1 tsk tørret oregano",
+                            "200 ml oksebouillon",
+                            "400 g hakkede tomater",
+                            "1000 g kartofler",
+                            "2 stk gulerødder",
+                            "1 spsk smør",
+                            "1 spsk olivenolie",
+                            "1 tsk salt"
+                        ],
+        "steps":  [
+                      "Skær oksekødet i tern på ca. 3 cm. Bland mel, spidskommen, oregano, halvdelen af den finthakkede chili og lidt salt i en skål og vend kødet i blandingen.",
+                      "Svits finthakkede løg og hvidløg i olie og smør i en stor gryde ved middel varme i 3–4 minutter, til løgene er bløde. Tilsæt det meldyppede oksekød og brun det godt af ved høj varme.",
+                      "Hæld oksebouillon og hakkede tomater over og rør godt rundt. Bring gryden i kog, skru ned til lav varme og lad gryden simre under låg i 1,5–2 timer, til kødet er helt mørt. Rør jævnligt undervejs.",
+                      "Skær kartofler og gulerødder i store tern. Tilsæt dem i gryden og lad det simre videre i 20–25 minutter, til grøntsagerne er møre.",
+                      "Smag til med salt, peber og mere chili efter smag. Server gryden rygende varm med godt brød."
+                  ]
+    }
 ]

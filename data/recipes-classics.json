@@ -1,614 +1,696 @@
-[
-  {
-    "id": "c001",
-    "name": "Frikadeller",
-    "cuisine": "dansk",
-    "cost": 65,
-    "time": 50,
-    "portions": 4,
-    "difficulty": "let",
-    "tags": ["klassiker", "hverdagsret", "svinekød"],
-    "ingredients": [
-      "500 g hakket svinekød",
-      "2 spsk hvedemel",
-      "2 spsk havregryn",
-      "1 dl mælk",
-      "2 æg",
-      "1 løg",
-      "1 fed hvidløg",
-      "1 tsk tørret timian",
-      "½ tsk spidskommen",
-      "3 spsk olivenolie",
-      "1 spsk smør",
-      "1 kg kartofler"
-    ],
-    "steps": [
-      "Riv løget og hvidløget fint. Kom hakket svinekød, havregryn, hvedemel, mælk, æg, løg, hvidløg, timian og spidskommen i en skål. Pisk farsen med en håndmikser i 2-3 min, til den er ensartet. Sæt på køl i mindst 30 min.",
-      "Skræl kartofler og kog dem i saltet vand i ca. 20 min, til de er møre.",
-      "Varm olivenolie og smør på en pande ved middel varme. Form frikadeller med en ske og steg dem ca. 5 min på hver side, til de er gyldne og gennemstegte.",
-      "Server frikadellerne med de kogte kartofler."
-    ]
-  },
-  {
-    "id": "c002",
-    "name": "Hakkebøf med bløde løg og brun sovs",
-    "cuisine": "dansk",
-    "cost": 100,
-    "time": 45,
-    "portions": 4,
-    "difficulty": "let",
-    "tags": ["klassiker", "hverdagsret", "oksekød"],
-    "ingredients": [
-      "500 g hakket oksekød",
-      "300 g champignoner",
-      "2 kviste timian",
-      "3 løg",
-      "1 spsk balsamicoeddike",
-      "2 spsk smør",
-      "1 tsk olivenolie",
-      "3 dl bouillon",
-      "1 dl fløde",
-      "1 tsk Worcestershire sauce",
-      "1 spsk maizena",
-      "1 kg kartofler",
-      "200 g syltede agurker"
-    ],
-    "steps": [
-      "Varm panden med olivenolie og halvdelen af smørret. Steg champignonerne med timian ved høj varme, til de er gyldne. Flyt til side.",
-      "Sænk varmen, tilsæt resten af smørret og løgringene. Sauter løgene til de er bløde. Dryp balsamicoeddike over og sæt til side med champignonerne.",
-      "Form hakket oksekød til 4 flade bøffer. Krydr med salt og peber. Steg dem på panden 2-3 min på hver side. Tag af panden.",
-      "Hæld bouillon på panden og skrab bunden ren. Tilsæt fløde og Worcestershire sauce. Rør maizena ud i 2 spsk koldt vand og rør det i. Kog sovsen op og smag til.",
-      "Kom bøfferne tilbage i sovsen og top med løg og champignoner. Kog kartofler i saltet vand i 20 min. Server med syltede agurker."
-    ]
-  },
-  {
-    "id": "c003",
-    "name": "Spaghetti bolognese",
-    "cuisine": "italiensk",
-    "cost": 110,
-    "time": 75,
-    "portions": 4,
-    "difficulty": "let",
-    "tags": ["klassiker", "pasta", "oksekød"],
-    "ingredients": [
-      "500 g hakket oksekød",
-      "50 g bacon",
-      "2 løg",
-      "2 fed hvidløg",
-      "2 tsk tørret timian",
-      "1 dl rødvin",
-      "100 g soltørrede tomater",
-      "2 spsk balsamicoeddike",
-      "800 g hakkede tomater",
-      "2 spsk olivenolie",
-      "400 g spaghetti",
-      "75 g revet parmesan"
-    ],
-    "steps": [
-      "Steg bacon i olivenolie i en tykbundet gryde. Tag bacon op og læg på køkkenrulle.",
-      "Sauter finthakkede løg, hvidløg og timian i baconfedtet, til løgene er bløde.",
-      "Tilsæt hakket oksekød og brun det godt. Hæld rødvin på og lad koge lidt ind. Tilsæt finthakkede soltørrede tomater, balsamicoeddike og hakkede tomater. Hak baconen og rør den i.",
-      "Lad sovsen simre tildækket ved svag varme i 1 time. Rør jævnligt og tilsæt lidt vand eller rødvin, hvis den koger tør. Smag til med salt og peber.",
-      "Kog spaghetti efter pakken. Server pasta i dybe tallerkener toppet med bolognese og revet parmesan."
-    ]
-  },
-  {
-    "id": "c004",
-    "name": "Lasagne",
-    "cuisine": "italiensk",
-    "cost": 130,
-    "time": 100,
-    "portions": 4,
-    "difficulty": "mellem",
-    "tags": ["klassiker", "pasta", "oksekød", "ovn"],
-    "ingredients": [
-      "400 g hakket oksekød",
-      "2 løg",
-      "4 fed hvidløg",
-      "2 tsk tørret oregano",
-      "1 tsk tørret timian",
-      "4 gulerødder",
-      "3 stk selleri",
-      "1 squash",
-      "50 g tomatpuré",
-      "800 g hakkede tomater",
-      "1 dl rødvin",
-      "2 spsk olivenolie",
-      "2 spsk smør",
-      "2 spsk hvedemel",
-      "3 dl mælk",
-      "1 nip muskat",
-      "250 g mozzarella",
-      "200 g lasagneplader"
-    ],
-    "steps": [
-      "Sauter finthakkede løg og hvidløg i olivenolie, til de er bløde. Tilsæt hakket oksekød og brun ved høj varme. Skru ned og tilsæt oregano og timian.",
-      "Riv gulerødder, selleri og squash groft og rør dem i. Tilsæt tomatpuré, hakkede tomater og rødvin. Lad simre tildækket i mindst 1 time. Smag til med salt og peber.",
-      "Smelt smør i en gryde og pisk hvedemel i. Tilsæt mælk lidt ad gangen under piskning, til mornaysovsen er jævn. Riv 125 g mozzarella og rør i. Tilsæt muskat, salt og peber.",
-      "Smør et ildfast fad. Fordel et lag mornaysovs i bunden. Skift lagvis med kødsovs og lasagneplader. Slut med mornaysovs på toppen og skiver af den resterende mozzarella.",
-      "Bag ved 175°C varmluft i 20-25 min, til lasagnen er gylden og gennemvarm. Lad hvile 10 min inden servering."
-    ]
-  },
-  {
-    "id": "c005",
-    "name": "Spaghetti carbonara",
-    "cuisine": "italiensk",
-    "cost": 100,
-    "time": 25,
-    "portions": 4,
-    "difficulty": "let",
-    "tags": ["hurtig", "pasta", "klassiker"],
-    "ingredients": [
-      "400 g spaghetti",
-      "100 g bacon",
-      "1 løg",
-      "1 spsk smør",
-      "1 dl fløde",
-      "3 æg",
-      "150 g revet parmesan"
-    ],
-    "steps": [
-      "Kog spaghetti i rigeligt saltet vand til al dente. Gem et glas pastavand inden afkogling.",
-      "Steg bacon på panden ved middel varme, til det er sprødt men stadig saftigt. Tag op på køkkenrulle.",
-      "Kom smør i baconfedtet og sauter finthakket løg, til det er blødt.",
-      "Kom bacon tilbage på panden og tilsæt fløde. Lad koge kort op. Tag panden af varmen.",
-      "Vend den varme spaghetti i med de sammenpiskede æg og 100 g revet parmesan. Rør hurtigt, til sovsen er cremet. Tilsæt lidt pastavand, hvis retten er for tyk. Smag til med salt og peber. Server med resten af parmesanen."
-    ]
-  },
-  {
-    "id": "c006",
-    "name": "Indisk curry med kylling",
-    "cuisine": "indisk",
-    "cost": 80,
-    "time": 160,
-    "portions": 4,
-    "difficulty": "let",
-    "tags": ["curry", "kylling", "eksotisk"],
-    "ingredients": [
-      "400 g kyllingefilet",
-      "1 dl yoghurt naturel",
-      "1 lime",
-      "3 spsk karry",
-      "1 tsk stødt kanel",
-      "½ tsk nelliker",
-      "1 tsk kardemomme",
-      "2 fed hvidløg",
-      "1 spsk ingefær",
-      "2 løg",
-      "400 g hakkede tomater",
-      "1 peberfrugt",
-      "400 ml kokosmælk",
-      "1 rød chili",
-      "3 spsk olivenolie",
-      "3 dl ris",
-      "1 bundt koriander"
-    ],
-    "steps": [
-      "Skær kyllingefileter i tern. Bland yoghurt naturel og saften af ½ lime. Mariner kyllingen i blandingen i minimum 2 timer.",
-      "Rist karry, kanel, nelliker og kardemomme på en tør varm pande, til krydderierne dufter. Skru ned, tilsæt olivenolie, finthakkede løg, hvidløg og revet ingefær. Sauter under omrøring, til løgene er bløde og gyldne.",
-      "Tilsæt kylling inkl. marinade og hakkede tomater. Rør rundt og lad simre uden låg i ca. 15 min, til kyllingen er mør.",
-      "Tilsæt peberfrugt i tern, hakket chili og kokosmælk. Varm godt igennem. Smag til med resten af limesaften, salt og peber.",
-      "Kog ris efter anvisning. Server curry med ris og frisk koriander."
-    ]
-  },
-  {
-    "id": "c007",
-    "name": "Flæskesteg med sprød svær",
-    "cuisine": "dansk",
-    "cost": 95,
-    "time": 180,
-    "portions": 4,
-    "difficulty": "let",
-    "tags": ["klassiker", "svinekød", "søndagsret", "ovn"],
-    "ingredients": [
-      "1 kg svinekam",
-      "8 laurbær",
-      "4 kviste timian",
-      "1 kg kartofler",
-      "1 glas rødkål"
-    ],
-    "steps": [
-      "Kontroller at sværen er forskåret. Skær med en skarp kniv igennem svær og fedt ned til kødet i hver rille. Gnid salt grundigt ind i alle snit. Lad hvile 30 min ved stuetemperatur.",
-      "Placer svinekammen på en rist over en bradepande. Læg laurbær og timian under risten. Sørg for sværen ligger fladt. Hæld lidt vand i bunden af bradepanden.",
-      "Sæt i en kold ovn. Tænd på 125°C varmluft og steg i 2 timer. Skru op til 200°C og steg 30 min. Skru til 225°C og steg 15-20 min til sværen bobler og er sprød.",
-      "Lad flæskestegen hvile utildækket i 15 min. Kog kartofler i saltet vand i 20 min. Varm rødkål op.",
-      "Server flæskestegen skåret i skiver med kogte kartofler og rødkål."
-    ]
-  },
-  {
-    "id": "c008",
-    "name": "Forloren hare med bagte rodfrugter",
-    "cuisine": "dansk",
-    "cost": 110,
-    "time": 65,
-    "portions": 4,
-    "difficulty": "let",
-    "tags": ["klassiker", "hverdagsret", "svinekød", "ovn"],
-    "ingredients": [
-      "800 g hakket svinekød",
-      "200 g bacon",
-      "2 løg",
-      "2 fed hvidløg",
-      "2 dl mælk",
-      "½ dl fløde",
-      "2 æg",
-      "20 g havregryn",
-      "2 tsk tørret timian",
-      "4 spsk rasp",
-      "250 g rødbeder",
-      "250 g gulerødder",
-      "400 g kartofler"
-    ],
-    "steps": [
-      "Rist 75 g bacon sprødt og hak fint. Kom hakket svinekød, ristet bacon, finthakkede løg, hvidløg, mælk, fløde, æg, havregryn, timian, salt og peber i en skål. Pisk farsen med en håndmikser i 3 min.",
-      "Form farsen til et farsbrød i et ildfast fad. Drys med rasp og læg de resterende baconskiver tæt henover.",
-      "Skær rødbeder, gulerødder og kartofler i grove tern og fordel dem langs begge sider af farsbrødet. Drys med timian.",
-      "Bag i forvarmet ovn ved 180°C varmluft i 35-40 min, til kernetemperaturen er ca. 75°C. Vend rodfrugterne et par gange undervejs.",
-      "Server forloren hare i skiver med de bagte rodfrugter og skyen fra fadet."
-    ]
-  },
-  {
-    "id": "c009",
-    "name": "Ærtesuppe",
-    "cuisine": "dansk",
-    "cost": 60,
-    "time": 20,
-    "portions": 4,
-    "difficulty": "let",
-    "tags": ["suppe", "hurtig", "vegetarisk"],
-    "ingredients": [
-      "600 g frosne ærter",
-      "2 løg",
-      "2 fed hvidløg",
-      "1 tsk tørret timian",
-      "8 dl bouillon",
-      "1 dl fløde",
-      "1 spsk olivenolie",
-      "1 dl creme fraiche",
-      "100 g saltmandler"
-    ],
-    "steps": [
-      "Sauter finthakkede løg og hvidløg i olivenolie ved middel varme, til de er bløde.",
-      "Tilsæt ærter og timian. Rør rundt og hæld bouillon i. Lad simre tildækket i 5-7 min.",
-      "Hæld fløden i og blend suppen med en stavblender, til den er helt cremet og ensartet.",
-      "Smag til med salt og peber. Server suppen med creme fraiche og grofthakkede saltmandler."
-    ]
-  },
-  {
-    "id": "c010",
-    "name": "Biksemad med spejlæg",
-    "cuisine": "dansk",
-    "cost": 100,
-    "time": 50,
-    "portions": 4,
-    "difficulty": "let",
-    "tags": ["klassiker", "hverdagsret", "oksekød"],
-    "ingredients": [
-      "300 g oksebøf",
-      "1 kg kartofler",
-      "1 løg",
-      "1 rødløg",
-      "1 dl æblecidereddike",
-      "3 spsk sukker",
-      "2 spsk Worcestershire sauce",
-      "4 æg",
-      "2 spsk smør",
-      "1 spsk olivenolie",
-      "2 dl bearnaisesauce",
-      "100 g syltede rødbeder"
-    ],
-    "steps": [
-      "Bland æblecidereddike og sukker i en skål. Tilsæt tynde rødløgsringe og lad trække mindst 30 min.",
-      "Skræl kartofler og kog dem til møre. Lad køle helt af og skær i tern.",
-      "Sauter finthakket løg i olivenolie på en varm pande. Tilsæt kartofler med halvdelen af smørret og rist dem, til de har en sprød stegeflade. Krydr med Worcestershire sauce, salt og peber.",
-      "Lynsteg oksebøffen på en separat pande i resten af smørret. Krydr med salt og peber. Skær kødet i tern og bland med kartoffelblandingen.",
-      "Steg 4 spejlæg. Anret biksemad toppet med spejlæg, bearnaisesauce, syltede rødløg og syltede rødbeder ved siden af."
-    ]
-  },
-  {
-    "id": "c011",
-    "name": "Champignonsuppe",
-    "cuisine": "dansk",
-    "cost": 60,
-    "time": 45,
-    "portions": 4,
-    "difficulty": "let",
-    "tags": ["suppe", "vegetarisk"],
-    "ingredients": [
-      "800 g champignoner",
-      "2 løg",
-      "3 fed hvidløg",
-      "4 spsk hvedemel",
-      "1½ liter bouillon",
-      "1 dl fløde",
-      "50 g smør",
-      "1 nip muskat",
-      "4 forårsløg",
-      "4 skiver rugbrød"
-    ],
-    "steps": [
-      "Sauter finthakkede løg og hvidløg i smør i en gryde ved middel varme, til løgene er bløde.",
-      "Drys mel over og rør godt. Pisk bouillon i lidt efter lidt, til suppen er jævn.",
-      "Tilsæt champignoner (gem en håndfuld til pynt) og lad simre i 5 min. Tilsæt fløde og muskat. Smag til med salt og peber. Varm op til kogepunktet.",
-      "Steg de reserverede champignoner i lidt smør til de er gyldne.",
-      "Server suppen i dybe tallerkener med forårsløg, smørristede champignoner og rugbrød."
-    ]
-  },
-  {
-    "id": "c012",
-    "name": "Paneret fiskefilet",
-    "cuisine": "dansk",
-    "cost": 120,
-    "time": 25,
-    "portions": 4,
-    "difficulty": "let",
-    "tags": ["fisk", "klassiker", "hverdagsret"],
-    "ingredients": [
-      "600 g rødspætte",
-      "2 æg",
-      "20 g hvedemel",
-      "30 g grahamsmel",
-      "2 spsk smør",
-      "1 tsk olivenolie",
-      "8 skiver rugbrød",
-      "100 g remoulade",
-      "1 citron",
-      "1 bundt persille"
-    ],
-    "steps": [
-      "Pisk æggene sammen i en skål. Bland hvedemel, grahamsmel, salt og peber i en anden skål.",
-      "Dup rødspættefileterne tørre med køkkenrulle. Vend dem først i æggeblandingen og derefter i melblandingen.",
-      "Varm smør og olivenolie på panden til det skummer. Steg fileterne ved middel varme ca. 4-5 min på hver side, til de er smukt gyldne.",
-      "Server fiskefileterne på rugbrød med remoulade, citronbåde og finthakket persille."
-    ]
-  },
-  {
-    "id": "c013",
-    "name": "Stegt flæsk med persillesovs",
-    "cuisine": "dansk",
-    "cost": 110,
-    "time": 50,
-    "portions": 4,
-    "difficulty": "let",
-    "tags": ["klassiker", "hverdagsret", "svinekød"],
-    "ingredients": [
-      "800 g flæsk i skiver",
-      "2 spsk smør",
-      "2 spsk hvedemel",
-      "5 dl mælk",
-      "1 citron",
-      "1 bundt persille",
-      "1 kg kartofler"
-    ],
-    "steps": [
-      "Dryss salt over flæsket og placer det på en rist over en bradepande med bagepapir. Steg i forvarmet ovn ved 175°C varmluft i 30-40 min. Vend flæskeskiverne et par gange undervejs.",
-      "Kog kartofler i letsaltet vand i ca. 20 min, til de er møre. Afløb og hold varme.",
-      "Smelt smør i en gryde ved lav varme. Tilsæt hvedemel gradvist under piskning. Hæld mælk i langsomt og pisk persillesovsen ved middel varme i ca. 5 min, til den er jævn og cremet.",
-      "Smag persillesovsen til med citronsaft, revet citronskal, finthakket persille, salt og peber.",
-      "Server stegt flæsk med kogte kartofler og persillesovs."
-    ]
-  },
-  {
-    "id": "c014",
-    "name": "Hjemmelavede burgere",
-    "cuisine": "amerikansk",
-    "cost": 140,
-    "time": 30,
-    "portions": 4,
-    "difficulty": "let",
-    "tags": ["hverdagsret", "oksekød", "burger"],
-    "ingredients": [
-      "600 g hakket oksekød",
-      "50 g soltørrede tomater",
-      "1 tsk Worcestershire sauce",
-      "1 æg",
-      "½ tsk røget paprika",
-      "1 fed hvidløg",
-      "200 g bacon",
-      "150 g cheddar",
-      "1 stk salat",
-      "2 tomater",
-      "½ agurk",
-      "1 rødløg",
-      "2 spsk mayonnaise",
-      "2 spsk ketchup",
-      "4 burgerboller",
-      "1 spsk smør"
-    ],
-    "steps": [
-      "Bland hakket oksekød, finthakkede soltørrede tomater, Worcestershire sauce, æg, røget paprika, presset hvidløg, salt og peber i en skål. Ælt det godt og form 4 flade bøffer.",
-      "Steg bacon i en kold pande, til det er gyldent og sprødt. Læg på køkkenrulle.",
-      "Smelt smør på panden til det er gyldenbrunt. Steg bøfferne 4-5 min på hver side. Læg en skive cheddar og 2 skiver bacon på hver bøf og lad osten smelte.",
-      "Lun burgerbollerne. Smør mayonnaise og ketchup på. Byg burgerne med bøf, tomat i skiver, agurk i skiver, rødløgsringe og salat. Server straks."
-    ]
-  },
-  {
-    "id": "c015",
-    "name": "Tacos med pulled kylling og mangosalsa",
-    "cuisine": "mexicansk",
-    "cost": 150,
-    "time": 240,
-    "portions": 4,
-    "difficulty": "mellem",
-    "tags": ["weekend", "kylling", "mexicansk"],
-    "ingredients": [
-      "800 g kyllingebryst",
-      "1 spsk sød paprika",
-      "1 tsk røget paprika",
-      "1 tsk spidskommen",
-      "2 spsk brun farin",
-      "2 fed hvidløg",
-      "1 tsk chilipulver",
-      "1 dl bouillon",
-      "25 g smør",
-      "1 mango",
-      "2 avocado",
-      "1 bundt koriander",
-      "1 bundt basilikum",
-      "2 lime",
-      "1 rød chili",
-      "140 g majskerner",
-      "1 stk salat",
-      "8 stk tortillaer"
-    ],
-    "steps": [
-      "Bland sød paprika, røget paprika, spidskommen, brun farin, presset hvidløg, chilipulver, salt og peber. Gnid marinaden ind på kyllingebrysterne. Sæt på køl i 30 min.",
-      "Smør en gryde indvendigt. Kom kyllingebrysterne i og hæld bouillon på. Sæt låg på og bag ved 125°C i 3 timer, til kyllingen er mør og kan trækkes fra hinanden med to gafler.",
-      "Træk kyllingekødet fra hinanden med to gafler og vend det i stegeskyen.",
-      "Skær mango i tern. Mos avocadoerne groft. Bland mango, avocado, finthakket koriander, basilikum, saften af 1½ lime og revet limeskal, hakket chili, salt og peber til mangosalsa.",
-      "Rist majskerner på en varm pande med smør til gyldne. Lun tortillaerne. Server tacos med pulled kylling, mangosalsa, majskerner og salat."
-    ]
-  },
-  {
-    "id": "c016",
-    "name": "Kokos dhal med linser",
-    "cuisine": "vegetarisk",
-    "cost": 50,
-    "time": 50,
-    "portions": 4,
-    "difficulty": "let",
-    "tags": ["vegetarisk", "plantebaseret", "suppe"],
-    "ingredients": [
-      "200 g linser",
-      "4 fed hvidløg",
-      "2 spsk ingefær",
-      "1 spsk karry",
-      "1 spsk spidskommen",
-      "½ tsk kardemomme",
-      "½ spsk koriander",
-      "½ tsk chiliflager",
-      "1 dl bouillon",
-      "800 ml kokosmælk",
-      "400 g hakkede tomater",
-      "2 spsk olivenolie",
-      "1 dl yoghurt naturel",
-      "1 avocado",
-      "1 bundt koriander"
-    ],
-    "steps": [
-      "Varm olivenolie i en stor gryde. Sauter finthakket hvidløg og revet ingefær i 1 min.",
-      "Tilsæt karry, spidskommen, kardemomme, koriander og chiliflager. Rist krydderierne i 1 min under omrøring, til de dufter.",
-      "Skyl linserne grundigt i en si. Kom dem i gryden med bouillon, kokosmælk og hakkede tomater.",
-      "Lad dhalen simre tildækket i 30-45 min under jævnlig omrøring, til linserne er møre og retten er tyk. Tilsæt ekstra bouillon, hvis den bliver for tyr. Smag til med salt og peber.",
-      "Server i dybe skåle toppet med yoghurt naturel, skiver af avocado og frisk koriander."
-    ]
-  },
-  {
-    "id": "c017",
-    "name": "One pot pasta med champignon og bacon",
-    "cuisine": "italiensk",
-    "cost": 60,
-    "time": 25,
-    "portions": 4,
-    "difficulty": "let",
-    "tags": ["hurtig", "pasta", "one-pot"],
-    "ingredients": [
-      "400 g pasta",
-      "250 g champignoner",
-      "1 løg",
-      "3 fed hvidløg",
-      "1 squash",
-      "2 tsk tørret timian",
-      "1 tsk tørret oregano",
-      "2 kviste rosmarin",
-      "1 tsk chiliflager",
-      "100 g bacon",
-      "1 liter bouillon",
-      "1 dl fløde",
-      "50 g revet parmesan",
-      "1 bundt basilikum"
-    ],
-    "steps": [
-      "Steg bacon i tern på en pande, til det er sprødt. Læg på køkkenrulle.",
-      "Kom pasta, kvarterede champignoner, finthakket løg og hvidløg, revet squash, timian, oregano, finthakket rosmarin og chiliflager i en stor gryde. Tilsæt bouillon, fløde og bacon.",
-      "Rør det hele godt. Sæt låg på og kog op. Rør igen og lad simre i 10-12 min, til pastaen er mør og det meste af væsken er optaget. Rør jævnligt.",
-      "Smag til med salt og peber. Server toppet med revet parmesan og finthakket basilikum."
-    ]
-  },
-  {
-    "id": "c018",
-    "name": "Kyllingesuppe",
-    "cuisine": "dansk",
-    "cost": 100,
-    "time": 90,
-    "portions": 4,
-    "difficulty": "let",
-    "tags": ["suppe", "klassiker", "kylling"],
-    "ingredients": [
-      "1 hel kylling (ca. 1400 g)",
-      "2 dl bouillon",
-      "1 løg",
-      "6 gulerødder",
-      "3 porre",
-      "2 persillerod",
-      "4 kviste timian",
-      "1 knoldselleri"
-    ],
-    "steps": [
-      "Læg kyllingen i en stor gryde og dæk med vand. Kog op og skum urenheder af overfladen.",
-      "Tilsæt bouillon, 1 løg (halveret), 3 gulerødder (groftskåret), 2 porre (bladdelene), 1 persillerod og timian. Krydr med salt. Lad simre tildækket i 50 min.",
-      "Tag kyllingen op og pil kødet fra benene i mundrette stykker. Kom skroget tilbage i gryden og kog 15 min mere.",
-      "Fjern skroget og si bouillonen over i en ren gryde. Skær de resterende 3 gulerødder, 1 porre, 1 persillerod og knoldselleri i små tern. Tilsæt og kog i 5 min.",
-      "Vend kyllingekødet i suppen og varm igennem. Smag til med salt og peber."
-    ]
-  },
-  {
-    "id": "c019",
-    "name": "Kylling i karry",
-    "cuisine": "dansk",
-    "cost": 70,
-    "time": 40,
-    "portions": 4,
-    "difficulty": "let",
-    "tags": ["klassiker", "hverdagsret", "kylling"],
-    "ingredients": [
-      "300 g kyllingebryst",
-      "25 g smør",
-      "2 tsk karry",
-      "3 løg",
-      "200 g blomkål",
-      "2 gulerødder",
-      "2 forårsløg",
-      "2 spsk hvedemel",
-      "2½ dl bouillon",
-      "2 dl mælk",
-      "2 æbler",
-      "4 dl ris"
-    ],
-    "steps": [
-      "Smelt smør i en gryde og rist karry i 1 min. Tilsæt finthakkede løg og kyllingebryst i tern. Steg under omrøring i 2 min.",
-      "Tilsæt blomkål i buketter, gulerødder i skiver og forårsløg i stykker. Steg 2 min.",
-      "Drys hvedemel over og rør godt. Hæld bouillon og mælk på. Krydr med salt og peber og lad simre ved svag varme i 12 min.",
-      "Kog ris efter anvisning. Skær æbler i tern og vend dem i karryretten til sidst. Smag til og server med ris."
-    ]
-  },
-  {
-    "id": "c020",
-    "name": "Pasta med kylling, spinat og champignoner",
-    "cuisine": "italiensk",
-    "cost": 70,
-    "time": 35,
-    "portions": 4,
-    "difficulty": "let",
-    "tags": ["hurtig", "pasta", "kylling"],
-    "ingredients": [
-      "300 g kyllingebryst",
-      "300 g pasta",
-      "200 g champignoner",
-      "1 løg",
-      "2 fed hvidløg",
-      "2 dl fløde",
-      "50 g revet parmesan",
-      "1 citron",
-      "200 g spinat",
-      "200 g cherrytomater",
-      "20 g smør"
-    ],
-    "steps": [
-      "Kog pasta i rigeligt saltet vand i 8-10 min. Gem 1 dl pastavand inden afkogling.",
-      "Krydr kyllingebrystet med salt. Smelt smør på en dyb pande til gyldenbrunt. Brun kyllingen 2 min på hver side ved høj varme. Tag op.",
-      "Sauter kvarterede champignoner, finthakket løg og hvidløg i 5 min. Tilsæt fløde og ½ dl pastavand. Kog op og lad simre 5 min.",
-      "Skær kyllingen i tern og kom tilbage på panden med revet parmesan og revet citronskal. Vend spinat i to omgange, til den falder sammen. Tilsæt pasta og halverede cherrytomater og rør det hele. Smag til med salt og peber."
-    ]
-  }
+﻿[
+    {
+        "id":  "c001",
+        "name":  "Frikadeller",
+        "cuisine":  "dansk",
+        "cost":  110,
+        "time":  50,
+        "portions":  4,
+        "difficulty":  "let",
+        "tags":  [
+                     "klassiker",
+                     "hverdagsret",
+                     "svinekød"
+                 ],
+        "ingredients":  [
+                            "500 g hakket svinekød",
+                            "2 spsk hvedemel",
+                            "2 spsk havregryn",
+                            "1 dl mælk",
+                            "2 æg",
+                            "1 løg",
+                            "1 fed hvidløg",
+                            "1 tsk tørret timian",
+                            "½ tsk spidskommen",
+                            "3 spsk olivenolie",
+                            "1 spsk smør",
+                            "1 kg kartofler"
+                        ],
+        "steps":  [
+                      "Riv løget og hvidløget fint. Kom hakket svinekød, havregryn, hvedemel, mælk, æg, løg, hvidløg, timian og spidskommen i en skål. Pisk farsen med en håndmikser i 2-3 min, til den er ensartet. Sæt på køl i mindst 30 min.",
+                      "Skræl kartofler og kog dem i saltet vand i ca. 20 min, til de er møre.",
+                      "Varm olivenolie og smør på en pande ved middel varme. Form frikadeller med en ske og steg dem ca. 5 min på hver side, til de er gyldne og gennemstegte.",
+                      "Server frikadellerne med de kogte kartofler."
+                  ]
+    },
+    {
+        "id":  "c002",
+        "name":  "Hakkebøf med bløde løg og brun sovs",
+        "cuisine":  "dansk",
+        "cost":  170,
+        "time":  45,
+        "portions":  4,
+        "difficulty":  "let",
+        "tags":  [
+                     "klassiker",
+                     "hverdagsret",
+                     "oksekød"
+                 ],
+        "ingredients":  [
+                            "500 g hakket oksekød",
+                            "300 g champignoner",
+                            "2 kviste timian",
+                            "3 løg",
+                            "1 spsk balsamicoeddike",
+                            "2 spsk smør",
+                            "1 tsk olivenolie",
+                            "3 dl bouillon",
+                            "1 dl fløde",
+                            "1 tsk Worcestershire sauce",
+                            "1 spsk maizena",
+                            "1 kg kartofler",
+                            "200 g syltede agurker"
+                        ],
+        "steps":  [
+                      "Varm panden med olivenolie og halvdelen af smørret. Steg champignonerne med timian ved høj varme, til de er gyldne. Flyt til side.",
+                      "Sænk varmen, tilsæt resten af smørret og løgringene. Sauter løgene til de er bløde. Dryp balsamicoeddike over og sæt til side med champignonerne.",
+                      "Form hakket oksekød til 4 flade bøffer. Krydr med salt og peber. Steg dem på panden 2-3 min på hver side. Tag af panden.",
+                      "Hæld bouillon på panden og skrab bunden ren. Tilsæt fløde og Worcestershire sauce. Rør maizena ud i 2 spsk koldt vand og rør det i. Kog sovsen op og smag til.",
+                      "Kom bøfferne tilbage i sovsen og top med løg og champignoner. Kog kartofler i saltet vand i 20 min. Server med syltede agurker."
+                  ]
+    },
+    {
+        "id":  "c003",
+        "name":  "Spaghetti bolognese",
+        "cuisine":  "italiensk",
+        "cost":  185,
+        "time":  75,
+        "portions":  4,
+        "difficulty":  "let",
+        "tags":  [
+                     "klassiker",
+                     "pasta",
+                     "oksekød"
+                 ],
+        "ingredients":  [
+                            "500 g hakket oksekød",
+                            "50 g bacon",
+                            "2 løg",
+                            "2 fed hvidløg",
+                            "2 tsk tørret timian",
+                            "1 dl rødvin",
+                            "100 g soltørrede tomater",
+                            "2 spsk balsamicoeddike",
+                            "800 g hakkede tomater",
+                            "2 spsk olivenolie",
+                            "400 g spaghetti",
+                            "75 g revet parmesan"
+                        ],
+        "steps":  [
+                      "Steg bacon i olivenolie i en tykbundet gryde. Tag bacon op og læg på køkkenrulle.",
+                      "Sauter finthakkede løg, hvidløg og timian i baconfedtet, til løgene er bløde.",
+                      "Tilsæt hakket oksekød og brun det godt. Hæld rødvin på og lad koge lidt ind. Tilsæt finthakkede soltørrede tomater, balsamicoeddike og hakkede tomater. Hak baconen og rør den i.",
+                      "Lad sovsen simre tildækket ved svag varme i 1 time. Rør jævnligt og tilsæt lidt vand eller rødvin, hvis den koger tør. Smag til med salt og peber.",
+                      "Kog spaghetti efter pakken. Server pasta i dybe tallerkener toppet med bolognese og revet parmesan."
+                  ]
+    },
+    {
+        "id":  "c004",
+        "name":  "Lasagne",
+        "cuisine":  "italiensk",
+        "cost":  220,
+        "time":  100,
+        "portions":  4,
+        "difficulty":  "mellem",
+        "tags":  [
+                     "klassiker",
+                     "pasta",
+                     "oksekød",
+                     "ovn"
+                 ],
+        "ingredients":  [
+                            "400 g hakket oksekød",
+                            "2 løg",
+                            "4 fed hvidløg",
+                            "2 tsk tørret oregano",
+                            "1 tsk tørret timian",
+                            "4 gulerødder",
+                            "3 stk selleri",
+                            "1 squash",
+                            "50 g tomatpuré",
+                            "800 g hakkede tomater",
+                            "1 dl rødvin",
+                            "2 spsk olivenolie",
+                            "2 spsk smør",
+                            "2 spsk hvedemel",
+                            "3 dl mælk",
+                            "1 nip muskat",
+                            "250 g mozzarella",
+                            "200 g lasagneplader"
+                        ],
+        "steps":  [
+                      "Sauter finthakkede løg og hvidløg i olivenolie, til de er bløde. Tilsæt hakket oksekød og brun ved høj varme. Skru ned og tilsæt oregano og timian.",
+                      "Riv gulerødder, selleri og squash groft og rør dem i. Tilsæt tomatpuré, hakkede tomater og rødvin. Lad simre tildækket i mindst 1 time. Smag til med salt og peber.",
+                      "Smelt smør i en gryde og pisk hvedemel i. Tilsæt mælk lidt ad gangen under piskning, til mornaysovsen er jævn. Riv 125 g mozzarella og rør i. Tilsæt muskat, salt og peber.",
+                      "Smør et ildfast fad. Fordel et lag mornaysovs i bunden. Skift lagvis med kødsovs og lasagneplader. Slut med mornaysovs på toppen og skiver af den resterende mozzarella.",
+                      "Bag ved 175°C varmluft i 20-25 min, til lasagnen er gylden og gennemvarm. Lad hvile 10 min inden servering."
+                  ]
+    },
+    {
+        "id":  "c005",
+        "name":  "Spaghetti carbonara",
+        "cuisine":  "italiensk",
+        "cost":  170,
+        "time":  25,
+        "portions":  4,
+        "difficulty":  "let",
+        "tags":  [
+                     "hurtig",
+                     "pasta",
+                     "klassiker"
+                 ],
+        "ingredients":  [
+                            "400 g spaghetti",
+                            "100 g bacon",
+                            "1 løg",
+                            "1 spsk smør",
+                            "1 dl fløde",
+                            "3 æg",
+                            "150 g revet parmesan"
+                        ],
+        "steps":  [
+                      "Kog spaghetti i rigeligt saltet vand til al dente. Gem et glas pastavand inden afkogling.",
+                      "Steg bacon på panden ved middel varme, til det er sprødt men stadig saftigt. Tag op på køkkenrulle.",
+                      "Kom smør i baconfedtet og sauter finthakket løg, til det er blødt.",
+                      "Kom bacon tilbage på panden og tilsæt fløde. Lad koge kort op. Tag panden af varmen.",
+                      "Vend den varme spaghetti i med de sammenpiskede æg og 100 g revet parmesan. Rør hurtigt, til sovsen er cremet. Tilsæt lidt pastavand, hvis retten er for tyk. Smag til med salt og peber. Server med resten af parmesanen."
+                  ]
+    },
+    {
+        "id":  "c006",
+        "name":  "Indisk curry med kylling",
+        "cuisine":  "indisk",
+        "cost":  135,
+        "time":  160,
+        "portions":  4,
+        "difficulty":  "let",
+        "tags":  [
+                     "curry",
+                     "kylling",
+                     "eksotisk"
+                 ],
+        "ingredients":  [
+                            "400 g kyllingefilet",
+                            "1 dl yoghurt naturel",
+                            "1 lime",
+                            "3 spsk karry",
+                            "1 tsk stødt kanel",
+                            "½ tsk nelliker",
+                            "1 tsk kardemomme",
+                            "2 fed hvidløg",
+                            "1 spsk ingefær",
+                            "2 løg",
+                            "400 g hakkede tomater",
+                            "1 peberfrugt",
+                            "400 ml kokosmælk",
+                            "1 rød chili",
+                            "3 spsk olivenolie",
+                            "3 dl ris",
+                            "1 bundt koriander"
+                        ],
+        "steps":  [
+                      "Skær kyllingefileter i tern. Bland yoghurt naturel og saften af ½ lime. Mariner kyllingen i blandingen i minimum 2 timer.",
+                      "Rist karry, kanel, nelliker og kardemomme på en tør varm pande, til krydderierne dufter. Skru ned, tilsæt olivenolie, finthakkede løg, hvidløg og revet ingefær. Sauter under omrøring, til løgene er bløde og gyldne.",
+                      "Tilsæt kylling inkl. marinade og hakkede tomater. Rør rundt og lad simre uden låg i ca. 15 min, til kyllingen er mør.",
+                      "Tilsæt peberfrugt i tern, hakket chili og kokosmælk. Varm godt igennem. Smag til med resten af limesaften, salt og peber.",
+                      "Kog ris efter anvisning. Server curry med ris og frisk koriander."
+                  ]
+    },
+    {
+        "id":  "c007",
+        "name":  "Flæskesteg med sprød svær",
+        "cuisine":  "dansk",
+        "cost":  160,
+        "time":  180,
+        "portions":  4,
+        "difficulty":  "let",
+        "tags":  [
+                     "klassiker",
+                     "svinekød",
+                     "søndagsret",
+                     "ovn"
+                 ],
+        "ingredients":  [
+                            "1 kg svinekam",
+                            "8 laurbær",
+                            "4 kviste timian",
+                            "1 kg kartofler",
+                            "1 glas rødkål"
+                        ],
+        "steps":  [
+                      "Kontroller at sværen er forskåret. Skær med en skarp kniv igennem svær og fedt ned til kødet i hver rille. Gnid salt grundigt ind i alle snit. Lad hvile 30 min ved stuetemperatur.",
+                      "Placer svinekammen på en rist over en bradepande. Læg laurbær og timian under risten. Sørg for sværen ligger fladt. Hæld lidt vand i bunden af bradepanden.",
+                      "Sæt i en kold ovn. Tænd på 125°C varmluft og steg i 2 timer. Skru op til 200°C og steg 30 min. Skru til 225°C og steg 15-20 min til sværen bobler og er sprød.",
+                      "Lad flæskestegen hvile utildækket i 15 min. Kog kartofler i saltet vand i 20 min. Varm rødkål op.",
+                      "Server flæskestegen skåret i skiver med kogte kartofler og rødkål."
+                  ]
+    },
+    {
+        "id":  "c008",
+        "name":  "Forloren hare med bagte rodfrugter",
+        "cuisine":  "dansk",
+        "cost":  185,
+        "time":  65,
+        "portions":  4,
+        "difficulty":  "let",
+        "tags":  [
+                     "klassiker",
+                     "hverdagsret",
+                     "svinekød",
+                     "ovn"
+                 ],
+        "ingredients":  [
+                            "800 g hakket svinekød",
+                            "200 g bacon",
+                            "2 løg",
+                            "2 fed hvidløg",
+                            "2 dl mælk",
+                            "½ dl fløde",
+                            "2 æg",
+                            "20 g havregryn",
+                            "2 tsk tørret timian",
+                            "4 spsk rasp",
+                            "250 g rødbeder",
+                            "250 g gulerødder",
+                            "400 g kartofler"
+                        ],
+        "steps":  [
+                      "Rist 75 g bacon sprødt og hak fint. Kom hakket svinekød, ristet bacon, finthakkede løg, hvidløg, mælk, fløde, æg, havregryn, timian, salt og peber i en skål. Pisk farsen med en håndmikser i 3 min.",
+                      "Form farsen til et farsbrød i et ildfast fad. Drys med rasp og læg de resterende baconskiver tæt henover.",
+                      "Skær rødbeder, gulerødder og kartofler i grove tern og fordel dem langs begge sider af farsbrødet. Drys med timian.",
+                      "Bag i forvarmet ovn ved 180°C varmluft i 35-40 min, til kernetemperaturen er ca. 75°C. Vend rodfrugterne et par gange undervejs.",
+                      "Server forloren hare i skiver med de bagte rodfrugter og skyen fra fadet."
+                  ]
+    },
+    {
+        "id":  "c009",
+        "name":  "Ærtesuppe",
+        "cuisine":  "dansk",
+        "cost":  100,
+        "time":  20,
+        "portions":  4,
+        "difficulty":  "let",
+        "tags":  [
+                     "suppe",
+                     "hurtig",
+                     "vegetarisk"
+                 ],
+        "ingredients":  [
+                            "600 g frosne ærter",
+                            "2 løg",
+                            "2 fed hvidløg",
+                            "1 tsk tørret timian",
+                            "8 dl bouillon",
+                            "1 dl fløde",
+                            "1 spsk olivenolie",
+                            "1 dl creme fraiche",
+                            "100 g saltmandler"
+                        ],
+        "steps":  [
+                      "Sauter finthakkede løg og hvidløg i olivenolie ved middel varme, til de er bløde.",
+                      "Tilsæt ærter og timian. Rør rundt og hæld bouillon i. Lad simre tildækket i 5-7 min.",
+                      "Hæld fløden i og blend suppen med en stavblender, til den er helt cremet og ensartet.",
+                      "Smag til med salt og peber. Server suppen med creme fraiche og grofthakkede saltmandler."
+                  ]
+    },
+    {
+        "id":  "c010",
+        "name":  "Biksemad med spejlæg",
+        "cuisine":  "dansk",
+        "cost":  170,
+        "time":  50,
+        "portions":  4,
+        "difficulty":  "let",
+        "tags":  [
+                     "klassiker",
+                     "hverdagsret",
+                     "oksekød"
+                 ],
+        "ingredients":  [
+                            "300 g oksebøf",
+                            "1 kg kartofler",
+                            "1 løg",
+                            "1 rødløg",
+                            "1 dl æblecidereddike",
+                            "3 spsk sukker",
+                            "2 spsk Worcestershire sauce",
+                            "4 æg",
+                            "2 spsk smør",
+                            "1 spsk olivenolie",
+                            "2 dl bearnaisesauce",
+                            "100 g syltede rødbeder"
+                        ],
+        "steps":  [
+                      "Bland æblecidereddike og sukker i en skål. Tilsæt tynde rødløgsringe og lad trække mindst 30 min.",
+                      "Skræl kartofler og kog dem til møre. Lad køle helt af og skær i tern.",
+                      "Sauter finthakket løg i olivenolie på en varm pande. Tilsæt kartofler med halvdelen af smørret og rist dem, til de har en sprød stegeflade. Krydr med Worcestershire sauce, salt og peber.",
+                      "Lynsteg oksebøffen på en separat pande i resten af smørret. Krydr med salt og peber. Skær kødet i tern og bland med kartoffelblandingen.",
+                      "Steg 4 spejlæg. Anret biksemad toppet med spejlæg, bearnaisesauce, syltede rødløg og syltede rødbeder ved siden af."
+                  ]
+    },
+    {
+        "id":  "c011",
+        "name":  "Champignonsuppe",
+        "cuisine":  "dansk",
+        "cost":  100,
+        "time":  45,
+        "portions":  4,
+        "difficulty":  "let",
+        "tags":  [
+                     "suppe",
+                     "vegetarisk"
+                 ],
+        "ingredients":  [
+                            "800 g champignoner",
+                            "2 løg",
+                            "3 fed hvidløg",
+                            "4 spsk hvedemel",
+                            "1½ liter bouillon",
+                            "1 dl fløde",
+                            "50 g smør",
+                            "1 nip muskat",
+                            "4 forårsløg",
+                            "4 skiver rugbrød"
+                        ],
+        "steps":  [
+                      "Sauter finthakkede løg og hvidløg i smør i en gryde ved middel varme, til løgene er bløde.",
+                      "Drys mel over og rør godt. Pisk bouillon i lidt efter lidt, til suppen er jævn.",
+                      "Tilsæt champignoner (gem en håndfuld til pynt) og lad simre i 5 min. Tilsæt fløde og muskat. Smag til med salt og peber. Varm op til kogepunktet.",
+                      "Steg de reserverede champignoner i lidt smør til de er gyldne.",
+                      "Server suppen i dybe tallerkener med forårsløg, smørristede champignoner og rugbrød."
+                  ]
+    },
+    {
+        "id":  "c012",
+        "name":  "Paneret fiskefilet",
+        "cuisine":  "dansk",
+        "cost":  205,
+        "time":  25,
+        "portions":  4,
+        "difficulty":  "let",
+        "tags":  [
+                     "fisk",
+                     "klassiker",
+                     "hverdagsret"
+                 ],
+        "ingredients":  [
+                            "600 g rødspætte",
+                            "2 æg",
+                            "20 g hvedemel",
+                            "30 g grahamsmel",
+                            "2 spsk smør",
+                            "1 tsk olivenolie",
+                            "8 skiver rugbrød",
+                            "100 g remoulade",
+                            "1 citron",
+                            "1 bundt persille"
+                        ],
+        "steps":  [
+                      "Pisk æggene sammen i en skål. Bland hvedemel, grahamsmel, salt og peber i en anden skål.",
+                      "Dup rødspættefileterne tørre med køkkenrulle. Vend dem først i æggeblandingen og derefter i melblandingen.",
+                      "Varm smør og olivenolie på panden til det skummer. Steg fileterne ved middel varme ca. 4-5 min på hver side, til de er smukt gyldne.",
+                      "Server fiskefileterne på rugbrød med remoulade, citronbåde og finthakket persille."
+                  ]
+    },
+    {
+        "id":  "c013",
+        "name":  "Stegt flæsk med persillesovs",
+        "cuisine":  "dansk",
+        "cost":  185,
+        "time":  50,
+        "portions":  4,
+        "difficulty":  "let",
+        "tags":  [
+                     "klassiker",
+                     "hverdagsret",
+                     "svinekød"
+                 ],
+        "ingredients":  [
+                            "800 g flæsk i skiver",
+                            "2 spsk smør",
+                            "2 spsk hvedemel",
+                            "5 dl mælk",
+                            "1 citron",
+                            "1 bundt persille",
+                            "1 kg kartofler"
+                        ],
+        "steps":  [
+                      "Dryss salt over flæsket og placer det på en rist over en bradepande med bagepapir. Steg i forvarmet ovn ved 175°C varmluft i 30-40 min. Vend flæskeskiverne et par gange undervejs.",
+                      "Kog kartofler i letsaltet vand i ca. 20 min, til de er møre. Afløb og hold varme.",
+                      "Smelt smør i en gryde ved lav varme. Tilsæt hvedemel gradvist under piskning. Hæld mælk i langsomt og pisk persillesovsen ved middel varme i ca. 5 min, til den er jævn og cremet.",
+                      "Smag persillesovsen til med citronsaft, revet citronskal, finthakket persille, salt og peber.",
+                      "Server stegt flæsk med kogte kartofler og persillesovs."
+                  ]
+    },
+    {
+        "id":  "c014",
+        "name":  "Hjemmelavede burgere",
+        "cuisine":  "amerikansk",
+        "cost":  240,
+        "time":  30,
+        "portions":  4,
+        "difficulty":  "let",
+        "tags":  [
+                     "hverdagsret",
+                     "oksekød",
+                     "burger"
+                 ],
+        "ingredients":  [
+                            "600 g hakket oksekød",
+                            "50 g soltørrede tomater",
+                            "1 tsk Worcestershire sauce",
+                            "1 æg",
+                            "½ tsk røget paprika",
+                            "1 fed hvidløg",
+                            "200 g bacon",
+                            "150 g cheddar",
+                            "1 stk salat",
+                            "2 tomater",
+                            "½ agurk",
+                            "1 rødløg",
+                            "2 spsk mayonnaise",
+                            "2 spsk ketchup",
+                            "4 burgerboller",
+                            "1 spsk smør"
+                        ],
+        "steps":  [
+                      "Bland hakket oksekød, finthakkede soltørrede tomater, Worcestershire sauce, æg, røget paprika, presset hvidløg, salt og peber i en skål. Ælt det godt og form 4 flade bøffer.",
+                      "Steg bacon i en kold pande, til det er gyldent og sprødt. Læg på køkkenrulle.",
+                      "Smelt smør på panden til det er gyldenbrunt. Steg bøfferne 4-5 min på hver side. Læg en skive cheddar og 2 skiver bacon på hver bøf og lad osten smelte.",
+                      "Lun burgerbollerne. Smør mayonnaise og ketchup på. Byg burgerne med bøf, tomat i skiver, agurk i skiver, rødløgsringe og salat. Server straks."
+                  ]
+    },
+    {
+        "id":  "c015",
+        "name":  "Tacos med pulled kylling og mangosalsa",
+        "cuisine":  "mexicansk",
+        "cost":  255,
+        "time":  240,
+        "portions":  4,
+        "difficulty":  "mellem",
+        "tags":  [
+                     "weekend",
+                     "kylling",
+                     "mexicansk"
+                 ],
+        "ingredients":  [
+                            "800 g kyllingebryst",
+                            "1 spsk sød paprika",
+                            "1 tsk røget paprika",
+                            "1 tsk spidskommen",
+                            "2 spsk brun farin",
+                            "2 fed hvidløg",
+                            "1 tsk chilipulver",
+                            "1 dl bouillon",
+                            "25 g smør",
+                            "1 mango",
+                            "2 avocado",
+                            "1 bundt koriander",
+                            "1 bundt basilikum",
+                            "2 lime",
+                            "1 rød chili",
+                            "140 g majskerner",
+                            "1 stk salat",
+                            "8 stk tortillaer"
+                        ],
+        "steps":  [
+                      "Bland sød paprika, røget paprika, spidskommen, brun farin, presset hvidløg, chilipulver, salt og peber. Gnid marinaden ind på kyllingebrysterne. Sæt på køl i 30 min.",
+                      "Smør en gryde indvendigt. Kom kyllingebrysterne i og hæld bouillon på. Sæt låg på og bag ved 125°C i 3 timer, til kyllingen er mør og kan trækkes fra hinanden med to gafler.",
+                      "Træk kyllingekødet fra hinanden med to gafler og vend det i stegeskyen.",
+                      "Skær mango i tern. Mos avocadoerne groft. Bland mango, avocado, finthakket koriander, basilikum, saften af 1½ lime og revet limeskal, hakket chili, salt og peber til mangosalsa.",
+                      "Rist majskerner på en varm pande med smør til gyldne. Lun tortillaerne. Server tacos med pulled kylling, mangosalsa, majskerner og salat."
+                  ]
+    },
+    {
+        "id":  "c016",
+        "name":  "Kokos dhal med linser",
+        "cuisine":  "vegetarisk",
+        "cost":  85,
+        "time":  50,
+        "portions":  4,
+        "difficulty":  "let",
+        "tags":  [
+                     "vegetarisk",
+                     "plantebaseret",
+                     "suppe"
+                 ],
+        "ingredients":  [
+                            "200 g linser",
+                            "4 fed hvidløg",
+                            "2 spsk ingefær",
+                            "1 spsk karry",
+                            "1 spsk spidskommen",
+                            "½ tsk kardemomme",
+                            "½ spsk koriander",
+                            "½ tsk chiliflager",
+                            "1 dl bouillon",
+                            "800 ml kokosmælk",
+                            "400 g hakkede tomater",
+                            "2 spsk olivenolie",
+                            "1 dl yoghurt naturel",
+                            "1 avocado",
+                            "1 bundt koriander"
+                        ],
+        "steps":  [
+                      "Varm olivenolie i en stor gryde. Sauter finthakket hvidløg og revet ingefær i 1 min.",
+                      "Tilsæt karry, spidskommen, kardemomme, koriander og chiliflager. Rist krydderierne i 1 min under omrøring, til de dufter.",
+                      "Skyl linserne grundigt i en si. Kom dem i gryden med bouillon, kokosmælk og hakkede tomater.",
+                      "Lad dhalen simre tildækket i 30-45 min under jævnlig omrøring, til linserne er møre og retten er tyk. Tilsæt ekstra bouillon, hvis den bliver for tyr. Smag til med salt og peber.",
+                      "Server i dybe skåle toppet med yoghurt naturel, skiver af avocado og frisk koriander."
+                  ]
+    },
+    {
+        "id":  "c017",
+        "name":  "One pot pasta med champignon og bacon",
+        "cuisine":  "italiensk",
+        "cost":  100,
+        "time":  25,
+        "portions":  4,
+        "difficulty":  "let",
+        "tags":  [
+                     "hurtig",
+                     "pasta",
+                     "one-pot"
+                 ],
+        "ingredients":  [
+                            "400 g pasta",
+                            "250 g champignoner",
+                            "1 løg",
+                            "3 fed hvidløg",
+                            "1 squash",
+                            "2 tsk tørret timian",
+                            "1 tsk tørret oregano",
+                            "2 kviste rosmarin",
+                            "1 tsk chiliflager",
+                            "100 g bacon",
+                            "1 liter bouillon",
+                            "1 dl fløde",
+                            "50 g revet parmesan",
+                            "1 bundt basilikum"
+                        ],
+        "steps":  [
+                      "Steg bacon i tern på en pande, til det er sprødt. Læg på køkkenrulle.",
+                      "Kom pasta, kvarterede champignoner, finthakket løg og hvidløg, revet squash, timian, oregano, finthakket rosmarin og chiliflager i en stor gryde. Tilsæt bouillon, fløde og bacon.",
+                      "Rør det hele godt. Sæt låg på og kog op. Rør igen og lad simre i 10-12 min, til pastaen er mør og det meste af væsken er optaget. Rør jævnligt.",
+                      "Smag til med salt og peber. Server toppet med revet parmesan og finthakket basilikum."
+                  ]
+    },
+    {
+        "id":  "c018",
+        "name":  "Kyllingesuppe",
+        "cuisine":  "dansk",
+        "cost":  170,
+        "time":  90,
+        "portions":  4,
+        "difficulty":  "let",
+        "tags":  [
+                     "suppe",
+                     "klassiker",
+                     "kylling"
+                 ],
+        "ingredients":  [
+                            "1 hel kylling (ca. 1400 g)",
+                            "2 dl bouillon",
+                            "1 løg",
+                            "6 gulerødder",
+                            "3 porre",
+                            "2 persillerod",
+                            "4 kviste timian",
+                            "1 knoldselleri"
+                        ],
+        "steps":  [
+                      "Læg kyllingen i en stor gryde og dæk med vand. Kog op og skum urenheder af overfladen.",
+                      "Tilsæt bouillon, 1 løg (halveret), 3 gulerødder (groftskåret), 2 porre (bladdelene), 1 persillerod og timian. Krydr med salt. Lad simre tildækket i 50 min.",
+                      "Tag kyllingen op og pil kødet fra benene i mundrette stykker. Kom skroget tilbage i gryden og kog 15 min mere.",
+                      "Fjern skroget og si bouillonen over i en ren gryde. Skær de resterende 3 gulerødder, 1 porre, 1 persillerod og knoldselleri i små tern. Tilsæt og kog i 5 min.",
+                      "Vend kyllingekødet i suppen og varm igennem. Smag til med salt og peber."
+                  ]
+    },
+    {
+        "id":  "c019",
+        "name":  "Kylling i karry",
+        "cuisine":  "dansk",
+        "cost":  120,
+        "time":  40,
+        "portions":  4,
+        "difficulty":  "let",
+        "tags":  [
+                     "klassiker",
+                     "hverdagsret",
+                     "kylling"
+                 ],
+        "ingredients":  [
+                            "300 g kyllingebryst",
+                            "25 g smør",
+                            "2 tsk karry",
+                            "3 løg",
+                            "200 g blomkål",
+                            "2 gulerødder",
+                            "2 forårsløg",
+                            "2 spsk hvedemel",
+                            "2½ dl bouillon",
+                            "2 dl mælk",
+                            "2 æbler",
+                            "4 dl ris"
+                        ],
+        "steps":  [
+                      "Smelt smør i en gryde og rist karry i 1 min. Tilsæt finthakkede løg og kyllingebryst i tern. Steg under omrøring i 2 min.",
+                      "Tilsæt blomkål i buketter, gulerødder i skiver og forårsløg i stykker. Steg 2 min.",
+                      "Drys hvedemel over og rør godt. Hæld bouillon og mælk på. Krydr med salt og peber og lad simre ved svag varme i 12 min.",
+                      "Kog ris efter anvisning. Skær æbler i tern og vend dem i karryretten til sidst. Smag til og server med ris."
+                  ]
+    },
+    {
+        "id":  "c020",
+        "name":  "Pasta med kylling, spinat og champignoner",
+        "cuisine":  "italiensk",
+        "cost":  120,
+        "time":  35,
+        "portions":  4,
+        "difficulty":  "let",
+        "tags":  [
+                     "hurtig",
+                     "pasta",
+                     "kylling"
+                 ],
+        "ingredients":  [
+                            "300 g kyllingebryst",
+                            "300 g pasta",
+                            "200 g champignoner",
+                            "1 løg",
+                            "2 fed hvidløg",
+                            "2 dl fløde",
+                            "50 g revet parmesan",
+                            "1 citron",
+                            "200 g spinat",
+                            "200 g cherrytomater",
+                            "20 g smør"
+                        ],
+        "steps":  [
+                      "Kog pasta i rigeligt saltet vand i 8-10 min. Gem 1 dl pastavand inden afkogling.",
+                      "Krydr kyllingebrystet med salt. Smelt smør på en dyb pande til gyldenbrunt. Brun kyllingen 2 min på hver side ved høj varme. Tag op.",
+                      "Sauter kvarterede champignoner, finthakket løg og hvidløg i 5 min. Tilsæt fløde og ½ dl pastavand. Kog op og lad simre 5 min.",
+                      "Skær kyllingen i tern og kom tilbage på panden med revet parmesan og revet citronskal. Vend spinat i to omgange, til den falder sammen. Tilsæt pasta og halverede cherrytomater og rør det hele. Smag til med salt og peber."
+                  ]
+    }
 ]
