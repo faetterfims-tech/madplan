@@ -219,6 +219,16 @@
 <!-- VIEWS -->
 <div id="plan-view" class="view active">
   <div style="height:12px;"></div>
+  <div class="card" style="display:flex;gap:12px;padding:12px 14px;margin-bottom:12px;">
+    <div style="flex:1;">
+      <div style="font-size:11px;font-weight:600;color:var(--text-secondary);margin-bottom:4px;">UGENTLIGT BUDGET</div>
+      <select id="budget-select" onchange="onBudgetChange(this.value)"></select>
+    </div>
+    <div style="flex:1;">
+      <div style="font-size:11px;font-weight:600;color:var(--text-secondary);margin-bottom:4px;">ANTAL PERSONER</div>
+      <select id="persons-select" onchange="onPersonsChange(this.value)"></select>
+    </div>
+  </div>
   <div class="stats-grid">
     <div class="stat"><div class="stat-val" id="s-planned">0/7</div><div class="stat-lbl">Dage planlagt</div></div>
     <div class="stat"><div class="stat-val" id="s-variety">-</div><div class="stat-lbl">Variation</div></div>
@@ -376,7 +386,7 @@
 </nav>
 
 <script>
-const BUDGET = 1000;
+let settings = { budget: 1000, persons: 4 };
 const DAYS = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];
 const DAY_DK = {Monday:'Mandag',Tuesday:'Tirsdag',Wednesday:'Onsdag',Thursday:'Torsdag',Friday:'Fredag',Saturday:'Lørdag',Sunday:'Søndag'};
 
@@ -394,6 +404,7 @@ function save() {
     localStorage.setItem('madplan_favourites', JSON.stringify(favourites));
     localStorage.setItem('madplan_recent', JSON.stringify(recentMeals));
     localStorage.setItem('madplan_week', JSON.stringify(weekPlan));
+    localStorage.setItem('madplan_settings', JSON.stringify(settings));
   } catch(e) {}
 }
 function load() {
@@ -402,17 +413,48 @@ function load() {
     const f = localStorage.getItem('madplan_favourites'); if(f) favourites = JSON.parse(f);
     const rm = localStorage.getItem('madplan_recent'); if(rm) recentMeals = JSON.parse(rm);
     const w = localStorage.getItem('madplan_week'); if(w) weekPlan = JSON.parse(w);
+    const s = localStorage.getItem('madplan_settings'); if(s) settings = {...settings, ...JSON.parse(s)};
   } catch(e) {}
 }
 
+// ── SCALING HELPERS ───────────────────────────────────────
+function scaledCost(m) {
+  return Math.round(m.cost * settings.persons / (m.portions || 4));
+}
+function formatScaledAmt(amt, unit) {
+  const u = (unit||'').toLowerCase();
+  if (u==='g' && amt>=1000) return `${+(amt/1000).toFixed(2).replace(/\.?0+$/,'')} kg`;
+  if (u==='ml' && amt>=1000) return `${+(amt/1000).toFixed(2).replace(/\.?0+$/,'')} l`;
+  if (u==='ml' && amt>=100)  return `${+(amt/100).toFixed(1).replace(/\.?0+$/,'')} dl`;
+  if (u==='dl' && amt>=10)   return `${+(amt/10).toFixed(1).replace(/\.?0+$/,'')} l`;
+  const d = parseFloat(amt.toFixed(1));
+  return u ? `${d} ${u}` : `${d}`;
+}
+function scaleIngredientStr(str, factor) {
+  if (!factor || factor===1) return str;
+  const FR={'½':0.5,'¼':0.25,'¾':0.75};
+  const UR='kg|g|liter|l|dl|cl|ml|spsk|tsk|stk|fed|kviste?|bundt|dåser?|glas|pk\\.?|nip';
+  let m;
+  m=str.match(new RegExp(`^([\\d]+[,.]?[\\d]*)\\s*(${UR})\\s+(.+)$`,'i'));
+  if(m){const a=parseFloat(m[1].replace(',','.'))*factor;return formatScaledAmt(a,m[2])+' '+m[3];}
+  m=str.match(new RegExp(`^([½¼¾])\\s*(${UR})\\s+(.+)$`,'i'));
+  if(m){const a=(FR[m[1]]||0.5)*factor;return formatScaledAmt(a,m[2])+' '+m[3];}
+  m=str.match(/^([\d]+[,.]?[\d]*)\s+(.+)$/);
+  if(m){const a=parseFloat(m[1].replace(',','.'))*factor;return formatScaledAmt(a,'')+' '+m[2];}
+  m=str.match(/^([½¼¾])\s+(.+)$/);
+  if(m){const a=(FR[m[1]]||0.5)*factor;return formatScaledAmt(a,'')+' '+m[2];}
+  return str;
+}
+
 // ── STATS ─────────────────────────────────────────────────
-function totalCost() { return Object.values(weekPlan).reduce((s,m)=>s+(m?m.cost:0),0); }
+function totalCost() { return Object.values(weekPlan).reduce((s,m)=>s+(m?scaledCost(m):0),0); }
 function updateStats() {
   const cost = totalCost();
-  const pct = Math.min(100, Math.round(cost/BUDGET*100));
+  const budget = settings.budget;
+  const pct = Math.min(100, Math.round(cost/budget*100));
   document.getElementById('budget-bar').style.width = pct+'%';
-  document.getElementById('budget-bar').className = 'budget-bar'+(cost>BUDGET?' over':'');
-  document.getElementById('budget-text').textContent = cost+' / '+BUDGET+' kr. brugt denne uge';
+  document.getElementById('budget-bar').className = 'budget-bar'+(cost>budget?' over':'');
+  document.getElementById('budget-text').textContent = cost+' / '+budget+' kr. · '+settings.persons+' pers.';
   const planned = DAYS.filter(d=>weekPlan[d]).length;
   document.getElementById('s-planned').textContent = planned+'/7';
   const names = DAYS.filter(d=>weekPlan[d]).map(d=>weekPlan[d].name);
@@ -431,15 +473,18 @@ function renderWeekGrid() {
     const rating = ratings[m.name]||null;
     const isFav = favourites.some(f=>f.name===m.name);
     const sn = m.name.replace(/'/g,"\\'");
+    const scale = settings.persons / (m.portions || 4);
+    const displayCost = scaledCost(m);
+    const displayIngs = m.ingredients.map(i=>scaleIngredientStr(i,scale)).join(' · ');
     return `<div class="day-card">
       <div class="day-header">
         <span class="day-name">${DAY_DK[day]}</span>
-        <span class="cost-pill">${m.cost} kr.</span>
+        <span class="cost-pill">${displayCost} kr.</span>
       </div>
       <div class="day-body">
         <div class="meal-name">${m.name}${isFav?' ⭐':''}</div>
         <div class="meal-meta"><span>${m.time}</span><span>${m.cuisine||''}</span></div>
-        <div class="meal-ingredients">${m.ingredients.join(' · ')}</div>
+        <div class="meal-ingredients">${displayIngs}</div>
         <div class="meal-actions">
           <button class="rating-btn ${rating==='liked'?'liked':''}" onclick="rateMeal('${sn}','liked')">👍</button>
           <button class="rating-btn ${rating==='disliked'?'disliked':''}" onclick="rateMeal('${sn}','disliked')">👎</button>
@@ -472,9 +517,10 @@ function clearWeek() {
 function openRecipeModal(day) {
   const m = weekPlan[day]; if(!m) return;
   recipeModalMeal = m;
+  const scale = settings.persons / (m.portions || 4);
   document.getElementById('rm-title').textContent = m.name;
-  document.getElementById('rm-meta').textContent = (m.cuisine||'')+(m.time?' · '+m.time:'')+(m.cost?' · '+m.cost+' kr.':'');
-  document.getElementById('rm-ingredients').innerHTML = m.ingredients.map(i=>`<div style="padding:4px 0;font-size:14px;border-bottom:1px solid var(--border);">• ${i}</div>`).join('');
+  document.getElementById('rm-meta').textContent = (m.cuisine||'')+(m.time?' · '+m.time:'')+(m.cost?' · '+scaledCost(m)+' kr. ('+settings.persons+' pers.)':'');
+  document.getElementById('rm-ingredients').innerHTML = m.ingredients.map(i=>scaleIngredientStr(i,scale)).map(i=>`<div style="padding:4px 0;font-size:14px;border-bottom:1px solid var(--border);">• ${i}</div>`).join('');
   const steps = m.steps||[];
   document.getElementById('rm-steps').innerHTML = steps.length
     ? steps.map((s,i)=>`<div class="step-card"><div class="step-num">TRIN ${i+1}</div>${s}</div>`).join('')
@@ -570,7 +616,11 @@ function renderGrocery() {
   const planned = DAYS.filter(d=>weekPlan[d]);
   if(!planned.length) { c.innerHTML='<div class="hint">Planlæg måltider for at se din indkøbsliste.</div>'; return; }
   const raw = [];
-  planned.forEach(d => { weekPlan[d].ingredients.forEach(i => raw.push(i)); });
+  planned.forEach(d => {
+    const m = weekPlan[d];
+    const scale = settings.persons / (m.portions || 4);
+    m.ingredients.forEach(i => raw.push(scaleIngredientStr(i, scale)));
+  });
   const items = consolidateIngredients(raw);
   const cats = {Kød:[],Grøntsager:[],Mejeri:[],Tørvarer:[],Andet:[]};
   items.forEach(i=>{
@@ -597,9 +647,10 @@ function renderGrocery() {
     html+=`</div>`;
   });
   const cost=totalCost();
+  const budget=settings.budget;
   html+=`<div class="card" style="display:flex;justify-content:space-between;align-items:center;">
-    <span style="font-weight:600;">Estimeret total</span>
-    <span style="font-size:16px;font-weight:700;color:${cost>BUDGET?'#e24b4a':'var(--green)'}">${cost} kr.</span>
+    <span style="font-weight:600;">Estimeret total (${settings.persons} pers.)</span>
+    <span style="font-size:16px;font-weight:700;color:${cost>budget?'#e24b4a':'var(--green)'}">${cost} kr.</span>
   </div>`;
   c.innerHTML=html;
 }
@@ -718,11 +769,39 @@ function scoreRecipe(r, liked, pickedMainIngs) {
   const mainIngs = (r.ingredients || []).map(canonicalIngName)
     .filter(n => n && !PANTRY_INGS.has(n));
   const repeat = mainIngs.filter(n => pickedMainIngs.has(n)).length;
+  const targetCostPer4 = settings.budget * 4 / (7 * settings.persons);
+  const budgetBonus = r.cost <= targetCostPer4 ? 5 : (r.cost > targetCostPer4 * 1.6 ? -8 : 0);
   return {
     ...r,
-    _score: (liked.includes(r.name) ? 20 : 0) + Math.random() * 10 - repeat * 20,
+    _score: (liked.includes(r.name) ? 20 : 0) + Math.random() * 10 - repeat * 20 + budgetBonus,
     _mainIngs: mainIngs
   };
+}
+
+// ── SETTINGS UI ───────────────────────────────────────────
+function onBudgetChange(val) {
+  settings.budget = parseInt(val);
+  save(); updateStats(); renderGrocery();
+}
+function onPersonsChange(val) {
+  settings.persons = parseInt(val);
+  save(); renderWeekGrid();
+}
+function initSettingsUI() {
+  const bSel = document.getElementById('budget-select');
+  for (let v = 500; v <= 3000; v += 100) {
+    const o = document.createElement('option');
+    o.value = v; o.textContent = v + ' kr.';
+    if (v === settings.budget) o.selected = true;
+    bSel.appendChild(o);
+  }
+  const pSel = document.getElementById('persons-select');
+  for (let v = 1; v <= 8; v++) {
+    const o = document.createElement('option');
+    o.value = v; o.textContent = v + (v === 1 ? ' person' : ' personer');
+    if (v === settings.persons) o.selected = true;
+    pSel.appendChild(o);
+  }
 }
 
 function pickMeals(pool, count, alreadyPicked, liked, disliked) {
@@ -886,6 +965,7 @@ function switchTab(t, el) {
 
 // ── INIT ───────────────────────────────────────────────────
 load();
+initSettingsUI();
 renderWeekGrid();
 renderFavourites();
 renderHistory();
