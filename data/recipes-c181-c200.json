@@ -1,0 +1,550 @@
+[
+  {
+    "id": "c181",
+    "name": "Tacos med hakket svinekød",
+    "cuisine": "mexicansk",
+    "cost": 120,
+    "time": 20,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["svinekød", "mexicansk", "tacos", "hurtig"],
+    "ingredients": [
+      "500 g hakket svinekød",
+      "8 stk hård tacoskal",
+      "1 dåse hakkede tomater",
+      "1 løg",
+      "3 fed hvidløg",
+      "1 pose tacokrydderi",
+      "4 salatblade",
+      "200 g creme fraiche",
+      "2 spsk olivenolie"
+    ],
+    "steps": [
+      "Steg svinekød, løg og hvidløg i olie 6 min til brunet.",
+      "Tilsæt tacokrydderi og hakkede tomater. Kog 8 min til saucen er tyknet.",
+      "Varm tacoskaller i ovn 3 min ved 180°C.",
+      "Fyld tacoskaller med kødblanding, salatblade og creme fraiche."
+    ]
+  },
+  {
+    "id": "c182",
+    "name": "Quesadillas med kylling og ost",
+    "cuisine": "mexicansk",
+    "cost": 115,
+    "time": 20,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["kylling", "mexicansk", "hurtig"],
+    "ingredients": [
+      "400 g kyllingefilet",
+      "8 stk hvede tortilla",
+      "150 g revet cheddar",
+      "1 stk peberfrugt",
+      "3 fed hvidløg",
+      "1 pose tacokrydderi",
+      "2 spsk olivenolie"
+    ],
+    "steps": [
+      "Skær kylling i tern. Steg i olie med hvidløg og tacokrydderi 6 min til gylden.",
+      "Skær peberfrugt i tern og steg 3 min med kyllingen.",
+      "Læg en tortilla på varm tør pande. Fordel kylling og ost på halvdelen, fold over. Steg 2 min per side til gylden.",
+      "Skær i trekanter og server med creme fraiche og salsa."
+    ]
+  },
+  {
+    "id": "c183",
+    "name": "Gyros med pitabrød og tzatziki",
+    "cuisine": "middelhavs",
+    "cost": 135,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["svinekød", "pita", "middelhavs"],
+    "ingredients": [
+      "500 g hakket svinekød",
+      "4 stk pitabrød",
+      "200 g creme fraiche",
+      "1 agurk",
+      "4 fed hvidløg",
+      "2 tsk tørret dild",
+      "3 tomater",
+      "4 salatblade",
+      "2 tsk paprika",
+      "1 tsk spidskommen",
+      "2 spsk olivenolie"
+    ],
+    "steps": [
+      "Riv halvdelen af agurken, klem vandet ud. Rør creme fraiche med revet agurk, 2 fed hvidløg og dild til tzatziki.",
+      "Steg svinekød med 2 fed hvidløg, paprika og spidskommen i olie 6 min til brunet.",
+      "Varm pitabrød i ovn 3 min. Skær tomater og resten af agurken i skiver.",
+      "Fyld pitabrød med kød, salat, tomater, agurk og tzatziki."
+    ]
+  },
+  {
+    "id": "c184",
+    "name": "Wraps med hakket oksekød og salsa",
+    "cuisine": "mexicansk",
+    "cost": 120,
+    "time": 20,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["oksekød", "mexicansk", "wrap", "hurtig"],
+    "ingredients": [
+      "400 g hakket oksekød",
+      "8 stk hvede tortilla",
+      "1 stk peberfrugt",
+      "1 løg",
+      "3 fed hvidløg",
+      "1 pose tacokrydderi",
+      "4 salatblade",
+      "2 spsk olivenolie"
+    ],
+    "steps": [
+      "Steg oksekød, løg og hvidløg i olie 6 min til brunet. Tilsæt tacokrydderi.",
+      "Skær peberfrugt i strimler og steg med kødet 3 min.",
+      "Varm tortilla i mikro 30 sek.",
+      "Fyld tortillaerne med kød, peberfrugt, salat og creme fraiche."
+    ]
+  },
+  {
+    "id": "c185",
+    "name": "Shawarma med kylling og pitabrød",
+    "cuisine": "middelhavs",
+    "cost": 150,
+    "time": 20,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["kylling", "pita", "middelhavs", "hurtig"],
+    "ingredients": [
+      "600 g kyllingefilet",
+      "4 stk pitabrød",
+      "200 g creme fraiche",
+      "1 agurk",
+      "3 tomater",
+      "4 fed hvidløg",
+      "2 tsk spidskommen",
+      "1 tsk paprika",
+      "4 salatblade",
+      "2 spsk olivenolie"
+    ],
+    "steps": [
+      "Skær kylling i strimler. Krydr med spidskommen, paprika, hvidløg, salt og peber.",
+      "Steg kylling i olie ved høj varme 6-8 min til gylden og gennemstegt.",
+      "Rør creme fraiche med revet hvidløg til en simpel sauce. Skær tomat og agurk i skiver.",
+      "Varm pitabrød, fyld med kylling, salat, tomat, agurk og creme fraiche."
+    ]
+  },
+  {
+    "id": "c186",
+    "name": "Pad thai",
+    "cuisine": "asiatisk",
+    "cost": 120,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["nudler", "asiatisk", "hurtig"],
+    "ingredients": [
+      "300 g risnudler",
+      "4 æg",
+      "200 g rejer",
+      "1 stk peberfrugt",
+      "3 fed hvidløg",
+      "4 spsk sojasauce",
+      "2 spsk peanut butter",
+      "1 citron",
+      "2 løg",
+      "2 spsk olivenolie"
+    ],
+    "steps": [
+      "Iblødsæt risnudler i koldt vand 15 min. Skær peberfrugt i strimler og løg i tynde ringe.",
+      "Varm olie i wok ved høj varme. Steg rejer og hvidløg 2 min. Skub til siden og scramble æggene.",
+      "Tilsæt drænte nudler, peberfrugt og løg. Steg 3 min under omrøring.",
+      "Rør sojasauce, peanut butter og citronsaft i. Server straks."
+    ]
+  },
+  {
+    "id": "c187",
+    "name": "Nudelsuppe med oksekød",
+    "cuisine": "asiatisk",
+    "cost": 110,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["suppe", "nudler", "oksekød", "asiatisk"],
+    "ingredients": [
+      "300 g oksekødsstrimler",
+      "300 g nudler",
+      "1.5 l bouillon",
+      "1 spsk ingefær",
+      "3 fed hvidløg",
+      "3 spsk sojasauce",
+      "2 løg",
+      "1 tsk sesamolie",
+      "2 spsk olivenolie"
+    ],
+    "steps": [
+      "Kog bouillon med hvidløg, ingefær og sojasauce i 10 min.",
+      "Steg oksekødsstrimler i olie på panden 3 min til brunet.",
+      "Tilsæt nudler til bouillonen og kog 5 min til møre.",
+      "Fordel suppe i skåle, top med kødstrimler, løgringe og sesamolie."
+    ]
+  },
+  {
+    "id": "c188",
+    "name": "Indisk dal med ris",
+    "cuisine": "indisk",
+    "cost": 110,
+    "time": 30,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["linser", "indisk", "vegetarisk", "billig"],
+    "ingredients": [
+      "300 g røde linser",
+      "1 dåse kokosmælk",
+      "1 dåse hakkede tomater",
+      "2 løg",
+      "4 fed hvidløg",
+      "1 spsk ingefær",
+      "2 tsk garam masala",
+      "1 tsk gurkemeje",
+      "400 g ris",
+      "2 spsk olivenolie",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Kog ris. Skyl linser. Steg løg og hvidløg i olie 4 min.",
+      "Tilsæt ingefær, garam masala og gurkemeje, rør 1 min.",
+      "Tilsæt hakkede tomater, kokosmælk og linser. Kog 20 min til linser er møre og dalen cremet.",
+      "Smag til med salt. Server over ris."
+    ]
+  },
+  {
+    "id": "c189",
+    "name": "Nachos med bønner og ost",
+    "cuisine": "mexicansk",
+    "cost": 135,
+    "time": 20,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["bønner", "mexicansk", "vegetarisk", "hurtig"],
+    "ingredients": [
+      "200 g tortilla chips",
+      "2 dåser sorte bønner",
+      "200 g revet cheddar",
+      "1 dåse hakkede tomater",
+      "1 løg",
+      "1 pose tacokrydderi",
+      "1 stk chili",
+      "200 g creme fraiche",
+      "2 spsk olivenolie"
+    ],
+    "steps": [
+      "Tænd ovn på 200°C. Steg hakket løg og chili i olie 3 min. Tilsæt tacokrydderi og drænede bønner.",
+      "Rør hakkede tomater i og kog 5 min.",
+      "Fordel tortilla chips i et ovnfast fad. Fordel bønneblandingen over og drys ost på.",
+      "Bag 8-10 min til osten er smeltet og gylden. Server med creme fraiche."
+    ]
+  },
+  {
+    "id": "c190",
+    "name": "Koreansk-inspireret oksekød med ris",
+    "cuisine": "asiatisk",
+    "cost": 135,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["oksekød", "ris", "asiatisk"],
+    "ingredients": [
+      "500 g hakket oksekød",
+      "400 g ris",
+      "2 gulerødder",
+      "1 løg",
+      "4 fed hvidløg",
+      "4 spsk sojasauce",
+      "1 spsk honning",
+      "1 spsk ingefær",
+      "1 tsk sesamolie",
+      "2 spsk olivenolie"
+    ],
+    "steps": [
+      "Kog ris. Riv gulerødder og hak løg fint.",
+      "Steg oksekød og løg i olie 5 min til brunet. Tilsæt hvidløg og ingefær, steg 1 min.",
+      "Rør sojasauce og honning i. Tilsæt gulerødder og kog 3 min.",
+      "Dryp sesamolie over og server over ris."
+    ]
+  },
+  {
+    "id": "c191",
+    "name": "Millionbøf",
+    "cuisine": "dansk",
+    "cost": 145,
+    "time": 30,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["oksekød", "pasta", "dansk", "klassiker"],
+    "ingredients": [
+      "500 g hakket oksekød",
+      "400 g pasta",
+      "2 dåser hakkede tomater",
+      "2 løg",
+      "4 fed hvidløg",
+      "2 spsk tomatpuré",
+      "1 tsk paprika",
+      "1 tsk tørret oregano",
+      "2 spsk olivenolie",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Kog pasta i saltet vand.",
+      "Steg oksekød, løg og hvidløg i olie 6 min til brunet.",
+      "Tilsæt tomatpuré, paprika, oregano og hakkede tomater. Kog 15 min til saucen er tyknet.",
+      "Smag til med salt og peber. Vend pasta i sovsen eller server ved siden af."
+    ]
+  },
+  {
+    "id": "c192",
+    "name": "Stegt flæsk med persillesovs",
+    "cuisine": "dansk",
+    "cost": 100,
+    "time": 30,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["flæsk", "kartofler", "dansk", "klassiker"],
+    "ingredients": [
+      "500 g stegt flæsk",
+      "1 kg kartofler",
+      "1 bundt persille",
+      "2 dl mælk",
+      "3 spsk hvedemel",
+      "30 g smør",
+      "3 dl bouillon",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Kog kartofler i saltet vand 20 min.",
+      "Steg flæskeskiver på tør pande 3-4 min per side til sprøde.",
+      "Smelt smør i gryde, rør mel i og kog 1 min. Tilsæt mælk og bouillon lidt ad gangen til jævn sovs. Kog 5 min.",
+      "Hak persille fint og rør i sovsen. Smag til med salt. Server med kartofler."
+    ]
+  },
+  {
+    "id": "c193",
+    "name": "Boller i karry",
+    "cuisine": "dansk",
+    "cost": 140,
+    "time": 35,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["svinekød", "karry", "dansk", "klassiker"],
+    "ingredients": [
+      "500 g hakket svinekød",
+      "3 spsk hvedemel",
+      "1 æg",
+      "1 dl mælk",
+      "2 løg",
+      "2 spsk karry",
+      "5 dl bouillon",
+      "1 dl fløde",
+      "400 g ris",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Rør hakket svinekød med mel, æg, mælk, halvdelen af løgene (hakket), salt og peber til en fast fars.",
+      "Kog ris. Kog bouillon op. Form fars til boller med en ske og kog i bouillonen 10 min.",
+      "Tag bollerne op. Steg resten af løgene i gryde, tilsæt karry og steg 1 min. Tilsæt bouillon og fløde.",
+      "Kog sovsen 5 min til tyknet. Smag til. Kom bollerne i og server med ris."
+    ]
+  },
+  {
+    "id": "c194",
+    "name": "Grønlangkål med medisterpølse",
+    "cuisine": "dansk",
+    "cost": 125,
+    "time": 30,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["grønkål", "pølse", "dansk", "klassiker"],
+    "ingredients": [
+      "400 g frossen grønkål",
+      "400 g medisterpølse",
+      "150 g bacon",
+      "2 dl mælk",
+      "2 spsk hvedemel",
+      "30 g smør",
+      "750 g kartofler",
+      "1 nip muskat",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Kog kartofler. Steg bacon og pølse på panden til gylden og gennemstegt.",
+      "Kog grønkål op i lidt vand 3 min. Dræn godt.",
+      "Smelt smør, rør mel i og tilsæt mælk til en béchamel. Rør grønkål i, smag til med muskat og salt.",
+      "Server grønlangkål med kartofler, pølse og bacon."
+    ]
+  },
+  {
+    "id": "c195",
+    "name": "Hvidkålsstuvning med bacon og pølse",
+    "cuisine": "dansk",
+    "cost": 115,
+    "time": 30,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["kål", "bacon", "dansk", "hverdagsret", "billig"],
+    "ingredients": [
+      "500 g hvidkål",
+      "150 g bacon",
+      "300 g medisterpølse",
+      "2 dl mælk",
+      "2 spsk maizena",
+      "1 løg",
+      "750 g kartofler",
+      "1 tsk spidskommen",
+      "2 spsk olivenolie",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Kog kartofler. Snit kål fint. Skær pølse i skiver og steg med bacon i olie 5 min.",
+      "Steg løg 3 min. Tilsæt kål og 1 dl vand, kog med låg 10 min til kålen er blød.",
+      "Rør maizena ud i mælk og rør i kålen. Kog under omrøring 3 min til tyknet.",
+      "Tilsæt spidskommen og smag til. Server med kartofler og pølserne."
+    ]
+  },
+  {
+    "id": "c196",
+    "name": "Æg i sennepssovs",
+    "cuisine": "dansk",
+    "cost": 100,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["æg", "sovs", "dansk", "klassiker", "billig"],
+    "ingredients": [
+      "8 æg",
+      "3 spsk sennep",
+      "5 dl bouillon",
+      "2 dl mælk",
+      "2 spsk hvedemel",
+      "30 g smør",
+      "1 kg kartofler",
+      "1 tsk sukker",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Kog æg i 10 min (hårdkogte). Skræl og halver.",
+      "Kog kartofler i saltet vand 20 min.",
+      "Smelt smør, rør mel i og kog 1 min. Tilsæt bouillon og mælk lidt ad gangen til en jævn sovs. Kog 5 min.",
+      "Rør sennep og sukker i sovsen. Smag til med salt. Læg æggene i sovsen og server med kartofler."
+    ]
+  },
+  {
+    "id": "c197",
+    "name": "Gule ærter med flæsk",
+    "cuisine": "dansk",
+    "cost": 115,
+    "time": 40,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["ærter", "flæsk", "dansk", "klassiker"],
+    "ingredients": [
+      "400 g gule ærter",
+      "200 g bacon",
+      "500 g kartofler",
+      "3 gulerødder",
+      "2 løg",
+      "1 l bouillon",
+      "2 laurbær",
+      "1 tsk tørret timian",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Skyl ærter. Kom ærter i gryde med bouillon, laurbær og timian. Kog 30 min.",
+      "Skær kartofler og gulerødder i tern. Hak løg. Tilsæt til ærterne og kog 10 min.",
+      "Steg bacon til sprødt på en separat pande.",
+      "Smag suppen til med salt og peber. Server med sprød bacon på toppen."
+    ]
+  },
+  {
+    "id": "c198",
+    "name": "Stuvet spinat med kogte æg",
+    "cuisine": "dansk",
+    "cost": 100,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["spinat", "æg", "dansk", "vegetarisk", "billig"],
+    "ingredients": [
+      "200 g spinat",
+      "8 æg",
+      "2 dl mælk",
+      "2 spsk maizena",
+      "30 g smør",
+      "1 kg kartofler",
+      "1 nip muskat",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Kog kartofler. Kog æg 10 min (hårdkogte), afkøl og skræl.",
+      "Smelt smør i gryde, tilsæt spinat og kog til det falder sammen.",
+      "Rør maizena ud i mælk og rør i spinaten. Kog 3 min under omrøring til tyknet.",
+      "Krydr med muskat og salt. Server spinat med halverede æg og kartofler."
+    ]
+  },
+  {
+    "id": "c199",
+    "name": "Ribbensgryde",
+    "cuisine": "dansk",
+    "cost": 125,
+    "time": 40,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["svinekød", "gryderet", "dansk"],
+    "ingredients": [
+      "600 g svinekam i tern",
+      "1 kg kartofler",
+      "3 gulerødder",
+      "2 løg",
+      "5 dl bouillon",
+      "2 laurbær",
+      "2 spsk sennep",
+      "1 tsk tørret timian",
+      "2 spsk olivenolie",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Skær kartofler og gulerødder i tern. Hak løg. Brun svinekød i olie 5 min.",
+      "Tilsæt løg og steg 3 min. Tilsæt gulerødder, kartofler, bouillon, laurbær og timian.",
+      "Kog med låg 25 min til kød og kartofler er møre.",
+      "Rør sennep i og smag til med salt og peber."
+    ]
+  },
+  {
+    "id": "c200",
+    "name": "Kødsuppe med grøntsager",
+    "cuisine": "dansk",
+    "cost": 120,
+    "time": 35,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["suppe", "kød", "grøntsager", "dansk"],
+    "ingredients": [
+      "300 g oksekødsstrimler",
+      "500 g kartofler",
+      "3 gulerødder",
+      "2 løg",
+      "100 g suppenudler",
+      "1.5 l bouillon",
+      "2 laurbær",
+      "1 tsk tørret timian",
+      "1 bundt persille",
+      "2 spsk olivenolie",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Skær kartofler og gulerødder i tern, hak løg. Brun oksekød i olie 4 min.",
+      "Tilsæt løg og steg 3 min. Hæld bouillon i med laurbær, timian, kartofler og gulerødder.",
+      "Kog 20 min. Tilsæt nudler og kog 8 min.",
+      "Smag til med salt og peber. Server med hakket persille."
+    ]
+  }
+]

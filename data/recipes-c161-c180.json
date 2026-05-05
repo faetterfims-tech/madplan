@@ -1,0 +1,539 @@
+[
+  {
+    "id": "c161",
+    "name": "Kikærte curry med ris",
+    "cuisine": "indisk",
+    "cost": 120,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["kikærter", "curry", "vegetarisk", "indisk", "billig"],
+    "ingredients": [
+      "2 dåser kikærter",
+      "1 dåse hakkede tomater",
+      "1 dåse kokosmælk",
+      "2 løg",
+      "4 fed hvidløg",
+      "1 spsk ingefær",
+      "2 tsk karry",
+      "1 tsk garam masala",
+      "400 g ris",
+      "2 spsk olivenolie",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Kog ris. Steg hakket løg og hvidløg i olie 4 min. Tilsæt ingefær, karry og garam masala.",
+      "Tilsæt hakkede tomater og kog 5 min. Rør kokosmælk og drænede kikærter i.",
+      "Kog 12 min ved lav varme til saucen er tyknet. Smag til med salt.",
+      "Server over ris med evt. naan."
+    ]
+  },
+  {
+    "id": "c162",
+    "name": "Vegetarisk chili",
+    "cuisine": "mexicansk",
+    "cost": 130,
+    "time": 30,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["bønner", "mexicansk", "vegetarisk"],
+    "ingredients": [
+      "2 dåser røde kidneybønner",
+      "2 dåser hakkede tomater",
+      "2 stk peberfrugt",
+      "2 løg",
+      "4 fed hvidløg",
+      "1 stk chili",
+      "2 tsk spidskommen",
+      "1 tsk paprika",
+      "400 g ris",
+      "2 spsk olivenolie",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Kog ris. Steg hakket løg, hvidløg, chili og peberfrugt i olie 5 min.",
+      "Tilsæt spidskommen og paprika, rør 1 min. Tilsæt hakkede tomater og drænede bønner.",
+      "Kog 20 min ved middel varme til saucen er tyknet. Smag til.",
+      "Server over ris med creme fraiche og evt. cheddar."
+    ]
+  },
+  {
+    "id": "c163",
+    "name": "Hummus og grøntsagswrap",
+    "cuisine": "middelhavs",
+    "cost": 95,
+    "time": 15,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["wrap", "hummus", "vegetarisk", "hurtig", "billig"],
+    "ingredients": [
+      "1 pk hummus á 250 g",
+      "8 stk hvede tortilla",
+      "2 stk peberfrugt",
+      "1 agurk",
+      "4 salatblade",
+      "300 g cherrytomater",
+      "1 tsk tørret oregano",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Skær peberfrugt i strimler, agurk i skiver og halver cherrytomater.",
+      "Varm tortilla 30 sek i mikro.",
+      "Smør hummus på tortillaerne. Fordel peberfrugt, agurk, cherrytomater og salat.",
+      "Drys oregano over, rul stramt og skær på skrå."
+    ]
+  },
+  {
+    "id": "c164",
+    "name": "Røde linser med kokosmælk og spinat",
+    "cuisine": "indisk",
+    "cost": 115,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["linser", "spinat", "vegetarisk", "indisk", "billig"],
+    "ingredients": [
+      "300 g røde linser",
+      "1 dåse kokosmælk",
+      "200 g spinat",
+      "2 løg",
+      "4 fed hvidløg",
+      "1 spsk ingefær",
+      "2 tsk karry",
+      "3 dl bouillon",
+      "400 g ris",
+      "2 spsk olivenolie",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Kog ris. Skyl linser. Steg løg og hvidløg i olie 4 min. Tilsæt ingefær og karry.",
+      "Tilsæt linser, kokosmælk og bouillon. Kog 18 min til linser er møre.",
+      "Rør spinat i og kog 2 min til den falder sammen. Smag til med salt.",
+      "Server over ris."
+    ]
+  },
+  {
+    "id": "c165",
+    "name": "Grøntsags stir fry med ris",
+    "cuisine": "asiatisk",
+    "cost": 130,
+    "time": 20,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["grøntsager", "ris", "vegetarisk", "asiatisk", "hurtig"],
+    "ingredients": [
+      "400 g ris",
+      "1 hoved broccoli",
+      "2 stk peberfrugt",
+      "3 gulerødder",
+      "200 g champignoner",
+      "3 fed hvidløg",
+      "4 spsk sojasauce",
+      "1 tsk sesamolie",
+      "2 spsk olivenolie"
+    ],
+    "steps": [
+      "Kog ris. Del broccoli i buketter, skær peberfrugt og gulerødder i strimler, champignoner i skiver.",
+      "Varm olie i wok ved høj varme. Steg hvidløg 1 min.",
+      "Tilsæt gulerødder og broccoli, steg 3 min. Tilsæt peberfrugt og champignoner, steg 3 min.",
+      "Rør sojasauce og sesamolie i. Server over ris."
+    ]
+  },
+  {
+    "id": "c166",
+    "name": "Mexicansk bønnepande med tortilla",
+    "cuisine": "mexicansk",
+    "cost": 125,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["bønner", "mexicansk", "vegetarisk"],
+    "ingredients": [
+      "2 dåser sorte bønner",
+      "1 dåse majs",
+      "2 stk peberfrugt",
+      "1 løg",
+      "3 fed hvidløg",
+      "1 pose tacokrydderi",
+      "8 stk hvede tortilla",
+      "200 g creme fraiche",
+      "2 spsk olivenolie",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Steg hakket løg, hvidløg og peberfrugt i olie 5 min.",
+      "Tilsæt tacokrydderi, drænede bønner og majs. Kog 8 min under omrøring.",
+      "Smag til med salt. Varm tortilla.",
+      "Fyld tortilla med bønneblandingen og server med creme fraiche."
+    ]
+  },
+  {
+    "id": "c167",
+    "name": "Pasta med pesto og cherrytomater",
+    "cuisine": "italiensk",
+    "cost": 120,
+    "time": 20,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["pasta", "pesto", "vegetarisk", "hurtig"],
+    "ingredients": [
+      "400 g pasta",
+      "1 glas pesto á 190 g",
+      "300 g cherrytomater",
+      "125 g mozzarella",
+      "2 fed hvidløg",
+      "2 spsk olivenolie",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Kog pasta i saltet vand. Halver cherrytomater.",
+      "Varm olie på panden og steg hvidløg 1 min. Tilsæt cherrytomater og steg 4 min.",
+      "Dræn pasta og vend med pesto og tomaterne.",
+      "Riv mozzarella i stykker og læg over pastaen. Server straks."
+    ]
+  },
+  {
+    "id": "c168",
+    "name": "Bagt feta med tomater og pasta",
+    "cuisine": "vegetarisk",
+    "cost": 100,
+    "time": 35,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["feta", "tomat", "pasta", "vegetarisk", "ovnret"],
+    "ingredients": [
+      "200 g feta",
+      "500 g cherrytomater",
+      "400 g pasta",
+      "6 fed hvidløg",
+      "1 dl olivenolie",
+      "1 tsk tørret oregano",
+      "1 nip salt",
+      "1 nip peber"
+    ],
+    "steps": [
+      "Tænd ovn på 200°C. Hæld cherrytomater og hvidløg i et ovnfad med olivenolie, salt og oregano.",
+      "Læg fetablokken midt i fadet. Bag 25-30 min til tomaterne er sprukne og feta gylden.",
+      "Kog pasta imens. Mos feta og tomater til en cremet sovs.",
+      "Vend pasta i fetasovsen og server straks."
+    ]
+  },
+  {
+    "id": "c169",
+    "name": "Spinat og kikærtekarry",
+    "cuisine": "indisk",
+    "cost": 130,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["spinat", "kikærter", "indisk", "vegetarisk"],
+    "ingredients": [
+      "2 dåser kikærter",
+      "200 g spinat",
+      "1 dåse kokosmælk",
+      "1 dåse hakkede tomater",
+      "2 løg",
+      "4 fed hvidløg",
+      "1 spsk ingefær",
+      "2 tsk garam masala",
+      "400 g ris",
+      "2 spsk olivenolie",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Kog ris. Steg løg og hvidløg i olie 4 min. Tilsæt ingefær og garam masala.",
+      "Tilsæt hakkede tomater og kog 5 min. Rør kokosmælk og kikærter i.",
+      "Kog 10 min. Rør spinat i og kog 2 min. Smag til med salt.",
+      "Server over ris."
+    ]
+  },
+  {
+    "id": "c170",
+    "name": "Veggie bolognese med linser",
+    "cuisine": "vegetarisk",
+    "cost": 115,
+    "time": 35,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["linser", "pasta", "vegetarisk", "billig"],
+    "ingredients": [
+      "300 g grønne linser",
+      "2 dåser hakkede tomater",
+      "2 løg",
+      "3 gulerødder",
+      "4 fed hvidløg",
+      "2 spsk tomatpuré",
+      "1 dl rødvin",
+      "400 g pasta",
+      "2 tsk tørret oregano",
+      "2 spsk olivenolie",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Skyl linser og kog 15 min. Hak løg, gulerødder og hvidløg fint.",
+      "Steg løg og hvidløg i olie 4 min. Tilsæt gulerødder og steg 5 min.",
+      "Tilsæt tomatpuré, rødvin, hakkede tomater og kogte linser. Kog 15 min.",
+      "Kog pasta imens. Smag saucen til med oregano, salt og peber. Vend med pasta."
+    ]
+  },
+  {
+    "id": "c171",
+    "name": "Fiskedeller med remoulade og kartofler",
+    "cuisine": "dansk",
+    "cost": 155,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["fisk", "dansk", "klassiker"],
+    "ingredients": [
+      "400 g torskefilet",
+      "4 spsk hvedemel",
+      "2 æg",
+      "1 dl mælk",
+      "1 tsk tørret dild",
+      "750 g kartofler",
+      "1 glas remoulade",
+      "3 spsk olivenolie",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Kog kartofler i saltet vand 20 min.",
+      "Hak torsken fint. Rør mel, æg og mælk i til en fast fars. Krydr med dild, salt og peber.",
+      "Form til ovale deller med en ske. Steg i olie ved middel varme 4-5 min per side til gyldne og gennemstegte.",
+      "Server med de kogte kartofler og remoulade."
+    ]
+  },
+  {
+    "id": "c172",
+    "name": "Tuna pasta med olivenolie og hvidløg",
+    "cuisine": "italiensk",
+    "cost": 95,
+    "time": 15,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["pasta", "tun", "fisk", "hurtig", "billig"],
+    "ingredients": [
+      "400 g pasta",
+      "2 dåser tun i vand á 160 g",
+      "4 fed hvidløg",
+      "1 citron",
+      "1 dl olivenolie",
+      "1 bundt persille",
+      "1 nip chiliflager",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Kog pasta i saltet vand. Gem 1 dl pastavand.",
+      "Steg finthakket hvidløg i olivenolie 2 min. Tilsæt chiliflager.",
+      "Dræn tun og rør i panden med citronsaft. Tilsæt pasta og lidt pastavand, rør godt.",
+      "Smag til med salt. Top med hakket persille og server."
+    ]
+  },
+  {
+    "id": "c173",
+    "name": "Makrel i tomat på ris",
+    "cuisine": "dansk",
+    "cost": 85,
+    "time": 15,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["fisk", "makrel", "dansk", "hurtig", "billig"],
+    "ingredients": [
+      "4 dåser makrel i tomat",
+      "400 g ris",
+      "2 gulerødder",
+      "1 løg",
+      "2 spsk sojasauce",
+      "1 spsk olivenolie",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Kok ris i saltet vand.",
+      "Riv gulerødder og hak løg fint. Steg i olie 4 min.",
+      "Tilsæt makrel med tomatsauce og sojasauce. Varm igennem 3 min.",
+      "Server over ris."
+    ]
+  },
+  {
+    "id": "c174",
+    "name": "Bagt torsk med citronsovs og kartofler",
+    "cuisine": "dansk",
+    "cost": 160,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["fisk", "torsk", "dansk", "ovnret"],
+    "ingredients": [
+      "400 g torskefilet",
+      "2 citroner",
+      "1 kg kartofler",
+      "200 g creme fraiche",
+      "3 fed hvidløg",
+      "1 tsk tørret dild",
+      "2 spsk olivenolie",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Tænd ovn på 200°C. Kog kartofler 15 min til halvt møre, skær i kvarter.",
+      "Læg torsk i ovnfast fad. Krydr med salt, peber og dild. Hæld citronsaft over.",
+      "Bag fisk 12-15 min til den flager let.",
+      "Rør creme fraiche med hvidløg og dild til sauce. Server med kartofler og sovsen."
+    ]
+  },
+  {
+    "id": "c175",
+    "name": "Rejer på ristet brød med hvidløgssmør",
+    "cuisine": "dansk",
+    "cost": 130,
+    "time": 15,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["rejer", "fisk", "dansk", "hurtig"],
+    "ingredients": [
+      "200 g rejer",
+      "8 skiver toastbrød",
+      "100 g smør",
+      "4 fed hvidløg",
+      "1 citron",
+      "1 bundt persille",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Rist toastbrød. Hak hvidløg og persille fint.",
+      "Smelt smør på panden ved lav varme. Tilsæt hvidløg og steg 2 min uden at brænde.",
+      "Tilsæt rejer og varm igennem 2 min. Presser citronsaft over.",
+      "Anret rejer og hvidløgssmør på det ristede brød. Drys persille over."
+    ]
+  },
+  {
+    "id": "c176",
+    "name": "Fiskepinde med kartoffelsalat",
+    "cuisine": "dansk",
+    "cost": 85,
+    "time": 20,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["fisk", "dansk", "hurtig", "billig", "børnevenlig"],
+    "ingredients": [
+      "1 pk fiskepinde á 400 g",
+      "750 g kartofler",
+      "3 spsk mayonnaise",
+      "1 tsk tørret dild",
+      "1 agurk",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Kog kartofler i saltet vand 20 min. Afkøl lidt og skær i tern.",
+      "Bag fiskepinde i ovn efter pakken (ca. 15 min ved 220°C).",
+      "Bland kartofler med mayonnaise, hakket agurk og dild. Smag til med salt og peber.",
+      "Server fiskepinde med kartoffelsalaten."
+    ]
+  },
+  {
+    "id": "c177",
+    "name": "Bagt torsk med broccoli og flødesovs",
+    "cuisine": "dansk",
+    "cost": 160,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["fisk", "torsk", "dansk"],
+    "ingredients": [
+      "400 g torskefilet",
+      "1 hoved broccoli",
+      "2 dl fløde",
+      "2 fed hvidløg",
+      "1 citron",
+      "1 tsk tørret dild",
+      "750 g kartofler",
+      "2 spsk olivenolie",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Kog kartofler. Tænd ovn på 200°C. Del broccoli i buketter.",
+      "Kom broccoli i ovnfast fad med olie og salt. Læg torsk ovenpå og krydr med dild og citronsaft.",
+      "Bag 15 min til fisk flager let.",
+      "Varm fløde og hvidløg i gryde 5 min til let tyknet. Smag til. Server med kartofler og flødesovs."
+    ]
+  },
+  {
+    "id": "c178",
+    "name": "Rejer wok med ris og grøntsager",
+    "cuisine": "asiatisk",
+    "cost": 140,
+    "time": 20,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["rejer", "fisk", "ris", "asiatisk", "hurtig"],
+    "ingredients": [
+      "200 g rejer",
+      "400 g ris",
+      "2 stk peberfrugt",
+      "200 g champignoner",
+      "3 fed hvidløg",
+      "3 spsk sojasauce",
+      "1 tsk sesamolie",
+      "1 spsk ingefær",
+      "2 spsk olivenolie"
+    ],
+    "steps": [
+      "Kog ris. Skær peberfrugt i strimler og champignoner i skiver.",
+      "Varm olie i wok ved høj varme. Steg hvidløg og ingefær 1 min.",
+      "Tilsæt peberfrugt og champignoner, steg 4 min. Tilsæt rejer og steg 2 min til lyserøde.",
+      "Rør sojasauce og sesamolie i. Server over ris."
+    ]
+  },
+  {
+    "id": "c179",
+    "name": "Fiskestrimler i tortilla",
+    "cuisine": "mexicansk",
+    "cost": 100,
+    "time": 20,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["fisk", "wrap", "mexicansk", "hurtig"],
+    "ingredients": [
+      "400 g frosne fiskestrimler",
+      "8 stk hvede tortilla",
+      "200 g creme fraiche",
+      "1 citron",
+      "2 tsk paprika",
+      "4 salatblade",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Bag fiskestrimler i ovn ved 220°C i 15 min til gyldne og sprøde.",
+      "Rør creme fraiche med citronsaft og paprika til en nem sauce.",
+      "Varm tortilla i mikro 30 sek.",
+      "Fyld tortillaerne med fiskestrimler, salatblade og paprika-cremefraiche."
+    ]
+  },
+  {
+    "id": "c180",
+    "name": "Enkel fiskesuppe med fløde",
+    "cuisine": "dansk",
+    "cost": 165,
+    "time": 30,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["suppe", "fisk", "dansk"],
+    "ingredients": [
+      "400 g torskefilet",
+      "2 dl fløde",
+      "3 gulerødder",
+      "2 løg",
+      "3 fed hvidløg",
+      "8 dl bouillon",
+      "500 g kartofler",
+      "1 tsk tørret dild",
+      "2 spsk olivenolie",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Skær kartofler og gulerødder i tern, hak løg og hvidløg.",
+      "Steg løg og hvidløg i olie 3 min. Tilsæt gulerødder, kartofler og bouillon. Kog 15 min.",
+      "Skær torsk i stykker og tilsæt. Kog 5 min til fisken flager let.",
+      "Rør fløde i og varm igennem. Smag til med dild, salt og peber."
+    ]
+  }
+]

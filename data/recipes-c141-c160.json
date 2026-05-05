@@ -1,0 +1,534 @@
+[
+  {
+    "id": "c141",
+    "name": "Honey mustard kylling med kartofler",
+    "cuisine": "dansk",
+    "cost": 135,
+    "time": 35,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["kylling", "kartofler", "dansk", "ovnret"],
+    "ingredients": [
+      "600 g kyllingefilet",
+      "1 kg kartofler",
+      "3 spsk sennep",
+      "3 spsk honning",
+      "4 fed hvidløg",
+      "1 citron",
+      "2 tsk tørret timian",
+      "2 spsk olivenolie",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Tænd ovn på 200°C. Skær kartofler i kvarter og kom på bageplade med olie, salt og hvidløg.",
+      "Rør sennep, honning, citronsaft og timian til en marinade. Vend kyllingerne heri.",
+      "Læg kylling mellem kartoflerne på bagepladen. Bag 25-30 min til kylling er gennemstegt og kartofler gyldne.",
+      "Server med salat."
+    ]
+  },
+  {
+    "id": "c142",
+    "name": "Kylling med paprikasovs og ris",
+    "cuisine": "dansk",
+    "cost": 130,
+    "time": 30,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["kylling", "ris", "dansk"],
+    "ingredients": [
+      "500 g kyllingefilet",
+      "400 g ris",
+      "1 stk peberfrugt",
+      "2 løg",
+      "200 g creme fraiche",
+      "3 fed hvidløg",
+      "2 tsk paprika",
+      "2 spsk olivenolie",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Kog ris. Skær kylling i strimler og peberfrugt i tern.",
+      "Steg kylling i olie 5 min til gylden. Tag af panden.",
+      "Steg løg og hvidløg 3 min. Tilsæt peberfrugt og paprika, steg 3 min. Rør kylling og creme fraiche i.",
+      "Varm igennem og smag til. Server med ris."
+    ]
+  },
+  {
+    "id": "c143",
+    "name": "Kylling tikka masala",
+    "cuisine": "indisk",
+    "cost": 125,
+    "time": 30,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["kylling", "indisk", "karry"],
+    "ingredients": [
+      "500 g kyllingefilet",
+      "1 dåse hakkede tomater",
+      "1 dåse kokosmælk",
+      "2 løg",
+      "4 fed hvidløg",
+      "1 spsk ingefær",
+      "2 spsk tikka masala krydderi",
+      "400 g ris",
+      "2 spsk olivenolie",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Kog ris. Skær kylling i tern.",
+      "Steg løg og hvidløg i olie 4 min. Tilsæt tikka krydderi og ingefær, steg 1 min.",
+      "Tilsæt kylling og brun 4 min. Hæld hakkede tomater og kokosmælk i, kog 12 min.",
+      "Smag til med salt. Server med ris og evt. naan."
+    ]
+  },
+  {
+    "id": "c144",
+    "name": "Kylling fajitas",
+    "cuisine": "mexicansk",
+    "cost": 120,
+    "time": 20,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["kylling", "mexicansk", "wrap", "hurtig"],
+    "ingredients": [
+      "500 g kyllingefilet",
+      "2 stk peberfrugt",
+      "1 løg",
+      "1 pose tacokrydderi",
+      "8 stk hvede tortilla",
+      "3 fed hvidløg",
+      "2 spsk olivenolie",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Skær kylling i strimler, peberfrugt og løg i lange strimler.",
+      "Varm olie i panden ved høj varme. Steg kylling og hvidløg 5 min til gylden.",
+      "Tilsæt peberfrugt, løg og tacokrydderi. Steg 4 min til grøntsager er bløde men stadig med bid.",
+      "Varm tortilla og server med kyllingblandingen, creme fraiche og salsa."
+    ]
+  },
+  {
+    "id": "c145",
+    "name": "Citronkylling med grøntsager",
+    "cuisine": "middelhavs",
+    "cost": 140,
+    "time": 35,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["kylling", "ovnret", "grøntsager", "middelhavs"],
+    "ingredients": [
+      "600 g kyllingefilet",
+      "2 citroner",
+      "750 g kartofler",
+      "1 hoved broccoli",
+      "6 fed hvidløg",
+      "2 tsk tørret timian",
+      "2 spsk olivenolie",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Tænd ovn på 200°C. Skær kartofler i kvarter og broccoli i buketter.",
+      "Bland grøntsager med olie, hvidløg, salt og timian på en bageplade.",
+      "Læg kylling ovenpå, hæld citronsaft over det hele. Skær en citron i skiver og fordel rundt.",
+      "Bag 25-30 min til kylling er gylden og gennemstegt."
+    ]
+  },
+  {
+    "id": "c146",
+    "name": "Sprøde kyllingnuggets med kartofler",
+    "cuisine": "amerikansk",
+    "cost": 125,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["kylling", "kartofler", "børnevenlig", "hurtig"],
+    "ingredients": [
+      "600 g kyllingefilet",
+      "100 g hvedemel",
+      "2 æg",
+      "100 g rasp",
+      "1 kg kartofler",
+      "1 tsk paprika",
+      "3 spsk olivenolie",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Tænd ovn på 220°C. Skær kartofler i stave, bland med olie og salt på bageplade. Bag 20 min.",
+      "Skær kylling i mundrette stykker. Vend i mel, derefter pisket æg, derefter rasp blandet med paprika.",
+      "Steg nuggets i olie på panden 3-4 min per side til gyldne og gennemstegte.",
+      "Server med kartoffelstavene og ketchup eller dipsauce."
+    ]
+  },
+  {
+    "id": "c147",
+    "name": "Kylling og champignonstroganov",
+    "cuisine": "dansk",
+    "cost": 150,
+    "time": 30,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["kylling", "champignoner", "dansk"],
+    "ingredients": [
+      "500 g kyllingefilet",
+      "400 g champignoner",
+      "400 g creme fraiche",
+      "2 løg",
+      "3 fed hvidløg",
+      "2 tsk paprika",
+      "400 g ris",
+      "2 spsk olivenolie",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Kog ris. Skær kylling i strimler og champignoner i skiver.",
+      "Steg kylling i olie 5 min til gylden. Tag af panden.",
+      "Steg løg, hvidløg og champignoner 6 min til gyldne. Tilsæt paprika og creme fraiche.",
+      "Rør kylling i og varm igennem 3 min. Smag til og server med ris."
+    ]
+  },
+  {
+    "id": "c148",
+    "name": "Kyllingwraps med creme fraiche",
+    "cuisine": "mexicansk",
+    "cost": 125,
+    "time": 20,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["kylling", "wrap", "mexicansk", "hurtig"],
+    "ingredients": [
+      "500 g kyllingefilet",
+      "8 stk hvede tortilla",
+      "200 g creme fraiche",
+      "1 stk peberfrugt",
+      "1 løg",
+      "1 pose tacokrydderi",
+      "4 salatblade",
+      "3 fed hvidløg",
+      "2 spsk olivenolie"
+    ],
+    "steps": [
+      "Skær kylling i strimler og peberfrugt og løg i strimler.",
+      "Steg kylling i olie 5 min. Tilsæt løg, peberfrugt, hvidløg og tacokrydderi, steg 4 min.",
+      "Varm tortilla i mikro 30 sek.",
+      "Fordel kylling, salat og creme fraiche i tortillaerne og rul dem."
+    ]
+  },
+  {
+    "id": "c149",
+    "name": "Kylling med pesto og pasta",
+    "cuisine": "italiensk",
+    "cost": 140,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["kylling", "pasta", "pesto", "italiensk"],
+    "ingredients": [
+      "500 g kyllingefilet",
+      "400 g pasta",
+      "1 glas pesto",
+      "3 tomater",
+      "50 g revet parmesan",
+      "2 fed hvidløg",
+      "2 spsk olivenolie",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Kog pasta i saltet vand.",
+      "Skær kylling i tern og tomater i kvarter. Steg kylling og hvidløg i olie 6 min til gylden.",
+      "Vend pasta i pesto. Tilsæt kylling og tomater.",
+      "Drys parmesan over og server straks."
+    ]
+  },
+  {
+    "id": "c150",
+    "name": "Kylling med sød chili og ris",
+    "cuisine": "asiatisk",
+    "cost": 150,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["kylling", "ris", "asiatisk"],
+    "ingredients": [
+      "600 g kyllingefilet",
+      "400 g ris",
+      "1 hoved broccoli",
+      "4 spsk sød chilisauce",
+      "3 spsk sojasauce",
+      "4 fed hvidløg",
+      "1 spsk ingefær",
+      "1 tsk sesamolie",
+      "2 spsk olivenolie"
+    ],
+    "steps": [
+      "Kog ris. Del broccoli i buketter og blancher 2 min.",
+      "Skær kylling i strimler. Steg i olie ved høj varme 5 min til gylden.",
+      "Rør sød chili, sojasauce, hvidløg og ingefær i. Tilsæt broccoli og rør rundt.",
+      "Dryp sesamolie over og server med ris."
+    ]
+  },
+  {
+    "id": "c151",
+    "name": "Æbleflæsk med kartofler",
+    "cuisine": "dansk",
+    "cost": 100,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["bacon", "æbler", "kartofler", "dansk", "klassiker"],
+    "ingredients": [
+      "200 g bacon",
+      "3 æbler",
+      "1 kg kartofler",
+      "2 løg",
+      "1 spsk sukker",
+      "2 spsk olivenolie",
+      "1 tsk tørret timian",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Skræl kartofler og kog i saltet vand 20 min. Skær bacon i tern, æbler i kvarter og løg i ringe.",
+      "Steg bacon i olie på panden til sprødt. Tilsæt løg og steg 5 min.",
+      "Tilsæt æbler og sukker, steg 4 min til æbler er bløde og karamelliserede.",
+      "Anret kartofler på tallerkenen med æbleflæsket over. Drys timian på."
+    ]
+  },
+  {
+    "id": "c152",
+    "name": "Medisterpølse med stuvet kål",
+    "cuisine": "dansk",
+    "cost": 90,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["pølse", "kål", "dansk", "klassiker", "billig"],
+    "ingredients": [
+      "500 g medisterpølse",
+      "500 g hvidkål",
+      "2 dl bouillon",
+      "1 løg",
+      "3 fed hvidløg",
+      "1 tsk spidskommen",
+      "750 g kartofler",
+      "2 spsk olivenolie",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Kog kartofler. Snit kål fint. Steg pølse i olie 8 min til gylden, skær i skiver.",
+      "Steg løg og hvidløg i pande 3 min. Tilsæt kål og bouillon.",
+      "Kog kålen med låg 10 min, tilsæt spidskommen og smag til med salt.",
+      "Server pølse og kål over de kogte kartofler."
+    ]
+  },
+  {
+    "id": "c153",
+    "name": "Svinekoteletter med sennepssovs",
+    "cuisine": "dansk",
+    "cost": 125,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["svinekød", "koteletter", "dansk"],
+    "ingredients": [
+      "4 stk svinekoteletter",
+      "1 kg kartofler",
+      "3 spsk sennep",
+      "3 dl bouillon",
+      "2 fed hvidløg",
+      "1 tsk tørret timian",
+      "2 spsk olivenolie",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Kog kartofler i saltet vand. Krydr koteletter med salt og peber.",
+      "Steg koteletter i olie 3-4 min per side til gyldne og gennemstegte. Tag af panden.",
+      "Steg hvidløg i panden 1 min. Tilsæt bouillon og sennep, kog 5 min til saucen er tyknet.",
+      "Server koteletter med sennepssovs og kartofler."
+    ]
+  },
+  {
+    "id": "c154",
+    "name": "Biksemad med spejlæg",
+    "cuisine": "dansk",
+    "cost": 90,
+    "time": 20,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["kartofler", "pølse", "æg", "dansk", "klassiker", "billig"],
+    "ingredients": [
+      "750 g kartofler",
+      "400 g medisterpølse",
+      "2 løg",
+      "4 æg",
+      "2 spsk sojasauce",
+      "2 spsk olivenolie",
+      "1 nip salt",
+      "1 nip peber"
+    ],
+    "steps": [
+      "Skær kartofler i tern og kog i 10 min (halvkogte). Skær pølse og løg i tern.",
+      "Steg kartofler i olie ved høj varme 5 min til gyldne. Tilsæt pølse og løg, steg 5 min.",
+      "Tilsæt sojasauce og rør rundt. Smag til med salt og peber.",
+      "Steg spejlæg på en separat pande og læg et æg på hvert portionsanretning."
+    ]
+  },
+  {
+    "id": "c155",
+    "name": "Svinekødsstrimler med grøntsager",
+    "cuisine": "asiatisk",
+    "cost": 135,
+    "time": 20,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["svinekød", "wok", "grøntsager", "asiatisk", "hurtig"],
+    "ingredients": [
+      "500 g hakket svinekød",
+      "2 stk peberfrugt",
+      "1 hoved broccoli",
+      "3 fed hvidløg",
+      "3 spsk sojasauce",
+      "2 spsk oyster sauce",
+      "1 spsk ingefær",
+      "400 g ris",
+      "2 spsk olivenolie"
+    ],
+    "steps": [
+      "Kog ris. Del broccoli i buketter, skær peberfrugt i strimler.",
+      "Varm olie i wok ved høj varme. Steg svinekød og hvidløg 4 min til brunet.",
+      "Tilsæt broccoli og peberfrugt, steg 3 min. Rør ingefær, sojasauce og oyster sauce i.",
+      "Server over ris."
+    ]
+  },
+  {
+    "id": "c156",
+    "name": "Hakket svinekød i pitabrød med tzatziki",
+    "cuisine": "middelhavs",
+    "cost": 115,
+    "time": 20,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["svinekød", "pita", "middelhavs", "hurtig"],
+    "ingredients": [
+      "500 g hakket svinekød",
+      "4 stk pitabrød",
+      "200 g creme fraiche",
+      "1 agurk",
+      "4 fed hvidløg",
+      "2 tsk tørret dild",
+      "1 løg",
+      "2 tsk paprika",
+      "4 salatblade",
+      "2 spsk olivenolie"
+    ],
+    "steps": [
+      "Riv halvdelen af agurken groft og klem vandet ud. Rør creme fraiche, revet agurk, 2 fed hvidløg og dild til tzatziki.",
+      "Steg svinekød, løg og 2 fed hvidløg i olie 6 min til brunet. Krydr med paprika, salt og peber.",
+      "Varm pitabrød i ovn eller pande 2 min.",
+      "Fyld pitabrød med svinekød, tzatziki, salat og skiver af resten af agurken."
+    ]
+  },
+  {
+    "id": "c157",
+    "name": "Chorizo og kikærtegryde",
+    "cuisine": "middelhavs",
+    "cost": 130,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["chorizo", "kikærter", "middelhavs"],
+    "ingredients": [
+      "200 g chorizo",
+      "2 dåser kikærter",
+      "1 dåse hakkede tomater",
+      "2 stk peberfrugt",
+      "2 løg",
+      "4 fed hvidløg",
+      "2 tsk paprika",
+      "1 spsk olivenolie",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Skær chorizo i skiver. Skær peberfrugt og løg i tern.",
+      "Steg chorizo i olie 3 min. Tilsæt løg og hvidløg, steg 4 min.",
+      "Tilsæt peberfrugt, paprika, hakkede tomater og drænede kikærter. Kog 12 min.",
+      "Smag til med salt og peber. Server med brød."
+    ]
+  },
+  {
+    "id": "c158",
+    "name": "Pølsegryde med kartofler og tomat",
+    "cuisine": "dansk",
+    "cost": 110,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["pølse", "kartofler", "dansk", "hverdagsret", "billig"],
+    "ingredients": [
+      "500 g medisterpølse",
+      "750 g kartofler",
+      "1 dåse hakkede tomater",
+      "1 stk peberfrugt",
+      "2 løg",
+      "3 fed hvidløg",
+      "1 tsk paprika",
+      "2 spsk olivenolie",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Skær kartofler i tern og pølse i skiver. Hak løg og peberfrugt.",
+      "Steg pølse i olie 4 min til brunet. Tag af panden.",
+      "Steg løg, hvidløg og peberfrugt 4 min. Tilsæt kartofler, paprika og hakkede tomater.",
+      "Tilsæt pølse, dæk med låg og kog 15 min til kartofler er møre."
+    ]
+  },
+  {
+    "id": "c159",
+    "name": "Bondesovs med svinekød",
+    "cuisine": "dansk",
+    "cost": 100,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["svinekød", "sovs", "dansk", "klassiker", "billig"],
+    "ingredients": [
+      "500 g hakket svinekød",
+      "2 løg",
+      "4 dl bouillon",
+      "3 spsk maizena",
+      "2 spsk sojasauce",
+      "1 kg kartofler",
+      "2 spsk olivenolie",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Kog kartofler i saltet vand 20 min.",
+      "Steg svinekød og løg i olie 6 min til brunet og løg er bløde.",
+      "Tilsæt bouillon og sojasauce. Rør maizena ud i 3 spsk koldt vand og rør i sovsen. Kog 5 min til tyknet.",
+      "Smag til med salt og peber. Server over de kogte kartofler."
+    ]
+  },
+  {
+    "id": "c160",
+    "name": "Brændende kærlighed",
+    "cuisine": "dansk",
+    "cost": 100,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["kartofler", "bacon", "dansk", "klassiker", "billig"],
+    "ingredients": [
+      "1 kg kartofler",
+      "200 g bacon",
+      "4 løg",
+      "2 dl mælk",
+      "2 spsk olivenolie",
+      "1 nip muskat",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Skræl kartofler og kog i saltet vand 20 min til møre.",
+      "Skær bacon i tern og løg i ringe. Steg bacon til sprødt, tilsæt løg og steg 15 min til karamelliserede.",
+      "Mos kartofler med varm mælk, olie, muskat og salt til cremet mos.",
+      "Anret mos på tallerkenen med det stegte bacon og løg over."
+    ]
+  }
+]

@@ -1,0 +1,531 @@
+[
+  {
+    "id": "c101",
+    "name": "Spaghetti aglio e olio",
+    "cuisine": "italiensk",
+    "cost": 85,
+    "time": 20,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["pasta", "vegetarisk", "hurtig", "billig"],
+    "ingredients": [
+      "400 g spaghetti",
+      "6 fed hvidløg",
+      "1 dl olivenolie",
+      "1 tsk chiliflager",
+      "50 g revet parmesan",
+      "1 bundt persille",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Kog spaghetti i rigeligt saltet vand. Gem 1 dl pastavand inden dræning.",
+      "Pil hvidløg og skær i tynde skiver. Varm olivenolie på panden ved lav varme og steg hvidløg 3 min til gylden. Tilsæt chiliflager.",
+      "Vend den drænede pasta i panden med hvidløgsolien og lidt pastavand. Rør til pastaen er jævnt dækket.",
+      "Server med revet parmesan og hakket persille."
+    ]
+  },
+  {
+    "id": "c102",
+    "name": "Pasta med tun og oliven",
+    "cuisine": "italiensk",
+    "cost": 100,
+    "time": 20,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["pasta", "fisk", "hurtig", "billig"],
+    "ingredients": [
+      "400 g pasta",
+      "2 dåser tun i vand á 160 g",
+      "1 dåse hakkede tomater",
+      "1 dåse sorte oliven á 180 g",
+      "4 fed hvidløg",
+      "1 dl olivenolie",
+      "1 tsk tørret oregano",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Kog pasta i saltet vand. Pres vand af tun.",
+      "Varm olivenolie på panden, steg finthakket hvidløg 2 min. Tilsæt hakkede tomater og oregano, kog 5 min.",
+      "Rør tun og oliven i sovsen. Smag til med salt og peber.",
+      "Vend pasta i sovsen og server straks."
+    ]
+  },
+  {
+    "id": "c103",
+    "name": "Mac and cheese",
+    "cuisine": "amerikansk",
+    "cost": 95,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["pasta", "ost", "hurtig", "billig", "børnevenlig"],
+    "ingredients": [
+      "400 g makaroni",
+      "50 g smør",
+      "3 spsk hvedemel",
+      "4 dl mælk",
+      "200 g revet cheddar",
+      "1 tsk sennep",
+      "1 nip muskat",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Kog makaroni i saltet vand, dræn og sæt til side.",
+      "Smelt smør i en gryde, rør mel i og kog 1 min. Tilsæt mælk lidt ad gangen under konstant omrøring til en jævn bechamelsovs.",
+      "Rør revet cheddar, sennep og muskat i sovsen til osten er smeltet. Smag til.",
+      "Vend den kogte makaroni i ostsovsen og server straks."
+    ]
+  },
+  {
+    "id": "c104",
+    "name": "Pasta arrabiata",
+    "cuisine": "italiensk",
+    "cost": 85,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["pasta", "vegetarisk", "stærk", "billig"],
+    "ingredients": [
+      "400 g pasta",
+      "2 dåser hakkede tomater",
+      "4 fed hvidløg",
+      "2 stk chili",
+      "1 dl olivenolie",
+      "1 tsk tørret oregano",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Kog pasta i saltet vand.",
+      "Finthak hvidløg og chili. Varm olivenolie på panden, steg hvidløg og chili 2 min uden at brænde.",
+      "Hæld hakkede tomater i, tilsæt oregano og lad sovsen simre 15 min til den er tyknet. Smag til med salt.",
+      "Vend pasta i sovsen og server."
+    ]
+  },
+  {
+    "id": "c105",
+    "name": "Pasta med bacon og ærter i tomatsovs",
+    "cuisine": "dansk",
+    "cost": 110,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["pasta", "bacon", "hurtig"],
+    "ingredients": [
+      "400 g pasta",
+      "150 g bacon",
+      "200 g frosne ærter",
+      "1 dåse hakkede tomater",
+      "1 løg",
+      "2 fed hvidløg",
+      "1 dl olivenolie",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Kog pasta i saltet vand.",
+      "Skær bacon i strimler og steg på panden til sprødt. Tag bacon af panden.",
+      "Steg finthakket løg og hvidløg i baconsosen 2 min. Tilsæt hakkede tomater og kog 8 min. Rør ærter i de sidste 2 min.",
+      "Vend pasta og bacon i sovsen. Server straks."
+    ]
+  },
+  {
+    "id": "c106",
+    "name": "Pasta med pølse og paprika",
+    "cuisine": "dansk",
+    "cost": 115,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["pasta", "pølse", "hurtig"],
+    "ingredients": [
+      "400 g pasta",
+      "300 g medisterpølse",
+      "2 stk peberfrugt",
+      "1 løg",
+      "1 dåse hakkede tomater",
+      "3 fed hvidløg",
+      "1 tsk paprika",
+      "1 spsk olivenolie",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Kog pasta i saltet vand.",
+      "Skær pølse i skiver og steg på panden til brunet. Tag af panden.",
+      "Steg hakket løg, hvidløg og skåret peberfrugt 5 min. Tilsæt hakkede tomater og paprika, kog 8 min.",
+      "Rør pølse i sovsen, vend pasta i og server."
+    ]
+  },
+  {
+    "id": "c107",
+    "name": "Pasta med feta og cherrytomater",
+    "cuisine": "middelhavs",
+    "cost": 110,
+    "time": 20,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["pasta", "feta", "vegetarisk", "hurtig"],
+    "ingredients": [
+      "400 g pasta",
+      "200 g feta",
+      "300 g cherrytomater",
+      "100 g spinat",
+      "3 fed hvidløg",
+      "1 dl olivenolie",
+      "1 tsk tørret oregano",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Kog pasta i saltet vand. Halver cherrytomater.",
+      "Varm olivenolie på panden, steg hvidløg 1 min. Tilsæt cherrytomater og steg 5 min til de begynder at koge ud.",
+      "Tilsæt spinat og rør til det falder sammen. Smag til med oregano og salt.",
+      "Vend pasta i sovsen, smulder feta over og server."
+    ]
+  },
+  {
+    "id": "c108",
+    "name": "Spaghetti carbonara",
+    "cuisine": "italiensk",
+    "cost": 115,
+    "time": 20,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["pasta", "æg", "bacon", "hurtig"],
+    "ingredients": [
+      "400 g spaghetti",
+      "150 g bacon",
+      "4 æg",
+      "50 g revet parmesan",
+      "2 fed hvidløg",
+      "1 nip salt",
+      "1 nip peber"
+    ],
+    "steps": [
+      "Kog spaghetti i saltet vand. Gem 1 dl pastavand.",
+      "Steg bacon i strimler og knust hvidløg på panden til bacon er sprødt. Sluk for varmen.",
+      "Pisk æg og parmesan sammen i en skål. Tilsæt lidt pastavand og pisk igen.",
+      "Dræn pastaen og vend straks i panden med bacon. Hæld æggeblandingen over og rør hurtigt — restvarmen tilbereder æggene. Server med ekstra parmesan."
+    ]
+  },
+  {
+    "id": "c109",
+    "name": "Pasta med grøntsagssovs",
+    "cuisine": "vegetarisk",
+    "cost": 110,
+    "time": 30,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["pasta", "vegetarisk", "grøntsager", "billig"],
+    "ingredients": [
+      "400 g pasta",
+      "2 løg",
+      "2 gulerødder",
+      "1 stk peberfrugt",
+      "250 g champignoner",
+      "1 dåse hakkede tomater",
+      "3 fed hvidløg",
+      "1 tsk tørret oregano",
+      "1 spsk olivenolie",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Kog pasta i saltet vand.",
+      "Hak løg, gulerødder og hvidløg fint. Skær peberfrugt og champignoner i tern.",
+      "Varm olie på panden, steg løg og hvidløg 3 min. Tilsæt gulerødder og champignoner og steg 5 min. Tilsæt peberfrugt og hakkede tomater, kog 10 min.",
+      "Smag til med oregano, salt og peber. Vend pasta i sovsen."
+    ]
+  },
+  {
+    "id": "c110",
+    "name": "Lynhurtig pasta med smørsovs og parmesan",
+    "cuisine": "italiensk",
+    "cost": 90,
+    "time": 15,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["pasta", "vegetarisk", "hurtig", "billig"],
+    "ingredients": [
+      "400 g pasta",
+      "60 g smør",
+      "50 g revet parmesan",
+      "2 fed hvidløg",
+      "1 bundt persille",
+      "1 nip salt",
+      "1 nip peber"
+    ],
+    "steps": [
+      "Kog pasta i rigeligt saltet vand. Gem 1 dl pastavand inden dræning.",
+      "Smelt smør på lav varme med knust hvidløg i 2 min — lad ikke smørret brune.",
+      "Vend den varme pasta i smørsovsen med lidt pastavand. Drys parmesan over og rør til det smelter.",
+      "Hakk persille og drys over. Server straks."
+    ]
+  },
+  {
+    "id": "c111",
+    "name": "Stegt ris med æg og grøntsager",
+    "cuisine": "asiatisk",
+    "cost": 90,
+    "time": 20,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["ris", "æg", "vegetarisk", "hurtig", "billig"],
+    "ingredients": [
+      "400 g ris",
+      "4 æg",
+      "2 gulerødder",
+      "150 g frosne ærter",
+      "2 løg",
+      "3 spsk sojasauce",
+      "2 spsk olivenolie",
+      "2 fed hvidløg",
+      "1 tsk sesamolie"
+    ],
+    "steps": [
+      "Kog ris efter pakken og lad dem køle lidt (kolde ris giver bedst resultat).",
+      "Varm olie i en wok eller stor pande ved høj varme. Steg hakket løg og hvidløg 2 min.",
+      "Skub grøntsagerne til siden, tilsæt gulerødder og ærter, steg 3 min. Lav plads i midten og scramble æggene.",
+      "Tilsæt ris, sojasauce og sesamolie. Rør alt sammen og steg ved høj varme 3 min."
+    ]
+  },
+  {
+    "id": "c112",
+    "name": "Kylling fried rice",
+    "cuisine": "asiatisk",
+    "cost": 125,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["ris", "kylling", "asiatisk", "hurtig"],
+    "ingredients": [
+      "400 g kyllingefilet",
+      "400 g ris",
+      "3 æg",
+      "150 g frosne ærter",
+      "2 løg",
+      "3 fed hvidløg",
+      "4 spsk sojasauce",
+      "2 spsk olivenolie",
+      "1 tsk sesamolie"
+    ],
+    "steps": [
+      "Kog ris og lad dem afkøle. Skær kylling i tern.",
+      "Varm olie i wok ved høj varme, steg kylling 5 min til gennemstegt og gylden. Tag af.",
+      "Steg løg og hvidløg 2 min. Tilsæt ærter. Skub til siden, scramble æggene i midten.",
+      "Tilsæt ris, kylling, sojasauce og sesamolie. Rør hele vejen og steg 3 min ved høj varme."
+    ]
+  },
+  {
+    "id": "c113",
+    "name": "Nudler med peanut sauce",
+    "cuisine": "asiatisk",
+    "cost": 85,
+    "time": 20,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["nudler", "vegetarisk", "hurtig", "billig"],
+    "ingredients": [
+      "400 g nudler",
+      "4 spsk peanut butter",
+      "3 spsk sojasauce",
+      "2 spsk citronsaft",
+      "1 spsk honning",
+      "2 fed hvidløg",
+      "1 spsk ingefær",
+      "2 gulerødder",
+      "1 dl varmt vand"
+    ],
+    "steps": [
+      "Kog nudler efter pakken, dræn og skyl med koldt vand.",
+      "Riv gulerødder groft. Finthak hvidløg og riv ingefær.",
+      "Rør peanut butter, sojasauce, citronsaft, honning, hvidløg og ingefær sammen med varmt vand til en jævn sauce.",
+      "Vend nudler og gulerødder i peanut saucen og server. Drys evt. med hakkede peanuts."
+    ]
+  },
+  {
+    "id": "c114",
+    "name": "Svinekødsstrimler i wok med nudler",
+    "cuisine": "asiatisk",
+    "cost": 125,
+    "time": 20,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["nudler", "svinekød", "wok", "hurtig"],
+    "ingredients": [
+      "400 g hakket svinekød",
+      "300 g nudler",
+      "2 stk peberfrugt",
+      "1 hoved broccoli",
+      "3 fed hvidløg",
+      "3 spsk sojasauce",
+      "2 spsk oyster sauce",
+      "1 spsk ingefær",
+      "2 spsk olivenolie"
+    ],
+    "steps": [
+      "Kog nudler og dræn. Del broccoli i buketter, skær peberfrugt i strimler.",
+      "Varm olie i wok ved høj varme. Steg svinekød og hvidløg 4 min til brunet.",
+      "Tilsæt broccoli og peberfrugt, steg 3 min. Tilsæt ingefær, sojasauce og oyster sauce.",
+      "Rør nudler i og steg 2 min ved høj varme. Server straks."
+    ]
+  },
+  {
+    "id": "c115",
+    "name": "Mexicanske ris med bønner",
+    "cuisine": "mexicansk",
+    "cost": 85,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["ris", "bønner", "vegetarisk", "billig", "mexicansk"],
+    "ingredients": [
+      "400 g ris",
+      "1 dåse kidneybønner",
+      "1 dåse majs",
+      "1 dåse hakkede tomater",
+      "1 løg",
+      "3 fed hvidløg",
+      "2 tsk spidskommen",
+      "1 tsk paprika",
+      "1 spsk olivenolie",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Kog ris i saltet vand.",
+      "Steg hakket løg og hvidløg i olie 3 min. Tilsæt spidskommen og paprika, steg 1 min.",
+      "Tilsæt hakkede tomater og kog 8 min. Rør drænet majs og bønner i, varm igennem.",
+      "Anret ris med bønneblandingen. Server med creme fraiche og limesaft."
+    ]
+  },
+  {
+    "id": "c116",
+    "name": "Teriyaki kylling med ris",
+    "cuisine": "asiatisk",
+    "cost": 130,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["kylling", "ris", "asiatisk", "hurtig"],
+    "ingredients": [
+      "600 g kyllingefilet",
+      "400 g ris",
+      "4 spsk sojasauce",
+      "3 spsk honning",
+      "3 fed hvidløg",
+      "1 spsk ingefær",
+      "1 tsk sesamolie",
+      "1 spsk olivenolie"
+    ],
+    "steps": [
+      "Kog ris. Rør sojasauce, honning, revet hvidløg og ingefær sammen til teriyakisauce.",
+      "Skær kylling i tern. Varm olie på panden ved høj varme og steg kylling 5 min til gylden.",
+      "Hæld teriyakisauce over kyllingen og kog ved middel varme 3-4 min til saucen er glaseret.",
+      "Dryp sesamolie over og server med ris."
+    ]
+  },
+  {
+    "id": "c117",
+    "name": "Ris med linser og karamelliserede løg",
+    "cuisine": "middelhavs",
+    "cost": 90,
+    "time": 35,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["ris", "linser", "vegetarisk", "billig"],
+    "ingredients": [
+      "300 g ris",
+      "200 g røde linser",
+      "4 løg",
+      "1 spsk olivenolie",
+      "1 tsk spidskommen",
+      "½ tsk kanel",
+      "1 l bouillon",
+      "200 g creme fraiche"
+    ],
+    "steps": [
+      "Skær løg i tynde ringe. Varm olie på panden ved middel varme og steg løg 20 min til mørke og karamelliserede.",
+      "Skyl linser. Kog ris og linser i bouillon med spidskommen og kanel ca. 20 min.",
+      "Smag til med salt og peber.",
+      "Anret ris og linser med de karamelliserede løg på toppen. Server med creme fraiche."
+    ]
+  },
+  {
+    "id": "c118",
+    "name": "Kylling i oyster sauce med ris",
+    "cuisine": "asiatisk",
+    "cost": 130,
+    "time": 20,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["kylling", "ris", "asiatisk", "hurtig"],
+    "ingredients": [
+      "500 g kyllingefilet",
+      "400 g ris",
+      "1 hoved broccoli",
+      "3 spsk oyster sauce",
+      "2 spsk sojasauce",
+      "4 fed hvidløg",
+      "1 spsk ingefær",
+      "1 tsk sesamolie",
+      "2 spsk olivenolie"
+    ],
+    "steps": [
+      "Kog ris. Del broccoli i buketter og blancher 2 min i kogende vand.",
+      "Skær kylling i strimler. Varm olie i wok, steg kylling og hvidløg 5 min.",
+      "Tilsæt broccoli, oyster sauce, sojasauce og ingefær. Rør og steg 2 min.",
+      "Dryp sesamolie over og server med ris."
+    ]
+  },
+  {
+    "id": "c119",
+    "name": "Nudler med grøntsager og sojasauce",
+    "cuisine": "asiatisk",
+    "cost": 110,
+    "time": 20,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["nudler", "vegetarisk", "wok", "hurtig", "billig"],
+    "ingredients": [
+      "400 g nudler",
+      "2 stk peberfrugt",
+      "2 gulerødder",
+      "200 g champignoner",
+      "1 løg",
+      "3 fed hvidløg",
+      "4 spsk sojasauce",
+      "1 tsk sesamolie",
+      "2 spsk olivenolie"
+    ],
+    "steps": [
+      "Kog nudler og dræn. Skær alle grøntsager i strimler.",
+      "Varm olie i wok ved høj varme. Steg løg og hvidløg 2 min.",
+      "Tilsæt gulerødder, peberfrugt og champignoner og steg 4 min under omrøring.",
+      "Tilsæt nudler, sojasauce og sesamolie. Rør alt godt og server straks."
+    ]
+  },
+  {
+    "id": "c120",
+    "name": "Ris med hakket oksekød og asiatisk sovs",
+    "cuisine": "asiatisk",
+    "cost": 130,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["ris", "oksekød", "asiatisk", "hurtig"],
+    "ingredients": [
+      "400 g hakket oksekød",
+      "400 g ris",
+      "2 gulerødder",
+      "1 løg",
+      "4 fed hvidløg",
+      "4 spsk sojasauce",
+      "2 spsk oyster sauce",
+      "1 spsk ingefær",
+      "1 tsk sesamolie",
+      "2 spsk olivenolie"
+    ],
+    "steps": [
+      "Kog ris. Riv gulerødder og hak løg fint.",
+      "Varm olie i panden ved høj varme. Steg oksekød og løg 5 min til brunet. Tilsæt hvidløg og ingefær, steg 1 min.",
+      "Rør gulerødder, sojasauce og oyster sauce i. Kog 3 min.",
+      "Dryp sesamolie over og server med ris."
+    ]
+  }
+]

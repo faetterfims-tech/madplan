@@ -1,0 +1,535 @@
+[
+  {
+    "id": "c121",
+    "name": "Cremet tomatsuppe",
+    "cuisine": "vegetarisk",
+    "cost": 90,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["suppe", "tomat", "vegetarisk", "hurtig", "billig"],
+    "ingredients": [
+      "2 dåser hakkede tomater",
+      "2 dl fløde",
+      "2 løg",
+      "4 fed hvidløg",
+      "5 dl bouillon",
+      "1 tsk tørret basilikum",
+      "1 tsk sukker",
+      "1 spsk olivenolie",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Steg hakket løg og hvidløg i olie 4 min til bløde.",
+      "Tilsæt hakkede tomater, bouillon, basilikum og sukker. Kog 15 min.",
+      "Blend suppen glat med en stavblender. Hæld fløde i og varm igennem.",
+      "Smag til med salt og peber. Server med godt brød."
+    ]
+  },
+  {
+    "id": "c122",
+    "name": "Rød linsesuppe med gulerødder",
+    "cuisine": "vegetarisk",
+    "cost": 80,
+    "time": 30,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["suppe", "linser", "vegetarisk", "billig"],
+    "ingredients": [
+      "300 g røde linser",
+      "3 gulerødder",
+      "2 løg",
+      "3 fed hvidløg",
+      "1 dåse hakkede tomater",
+      "1 l bouillon",
+      "2 tsk spidskommen",
+      "1 tsk karry",
+      "1 spsk olivenolie",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Skyl linser. Skær gulerødder i skiver og hak løg og hvidløg.",
+      "Steg løg og hvidløg i olie 3 min. Tilsæt spidskommen og karry, steg 1 min.",
+      "Tilsæt linser, gulerødder, hakkede tomater og bouillon. Kog 20 min til linser er møre.",
+      "Blend halvt eller server som den er. Smag til med salt og citron."
+    ]
+  },
+  {
+    "id": "c123",
+    "name": "Kartoffelsuppe med bacon",
+    "cuisine": "dansk",
+    "cost": 115,
+    "time": 30,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["suppe", "kartofler", "bacon", "dansk"],
+    "ingredients": [
+      "1 kg kartofler",
+      "150 g bacon",
+      "2 løg",
+      "3 fed hvidløg",
+      "1 l bouillon",
+      "2 dl fløde",
+      "2 kviste timian",
+      "1 spsk olivenolie",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Skræl og skær kartofler i tern. Hak løg og hvidløg.",
+      "Steg bacon i en gryde til sprødt, tag af. Steg løg og hvidløg i baconstegen 3 min.",
+      "Tilsæt kartofler, bouillon og timian. Kog 20 min til kartofler er møre.",
+      "Blend suppen glat, rør fløde i og varm igennem. Top med sprød bacon."
+    ]
+  },
+  {
+    "id": "c124",
+    "name": "Kikærtesuppe med tomat og paprika",
+    "cuisine": "vegetarisk",
+    "cost": 100,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["suppe", "kikærter", "vegetarisk", "billig"],
+    "ingredients": [
+      "2 dåser kikærter",
+      "1 dåse hakkede tomater",
+      "2 stk peberfrugt",
+      "2 løg",
+      "4 fed hvidløg",
+      "6 dl bouillon",
+      "2 tsk paprika",
+      "1 tsk spidskommen",
+      "1 spsk olivenolie",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Steg hakket løg, hvidløg og paprika i olie 4 min. Tilsæt paprika og spidskommen.",
+      "Tilsæt hakkede tomater, bouillon og drænede kikærter. Kog 15 min.",
+      "Blend halvdelen af suppen og rør tilbage for cremet konsistens.",
+      "Smag til med salt, peber og evt. citronsaft. Server med pitabrød."
+    ]
+  },
+  {
+    "id": "c125",
+    "name": "Kyllingesuppe med nudler",
+    "cuisine": "dansk",
+    "cost": 110,
+    "time": 30,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["suppe", "kylling", "nudler", "dansk"],
+    "ingredients": [
+      "400 g kyllingefilet",
+      "200 g suppenudler",
+      "3 gulerødder",
+      "2 løg",
+      "3 fed hvidløg",
+      "1.5 l bouillon",
+      "1 bundt persille",
+      "2 kviste timian",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Skær kylling i tern, gulerødder i skiver, løg i tern.",
+      "Kog bouillon op, tilsæt kylling, løg, hvidløg og timian. Kog 10 min.",
+      "Tilsæt gulerødder og nudler, kog 8 min til nudler er møre.",
+      "Smag til med salt og peber. Top med hakket persille og server."
+    ]
+  },
+  {
+    "id": "c126",
+    "name": "Tailandsk kokosmælksuppe med kylling",
+    "cuisine": "asiatisk",
+    "cost": 130,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["suppe", "kylling", "kokosmælk", "asiatisk"],
+    "ingredients": [
+      "400 g kyllingefilet",
+      "1 dåse kokosmælk",
+      "4 dl bouillon",
+      "300 g champignoner",
+      "2 spsk rød karrypasta",
+      "1 spsk ingefær",
+      "3 spsk sojasauce",
+      "1 citron",
+      "2 spsk olivenolie"
+    ],
+    "steps": [
+      "Skær kylling i tern og champignoner i skiver.",
+      "Varm olie i gryde, steg karrypasta og ingefær 1 min. Tilsæt kylling og steg 4 min.",
+      "Hæld kokosmælk og bouillon i, tilsæt champignoner og kog 10 min.",
+      "Smag til med sojasauce og citronsaft. Server med ris."
+    ]
+  },
+  {
+    "id": "c127",
+    "name": "Grønkålssuppe med pølse",
+    "cuisine": "dansk",
+    "cost": 90,
+    "time": 30,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["suppe", "grønkål", "pølse", "dansk", "billig"],
+    "ingredients": [
+      "300 g medisterpølse",
+      "300 g frossen grønkål",
+      "500 g kartofler",
+      "2 løg",
+      "3 fed hvidløg",
+      "1.5 l bouillon",
+      "1 tsk tørret timian",
+      "1 spsk olivenolie",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Skær pølse i skiver og kartofler i tern. Hak løg og hvidløg.",
+      "Steg pølse i olie 3 min til brunet. Tag af. Steg løg og hvidløg 3 min.",
+      "Tilsæt bouillon, kartofler og timian. Kog 15 min.",
+      "Tilsæt grønkål og pølse, kog 5 min. Smag til med salt og peber."
+    ]
+  },
+  {
+    "id": "c128",
+    "name": "Champignonsuppe med fløde",
+    "cuisine": "vegetarisk",
+    "cost": 100,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["suppe", "champignoner", "vegetarisk"],
+    "ingredients": [
+      "500 g champignoner",
+      "2 løg",
+      "3 fed hvidløg",
+      "8 dl bouillon",
+      "1 dl fløde",
+      "2 kviste timian",
+      "1 spsk olivenolie",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Skær champignoner i skiver. Hak løg og hvidløg.",
+      "Steg løg og hvidløg i olie 3 min. Tilsæt champignoner og steg 6 min til gyldne og der ikke er mere væske.",
+      "Tilsæt bouillon og timian, kog 10 min. Blend suppen glat.",
+      "Rør fløde i og varm igennem. Smag til med salt og peber."
+    ]
+  },
+  {
+    "id": "c129",
+    "name": "Mexicansk sort bønnesuppe",
+    "cuisine": "mexicansk",
+    "cost": 85,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["suppe", "bønner", "mexicansk", "vegetarisk", "billig"],
+    "ingredients": [
+      "2 dåser sorte bønner",
+      "1 dåse hakkede tomater",
+      "1 dåse majs",
+      "2 løg",
+      "4 fed hvidløg",
+      "5 dl bouillon",
+      "2 tsk spidskommen",
+      "1 tsk paprika",
+      "1 spsk olivenolie",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Steg hakket løg og hvidløg i olie 4 min. Tilsæt spidskommen og paprika.",
+      "Tilsæt hakkede tomater, bouillon og drænede bønner. Kog 15 min.",
+      "Blend halvdelen af suppen og rør tilbage. Tilsæt drænet majs.",
+      "Smag til og server med tortilla chips og creme fraiche."
+    ]
+  },
+  {
+    "id": "c130",
+    "name": "Grøntsagsminestrone",
+    "cuisine": "vegetarisk",
+    "cost": 100,
+    "time": 30,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["suppe", "grøntsager", "vegetarisk", "billig"],
+    "ingredients": [
+      "1 dåse hakkede tomater",
+      "1 dåse kikærter",
+      "100 g suppenudler",
+      "3 gulerødder",
+      "1 squash",
+      "2 løg",
+      "4 fed hvidløg",
+      "1.5 l bouillon",
+      "2 tsk tørret oregano",
+      "1 spsk olivenolie",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Skær gulerødder, squash og løg i tern. Hak hvidløg.",
+      "Steg løg og hvidløg i olie 3 min. Tilsæt gulerødder og squash, steg 3 min.",
+      "Tilsæt hakkede tomater, kikærter og bouillon. Kog 10 min.",
+      "Tilsæt nudler og kog 8 min. Smag til med oregano, salt og peber."
+    ]
+  },
+  {
+    "id": "c131",
+    "name": "Shakshuka med pitabrød",
+    "cuisine": "middelhavs",
+    "cost": 115,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["æg", "tomat", "middelhavs", "vegetarisk"],
+    "ingredients": [
+      "6 æg",
+      "1 dåse hakkede tomater",
+      "1 stk peberfrugt",
+      "2 løg",
+      "4 fed hvidløg",
+      "100 g feta",
+      "4 stk pitabrød",
+      "2 tsk paprika",
+      "1 tsk spidskommen",
+      "1 spsk olivenolie",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Steg hakket løg, hvidløg og peberfrugt i olie 5 min. Tilsæt paprika og spidskommen.",
+      "Tilsæt hakkede tomater og kog 8 min til sovsen er tyknet.",
+      "Lav 6 fordybninger i sovsen og slå et æg i hvert. Læg låg på og kog 5-7 min til æggehviden er stivnet.",
+      "Smulder feta over og server med pitabrød."
+    ]
+  },
+  {
+    "id": "c132",
+    "name": "Frittata med grøntsager og ost",
+    "cuisine": "italiensk",
+    "cost": 120,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["æg", "grøntsager", "vegetarisk", "ovnret"],
+    "ingredients": [
+      "8 æg",
+      "1 stk peberfrugt",
+      "200 g champignoner",
+      "1 løg",
+      "100 g revet cheddar",
+      "2 spsk olivenolie",
+      "1 nip salt",
+      "1 nip peber"
+    ],
+    "steps": [
+      "Tænd ovn på 200°C. Skær peberfrugt og champignoner i tern, løg i ringe.",
+      "Steg grøntsagerne i ovnfast pande i olie 5 min til bløde.",
+      "Pisk æg med salt og peber. Hæld over grøntsagerne, drys ost over.",
+      "Bag i ovn 12-15 min til æggene er stivnede og toppen gylden."
+    ]
+  },
+  {
+    "id": "c133",
+    "name": "Æggekage med bacon og løg",
+    "cuisine": "dansk",
+    "cost": 115,
+    "time": 20,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["æg", "bacon", "dansk", "hurtig"],
+    "ingredients": [
+      "6 æg",
+      "150 g bacon",
+      "2 løg",
+      "1 dl mælk",
+      "2 spsk hvedemel",
+      "2 spsk olivenolie",
+      "1 nip salt",
+      "1 nip peber"
+    ],
+    "steps": [
+      "Skær bacon og løg i tern. Steg bacon på panden til sprødt, tilsæt løg og steg 5 min.",
+      "Pisk æg, mælk og mel til en glat dej. Krydr med salt og peber.",
+      "Hæld æggemassen over bacon og løg. Steg ved middel varme med låg 10-12 min til æggemassen er stivnet.",
+      "Server direkte fra panden med rugbrød og syltede agurker."
+    ]
+  },
+  {
+    "id": "c134",
+    "name": "Omelet med skinke og ost",
+    "cuisine": "dansk",
+    "cost": 100,
+    "time": 15,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["æg", "skinke", "hurtig", "billig"],
+    "ingredients": [
+      "8 æg",
+      "100 g skinke",
+      "100 g revet cheddar",
+      "1 løg",
+      "2 spsk olivenolie",
+      "1 nip salt",
+      "1 nip peber"
+    ],
+    "steps": [
+      "Pisk æg med salt og peber. Skær skinke og løg i tern.",
+      "Varm olie på panden. Steg løg 2 min, tilsæt skinke.",
+      "Hæld æggemassen over. Lad undersiden stivne 2 min ved middel varme.",
+      "Drys ost over halvdelen, fold omeletten og steg 1 min mere. Lav 2 omeletter i to omgange."
+    ]
+  },
+  {
+    "id": "c135",
+    "name": "Bagt æg i tomatsauce",
+    "cuisine": "middelhavs",
+    "cost": 80,
+    "time": 20,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["æg", "tomat", "vegetarisk", "hurtig", "billig"],
+    "ingredients": [
+      "6 æg",
+      "1 dåse hakkede tomater",
+      "2 løg",
+      "3 fed hvidløg",
+      "1 stk chili",
+      "2 tsk paprika",
+      "1 spsk olivenolie",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Steg hakket løg, hvidløg og chili i olie 4 min. Tilsæt paprika.",
+      "Tilsæt hakkede tomater og kog 8 min til sovsen er tyknet. Smag til med salt.",
+      "Lav fordybninger i sovsen og slå et æg i hvert. Læg låg på.",
+      "Kog 5-7 min til æggehviden er stivnet. Server med brød."
+    ]
+  },
+  {
+    "id": "c136",
+    "name": "Spinat og feta frittata",
+    "cuisine": "vegetarisk",
+    "cost": 100,
+    "time": 25,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["æg", "spinat", "feta", "vegetarisk"],
+    "ingredients": [
+      "8 æg",
+      "200 g spinat",
+      "150 g feta",
+      "1 løg",
+      "3 fed hvidløg",
+      "2 spsk olivenolie",
+      "1 nip muskat",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Tænd ovn på 200°C. Steg hakket løg og hvidløg i olie 3 min. Tilsæt spinat og steg til det er faldet sammen.",
+      "Pisk æg med muskat, salt og peber. Hæld over spinat i ovnfast pande.",
+      "Smulder feta over toppen og bag i ovn 12-15 min til gylden og stivnet.",
+      "Lad afkøle lidt og server i stykker."
+    ]
+  },
+  {
+    "id": "c137",
+    "name": "Røræg med champignoner og toast",
+    "cuisine": "dansk",
+    "cost": 100,
+    "time": 15,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["æg", "champignoner", "hurtig", "billig"],
+    "ingredients": [
+      "8 æg",
+      "300 g champignoner",
+      "8 skiver toastbrød",
+      "1 dl mælk",
+      "2 spsk olivenolie",
+      "1 nip salt",
+      "1 nip peber"
+    ],
+    "steps": [
+      "Skær champignoner i skiver. Steg i 1 spsk olie ved høj varme 5 min til gyldne. Krydr med salt.",
+      "Rist toastbrød. Pisk æg med mælk, salt og peber.",
+      "Varm 1 spsk olie på panden ved lav varme. Hæld æggemassen i og rør langsomt til cremede røræg.",
+      "Anret røræg og champignoner på toasten. Server straks."
+    ]
+  },
+  {
+    "id": "c138",
+    "name": "Tortilla española",
+    "cuisine": "middelhavs",
+    "cost": 80,
+    "time": 30,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["æg", "kartofler", "vegetarisk", "billig"],
+    "ingredients": [
+      "6 æg",
+      "500 g kartofler",
+      "2 løg",
+      "1 dl olivenolie",
+      "1 bundt persille",
+      "1 nip salt",
+      "1 nip peber"
+    ],
+    "steps": [
+      "Skræl kartofler og skær i tynde skiver. Skær løg i ringe.",
+      "Varm olivenolie i panden og steg kartofler og løg ved lav varme 15 min til møre. Dræn for olie.",
+      "Pisk æg med salt og peber, vend kartofler i æggemassen.",
+      "Steg ved lav varme med låg 8 min, vend med tallerken og steg 5 min mere. Server i stykker."
+    ]
+  },
+  {
+    "id": "c139",
+    "name": "Quiche med bacon og ost",
+    "cuisine": "dansk",
+    "cost": 130,
+    "time": 40,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["æg", "bacon", "ost", "ovnret"],
+    "ingredients": [
+      "1 pk tærtedej",
+      "150 g bacon",
+      "4 æg",
+      "100 g revet cheddar",
+      "2 dl fløde",
+      "1 løg",
+      "1 nip muskat",
+      "1 nip salt"
+    ],
+    "steps": [
+      "Tænd ovn på 200°C. Læg tærtedej i en tærteform, prik bunden med en gaffel og forbag 10 min.",
+      "Steg hakket bacon og løg på panden 5 min. Fordel over den forbagte bund.",
+      "Pisk æg med fløde, muskat, salt og peber. Hæld over fyldet og drys ost over.",
+      "Bag 20-25 min til quichen er gylden og fast. Lad afkøle 5 min inden servering."
+    ]
+  },
+  {
+    "id": "c140",
+    "name": "Æg og kartofler i ovn",
+    "cuisine": "dansk",
+    "cost": 95,
+    "time": 35,
+    "portions": 4,
+    "difficulty": "let",
+    "tags": ["æg", "kartofler", "dansk", "billig"],
+    "ingredients": [
+      "6 æg",
+      "750 g kartofler",
+      "150 g bacon",
+      "1 tsk paprika",
+      "2 spsk olivenolie",
+      "1 nip salt",
+      "1 nip peber"
+    ],
+    "steps": [
+      "Tænd ovn på 200°C. Skær kartofler i tern og bland med olie, paprika, salt og peber på en bageplade.",
+      "Bag kartofler 20 min. Tilsæt bacon og bag 5 min mere.",
+      "Lav fordybninger i kartofler og bacon, slå et æg i hvert.",
+      "Bag 8-10 min til æggehviden er stivnet men blommen stadig er blød."
+    ]
+  }
+]
