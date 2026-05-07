@@ -786,17 +786,55 @@ function scoreRecipe(r, liked, pickedMainIngs) {
   const repeat = mainIngs.filter(n => pickedMainIngs.has(n)).length;
   const target = budgetTargetPer4();
   const ratio = r.cost / target;
-  // Budget er den primære faktor — rækkevidde ±30 mod tilfældig 0-6
+  // Graderet budget-score — toppunkt ved ratio ≈ 1.0 (præcis på per-måltids-mål)
   let budgetScore;
-  if (ratio > 1.35) budgetScore = -35;       // klart over budget
-  else if (ratio > 1.1) budgetScore = -12;   // lidt over
-  else if (ratio >= 0.55) budgetScore = 22;  // sweet spot: indenfor budget
-  else budgetScore = 4;                       // meget billig, under budgetniveau
+  if      (ratio > 1.35)  budgetScore = -40;  // over budget
+  else if (ratio > 1.15)  budgetScore = -10;  // lidt over
+  else if (ratio >= 0.85) budgetScore = 30;   // på målet ← ideal
+  else if (ratio >= 0.60) budgetScore = 10;   // en smule under
+  else if (ratio >= 0.35) budgetScore = -5;   // klart under
+  else                    budgetScore = -20;  // alt for billig
   return {
     ...r,
     _score: (liked.includes(r.name) ? 20 : 0) + Math.random() * 6 - repeat * 20 + budgetScore,
     _mainIngs: mainIngs
   };
+}
+
+// Efterjustering: swap indlysende afvigere til budgettet passer inden for ±13 %
+function budgetCalibrate(picked, db, disliked) {
+  const scaleFn = r => Math.round(r.cost * settings.persons / (r.portions || 4));
+  const budget = settings.budget;
+  const usedIds = new Set(picked.map(r => r.id));
+  const avail = db.filter(r => !disliked.includes(r.name));
+
+  for (let pass = 0; pass < 5; pass++) {
+    const total = picked.reduce((s, r) => s + scaleFn(r), 0);
+    if (total >= budget * 0.87 && total <= budget * 1.13) break;
+    const under = total < budget * 0.87;
+
+    // Swap billigste (hvis under) eller dyreste (hvis over)
+    const swapIdx = picked.reduce((mi, r, i) =>
+      under ? (scaleFn(r) < scaleFn(picked[mi]) ? i : mi)
+            : (scaleFn(r) > scaleFn(picked[mi]) ? i : mi)
+    , 0);
+    const cur = picked[swapIdx];
+
+    // Find erstatning tættest på hvad der mangler for at ramme budget
+    const othersCost = total - scaleFn(cur);
+    const idealScaled = budget - othersCost;
+    const idealRaw = idealScaled * (cur.portions || 4) / settings.persons;
+
+    const candidate = avail
+      .filter(r => !usedIds.has(r.id) && (under ? r.cost > cur.cost : r.cost < cur.cost))
+      .sort((a, b) => Math.abs(a.cost - idealRaw) - Math.abs(b.cost - idealRaw))[0];
+
+    if (!candidate) break;
+    usedIds.delete(cur.id);
+    picked[swapIdx] = candidate;
+    usedIds.add(candidate.id);
+  }
+  return picked;
 }
 
 // ── SETTINGS UI ───────────────────────────────────────────
@@ -898,20 +936,26 @@ async function requestNewWeek() {
       ...favourites.map(f=>f.name)
     ];
     const avoid = [...new Set([...recentMeals, ...Object.values(weekPlan).filter(Boolean).map(m=>m.name)])].slice(0,21);
-    const maxCost = budgetTargetPer4() * 1.35;
+    const target  = budgetTargetPer4();
+    const maxCost = target * 1.35;
+    const minCost = target * 0.45; // undgå opskrifter der er alt for billige ift. budgettet
 
-    // Primær pulje: kun opskrifter indenfor budgettet (med 35 % spillerum)
-    const budgetDb = db.filter(r => r.cost <= maxCost);
-    const basePool = (budgetDb.length >= 21 ? budgetDb : db).filter(r => !avoid.includes(r.name));
-    let pool = basePool;
-    let picked = pickMeals(pool, 7, [], liked, disliked);
+    // Primær pulje: opskrifter inden for budget-vinduet (begge retninger)
+    const budgetDb = db.filter(r => r.cost <= maxCost && r.cost >= minCost);
+    const fallbackDb = db.filter(r => r.cost <= maxCost);
+    const useWindow = budgetDb.length >= 21;
+    const basePool = (useWindow ? budgetDb : fallbackDb).filter(r => !avoid.includes(r.name));
+    let picked = pickMeals(basePool, 7, [], liked, disliked);
 
     if (picked.length < 7) {
       const curWeekNames = picked.map(p => p.name);
-      const extra = (budgetDb.length >= 21 ? budgetDb : db).filter(r => !disliked.includes(r.name));
+      const extra = (useWindow ? budgetDb : fallbackDb).filter(r => !disliked.includes(r.name));
       const more = pickMeals(extra, 7 - picked.length, curWeekNames, liked, disliked);
       picked = [...picked, ...more];
     }
+
+    // Kalibrér totalen mod budget — swap afvigere op til 5 gange
+    picked = budgetCalibrate(picked, db, disliked);
 
     weekPlan = {};
     DAYS.forEach((day, i) => { if (picked[i]) weekPlan[day] = recipeToMeal(picked[i]); });
@@ -940,9 +984,11 @@ async function requestSwap(day) {
     ];
     const curWeekNames = DAYS.filter(d => weekPlan[d] && d !== day).map(d => weekPlan[d].name);
     const avoid = [...new Set([...recentMeals, ...curWeekNames])];
-    const maxCost = budgetTargetPer4() * 1.35;
-    const budgetDb = db.filter(r => r.cost <= maxCost);
-    const swapBase = budgetDb.length >= 10 ? budgetDb : db;
+    const target  = budgetTargetPer4();
+    const maxCost = target * 1.35;
+    const minCost = target * 0.45;
+    const budgetDb = db.filter(r => r.cost <= maxCost && r.cost >= minCost);
+    const swapBase = budgetDb.length >= 10 ? budgetDb : db.filter(r => r.cost <= maxCost);
     const pool = swapBase.filter(r => !avoid.includes(r.name) && !disliked.includes(r.name));
     const picked = pickMeals(pool, 1, [], liked, disliked);
 
