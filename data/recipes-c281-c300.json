@@ -1,0 +1,604 @@
+[
+  {
+    "id": "c281",
+    "name": "Hakkebøf deluxe med portvinssovs",
+    "cuisine": "dansk",
+    "time": 35,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 265,
+    "ingredients": [
+      "600g hakket oksekød (8% fedt)",
+      "1 dl portvin",
+      "2 dl oksebouillon",
+      "2 dl piskefløde",
+      "300g champignoner",
+      "2 skalotteløg",
+      "3 fed hvidløg",
+      "frisk timian",
+      "smør",
+      "salt og peber",
+      "700g kartofler"
+    ],
+    "steps": [
+      "Kok kartofler.",
+      "Form 4 store bøffer, krydr med salt og peber.",
+      "Steg i smør 4 min. på hver side, tag op og hvil.",
+      "Svits skalotteløg, hvidløg og champignoner i panden.",
+      "Tilsæt portvin og lad koge halvt ind. Tilsæt bouillon og fløde, simre 5 min.",
+      "Server bøffer med portvinssovs og kartofler."
+    ]
+  },
+  {
+    "id": "c282",
+    "name": "Stegt laks med bearnaisesovs og asparges",
+    "cuisine": "dansk",
+    "time": 25,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 250,
+    "ingredients": [
+      "600g laksefilet",
+      "1 glas bearnaisesovs (færdiglavet)",
+      "1 bundt asparges",
+      "smør",
+      "salt og peber",
+      "700g nye kartofler",
+      "1 citron"
+    ],
+    "steps": [
+      "Kok kartofler i saltet vand 15 min.",
+      "Blancher asparges 3-4 min. i kogende vand.",
+      "Krydr laksen med salt og peber. Steg i smør 4 min. på hver side.",
+      "Varm bearnaisesovs op forsigtigt.",
+      "Server laks med asparges, kartofler og bearnaisesovs.",
+      "Pres citron over fisken."
+    ]
+  },
+  {
+    "id": "c283",
+    "name": "Torsk med rejer og asparges i flødesovs",
+    "cuisine": "dansk",
+    "time": 25,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 220,
+    "ingredients": [
+      "600g torsk (filet)",
+      "200g rejer (pillede)",
+      "1 bundt asparges",
+      "2 dl piskefløde",
+      "1 dl hvidvin",
+      "1 skalotteløg",
+      "2 fed hvidløg",
+      "frisk dild",
+      "smør",
+      "salt og peber",
+      "700g kartofler"
+    ],
+    "steps": [
+      "Kok kartofler. Blancher asparges 3 min.",
+      "Kog torsk i letsaltet vand 8-10 min.",
+      "Svits skalotteløg og hvidløg i smør. Tilsæt hvidvin og fløde.",
+      "Simre 5 min. Tilsæt rejer og dild, varm igennem.",
+      "Krydr sovsen. Server torsk med asparges overhældt med flødesovsen.",
+      "Server kartofler ved siden af."
+    ]
+  },
+  {
+    "id": "c284",
+    "name": "Kylling i fad med soltørrede tomater og mozzarella",
+    "cuisine": "italiensk",
+    "time": 30,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 225,
+    "ingredients": [
+      "4 kyllingebryster",
+      "100g soltørrede tomater i olie",
+      "250g mozzarella",
+      "3 fed hvidløg",
+      "2 dl hvidvin",
+      "1 dl hønsebouillon",
+      "frisk basilikum",
+      "olivenolie",
+      "salt og peber",
+      "400g spaghetti"
+    ],
+    "steps": [
+      "Forvarm ovn til 200°C. Kok pasta.",
+      "Brun kylling på begge sider i olie, krydr.",
+      "Læg i ovnfast fad med hvidløg, soltørrede tomater, hvidvin og bouillon.",
+      "Bag 15 min. Læg mozzarellaskiver over og bag 5-8 min. mere.",
+      "Drys med basilikum.",
+      "Server med pasta og saft fra fadet."
+    ]
+  },
+  {
+    "id": "c285",
+    "name": "Ribbensteg med rødkål og brunede kartofler",
+    "cuisine": "dansk",
+    "time": 55,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 195,
+    "ingredients": [
+      "1 kg ribbensteg med svær",
+      "groft salt",
+      "500g rødkål (færdig på glas)",
+      "800g kartofler",
+      "50g smør",
+      "3 spsk sukker",
+      "400ml svinebouillon",
+      "frisk timian"
+    ],
+    "steps": [
+      "Forvarm ovn til 230°C. Rids sværen og gnid salt i.",
+      "Steg ribbensteg 20 min. ved 230°C til sværen spreder sig. Skru ned til 175°C.",
+      "Steg yderligere 30 min. Hvil 10 min.",
+      "Kok kartofler. Smelt sukker i pande til karamel, tilsæt smør og vend kartofler.",
+      "Varm rødkål.",
+      "Server med stegeskyen."
+    ]
+  },
+  {
+    "id": "c286",
+    "name": "Laks med sennep, dild og kartofler",
+    "cuisine": "dansk",
+    "time": 25,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 220,
+    "ingredients": [
+      "600g laksefilet",
+      "3 spsk grov sennep",
+      "2 spsk honning",
+      "frisk dild",
+      "1 citron",
+      "800g kartofler",
+      "200g ærter",
+      "smør",
+      "salt og peber"
+    ],
+    "steps": [
+      "Kok kartofler og ærter.",
+      "Bland sennep og honning. Pensl laksen med blandingen.",
+      "Steg laks i smør 4 min. på hver side.",
+      "Pres citronsaft over.",
+      "Server med kartofler, ærter og frisk dild.",
+      "Hæld stegesmørret over som sauce."
+    ]
+  },
+  {
+    "id": "c287",
+    "name": "Steak med champignoner og bearnaisesovs",
+    "cuisine": "dansk",
+    "time": 25,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 205,
+    "ingredients": [
+      "600g oksebøf",
+      "400g champignoner",
+      "1 glas bearnaisesovs (færdiglavet)",
+      "smør",
+      "3 fed hvidløg",
+      "frisk timian",
+      "salt og peber",
+      "800g kartofler"
+    ],
+    "steps": [
+      "Kok kartofler.",
+      "Tag bøf ud 30 min. før stegning. Krydr med salt og peber.",
+      "Steg i smør 3 min. på hver side (medium). Hvil 5 min.",
+      "Steg champignoner i smør med hvidløg og timian til gyldne.",
+      "Varm bearnaisesovs op.",
+      "Server bøf med champignoner, bearnaise og kartofler."
+    ]
+  },
+  {
+    "id": "c288",
+    "name": "Kyllingesteg med bacon og champignoner",
+    "cuisine": "dansk",
+    "time": 50,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 225,
+    "ingredients": [
+      "1 hel kylling (ca. 1,5 kg)",
+      "200g bacon i tern",
+      "400g champignoner",
+      "3 fed hvidløg",
+      "frisk rosmarin og timian",
+      "2 dl hønsebouillon",
+      "1 dl hvidvin",
+      "smør",
+      "salt og peber",
+      "700g kartofler"
+    ],
+    "steps": [
+      "Forvarm ovn til 200°C. Kok kartofler.",
+      "Gnid kylling med smør, salt, peber, rosmarin og hvidløg.",
+      "Steg bacon og champignoner på pande.",
+      "Læg kylling i ovnfast fad med bacon, champignoner, bouillon og hvidvin.",
+      "Steg 45-50 min. (kerne 75°C). Hvil 10 min.",
+      "Server med kartofler og stegesaften."
+    ]
+  },
+  {
+    "id": "c289",
+    "name": "Hakkebøf med danablu og rødvinssovs",
+    "cuisine": "dansk",
+    "time": 30,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 240,
+    "ingredients": [
+      "600g hakket oksekød",
+      "100g danablu",
+      "2 dl rødvin",
+      "2 dl oksebouillon",
+      "2 dl piskefløde",
+      "2 skalotteløg",
+      "smør",
+      "salt og peber",
+      "700g kartofler",
+      "200g grønne bønner"
+    ],
+    "steps": [
+      "Kok kartofler og bønner.",
+      "Form 4 bøffer, krydr. Steg i smør 4 min. på hver side. Tag op.",
+      "Svits skalotteløg i panden. Tilsæt rødvin og lad koge halvt ind.",
+      "Tilsæt bouillon og fløde, simre 5 min.",
+      "Smuldr danablu i sovsen og rør til smeltet.",
+      "Server bøffer med danablusovs, kartofler og bønner."
+    ]
+  },
+  {
+    "id": "c290",
+    "name": "Svinekam med karamelliserede løg",
+    "cuisine": "dansk",
+    "time": 30,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 165,
+    "ingredients": [
+      "700g svinekam (skiver)",
+      "3 store løg",
+      "3 spsk smør",
+      "2 spsk sukker",
+      "2 spsk balsamicoeddike",
+      "frisk timian",
+      "salt og peber",
+      "700g kartofler",
+      "200g grønne bønner"
+    ],
+    "steps": [
+      "Kok kartofler og bønner.",
+      "Skær løg i tynde ringe. Karamelliser i smør med sukker 15 min.",
+      "Tilsæt balsamico og timian, simre 5 min. til tyk chutney.",
+      "Krydr svinekam og steg i smør 3-4 min. på hver side.",
+      "Server med karamelliserede løg, kartofler og bønner."
+    ]
+  },
+  {
+    "id": "c291",
+    "name": "Spansk paella med rejer og kylling",
+    "cuisine": "middelhavs",
+    "time": 45,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 225,
+    "ingredients": [
+      "400g paellarice eller risottoris",
+      "400g kyllingelår (udbenet)",
+      "300g rejer",
+      "1 løg",
+      "4 fed hvidløg",
+      "2 røde peberfrugter",
+      "400ml passata",
+      "800ml hønsebouillon",
+      "1 tsk gurkemeje",
+      "1 tsk paprika",
+      "olivenolie",
+      "salt og peber",
+      "1 citron",
+      "frisk persille"
+    ],
+    "steps": [
+      "Brun kylling i olie i stor pande eller gryde, tag op.",
+      "Svits løg, hvidløg og peberfrugt. Tilsæt paprika og gurkemeje.",
+      "Tilsæt ris og rør 2 min. Tilsæt passata og bouillon.",
+      "Læg kylling tilbage. Simre under låg 20 min.",
+      "Læg rejer på toppen og kog 5-7 min. til lyserøde.",
+      "Server med citron og persille — rør ikke."
+    ]
+  },
+  {
+    "id": "c292",
+    "name": "Fransk tartiflette",
+    "cuisine": "middelhavs",
+    "time": 50,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 195,
+    "ingredients": [
+      "800g kartofler",
+      "200g bacon i tern",
+      "2 løg",
+      "2 dl piskefløde",
+      "150g emmental (revet)",
+      "2 fed hvidløg",
+      "1 dl hvidvin",
+      "salt og peber",
+      "smør",
+      "frisk timian"
+    ],
+    "steps": [
+      "Forvarm ovn til 200°C.",
+      "Kok kartofler halvt (ca. 10 min.), skær i skiver.",
+      "Steg bacon og løg til gyldne.",
+      "Tilsæt hvidvin og fløde, lad simre 3 min.",
+      "Lag kartofler, bacon-løg-blanding og ost i smurt ovnfast fad. Gentag.",
+      "Bag 25-30 min. til gylden og boblende."
+    ]
+  },
+  {
+    "id": "c293",
+    "name": "Marokkansk kylling med couscous",
+    "cuisine": "middelhavs",
+    "time": 40,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 170,
+    "ingredients": [
+      "800g kyllingelår",
+      "400g couscous",
+      "2 løg",
+      "3 fed hvidløg",
+      "2 gulerødder",
+      "200g kikærter (dåse)",
+      "400ml passata",
+      "300ml hønsebouillon",
+      "1 tsk spidskommen",
+      "1 tsk gurkemeje",
+      "1 tsk paprika",
+      "1 tsk kanel",
+      "olivenolie",
+      "salt og peber",
+      "frisk koriander"
+    ],
+    "steps": [
+      "Brun kylling i olie, tag op.",
+      "Svits løg og hvidløg. Tilsæt alle krydderier og steg 1 min.",
+      "Tilsæt gulerødder, kikærter, passata og bouillon.",
+      "Læg kylling tilbage og simre under låg 25 min.",
+      "Tilbered couscous med kogende vand og lad stå 5 min.",
+      "Server kylling over couscous med koriander."
+    ]
+  },
+  {
+    "id": "c294",
+    "name": "Indisk butter chicken",
+    "cuisine": "indisk",
+    "time": 40,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 220,
+    "ingredients": [
+      "700g kyllingebryst",
+      "400ml passata",
+      "200ml piskefløde",
+      "2 spsk smør",
+      "1 løg",
+      "4 fed hvidløg",
+      "2 spsk revet ingefær",
+      "2 spsk garam masala",
+      "1 tsk paprika",
+      "1 tsk spidskommen",
+      "1 spsk tomatpuré",
+      "400g basmatiris",
+      "salt og peber",
+      "frisk koriander"
+    ],
+    "steps": [
+      "Kok ris.",
+      "Skær kylling i tern. Svits løg, hvidløg og ingefær i smør.",
+      "Tilsæt alle krydderier og tomatpuré, steg 2 min.",
+      "Tilsæt passata og simre 10 min.",
+      "Tilsæt kylling og simre 15 min.",
+      "Rør fløde i og krydr. Server med ris og koriander."
+    ]
+  },
+  {
+    "id": "c295",
+    "name": "Belgisk oksekød i øl",
+    "cuisine": "middelhavs",
+    "time": 55,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 235,
+    "ingredients": [
+      "700g oksekød (grydesteg)",
+      "330ml mørk øl",
+      "300ml oksebouillon",
+      "2 løg",
+      "3 fed hvidløg",
+      "2 gulerødder",
+      "2 spsk tomatpuré",
+      "2 spsk brun farin",
+      "2 spsk eddike",
+      "frisk timian og laurbærblad",
+      "smør",
+      "salt og peber",
+      "700g kartofler"
+    ],
+    "steps": [
+      "Brun oksekød i portioner i smør, tag op.",
+      "Svits løg, hvidløg og gulerødder.",
+      "Tilsæt tomatpuré, farin og eddike, steg 1 min.",
+      "Tilsæt øl og bouillon med timian og laurbær. Læg kød tilbage.",
+      "Simre under låg 40 min. til kød er mørt og sovsen tyk.",
+      "Kok kartofler og server ved siden af."
+    ]
+  },
+  {
+    "id": "c296",
+    "name": "Svensk köttbullar med flødesovs",
+    "cuisine": "nordisk",
+    "time": 35,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 240,
+    "ingredients": [
+      "600g hakket svinekød og oksekød (blandet)",
+      "1 løg",
+      "2 æg",
+      "3 spsk rasp",
+      "2 dl sødmælk",
+      "400ml oksebouillon",
+      "3 dl piskefløde",
+      "1 spsk worcestershiresauce",
+      "smør",
+      "salt og peber",
+      "700g kartofler",
+      "200g tyttebærsyltetøj"
+    ],
+    "steps": [
+      "Kok kartofler.",
+      "Bland kød, løg, æg, rasp og mælk til fars. Krydr.",
+      "Form til små boller og steg i smør til gyldne og gennemstegte.",
+      "Tag kødbollerne op. Tilsæt bouillon og fløde til panden.",
+      "Simre 5 min. og krydr med worcestershire, salt og peber.",
+      "Server köttbullar med sovs, kartofler og tyttebær."
+    ]
+  },
+  {
+    "id": "c297",
+    "name": "Gresk lammegryde med feta og oliven",
+    "cuisine": "middelhavs",
+    "time": 50,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 225,
+    "ingredients": [
+      "600g lammekød (tern)",
+      "200g feta",
+      "100g sorte oliven",
+      "800ml passata",
+      "2 løg",
+      "4 fed hvidløg",
+      "1 tsk kanel",
+      "1 tsk oregano",
+      "200ml lammebouillon",
+      "olivenolie",
+      "salt og peber",
+      "400g couscous",
+      "frisk persille"
+    ],
+    "steps": [
+      "Brun lammekød i portioner i olivenolie, tag op.",
+      "Svits løg og hvidløg.",
+      "Tilsæt kanel, oregano, passata og bouillon. Læg kød tilbage.",
+      "Simre under låg 30-35 min.",
+      "Tilsæt oliven de sidste 5 min.",
+      "Tilbered couscous. Server gryden med smuldret feta og persille."
+    ]
+  },
+  {
+    "id": "c298",
+    "name": "Japansk gyudon (oksekødsskål)",
+    "cuisine": "asiatisk",
+    "time": 25,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 190,
+    "ingredients": [
+      "500g oksekød (tynde strimler)",
+      "400g jasminris",
+      "3 løg",
+      "5 spsk sojasauce",
+      "3 spsk sukker",
+      "2 dl vand",
+      "2 spsk riseddike",
+      "4 æg",
+      "2 forårsløg",
+      "1 spsk sesamfrø",
+      "ingefær (revet)"
+    ],
+    "steps": [
+      "Kok ris.",
+      "Skær løg i tynde ringe. Bring vand, sojasauce, sukker og eddike i kog.",
+      "Tilsæt løg og simre 5 min.",
+      "Tilsæt oksekødsstrimler og kog 5-7 min.",
+      "Rær et rå æg i hver skål ris, hæld oksekød og sovs over.",
+      "Drys med forårsløg, sesamfrø og ingefær."
+    ]
+  },
+  {
+    "id": "c299",
+    "name": "Mexicansk birria-inspirerede tacos",
+    "cuisine": "mexicansk",
+    "time": 55,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 200,
+    "ingredients": [
+      "600g oksekød (grydesteg)",
+      "8 tacoskaller",
+      "400ml passata",
+      "300ml oksebouillon",
+      "2 løg",
+      "4 fed hvidløg",
+      "2 spsk chili (tørret)",
+      "1 tsk spidskommen",
+      "1 tsk oregano",
+      "1 tsk paprika",
+      "olivenolie",
+      "1 lime",
+      "200g emmental (revet)",
+      "frisk koriander",
+      "2 avocadoer"
+    ],
+    "steps": [
+      "Brun oksekød i olie, krydr med alle krydderier.",
+      "Tilsæt løg, hvidløg, passata og bouillon.",
+      "Simre under låg 40 min. til kød er mørt. Pil i strimler.",
+      "Mas avocadoerne med limesaft til guacamole.",
+      "Fyld tacoskaller med kød, guacamole og ost.",
+      "Gratiner kort i ovnen og server med koriander og lime."
+    ]
+  },
+  {
+    "id": "c300",
+    "name": "Kalvefrikassé med asparges og champignoner",
+    "cuisine": "dansk",
+    "time": 40,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 215,
+    "ingredients": [
+      "600g kalvekød (tern)",
+      "1 bundt asparges",
+      "300g champignoner",
+      "2 dl piskefløde",
+      "400ml kalvebouillon",
+      "1 løg",
+      "3 fed hvidløg",
+      "50g smør",
+      "3 spsk mel",
+      "frisk estragon",
+      "1 citron",
+      "salt og peber",
+      "700g kartofler"
+    ],
+    "steps": [
+      "Kok kartofler.",
+      "Kog kalvekød i bouillon 20-25 min. til mørt.",
+      "Smelt smør i gryde, svits løg og hvidløg. Rør mel i og tilsæt stegeskyen fra kalvekødet.",
+      "Tilsæt fløde og lad simre 5 min. Krydr med citronsaft og estragon.",
+      "Blancher asparges 3 min. Steg champignoner separat.",
+      "Bland kalvekød, asparges og champignoner i sovsen. Server med kartofler."
+    ]
+  }
+]

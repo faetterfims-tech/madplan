@@ -1,0 +1,595 @@
+[
+  {
+    "id": "c261",
+    "name": "Svamperisotto med parmesan og hvidvin",
+    "cuisine": "italiensk",
+    "time": 40,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 220,
+    "ingredients": [
+      "400g risottoris (arborio)",
+      "400g blandede svampe",
+      "1 dl hvidvin",
+      "1,2 l grøntsagsbouillon",
+      "1 løg",
+      "3 fed hvidløg",
+      "100g parmesan (revet)",
+      "50g smør",
+      "olivenolie",
+      "frisk timian",
+      "salt og peber"
+    ],
+    "steps": [
+      "Hold bouillon varm i en gryde ved siden af.",
+      "Svits løg og hvidløg i olie og smør. Tilsæt ris og rør til glasagtige.",
+      "Tilsæt hvidvin og rør til absorberet.",
+      "Tilsæt bouillon en øse ad gangen under konstant omrøring — ca. 20 min.",
+      "Steg svampe separat med timian og bland i risottoen de sidste 5 min.",
+      "Rør koldt smør og parmesan i. Krydr og server."
+    ]
+  },
+  {
+    "id": "c262",
+    "name": "Risotto med asparges og ærter",
+    "cuisine": "vegetarisk",
+    "time": 40,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 210,
+    "ingredients": [
+      "400g risottoris (arborio)",
+      "1 bundt asparges",
+      "200g ærter (frost)",
+      "1 dl hvidvin",
+      "1,2 l grøntsagsbouillon",
+      "1 løg",
+      "2 fed hvidløg",
+      "100g parmesan (revet)",
+      "50g smør",
+      "1 citron",
+      "olivenolie",
+      "salt og peber"
+    ],
+    "steps": [
+      "Hold bouillon varm. Skær asparges i stykker.",
+      "Svits løg og hvidløg i olie. Tilsæt ris, rør til glasagtige.",
+      "Tilsæt hvidvin, rør til absorberet.",
+      "Tilsæt bouillon gradvist under omrøring, ca. 20 min.",
+      "Tilsæt asparges og ærter de sidste 5 min.",
+      "Rør smør og parmesan i. Krydr med citronsaft, salt og peber."
+    ]
+  },
+  {
+    "id": "c263",
+    "name": "Vegetarisk moussaka med linser",
+    "cuisine": "middelhavs",
+    "time": 55,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 200,
+    "ingredients": [
+      "250g grønne linser",
+      "2 auberginer",
+      "800ml passata",
+      "1 løg",
+      "3 fed hvidløg",
+      "1 tsk kanel",
+      "1 tsk allehånde",
+      "50g smør",
+      "4 spsk mel",
+      "600ml sødmælk",
+      "2 æg",
+      "100g emmental (revet)",
+      "olivenolie",
+      "salt og peber"
+    ],
+    "steps": [
+      "Forvarm ovn til 190°C. Kok linser 20 min.",
+      "Skær aubergine i skiver, steg i olivenolie til gyldne.",
+      "Svits løg og hvidløg, tilsæt linser, passata, kanel og allehånde. Simre 10 min.",
+      "Lav béchamel af smør, mel og mælk. Krydr. Afkøl og pisk æg i.",
+      "Lag i ovnfast fad: linseblandingen, aubergine, gentag. Top med béchamel og ost.",
+      "Bag 35-40 min. til gylden."
+    ]
+  },
+  {
+    "id": "c264",
+    "name": "Vegetarisk grøn curry med kikærter",
+    "cuisine": "indisk",
+    "time": 25,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 180,
+    "ingredients": [
+      "2 dåser kikærter",
+      "400ml kokosmælk",
+      "2 spsk grøn karrypasta",
+      "1 zucchini",
+      "200g spinat",
+      "1 løg",
+      "3 fed hvidløg",
+      "2 spsk fiskesauce eller sojasauce",
+      "1 lime",
+      "400g jasminris",
+      "frisk koriander",
+      "rapsolie"
+    ],
+    "steps": [
+      "Kok ris.",
+      "Svits løg og hvidløg i olie. Tilsæt karrypasta og steg 1 min.",
+      "Tilsæt kokosmælk og lad simre 5 min.",
+      "Tilsæt kikærter, zucchini i tern og spinat.",
+      "Simre 10 min. Krydr med sojasauce og limesaft.",
+      "Server med ris og koriander."
+    ]
+  },
+  {
+    "id": "c265",
+    "name": "Pasta med svampesovs og fløde",
+    "cuisine": "italiensk",
+    "time": 25,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 185,
+    "ingredients": [
+      "400g tagliatelle",
+      "500g blandede svampe",
+      "2 dl piskefløde",
+      "1 dl hvidvin",
+      "1 løg",
+      "3 fed hvidløg",
+      "50g parmesan",
+      "frisk timian og persille",
+      "smør",
+      "salt og peber"
+    ],
+    "steps": [
+      "Kok pasta al dente.",
+      "Steg svampe i smør på høj varme til gyldne, krydr.",
+      "Svits løg og hvidløg, tilsæt hvidvin og lad koge halvt ind.",
+      "Tilsæt fløde og timian, simre 5 min.",
+      "Vend pasta i sovsen.",
+      "Server med parmesan og hakket persille."
+    ]
+  },
+  {
+    "id": "c266",
+    "name": "Aubergine og mozzarella stacks med tomatsovs",
+    "cuisine": "italiensk",
+    "time": 30,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 185,
+    "ingredients": [
+      "2 store auberginer",
+      "250g mozzarella",
+      "400ml passata",
+      "3 fed hvidløg",
+      "frisk basilikum",
+      "olivenolie",
+      "salt og peber",
+      "400g spaghetti"
+    ],
+    "steps": [
+      "Kok pasta. Forvarm ovn til grillfunktion.",
+      "Skær aubergine i tykke skiver, pensl med olie og krydr.",
+      "Grill aubergineskiver 4 min. på hver side.",
+      "Lav tomatsovs: svits hvidløg, tilsæt passata og basilikum, simre 10 min.",
+      "Sæt aubergineskiver i stakke med mozzarella imellem. Gratiner 5 min.",
+      "Server stacks på tomatsovs med pasta."
+    ]
+  },
+  {
+    "id": "c267",
+    "name": "Pasta med pesto, ricotta og spinat",
+    "cuisine": "italiensk",
+    "time": 20,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 160,
+    "ingredients": [
+      "400g penne",
+      "250g ricotta",
+      "200g frisk spinat",
+      "4 spsk grøn pesto",
+      "2 fed hvidløg",
+      "50g parmesan",
+      "1 citron",
+      "olivenolie",
+      "salt og peber",
+      "100g cherrytomater"
+    ],
+    "steps": [
+      "Kok pasta og gem lidt pastavand.",
+      "Svits hvidløg i olie, tilsæt spinat og lad falde sammen.",
+      "Bland ricotta og pesto i en skål.",
+      "Vend varm pasta i ricotta-pesto-blandingen med lidt pastavand.",
+      "Tilsæt spinat og cherrytomater.",
+      "Server med parmesan og citronskal."
+    ]
+  },
+  {
+    "id": "c268",
+    "name": "Risotto med squash og citron",
+    "cuisine": "vegetarisk",
+    "time": 40,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 205,
+    "ingredients": [
+      "400g risottoris (arborio)",
+      "2 zucchini",
+      "1,2 l grøntsagsbouillon",
+      "1 dl hvidvin",
+      "1 løg",
+      "2 fed hvidløg",
+      "100g parmesan (revet)",
+      "50g smør",
+      "2 citroner (saft og skal)",
+      "frisk basilikum",
+      "olivenolie",
+      "salt og peber"
+    ],
+    "steps": [
+      "Hold bouillon varm.",
+      "Svits løg og hvidløg i olie. Tilsæt ris og rør til glasagtige.",
+      "Tilsæt hvidvin, rør til absorberet.",
+      "Tilsæt bouillon gradvist under omrøring, ca. 20 min.",
+      "Steg zucchini i tern og rør i de sidste 5 min.",
+      "Rør smør, parmesan og citronsaft i. Top med basilikum."
+    ]
+  },
+  {
+    "id": "c269",
+    "name": "Vegetarisk lasagne med spinat og ricotta",
+    "cuisine": "italiensk",
+    "time": 55,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 245,
+    "ingredients": [
+      "12 lasagneplader",
+      "500g frisk spinat",
+      "500g ricotta",
+      "250g mozzarella",
+      "100g parmesan (revet)",
+      "800ml passata",
+      "3 fed hvidløg",
+      "frisk basilikum",
+      "50g smør",
+      "4 spsk mel",
+      "600ml sødmælk",
+      "muskatnød",
+      "salt og peber"
+    ],
+    "steps": [
+      "Forvarm ovn til 190°C.",
+      "Svits hvidløg, tilsæt spinat og lad falde sammen. Krydr og bland med ricotta.",
+      "Lav tomatsovs af passata og basilikum. Simre 10 min.",
+      "Lav béchamel af smør, mel og mælk. Krydr med muskatnød.",
+      "Lag: tomatsovs, lasagneplader, spinat-ricotta, béchamel, mozzarella. Gentag. Top med parmesan.",
+      "Bag 35-40 min. til gylden."
+    ]
+  },
+  {
+    "id": "c270",
+    "name": "Linsegryde med rødvin og urter",
+    "cuisine": "vegetarisk",
+    "time": 40,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 155,
+    "ingredients": [
+      "400g grønne linser",
+      "2 dl rødvin",
+      "400ml grøntsagsbouillon",
+      "800ml passata",
+      "2 gulerødder",
+      "2 selleristængler",
+      "1 løg",
+      "4 fed hvidløg",
+      "frisk timian og rosmarin",
+      "olivenolie",
+      "salt og peber",
+      "400g rustikt brød"
+    ],
+    "steps": [
+      "Svits løg, hvidløg, gulerødder og selleri i olie.",
+      "Tilsæt rødvin og lad koge 3 min.",
+      "Tilsæt linser, passata, bouillon og krydderurter.",
+      "Simre under låg 25-30 min. til linser er møre.",
+      "Krydr med salt og peber.",
+      "Server med rustikt brød."
+    ]
+  },
+  {
+    "id": "c271",
+    "name": "Gnocchi med tomatsovs og mozzarella",
+    "cuisine": "italiensk",
+    "time": 20,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 190,
+    "ingredients": [
+      "800g gnocchi (færdig)",
+      "800ml passata",
+      "250g mozzarella",
+      "4 fed hvidløg",
+      "frisk basilikum",
+      "1 tsk sukker",
+      "olivenolie",
+      "salt og peber",
+      "50g parmesan"
+    ],
+    "steps": [
+      "Svits hvidløg i olie. Tilsæt passata, sukker og basilikum. Simre 10 min. Krydr.",
+      "Kok gnocchi efter anvisning (flyder op når klar).",
+      "Hæld tomatsovsen i ovnfast fad, vend gnocchi i.",
+      "Læg mozzarellaskiver over og drys med parmesan.",
+      "Gratiner under grill 5-7 min. til osten er smeltet og gylden.",
+      "Server straks med ekstra basilikum."
+    ]
+  },
+  {
+    "id": "c272",
+    "name": "Pasta puttanesca",
+    "cuisine": "italiensk",
+    "time": 25,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 155,
+    "ingredients": [
+      "400g spaghetti",
+      "800ml passata",
+      "100g sorte oliven",
+      "3 spsk kapers",
+      "4 ansjosfileter",
+      "4 fed hvidløg",
+      "1 chili",
+      "olivenolie",
+      "frisk persille",
+      "salt og peber"
+    ],
+    "steps": [
+      "Kok pasta al dente.",
+      "Svits hvidløg, chili og ansjoser i rigeligt olie til ansjoser opløses.",
+      "Tilsæt passata, oliven og kapers. Simre 15 min.",
+      "Smag til med salt og peber (oliven og kapers giver saltsmag).",
+      "Vend pasta i sovsen.",
+      "Server med hakket persille."
+    ]
+  },
+  {
+    "id": "c273",
+    "name": "Penne alla vodka",
+    "cuisine": "italiensk",
+    "time": 25,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 165,
+    "ingredients": [
+      "400g penne",
+      "800ml passata",
+      "1 dl vodka",
+      "2 dl piskefløde",
+      "4 fed hvidløg",
+      "1 skalotteløg",
+      "2 spsk tomatpuré",
+      "olivenolie",
+      "50g parmesan",
+      "frisk basilikum",
+      "salt og peber"
+    ],
+    "steps": [
+      "Kok pasta al dente.",
+      "Svits skalotteløg og hvidløg i olie.",
+      "Tilsæt tomatpuré og steg 1 min.",
+      "Tilsæt vodka og lad koge 2 min. (alkoholen fordamper).",
+      "Tilsæt passata og fløde, simre 10 min. Krydr.",
+      "Vend pasta i sovsen og server med parmesan og basilikum."
+    ]
+  },
+  {
+    "id": "c274",
+    "name": "Pasta al forno med oksekød",
+    "cuisine": "italiensk",
+    "time": 45,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 220,
+    "ingredients": [
+      "400g rigatoni",
+      "500g hakket oksekød",
+      "800ml passata",
+      "1 løg",
+      "3 fed hvidløg",
+      "1 dl rødvin",
+      "150g emmental (revet)",
+      "50g parmesan",
+      "frisk basilikum",
+      "olivenolie",
+      "salt og peber"
+    ],
+    "steps": [
+      "Forvarm ovn til 200°C. Kok pasta al dente.",
+      "Brun oksekød med løg og hvidløg. Tilsæt rødvin og passata, simre 15 min.",
+      "Bland pasta med kødfarce i ovnfast fad.",
+      "Drys med emmental og parmesan.",
+      "Bag 20 min. til gylden og boblende.",
+      "Server med frisk basilikum."
+    ]
+  },
+  {
+    "id": "c275",
+    "name": "Pasta med rejer og hvidvin",
+    "cuisine": "italiensk",
+    "time": 20,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 210,
+    "ingredients": [
+      "400g spaghetti",
+      "500g store rejer (pillede)",
+      "2 dl hvidvin",
+      "4 fed hvidløg",
+      "1 chili",
+      "300g cherrytomater",
+      "frisk persille",
+      "olivenolie",
+      "1 citron",
+      "salt og peber"
+    ],
+    "steps": [
+      "Kok pasta al dente.",
+      "Svits hvidløg og chili i rigeligt olivenolie.",
+      "Tilsæt cherrytomater og steg 3 min.",
+      "Tilsæt hvidvin og lad koge 2 min.",
+      "Tilsæt rejer og steg 3 min. til lyserøde.",
+      "Vend pasta i, krydr og server med persille og citron."
+    ]
+  },
+  {
+    "id": "c276",
+    "name": "Kylling indbagt i skinke med rosmarin",
+    "cuisine": "italiensk",
+    "time": 30,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 195,
+    "ingredients": [
+      "4 kyllingebryster",
+      "8 skiver hamburgerryg (tyk)",
+      "frisk rosmarin",
+      "3 fed hvidløg",
+      "olivenolie",
+      "salt og peber",
+      "2 dl hvidvin",
+      "1 dl hønsebouillon",
+      "400g spaghetti",
+      "50g parmesan"
+    ],
+    "steps": [
+      "Forvarm ovn til 200°C. Kok pasta.",
+      "Bank kylling fladt, læg rosmarin og hvidløg på.",
+      "Rul skinke stramt om hvert kyllingebryst.",
+      "Brun i olie 2 min. på hver side, læg i ovnfast fad.",
+      "Hæld hvidvin og bouillon over, bag 15-18 min.",
+      "Server med pasta, stegeskyen og parmesan."
+    ]
+  },
+  {
+    "id": "c277",
+    "name": "Pasta alla norma med aubergine",
+    "cuisine": "italiensk",
+    "time": 30,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 155,
+    "ingredients": [
+      "400g rigatoni",
+      "2 auberginer",
+      "800ml passata",
+      "4 fed hvidløg",
+      "frisk basilikum",
+      "olivenolie",
+      "50g parmesan",
+      "salt og peber",
+      "1 tsk sukker"
+    ],
+    "steps": [
+      "Skær aubergine i tern, salt og lad trække 15 min. Tør af.",
+      "Steg aubergine i rigeligt olivenolie til gylden, tag op.",
+      "Svits hvidløg i panden, tilsæt passata og sukker. Simre 10 min.",
+      "Kok pasta al dente.",
+      "Bland pasta med tomatsovs og aubergine.",
+      "Server med basilikum og parmesan."
+    ]
+  },
+  {
+    "id": "c278",
+    "name": "Gnocchi med svampesovs og danablu",
+    "cuisine": "dansk",
+    "time": 25,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 215,
+    "ingredients": [
+      "800g gnocchi (færdig)",
+      "400g champignoner",
+      "100g danablu",
+      "2 dl piskefløde",
+      "1 løg",
+      "3 fed hvidløg",
+      "frisk timian",
+      "smør",
+      "salt og peber",
+      "frisk valnødder til drys"
+    ],
+    "steps": [
+      "Svits løg og hvidløg i smør.",
+      "Tilsæt champignoner og steg til gyldne.",
+      "Tilsæt fløde og timian, simre 5 min.",
+      "Smuldr danablu i sovsen og rør til smeltet. Krydr.",
+      "Kok gnocchi og vend i sovsen.",
+      "Server med drys af hakkede valnødder."
+    ]
+  },
+  {
+    "id": "c279",
+    "name": "Pasta carbonara med svinemørbrad",
+    "cuisine": "italiensk",
+    "time": 25,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 155,
+    "ingredients": [
+      "400g spaghetti",
+      "300g svinemørbrad i tern",
+      "4 æg",
+      "100g parmesan (revet)",
+      "3 fed hvidløg",
+      "olivenolie",
+      "salt og sort peber"
+    ],
+    "steps": [
+      "Kok pasta og gem 1 dl pastavand.",
+      "Brun svinemørbradstern i lidt olie med hvidløg, krydr.",
+      "Pisk æg og parmesan sammen i en skål.",
+      "Tag panden af varmen. Vend pasta i panden med kød.",
+      "Hæld æggeblandingen over og rør hurtigt — tilsæt pastavand løbende for at undgå kogt æg.",
+      "Server straks med ekstra parmesan og sort peber."
+    ]
+  },
+  {
+    "id": "c280",
+    "name": "Lasagne med spinat og chorizo",
+    "cuisine": "italiensk",
+    "time": 55,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 225,
+    "ingredients": [
+      "12 lasagneplader",
+      "300g chorizo (i skiver)",
+      "300g frisk spinat",
+      "800ml passata",
+      "3 fed hvidløg",
+      "50g smør",
+      "4 spsk mel",
+      "600ml sødmælk",
+      "150g emmental (revet)",
+      "50g parmesan",
+      "olivenolie",
+      "salt og peber"
+    ],
+    "steps": [
+      "Forvarm ovn til 190°C.",
+      "Steg chorizo, tilsæt hvidløg og passata. Simre 10 min.",
+      "Svits spinat til det falder sammen. Krydr.",
+      "Lav béchamel af smør, mel og mælk.",
+      "Lag: tomatsovs med chorizo, lasagneplader, spinat, béchamel, ost. Gentag. Top med parmesan.",
+      "Bag 35-40 min. til gylden."
+    ]
+  }
+]

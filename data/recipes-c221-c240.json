@@ -1,0 +1,608 @@
+[
+  {
+    "id": "c221",
+    "name": "Kylling i hvidvinssovs med champignoner",
+    "cuisine": "dansk",
+    "time": 35,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 225,
+    "ingredients": [
+      "800g kyllingelår (udbenet)",
+      "300g champignoner",
+      "2 dl hvidvin",
+      "2 dl hønsebouillon",
+      "2 dl piskefløde",
+      "1 løg",
+      "3 fed hvidløg",
+      "frisk timian",
+      "smør",
+      "salt og peber",
+      "700g kartofler"
+    ],
+    "steps": [
+      "Brun kyllingelår på begge sider i smør, tag op.",
+      "Svits løg, hvidløg og champignoner i panden.",
+      "Tilsæt hvidvin og bouillon, lad koge ind halvt.",
+      "Tilsæt fløde og timian, læg kylling tilbage.",
+      "Simre under låg 20 min.",
+      "Kog kartofler og server ved siden af."
+    ]
+  },
+  {
+    "id": "c222",
+    "name": "Kylling piccata med kapers",
+    "cuisine": "italiensk",
+    "time": 25,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 185,
+    "ingredients": [
+      "600g kyllingebryst (tynde skiver)",
+      "3 spsk kapers",
+      "2 citroner",
+      "1 dl hvidvin",
+      "1 dl hønsebouillon",
+      "3 spsk smør",
+      "hvedemel til vending",
+      "frisk persille",
+      "salt og peber",
+      "400g spaghetti"
+    ],
+    "steps": [
+      "Kog pasta efter anvisning.",
+      "Bank kyllingeskiver flade, vend i mel og krydr.",
+      "Steg kylling i smør 3 min. på hver side, tag op.",
+      "Deglaser med hvidvin og bouillon, skrap bunden.",
+      "Tilsæt citronsaft, kapers og koldt smør i tern — pisk til sovsen binder.",
+      "Hæld over kylling og server med pasta og persille."
+    ]
+  },
+  {
+    "id": "c223",
+    "name": "Kylling med sennepsflødesovs",
+    "cuisine": "dansk",
+    "time": 25,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 180,
+    "ingredients": [
+      "700g kyllingebryst",
+      "2 dl piskefløde",
+      "3 spsk grov sennep",
+      "1 spsk dijon sennep",
+      "1 dl hønsebouillon",
+      "1 løg",
+      "2 fed hvidløg",
+      "smør",
+      "frisk estragon eller persille",
+      "salt og peber",
+      "700g kartofler"
+    ],
+    "steps": [
+      "Kog kartofler.",
+      "Skær kylling i tern og brun i smør, tag op.",
+      "Svits løg og hvidløg i panden.",
+      "Tilsæt bouillon og fløde, lad koge ind lidt.",
+      "Rør begge sennep i, krydr med salt og peber.",
+      "Læg kylling tilbage og simre 5 min. Server med kartofler og estragon."
+    ]
+  },
+  {
+    "id": "c224",
+    "name": "Kylling coq au vin",
+    "cuisine": "middelhavs",
+    "time": 50,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 185,
+    "ingredients": [
+      "8 kyllingelår",
+      "3 dl rødvin",
+      "200ml hønsebouillon",
+      "150g bacon i tern",
+      "300g champignoner",
+      "1 løg",
+      "3 fed hvidløg",
+      "2 gulerødder",
+      "2 spsk tomatpuré",
+      "frisk timian og laurbærblad",
+      "smør",
+      "salt og peber",
+      "600g kartofler"
+    ],
+    "steps": [
+      "Brun bacon, tag op. Brun kyllingelår, tag op.",
+      "Svits løg, hvidløg, gulerødder i gryden.",
+      "Tilsæt tomatpuré, rødvin og bouillon. Tilsæt kylling, bacon og krydderurter.",
+      "Simre under låg 30-35 min.",
+      "Steg champignoner separat og tilsæt til sidst.",
+      "Kog kartofler og server ved siden af."
+    ]
+  },
+  {
+    "id": "c225",
+    "name": "Kyllingelår med citron, oliven og kapers",
+    "cuisine": "middelhavs",
+    "time": 45,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 165,
+    "ingredients": [
+      "8 kyllingelår",
+      "100g grønne oliven",
+      "3 spsk kapers",
+      "2 citroner",
+      "4 fed hvidløg",
+      "2 dl hønsebouillon",
+      "olivenolie",
+      "frisk rosmarin og timian",
+      "salt og peber",
+      "400g couscous"
+    ],
+    "steps": [
+      "Forvarm ovn til 200°C.",
+      "Brun kyllingelår på pande i olivenolie, krydr.",
+      "Læg i ovnfast fad med hvidløg, citronskiver, oliven og kapers.",
+      "Hæld bouillon over og drys med krydderurter.",
+      "Bag 30-35 min. til gennemstegt.",
+      "Tilbered couscous og server ved siden af."
+    ]
+  },
+  {
+    "id": "c226",
+    "name": "Kylling marsala med svampe og pasta",
+    "cuisine": "italiensk",
+    "time": 30,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 235,
+    "ingredients": [
+      "600g kyllingebryst (skiver)",
+      "400g tagliatelle",
+      "300g champignoner",
+      "1 dl portvin",
+      "1 dl hønsebouillon",
+      "2 dl piskefløde",
+      "2 fed hvidløg",
+      "smør",
+      "frisk persille",
+      "salt og peber"
+    ],
+    "steps": [
+      "Kog pasta efter anvisning.",
+      "Steg kyllingeskiver i smør 3 min. på hver side, tag op.",
+      "Svits champignoner og hvidløg i panden.",
+      "Tilsæt portvin og bouillon, lad koge ind halvt.",
+      "Tilsæt fløde og lad simre 3 min. Krydr.",
+      "Læg kylling tilbage, server over pasta med persille."
+    ]
+  },
+  {
+    "id": "c227",
+    "name": "Kylling paprikash",
+    "cuisine": "middelhavs",
+    "time": 35,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 180,
+    "ingredients": [
+      "800g kyllingelår (udbenet)",
+      "2 dl creme fraiche 18%",
+      "1 dl hønsebouillon",
+      "2 spsk paprika (sød)",
+      "1 tsk røget paprika",
+      "2 løg",
+      "3 fed hvidløg",
+      "2 røde peberfrugter",
+      "smør",
+      "salt og peber",
+      "400g tagliatelle"
+    ],
+    "steps": [
+      "Kog pasta efter anvisning.",
+      "Brun kylling på begge sider, tag op.",
+      "Svits løg, hvidløg og peberfrugt i gryden.",
+      "Tilsæt paprika og bouillon, læg kylling tilbage.",
+      "Simre 20 min.",
+      "Rør creme fraiche i og server med pasta."
+    ]
+  },
+  {
+    "id": "c228",
+    "name": "Kylling med parmesanskorpe bagt i ovn",
+    "cuisine": "italiensk",
+    "time": 30,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 225,
+    "ingredients": [
+      "4 kyllingebryster",
+      "100g parmesan (revet)",
+      "100g rasp",
+      "2 æg",
+      "3 fed hvidløg",
+      "frisk basilikum",
+      "olivenolie",
+      "salt og peber",
+      "400ml tomatsovs (færdig)",
+      "125g mozzarella",
+      "400g spaghetti"
+    ],
+    "steps": [
+      "Forvarm ovn til 200°C. Kog pasta.",
+      "Bland rasp, parmesan, hvidløg og basilikum.",
+      "Dyp kylling i pisket æg, vend i parmesan-rasp-blanding.",
+      "Læg i ovnfad med et skvæt olie.",
+      "Bag 20 min., læg mozzarella på og bag 5 min. til smeltet.",
+      "Server med varm tomatsovs og pasta."
+    ]
+  },
+  {
+    "id": "c229",
+    "name": "Kyllingelår braiseret med æbler og cider",
+    "cuisine": "dansk",
+    "time": 40,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 195,
+    "ingredients": [
+      "8 kyllingelår",
+      "2 æbler",
+      "3 dl æblecider",
+      "1 dl hønsebouillon",
+      "1 løg",
+      "3 fed hvidløg",
+      "frisk timian og rosmarin",
+      "2 dl piskefløde",
+      "smør",
+      "salt og peber",
+      "700g kartofler"
+    ],
+    "steps": [
+      "Brun kyllingelår på alle sider i smør, krydr.",
+      "Svits løg og hvidløg, tilsæt cider og bouillon.",
+      "Læg kylling tilbage med timian, rosmarin og æbleskiver.",
+      "Simre under låg 25-30 min.",
+      "Tag kylling op, tilsæt fløde og lad koge ind 5 min.",
+      "Kog kartofler og server med saften."
+    ]
+  },
+  {
+    "id": "c230",
+    "name": "Thai grøn curry med kylling",
+    "cuisine": "asiatisk",
+    "time": 30,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 210,
+    "ingredients": [
+      "700g kyllingebryst",
+      "400ml kokosmælk",
+      "2 spsk grøn karrypasta",
+      "400g jasminris",
+      "200g grønne bønner",
+      "1 zucchini",
+      "2 spsk fiskesauce",
+      "1 lime",
+      "1 spsk sukker",
+      "frisk koriander",
+      "rapsolie"
+    ],
+    "steps": [
+      "Kog ris efter anvisning.",
+      "Steg karrypasta i lidt olie 1 min.",
+      "Tilsæt kokosmælk og lad simre 3 min.",
+      "Tilsæt kylling i tern og grøntsager.",
+      "Simre 15 min. Krydr med fiskesauce, limesaft og sukker.",
+      "Server med ris og frisk koriander."
+    ]
+  },
+  {
+    "id": "c231",
+    "name": "Klassisk lasagne",
+    "cuisine": "italiensk",
+    "time": 60,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 255,
+    "ingredients": [
+      "500g hakket oksekød",
+      "12 lasagneplader",
+      "800ml passata",
+      "1 løg",
+      "3 fed hvidløg",
+      "1 gulerod",
+      "1 dl rødvin",
+      "50g smør",
+      "4 spsk mel",
+      "700ml sødmælk",
+      "150g emmental (revet)",
+      "50g parmesan",
+      "olivenolie",
+      "salt og peber",
+      "frisk basilikum"
+    ],
+    "steps": [
+      "Forvarm ovn til 190°C.",
+      "Svits løg, hvidløg, gulerod. Brun oksekød. Tilsæt rødvin og passata. Simre 20 min.",
+      "Lav béchamel: smelt smør, rør mel i, tilsæt mælk gradvist. Rør til tyk sovs. Krydr.",
+      "Lag lasagne: bolognese, lasagneplader, béchamel. Gentag 3 gange.",
+      "Top med revet emmental og parmesan.",
+      "Bag 30-35 min. til gylden og boblende."
+    ]
+  },
+  {
+    "id": "c232",
+    "name": "Makaronigratin med ost og bacon",
+    "cuisine": "dansk",
+    "time": 45,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 185,
+    "ingredients": [
+      "400g makaroni",
+      "200g bacon i tern",
+      "150g emmental (revet)",
+      "50g parmesan",
+      "500ml sødmælk",
+      "50g smør",
+      "3 spsk mel",
+      "1 løg",
+      "muskatnød",
+      "salt og peber",
+      "rasp til drys"
+    ],
+    "steps": [
+      "Forvarm ovn til 200°C. Kog makaroni al dente.",
+      "Steg bacon og løg, læg til side.",
+      "Lav béchamel af smør, mel og mælk. Rør emmental i. Krydr med muskatnød.",
+      "Bland pasta, bacon og béchamel i ovnfast fad.",
+      "Drys med parmesan og rasp.",
+      "Bag 20-25 min. til gylden og gratineret."
+    ]
+  },
+  {
+    "id": "c233",
+    "name": "Kyllinggratin med spinat og parmesan",
+    "cuisine": "italiensk",
+    "time": 40,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 215,
+    "ingredients": [
+      "700g kyllingebryst",
+      "300g frisk spinat",
+      "150g emmental (revet)",
+      "50g parmesan",
+      "2 dl piskefløde",
+      "1 dl hønsebouillon",
+      "3 fed hvidløg",
+      "smør",
+      "salt og peber",
+      "muskatnød",
+      "700g kartofler"
+    ],
+    "steps": [
+      "Forvarm ovn til 200°C. Kok kartofler.",
+      "Kog kylling i bouillon 15 min., pil i strimler.",
+      "Svits hvidløg og spinat i smør.",
+      "Bland kylling, spinat, fløde og halvdelen af osten. Krydr med muskatnød.",
+      "Læg i ovnfast fad, drys med resten af osten og parmesan.",
+      "Gratiner 20 min. til gylden."
+    ]
+  },
+  {
+    "id": "c234",
+    "name": "Fiskegratin med rejer og fløde",
+    "cuisine": "dansk",
+    "time": 40,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 225,
+    "ingredients": [
+      "500g torsk (filet)",
+      "200g pillede rejer",
+      "3 dl piskefløde",
+      "100g emmental (revet)",
+      "1 løg",
+      "3 fed hvidløg",
+      "2 spsk smør",
+      "2 spsk mel",
+      "frisk dild",
+      "salt og peber",
+      "700g kartofler"
+    ],
+    "steps": [
+      "Forvarm ovn til 200°C. Kok kartofler.",
+      "Lav flødesovs: smelt smør, svits løg og hvidløg, rør mel i, tilsæt fløde.",
+      "Lad simre 5 min. Krydr med salt, peber og dild.",
+      "Læg torsk og rejer i ovnfast fad, hæld sovsen over.",
+      "Drys med revet ost.",
+      "Bag 20-25 min. til gylden."
+    ]
+  },
+  {
+    "id": "c235",
+    "name": "Ovnbagt kyllingelår med middelhavsgrøntsager",
+    "cuisine": "middelhavs",
+    "time": 45,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 200,
+    "ingredients": [
+      "8 kyllingelår",
+      "2 zucchini",
+      "2 røde peberfrugter",
+      "1 aubergine",
+      "300g cherrytomater",
+      "4 fed hvidløg",
+      "olivenolie",
+      "frisk rosmarin og timian",
+      "1 citron",
+      "salt og peber",
+      "400g couscous"
+    ],
+    "steps": [
+      "Forvarm ovn til 200°C. Tilbered couscous.",
+      "Skær grøntsager i grove stykker.",
+      "Vend kylling og grøntsager i olivenolie, hvidløg og krydderurter.",
+      "Fordel i stort ovnfad.",
+      "Bag 35-40 min. til kylling er gennemstegt og grøntsager karamelliseret.",
+      "Pres citron over og server med couscous."
+    ]
+  },
+  {
+    "id": "c236",
+    "name": "Aubergine parmigiana",
+    "cuisine": "italiensk",
+    "time": 50,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 250,
+    "ingredients": [
+      "3 store auberginer",
+      "800ml passata",
+      "250g mozzarella",
+      "100g parmesan (revet)",
+      "3 fed hvidløg",
+      "frisk basilikum",
+      "olivenolie",
+      "salt og peber",
+      "400g spaghetti"
+    ],
+    "steps": [
+      "Forvarm ovn til 190°C. Kok pasta.",
+      "Skær aubergine i skiver, salt og lad trække 15 min. Tør af.",
+      "Steg aubergineskiver i olivenolie i portioner til gyldne.",
+      "Lav tomatsovs: svits hvidløg, tilsæt passata og basilikum, simre 10 min.",
+      "Lag i ovnfast fad: tomatsovs, aubergine, mozzarella, parmesan. Gentag.",
+      "Bag 25-30 min. til boblende og gylden."
+    ]
+  },
+  {
+    "id": "c237",
+    "name": "Ovnbagt ratatouille med mozzarella",
+    "cuisine": "middelhavs",
+    "time": 40,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 220,
+    "ingredients": [
+      "2 zucchini",
+      "2 auberginer",
+      "3 røde peberfrugter",
+      "400g cherrytomater",
+      "2 løg",
+      "4 fed hvidløg",
+      "250g mozzarella",
+      "50g parmesan",
+      "olivenolie",
+      "frisk timian og basilikum",
+      "salt og peber",
+      "400g rustikt brød til tilbehør"
+    ],
+    "steps": [
+      "Forvarm ovn til 200°C.",
+      "Skær alle grøntsager i grove stykker.",
+      "Vend grøntsager med olivenolie, hvidløg og timian i stort ovnfad.",
+      "Bag 25 min., rør rundt halvvejs.",
+      "Læg mozzarella-skiver og parmesan over og bag 10 min. mere.",
+      "Drys med basilikum og server med brød."
+    ]
+  },
+  {
+    "id": "c238",
+    "name": "Fyldte peberfrugter med oksekød og ris",
+    "cuisine": "middelhavs",
+    "time": 45,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 205,
+    "ingredients": [
+      "4 store peberfrugter",
+      "400g hakket oksekød",
+      "200g ris",
+      "400ml passata",
+      "1 løg",
+      "3 fed hvidløg",
+      "1 tsk spidskommen",
+      "1 tsk paprika",
+      "100g emmental (revet)",
+      "olivenolie",
+      "salt og peber",
+      "frisk persille"
+    ],
+    "steps": [
+      "Forvarm ovn til 190°C. Kog ris halvt.",
+      "Brun oksekød med løg og hvidløg. Tilsæt krydderier og halvt af passataen.",
+      "Bland kød og delvist kogte ris.",
+      "Skær toppen af peberfrugterne og fjern kerner.",
+      "Fyld peberfrugterne og stil i ovnfast fad. Hæld resten af passata om dem.",
+      "Drys med ost og bag 25-30 min."
+    ]
+  },
+  {
+    "id": "c239",
+    "name": "Gratineret blomkål med ost og bacon",
+    "cuisine": "dansk",
+    "time": 40,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 190,
+    "ingredients": [
+      "1 stort blomkål",
+      "200g bacon i tern",
+      "150g emmental (revet)",
+      "50g parmesan",
+      "500ml sødmælk",
+      "50g smør",
+      "3 spsk mel",
+      "muskatnød",
+      "salt og peber",
+      "rasp",
+      "700g kartofler"
+    ],
+    "steps": [
+      "Forvarm ovn til 200°C. Kok kartofler.",
+      "Del blomkål i buketter og blancher 5 min. Afdryp.",
+      "Steg bacon. Lav béchamel af smør, mel og mælk. Rør emmental i.",
+      "Læg blomkål og bacon i ovnfast fad, hæld béchamel over.",
+      "Drys med parmesan og rasp.",
+      "Bag 20-25 min. til gylden."
+    ]
+  },
+  {
+    "id": "c240",
+    "name": "Moussaka",
+    "cuisine": "middelhavs",
+    "time": 55,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 240,
+    "ingredients": [
+      "500g hakket lam eller oksekød",
+      "2 auberginer",
+      "800ml passata",
+      "1 løg",
+      "3 fed hvidløg",
+      "1 tsk kanel",
+      "1 tsk allehånde",
+      "50g smør",
+      "4 spsk mel",
+      "600ml sødmælk",
+      "2 æg",
+      "100g emmental (revet)",
+      "olivenolie",
+      "salt og peber"
+    ],
+    "steps": [
+      "Forvarm ovn til 190°C. Skær aubergine i skiver og steg i olivenolie til gyldne.",
+      "Brun kød med løg og hvidløg. Tilsæt passata, kanel og allehånde. Simre 15 min.",
+      "Lav béchamel: smelt smør, rør mel i, tilsæt mælk gradvist. Krydr. Afkøl let og pisk æg i.",
+      "Lag i fad: kødfarce, aubergineskiver, gentag. Top med béchamel og ost.",
+      "Bag 35-40 min. til gylden og fast.",
+      "Lad hvile 10 min. inden servering."
+    ]
+  }
+]

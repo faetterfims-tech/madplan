@@ -1,0 +1,590 @@
+[
+  {
+    "id": "c201",
+    "name": "Laks med citronsmørsovs og asparges",
+    "cuisine": "dansk",
+    "time": 25,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 240,
+    "ingredients": [
+      "600g laksefilet",
+      "1 bundt asparges",
+      "100g smør",
+      "2 citroner (saft og skal)",
+      "2 fed hvidløg",
+      "1 dl hvidvin",
+      "salt og peber",
+      "frisk dild",
+      "800g nye kartofler"
+    ],
+    "steps": [
+      "Kog kartofler i saltet vand ca. 15 min.",
+      "Skær asparges i stykker og blancher 3 min.",
+      "Steg laksen i smør 3-4 min. på hver side, krydr med salt og peber.",
+      "Smelt smør i panden, tilsæt hvidløg og hvidvin og lad koge ind.",
+      "Tilsæt citronsaft og -skal, krydr til.",
+      "Anret laks med asparges og kartofler, hæld citronsmørsovs over."
+    ]
+  },
+  {
+    "id": "c202",
+    "name": "Laks i hvidvinssovs med spinat og pasta",
+    "cuisine": "italiensk",
+    "time": 25,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 245,
+    "ingredients": [
+      "600g laksefilet",
+      "400g penne",
+      "200g frisk spinat",
+      "2 dl hvidvin",
+      "2 dl piskefløde",
+      "1 løg",
+      "3 fed hvidløg",
+      "50g parmesan",
+      "olivenolie",
+      "salt og peber"
+    ],
+    "steps": [
+      "Kog pasta efter anvisning på pakken.",
+      "Skær laks i tern og steg kort i olivenolie, tag op.",
+      "Svits løg og hvidløg, tilsæt hvidvin og lad koge ind halvt.",
+      "Tilsæt fløde og spinat, krydr med salt og peber.",
+      "Vend laks og pasta i sovsen.",
+      "Server med revet parmesan."
+    ]
+  },
+  {
+    "id": "c203",
+    "name": "Laks med teriyakiglasur og ris",
+    "cuisine": "asiatisk",
+    "time": 25,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 220,
+    "ingredients": [
+      "600g laksefilet",
+      "400g jasminris",
+      "4 spsk sojasauce",
+      "2 spsk honning",
+      "1 spsk sesamolie",
+      "2 fed hvidløg",
+      "1 spsk revet ingefær",
+      "1 spsk riseddike",
+      "2 forårsløg",
+      "1 spsk sesamfrø",
+      "1 agurk"
+    ],
+    "steps": [
+      "Kog ris efter anvisning.",
+      "Bland sojasauce, honning, sesamolie, hvidløg, ingefær og riseddike til marinade.",
+      "Mariner laks 10 min., steg derefter i pande 4 min. på hver side.",
+      "Pensl med ekstra marinade under stegning.",
+      "Server med ris, snittede forårsløg, agurk og sesamfrø."
+    ]
+  },
+  {
+    "id": "c204",
+    "name": "Laks i ovn med soltørrede tomater og oliven",
+    "cuisine": "middelhavs",
+    "time": 30,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 215,
+    "ingredients": [
+      "600g laksefilet",
+      "100g soltørrede tomater i olie",
+      "100g sorte oliven",
+      "1 zucchini",
+      "1 rød peberfrugt",
+      "3 fed hvidløg",
+      "olivenolie",
+      "frisk timian",
+      "salt og peber",
+      "700g nye kartofler"
+    ],
+    "steps": [
+      "Forvarm ovn til 200°C.",
+      "Skær grøntsager groft og læg i fad med olivenolie, hvidløg og timian.",
+      "Bag grøntsager 15 min.",
+      "Læg laksen oven på grøntsagerne med soltørrede tomater og oliven.",
+      "Bag yderligere 12-15 min.",
+      "Kog kartofler separat og server ved siden af."
+    ]
+  },
+  {
+    "id": "c205",
+    "name": "Laks med sennepssovs og dild",
+    "cuisine": "dansk",
+    "time": 25,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 215,
+    "ingredients": [
+      "600g laksefilet",
+      "2 dl piskefløde",
+      "3 spsk grov sennep",
+      "1 spsk dijon sennep",
+      "frisk dild",
+      "1 citron",
+      "smør",
+      "salt og peber",
+      "800g kartofler",
+      "200g grønne bønner"
+    ],
+    "steps": [
+      "Kog kartofler og grønne bønner.",
+      "Steg laksen i smør 4 min. på hver side, krydr.",
+      "Hæld fløde i panden, tilsæt begge sennep og lad simre 3 min.",
+      "Tilsæt hakket dild og citronsaft.",
+      "Server laks med sennepssovs, kartofler og bønner."
+    ]
+  },
+  {
+    "id": "c206",
+    "name": "Rejer pasta med hvidvin og cherrytomater",
+    "cuisine": "italiensk",
+    "time": 20,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 205,
+    "ingredients": [
+      "500g store rejer (pillede)",
+      "400g spaghetti",
+      "300g cherrytomater",
+      "2 dl hvidvin",
+      "4 fed hvidløg",
+      "1 chili",
+      "olivenolie",
+      "frisk basilikum",
+      "50g parmesan",
+      "salt og peber"
+    ],
+    "steps": [
+      "Kog spaghetti al dente.",
+      "Svits hvidløg og chili i rigeligt olivenolie.",
+      "Tilsæt cherrytomater og hvidvin, lad koge 5 min.",
+      "Tilsæt rejer og steg 2-3 min. til lyserøde.",
+      "Vend pasta i sovsen.",
+      "Server med basilikum og parmesan."
+    ]
+  },
+  {
+    "id": "c207",
+    "name": "Gratineret torsk med rejer",
+    "cuisine": "dansk",
+    "time": 30,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 220,
+    "ingredients": [
+      "600g torsk (filet)",
+      "200g rejer (pillede)",
+      "2 dl piskefløde",
+      "1 dl hvidvin",
+      "100g emmental (revet)",
+      "2 spsk smør",
+      "2 spsk mel",
+      "1 løg",
+      "salt og peber",
+      "frisk dild",
+      "700g kartofler"
+    ],
+    "steps": [
+      "Forvarm ovn til 200°C. Kog kartofler.",
+      "Smelt smør, svits løg, rør mel i og tilsæt hvidvin og fløde.",
+      "Lad sovsen simre 5 min., krydr med salt, peber og dild.",
+      "Læg torsk i ovnfast fad, fordel rejer over.",
+      "Hæld sovsen over, drys med ost.",
+      "Bag 20 min. til gylden og gratineret."
+    ]
+  },
+  {
+    "id": "c208",
+    "name": "Rødspætte med smørsovs og kapers",
+    "cuisine": "dansk",
+    "time": 20,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 195,
+    "ingredients": [
+      "800g rødspættefilet",
+      "150g smør",
+      "3 spsk kapers",
+      "2 citroner",
+      "frisk persille",
+      "hvedemel til vending",
+      "salt og peber",
+      "700g kartofler",
+      "200g ærter"
+    ],
+    "steps": [
+      "Kog kartofler og ærter.",
+      "Vend rødspætte i mel, krydr med salt og peber.",
+      "Steg i smør 2-3 min. på hver side til gylden.",
+      "Tag fisken op og brun smørret let i panden.",
+      "Tilsæt kapers, citronsaft og persille.",
+      "Hæld den brunede smørsovs over fisken og server."
+    ]
+  },
+  {
+    "id": "c209",
+    "name": "Rejer i kokosmælk og karry med ris",
+    "cuisine": "asiatisk",
+    "time": 20,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 190,
+    "ingredients": [
+      "500g store rejer (pillede)",
+      "400g jasminris",
+      "400ml kokosmælk",
+      "2 spsk rød karrypasta",
+      "1 løg",
+      "3 fed hvidløg",
+      "1 spsk revet ingefær",
+      "1 lime",
+      "2 spsk fiskesauce",
+      "frisk koriander",
+      "rapsolie"
+    ],
+    "steps": [
+      "Kog ris efter anvisning.",
+      "Svits løg, hvidløg og ingefær i olie.",
+      "Tilsæt karrypasta og steg 1 min.",
+      "Hæld kokosmælk i og lad simre 5 min.",
+      "Tilsæt rejer og fiskesauce, steg 3 min.",
+      "Server med ris, limesaft og frisk koriander."
+    ]
+  },
+  {
+    "id": "c210",
+    "name": "Laks med kartoffelpuré og spinatsovs",
+    "cuisine": "dansk",
+    "time": 30,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 250,
+    "ingredients": [
+      "600g laksefilet",
+      "800g kartofler",
+      "200g frisk spinat",
+      "2 dl piskefløde",
+      "100ml sødmælk",
+      "50g smør",
+      "2 fed hvidløg",
+      "muskatnød",
+      "salt og peber",
+      "olivenolie"
+    ],
+    "steps": [
+      "Kog kartofler og mos med smør, mælk, salt og muskatnød.",
+      "Svits hvidløg i lidt smør, tilsæt spinat og lad falde sammen.",
+      "Tilsæt fløde og lad simre 5 min. Blend spinatsovsen.",
+      "Steg laksen i olivenolie 4 min. på hver side.",
+      "Server laks på spinatsovs med kartoffelpuré."
+    ]
+  },
+  {
+    "id": "c211",
+    "name": "Bøf med bearnaisesovs og kartoffelbåde",
+    "cuisine": "dansk",
+    "time": 30,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 230,
+    "ingredients": [
+      "600g oksebøf (tykke skiver)",
+      "1 glas bearnaisesovs (færdiglavet)",
+      "800g kartofler",
+      "olivenolie",
+      "rosmarin",
+      "hvidløgspulver",
+      "salt og peber",
+      "200g cherrytomater",
+      "smør"
+    ],
+    "steps": [
+      "Skær kartofler i both, vend i olie, rosmarin og hvidløgspulver.",
+      "Bag kartoffelbåde ved 220°C i 25-30 min.",
+      "Tag bøffen ud af køleskabet 30 min. før stegning.",
+      "Steg bøf i smør 2-3 min. på hver side (medium). Hvil 5 min.",
+      "Varm bearnaisesovs op.",
+      "Server bøf med bearnaise, kartoffelbåde og cherrytomater."
+    ]
+  },
+  {
+    "id": "c212",
+    "name": "Oksekød stroganoff med pasta",
+    "cuisine": "dansk",
+    "time": 30,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 210,
+    "ingredients": [
+      "500g oksekød (strimler)",
+      "400g tagliatelle",
+      "300g champignoner",
+      "1 løg",
+      "2 fed hvidløg",
+      "3 dl creme fraiche 18%",
+      "2 spsk tomatpuré",
+      "1 spsk paprika",
+      "smør",
+      "salt og peber",
+      "frisk persille"
+    ],
+    "steps": [
+      "Kog pasta efter anvisning.",
+      "Brun oksestrimler hurtigt i smør, tag op.",
+      "Svits løg, hvidløg og champignoner.",
+      "Tilsæt paprika og tomatpuré, steg 1 min.",
+      "Rør creme fraiche i, tilsæt kød og lad simre 5 min.",
+      "Server over pasta med hakket persille."
+    ]
+  },
+  {
+    "id": "c213",
+    "name": "Gourmet burger med karamelliserede løg",
+    "cuisine": "amerikansk",
+    "time": 30,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 225,
+    "ingredients": [
+      "600g hakket oksekød (12% fedt)",
+      "4 burgerbuns",
+      "2 store løg",
+      "4 skiver emmental",
+      "2 spsk smør",
+      "1 spsk sukker",
+      "1 dl balsamicoeddike",
+      "salatblade",
+      "1 tomat",
+      "2 spsk mayonnaise",
+      "1 spsk dijon sennep",
+      "salt og peber"
+    ],
+    "steps": [
+      "Skær løg i ringe og karamelliser i smør med sukker og balsamico ca. 20 min.",
+      "Form 4 bøffer af hakket kød, krydr med salt og peber.",
+      "Grill eller steg bøfferne 3-4 min. på hver side.",
+      "Læg ost på de sidste 2 min.",
+      "Rist buns let. Smør med mayo og sennep.",
+      "Byg burger med salat, tomat, bøf og karamelliserede løg."
+    ]
+  },
+  {
+    "id": "c214",
+    "name": "Oksekød i rødvinssovs med kartofler",
+    "cuisine": "middelhavs",
+    "time": 45,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 235,
+    "ingredients": [
+      "600g oksekød (grydesteg i tern)",
+      "2 dl rødvin",
+      "400ml oksebouillon",
+      "300g champignoner",
+      "2 gulerødder",
+      "1 løg",
+      "3 fed hvidløg",
+      "2 spsk tomatpuré",
+      "frisk timian",
+      "smør",
+      "salt og peber",
+      "800g kartofler"
+    ],
+    "steps": [
+      "Brun oksekød i portioner i smør, tag op.",
+      "Svits løg, hvidløg, gulerødder og champignoner.",
+      "Tilsæt tomatpuré og rødvin, lad koge ind 5 min.",
+      "Hæld bouillon i med timian og kød.",
+      "Lad simre under låg 30 min.",
+      "Kog kartofler og server ved siden af."
+    ]
+  },
+  {
+    "id": "c215",
+    "name": "Entrecote med chimichurri og ris",
+    "cuisine": "middelhavs",
+    "time": 25,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 215,
+    "ingredients": [
+      "600g entrecote",
+      "400g basmatiris",
+      "1 stor bundt persille",
+      "4 fed hvidløg",
+      "2 spsk rødvinseddike",
+      "1 dl olivenolie",
+      "1 tsk spidskommen",
+      "1 tsk paprika",
+      "chili efter smag",
+      "salt og peber"
+    ],
+    "steps": [
+      "Kog ris efter anvisning.",
+      "Blend persille, hvidløg, eddike, olivenolie, spidskommen, paprika og chili til chimichurri.",
+      "Tag kød ud 30 min. før stegning, krydr med salt og peber.",
+      "Grill eller steg entrecote 3 min. på hver side (medium-rare).",
+      "Hvil 5 min., skær i skiver.",
+      "Server med ris og chimichurri."
+    ]
+  },
+  {
+    "id": "c216",
+    "name": "Boeuf bourguignon",
+    "cuisine": "middelhavs",
+    "time": 50,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 245,
+    "ingredients": [
+      "700g oksekød (grydesteg)",
+      "3 dl rødvin",
+      "300ml oksebouillon",
+      "200g champignoner",
+      "150g bacon i tern",
+      "2 gulerødder",
+      "1 løg",
+      "4 fed hvidløg",
+      "2 spsk tomatpuré",
+      "frisk timian og laurbærblad",
+      "smør",
+      "salt og peber",
+      "600g kartofler"
+    ],
+    "steps": [
+      "Brun bacon, tag op. Brun oksekød i portioner, tag op.",
+      "Svits løg, hvidløg og gulerødder i gryden.",
+      "Tilsæt tomatpuré, rødvin og bouillon. Tilsæt kød, bacon, timian og laurbær.",
+      "Lad simre under låg 35-40 min.",
+      "Steg champignoner separat i smør og tilsæt de sidste 5 min.",
+      "Kog kartofler og server ved siden af."
+    ]
+  },
+  {
+    "id": "c217",
+    "name": "Steak med svampesteg og kartoffelmos",
+    "cuisine": "dansk",
+    "time": 30,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 250,
+    "ingredients": [
+      "600g oksebøf",
+      "400g blandede svampe",
+      "800g kartofler",
+      "2 dl piskefløde",
+      "50g smør",
+      "3 fed hvidløg",
+      "frisk timian",
+      "100ml sødmælk",
+      "salt og peber",
+      "olivenolie"
+    ],
+    "steps": [
+      "Kog kartofler til mos med smør, mælk, salt og peber.",
+      "Steg svampe i smør med hvidløg og timian til gyldne.",
+      "Steg bøf 3 min. på hver side, hvil 5 min.",
+      "Hæld fløde i svampepanden og lad simre 3 min.",
+      "Server bøf med svampeflødesovs og kartoffelmos."
+    ]
+  },
+  {
+    "id": "c218",
+    "name": "Oksebøf med rødløgschutney",
+    "cuisine": "dansk",
+    "time": 30,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 245,
+    "ingredients": [
+      "600g oksebøf (skiver)",
+      "3 rødløg",
+      "2 spsk smør",
+      "3 spsk balsamicoeddike",
+      "2 spsk sukker",
+      "1 dl rødvin",
+      "frisk timian",
+      "salt og peber",
+      "800g kartofler",
+      "200g grønne bønner"
+    ],
+    "steps": [
+      "Skær rødløg i tynde ringe. Karamelliser i smør med sukker 10 min.",
+      "Tilsæt balsamico, rødvin og timian. Lad koge ind til chutney-konsistens ca. 10 min.",
+      "Kog kartofler og bønner.",
+      "Krydr bøf med salt og peber og steg 3 min. på hver side.",
+      "Hvil bøffen 5 min. og server med rødløgschutney, kartofler og bønner."
+    ]
+  },
+  {
+    "id": "c219",
+    "name": "Oksemørbrad i fad med grøntsager",
+    "cuisine": "dansk",
+    "time": 40,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 215,
+    "ingredients": [
+      "600g oksemørbrad",
+      "300g champignoner",
+      "2 gulerødder",
+      "1 zucchini",
+      "1 rød peberfrugt",
+      "4 fed hvidløg",
+      "2 dl oksebouillon",
+      "1 dl rødvin",
+      "frisk rosmarin og timian",
+      "olivenolie",
+      "salt og peber",
+      "600g kartofler"
+    ],
+    "steps": [
+      "Forvarm ovn til 200°C. Kog kartofler.",
+      "Brun mørbraden på alle sider i pande med olie.",
+      "Læg i ovnfast fad med skårne grøntsager, hvidløg og krydderurter.",
+      "Hæld bouillon og rødvin over.",
+      "Bag 25-30 min. (kerne 60°C for medium).",
+      "Hvil 10 min., skær i skiver og server med grøntsager og kartofler."
+    ]
+  },
+  {
+    "id": "c220",
+    "name": "Koreansk bulgogi med tilbehør",
+    "cuisine": "asiatisk",
+    "time": 30,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 175,
+    "ingredients": [
+      "500g oksekød (tynde strimler)",
+      "400g jasminris",
+      "4 spsk sojasauce",
+      "2 spsk sukker",
+      "1 spsk sesamolie",
+      "3 fed hvidløg",
+      "1 spsk revet ingefær",
+      "1 pære (revet)",
+      "4 forårsløg",
+      "1 spsk sesamfrø",
+      "1 agurk",
+      "2 gulerødder",
+      "rapsolie"
+    ],
+    "steps": [
+      "Bland sojasauce, sukker, sesamolie, hvidløg, ingefær og revet pære til marinade.",
+      "Mariner oksestrimler 15-20 min.",
+      "Kog ris efter anvisning.",
+      "Steg kød på meget varm pande i portioner, 2-3 min.",
+      "Skær agurk og gulerødder i strimler.",
+      "Server kød med ris, grøntsager, forårsløg og sesamfrø."
+    ]
+  }
+]

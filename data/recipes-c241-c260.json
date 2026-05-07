@@ -1,0 +1,603 @@
+[
+  {
+    "id": "c241",
+    "name": "Svinemørbrad med champignonflødesovs",
+    "cuisine": "dansk",
+    "time": 30,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 200,
+    "ingredients": [
+      "600g svinemørbrad",
+      "400g champignoner",
+      "2 dl piskefløde",
+      "1 dl hønsebouillon",
+      "1 løg",
+      "3 fed hvidløg",
+      "frisk timian",
+      "smør",
+      "salt og peber",
+      "700g kartofler"
+    ],
+    "steps": [
+      "Kog kartofler. Skær mørbrad i medallioner og krydr med salt og peber.",
+      "Brun medallionerne i smør 2-3 min. på hver side, tag op.",
+      "Svits løg, hvidløg og champignoner i panden.",
+      "Tilsæt bouillon og fløde med timian, lad simre 5 min.",
+      "Læg kød tilbage og varm igennem 2-3 min.",
+      "Server med kartofler."
+    ]
+  },
+  {
+    "id": "c242",
+    "name": "Svinemørbrad i ovn med honning og sennep",
+    "cuisine": "dansk",
+    "time": 35,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 155,
+    "ingredients": [
+      "600g svinemørbrad",
+      "3 spsk grov sennep",
+      "2 spsk honning",
+      "2 fed hvidløg",
+      "1 spsk olivenolie",
+      "frisk rosmarin",
+      "salt og peber",
+      "700g kartofler",
+      "200g grønne bønner"
+    ],
+    "steps": [
+      "Forvarm ovn til 200°C.",
+      "Bland sennep, honning, hvidløg og olie til marinade.",
+      "Pensl mørbrad med marinaden og krydr med salt og peber.",
+      "Brun kort på pande, læg derefter i ovnfast fad med rosmarin.",
+      "Bag 20-25 min. (kerne 68°C). Hvil 5 min.",
+      "Kok kartofler og bønner og server ved siden af."
+    ]
+  },
+  {
+    "id": "c243",
+    "name": "Lammekotelet med rosmarin og hvidløgssmør",
+    "cuisine": "middelhavs",
+    "time": 20,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 215,
+    "ingredients": [
+      "8 lammekotelet",
+      "100g smør",
+      "4 fed hvidløg",
+      "frisk rosmarin",
+      "frisk timian",
+      "1 citron",
+      "salt og peber",
+      "olivenolie",
+      "700g kartofler",
+      "200g asparges"
+    ],
+    "steps": [
+      "Kok kartofler. Blancher asparges 3 min.",
+      "Blødjør smør og bland med hakket hvidløg, rosmarin og timian.",
+      "Krydr koteletterne med salt og peber.",
+      "Steg i olivenolie 3 min. på hver side (medium-rare).",
+      "Læg hvidløgssmør på den varme steak og lad smelte.",
+      "Server med asparges, kartofler og citronsaft."
+    ]
+  },
+  {
+    "id": "c244",
+    "name": "Lammegryde med tomater og oliven",
+    "cuisine": "middelhavs",
+    "time": 50,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 200,
+    "ingredients": [
+      "600g lammekød (tern)",
+      "400ml passata",
+      "100g sorte oliven",
+      "2 løg",
+      "4 fed hvidløg",
+      "2 gulerødder",
+      "1 tsk spidskommen",
+      "1 tsk paprika",
+      "frisk rosmarin",
+      "200ml lammebouillon",
+      "olivenolie",
+      "salt og peber",
+      "400g couscous"
+    ],
+    "steps": [
+      "Brun lammekød i portioner i olivenolie, tag op.",
+      "Svits løg, hvidløg og gulerødder.",
+      "Tilsæt krydderier, passata og bouillon.",
+      "Læg lammekød tilbage med oliven og rosmarin.",
+      "Simre under låg 35 min.",
+      "Tilbered couscous og server ved siden af."
+    ]
+  },
+  {
+    "id": "c245",
+    "name": "Svinekoteletter med æble og cidersovs",
+    "cuisine": "dansk",
+    "time": 25,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 195,
+    "ingredients": [
+      "4 store svinekoteletter",
+      "2 æbler",
+      "2 dl æblecider",
+      "1 dl hønsebouillon",
+      "2 dl piskefløde",
+      "1 løg",
+      "2 fed hvidløg",
+      "frisk timian",
+      "smør",
+      "salt og peber",
+      "700g kartofler"
+    ],
+    "steps": [
+      "Kok kartofler.",
+      "Krydr koteletter og brun i smør 3-4 min. på hver side, tag op.",
+      "Svits løg og hvidløg. Tilsæt cider og bouillon, lad koge ind.",
+      "Tilsæt fløde, æbleskiver og timian. Simre 5 min.",
+      "Læg koteletter tilbage og varm igennem.",
+      "Server med kartofler."
+    ]
+  },
+  {
+    "id": "c246",
+    "name": "Pulled pork med coleslaw",
+    "cuisine": "amerikansk",
+    "time": 55,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 175,
+    "ingredients": [
+      "800g svinekam eller nakkefilet",
+      "2 spsk paprika",
+      "1 spsk spidskommen",
+      "1 spsk hvidløgspulver",
+      "2 spsk brun farin",
+      "2 dl bbq-sovs",
+      "1 dl æbleeddike",
+      "300g hvidkål",
+      "2 gulerødder",
+      "3 spsk mayonnaise",
+      "2 spsk eddike",
+      "salt og peber",
+      "4 burgerboller"
+    ],
+    "steps": [
+      "Bland paprika, spidskommen, hvidløgspulver, farin, salt og peber.",
+      "Gnid svinekødet ind i krydderierne.",
+      "Steg i ovn ved 160°C i 45 min. eller til mørt (kernetemperatur 90°C).",
+      "Pil kødet i strimler og bland med bbq-sovs og eddike.",
+      "Snit hvidkål og gulerødder fint, bland med mayo og eddike til coleslaw.",
+      "Server pulled pork i boller med coleslaw."
+    ]
+  },
+  {
+    "id": "c247",
+    "name": "Svinekam med æbler og rosmarin",
+    "cuisine": "dansk",
+    "time": 45,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 175,
+    "ingredients": [
+      "700g svinekam (skiver)",
+      "3 æbler",
+      "2 løg",
+      "3 fed hvidløg",
+      "frisk rosmarin",
+      "2 dl æblecider",
+      "1 dl svinebouillon",
+      "smør",
+      "salt og peber",
+      "700g kartofler"
+    ],
+    "steps": [
+      "Forvarm ovn til 190°C. Kok kartofler.",
+      "Brun svinekamskiverne på pande, krydr med salt og peber.",
+      "Læg i ovnfast fad med løgringe, æbleskiver og rosmarin.",
+      "Hæld cider og bouillon over.",
+      "Bag 30 min.",
+      "Server med kogte kartofler og saften fra fadet."
+    ]
+  },
+  {
+    "id": "c248",
+    "name": "Hakket lam kofte med tzatziki",
+    "cuisine": "middelhavs",
+    "time": 25,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 185,
+    "ingredients": [
+      "600g hakket lam (eller oksekød)",
+      "1 løg",
+      "3 fed hvidløg",
+      "1 tsk spidskommen",
+      "1 tsk koriander",
+      "1 tsk paprika",
+      "frisk persille",
+      "300g græsk yoghurt",
+      "1 agurk",
+      "1 citron",
+      "salt og peber",
+      "4 pitabrød",
+      "1 tomat"
+    ],
+    "steps": [
+      "Bland hakket kød med løg, hvidløg, krydderier og persille.",
+      "Form aflange kofte og stik på spyd.",
+      "Grill eller steg 4-5 min. på hver side.",
+      "Lav tzatziki: riv agurk groft, pres vand ud, bland med yoghurt, hvidløg og citronsaft.",
+      "Varm pitabrød.",
+      "Server kofte i pitabrød med tzatziki og tomat."
+    ]
+  },
+  {
+    "id": "c249",
+    "name": "Svinemørbrad med portvinssovs",
+    "cuisine": "dansk",
+    "time": 30,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 220,
+    "ingredients": [
+      "600g svinemørbrad",
+      "1 dl portvin",
+      "2 dl piskefløde",
+      "1 dl svinebouillon",
+      "300g champignoner",
+      "1 skalotteløg",
+      "2 fed hvidløg",
+      "frisk timian",
+      "smør",
+      "salt og peber",
+      "700g kartofler"
+    ],
+    "steps": [
+      "Kok kartofler.",
+      "Skær mørbrad i medallioner, krydr og brun i smør 3 min. på hver side. Tag op.",
+      "Svits skalotteløg, hvidløg og champignoner.",
+      "Tilsæt portvin og lad koge halvt ind.",
+      "Tilsæt bouillon, fløde og timian, simre 5 min.",
+      "Læg kød tilbage, varm igennem og server med kartofler."
+    ]
+  },
+  {
+    "id": "c250",
+    "name": "Flæskesteg med sprød svær",
+    "cuisine": "dansk",
+    "time": 55,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 175,
+    "ingredients": [
+      "1 kg flæskesteg med svær",
+      "groft salt",
+      "1 spsk fennikelfrø",
+      "4 fed hvidløg",
+      "frisk rosmarin",
+      "400ml svinebouillon",
+      "800g kartofler",
+      "500g rødkål (færdig)"
+    ],
+    "steps": [
+      "Forvarm ovn til 230°C. Rids sværen på kryds og tværs.",
+      "Gnid rigeligt salt, fennikel og rosmarin ned i ridserne.",
+      "Læg stegen med sværen opad i ovnfast fad. Hæld bouillon i bunden.",
+      "Steg 20 min. ved 230°C til sværen popper. Skru ned til 170°C og steg 30 min.",
+      "Lad hvile 10 min.",
+      "Kok kartofler og varm rødkål. Server med stegeskyen."
+    ]
+  },
+  {
+    "id": "c251",
+    "name": "Teriyaki laks med ris og grønt",
+    "cuisine": "asiatisk",
+    "time": 25,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 225,
+    "ingredients": [
+      "600g laksefilet",
+      "400g jasminris",
+      "4 spsk sojasauce",
+      "2 spsk honning",
+      "1 spsk riseddike",
+      "1 spsk sesamolie",
+      "200g broccolietter",
+      "2 gulerødder",
+      "2 forårsløg",
+      "1 spsk sesamfrø"
+    ],
+    "steps": [
+      "Kog ris. Blancher broccoli og gulerødder 3 min.",
+      "Bland sojasauce, honning, riseddike og sesamolie til teriyakisovs.",
+      "Steg laksen i pande 3-4 min. på hver side.",
+      "Pensl med teriyakisovs de sidste 2 min.",
+      "Server med ris, grøntsager og forårsløg.",
+      "Drys med sesamfrø og hæld resten af sovsen over."
+    ]
+  },
+  {
+    "id": "c252",
+    "name": "Koreansk bulgogi oksekød med salat",
+    "cuisine": "asiatisk",
+    "time": 30,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 175,
+    "ingredients": [
+      "500g oksekød (tynde strimler)",
+      "4 spsk sojasauce",
+      "2 spsk sukker",
+      "1 spsk sesamolie",
+      "3 fed hvidløg",
+      "1 pære (revet)",
+      "salatblade",
+      "2 gulerødder",
+      "1 agurk",
+      "2 forårsløg",
+      "1 spsk sesamfrø",
+      "400g jasminris"
+    ],
+    "steps": [
+      "Kog ris.",
+      "Bland sojasauce, sukker, sesamolie, hvidløg og revet pære til marinade.",
+      "Mariner kød 15 min.",
+      "Steg på meget varm pande i portioner, 2-3 min.",
+      "Skær gulerødder og agurk i strimler.",
+      "Server kød med ris, salat, grøntsager og sesamfrø."
+    ]
+  },
+  {
+    "id": "c253",
+    "name": "Grøn thai curry med kylling og ris",
+    "cuisine": "asiatisk",
+    "time": 30,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 210,
+    "ingredients": [
+      "700g kyllingebryst",
+      "400ml kokosmælk",
+      "2 spsk grøn karrypasta",
+      "400g jasminris",
+      "200g bambusskud (dåse)",
+      "200g ærter",
+      "2 spsk fiskesauce",
+      "1 lime",
+      "1 spsk sukker",
+      "frisk koriander",
+      "rapsolie"
+    ],
+    "steps": [
+      "Kok ris efter anvisning.",
+      "Steg karrypasta i olie 1 min.",
+      "Tilsæt kokosmælk og lad simre 3 min.",
+      "Tilsæt kylling i tern, bambusskud og ærter.",
+      "Simre 15 min. Krydr med fiskesauce, limesaft og sukker.",
+      "Server med ris og frisk koriander."
+    ]
+  },
+  {
+    "id": "c254",
+    "name": "Gul curry med oksekød og kartofler",
+    "cuisine": "asiatisk",
+    "time": 50,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 210,
+    "ingredients": [
+      "500g oksekød (tern)",
+      "400ml kokosmælk",
+      "2 spsk gul karrypasta",
+      "400g kartofler",
+      "1 løg",
+      "3 fed hvidløg",
+      "2 spsk fiskesauce",
+      "1 spsk sukker",
+      "400g jasminris",
+      "frisk koriander",
+      "rapsolie"
+    ],
+    "steps": [
+      "Kok ris.",
+      "Brun oksekød i portioner i olie, tag op.",
+      "Steg karrypasta og løg 2 min.",
+      "Tilsæt kokosmælk, oksekød og kartofler i tern.",
+      "Simre 30-35 min. til kød og kartofler er møre.",
+      "Krydr med fiskesauce og sukker. Server med ris og koriander."
+    ]
+  },
+  {
+    "id": "c255",
+    "name": "Japansk ramen med kylling",
+    "cuisine": "asiatisk",
+    "time": 35,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 190,
+    "ingredients": [
+      "400g ramennudler",
+      "600g kyllingebryst",
+      "1,5 l hønsebouillon",
+      "4 spsk sojasauce",
+      "2 spsk sesamolie",
+      "3 fed hvidløg",
+      "2 spsk revet ingefær",
+      "4 æg",
+      "4 forårsløg",
+      "2 gulerødder",
+      "200g broccolietter",
+      "1 spsk sesamfrø"
+    ],
+    "steps": [
+      "Kog kylling i bouillon 15-20 min. Pil i strimler. Behold bouillonen.",
+      "Tilsæt sojasauce, sesamolie, hvidløg og ingefær til bouillonen.",
+      "Kog nudler efter anvisning.",
+      "Blødkog æg 6-7 min., pil og halver.",
+      "Blancher broccoli og gulerødder i suppen 2-3 min.",
+      "Server suppe over nudler med kylling, æg, forårsløg og sesamfrø."
+    ]
+  },
+  {
+    "id": "c256",
+    "name": "Tonkatsu med ris og kålsalat",
+    "cuisine": "asiatisk",
+    "time": 30,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 135,
+    "ingredients": [
+      "4 svinekoteletter (udbenet)",
+      "400g jasminris",
+      "2 æg",
+      "100g rasp (panko hvis muligt)",
+      "hvedemel",
+      "300g spidskål",
+      "4 spsk sojasauce",
+      "2 spsk worcestershiresauce",
+      "1 spsk ketchup",
+      "1 spsk sukker",
+      "rapsolie til stegning",
+      "salt og peber"
+    ],
+    "steps": [
+      "Kok ris.",
+      "Bank koteletter flade. Vend i mel, pisket æg og rasp.",
+      "Steg i rigeligt olie 3-4 min. på hver side til gylden og gennemstegt.",
+      "Bland sojasauce, worcestershire, ketchup og sukker til tonkatsusovs.",
+      "Snit kål fint.",
+      "Server kotelet med ris, kålsalat og tonkatsusovs."
+    ]
+  },
+  {
+    "id": "c257",
+    "name": "Rejer i kokosmælk med ingefær",
+    "cuisine": "asiatisk",
+    "time": 25,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 200,
+    "ingredients": [
+      "500g store rejer (pillede)",
+      "400ml kokosmælk",
+      "3 fed hvidløg",
+      "2 spsk revet ingefær",
+      "1 chili",
+      "2 spsk fiskesauce",
+      "1 lime",
+      "frisk koriander",
+      "400g jasminris",
+      "2 forårsløg",
+      "rapsolie"
+    ],
+    "steps": [
+      "Kok ris.",
+      "Svits hvidløg, ingefær og chili i olie 1 min.",
+      "Tilsæt kokosmælk og lad simre 5 min.",
+      "Tilsæt rejer og steg 3 min. til lyserøde.",
+      "Krydr med fiskesauce og limesaft.",
+      "Server med ris, forårsløg og koriander."
+    ]
+  },
+  {
+    "id": "c258",
+    "name": "Kylling karaage med ris",
+    "cuisine": "asiatisk",
+    "time": 30,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 155,
+    "ingredients": [
+      "700g kyllingelår (udbenet, i bidder)",
+      "400g jasminris",
+      "4 spsk sojasauce",
+      "2 spsk sake eller risvin",
+      "2 spsk revet ingefær",
+      "3 fed hvidløg",
+      "hvedemel",
+      "maizena",
+      "rapsolie til stegning",
+      "1 citron",
+      "salatblade",
+      "mayonnaise"
+    ],
+    "steps": [
+      "Kok ris.",
+      "Mariner kyllingebidder i sojasauce, sake, ingefær og hvidløg 15 min.",
+      "Vend i blanding af mel og maizena (50/50).",
+      "Frituresteg i rigelig varm olie 6-8 min. til sprøde og gyldne.",
+      "Afdryp på køkkenrulle.",
+      "Server med ris, salat, citron og mayonnaise."
+    ]
+  },
+  {
+    "id": "c259",
+    "name": "Rejer med avocado og citrusdressing",
+    "cuisine": "asiatisk",
+    "time": 20,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 195,
+    "ingredients": [
+      "500g kogte rejer (pillede)",
+      "2 avocadoer",
+      "1 mango",
+      "2 lime",
+      "1 citron",
+      "1 chili",
+      "frisk koriander",
+      "2 forårsløg",
+      "2 spsk sesamolie",
+      "1 spsk fiskesauce",
+      "400g jasminris"
+    ],
+    "steps": [
+      "Kok ris.",
+      "Skær avocado og mango i tern.",
+      "Bland lime- og citronsaft med sesamolie, fiskesauce og hakket chili.",
+      "Bland rejer, avocado og mango med dressingen.",
+      "Drys med koriander og forårsløg.",
+      "Server over ris eller som salat."
+    ]
+  },
+  {
+    "id": "c260",
+    "name": "Kylling i orangesovs med ris",
+    "cuisine": "asiatisk",
+    "time": 35,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 150,
+    "ingredients": [
+      "700g kyllingebryst",
+      "400g jasminris",
+      "2 appelsiner (saft og skal)",
+      "3 spsk sojasauce",
+      "2 spsk honning",
+      "1 spsk riseddike",
+      "3 fed hvidløg",
+      "1 spsk maizena",
+      "1 rød peberfrugt",
+      "2 forårsløg",
+      "rapsolie"
+    ],
+    "steps": [
+      "Kok ris.",
+      "Bland appelsinsaft, -skal, sojasauce, honning, eddike og maizena til sovs.",
+      "Skær kylling i strimler og steg i olie ved høj varme.",
+      "Tilsæt hvidløg og peberfrugt, steg 2 min.",
+      "Hæld sovsen over og rør til den tykner, ca. 2 min.",
+      "Server med ris og forårsløg."
+    ]
+  }
+]
