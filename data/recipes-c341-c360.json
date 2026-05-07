@@ -1,0 +1,574 @@
+[
+  {
+    "id": "c341",
+    "name": "Shakshuka",
+    "cuisine": "middelhavs",
+    "time": 25,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 80,
+    "ingredients": [
+      "8 æg",
+      "800g dåsetomater",
+      "2 røde peberfrugter",
+      "1 løg",
+      "4 fed hvidløg",
+      "1 chili",
+      "1 tsk spidskommen",
+      "1 tsk paprika",
+      "olivenolie",
+      "salt og peber",
+      "frisk persille",
+      "4 skiver brød"
+    ],
+    "steps": [
+      "Svits løg, peberfrugt og hvidløg i olie i stor pande.",
+      "Tilsæt krydderier og chili, steg 1 min.",
+      "Hæld dåsetomater over og simre 10 min. Krydr.",
+      "Lav 8 fordybninger og bræk et æg i hver.",
+      "Læg låg på og kog til æggehvider er stivnet (5-7 min). Server med brød."
+    ]
+  },
+  {
+    "id": "c342",
+    "name": "Chana masala",
+    "cuisine": "indisk",
+    "time": 30,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 85,
+    "ingredients": [
+      "2 dåser kikærter",
+      "400g dåsetomater",
+      "1 løg",
+      "3 fed hvidløg",
+      "1 spsk revet ingefær",
+      "2 spsk garam masala",
+      "1 tsk spidskommen",
+      "1 tsk gurkemeje",
+      "rapsolie",
+      "salt og peber",
+      "frisk koriander",
+      "400g basmatiris"
+    ],
+    "steps": [
+      "Kok ris.",
+      "Svits løg, hvidløg og ingefær i olie. Tilsæt alle krydderier.",
+      "Tilsæt dåsetomater og simre 10 min.",
+      "Tilsæt kikærter og simre 15 min. Mos lidt for tykkere konsistens.",
+      "Krydr og server med ris og koriander."
+    ]
+  },
+  {
+    "id": "c343",
+    "name": "Bønne-burrito",
+    "cuisine": "mexicansk",
+    "time": 25,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 95,
+    "ingredients": [
+      "4 store tortillaer",
+      "2 dåser kidneybønner",
+      "300g basmatiris",
+      "1 løg",
+      "2 fed hvidløg",
+      "1 tsk spidskommen",
+      "1 tsk paprika",
+      "100g emmental (revet)",
+      "4 spsk creme fraiche",
+      "salsa (fra glas)",
+      "olivenolie",
+      "salt og peber"
+    ],
+    "steps": [
+      "Kok ris.",
+      "Svits løg og hvidløg i olie. Tilsæt bønner og krydderier.",
+      "Mos bønnerne delvist med en gaffel og rør rundt.",
+      "Varm tortillaer. Fordel ris, bønnemos, ost, salsa og creme fraiche.",
+      "Rul fast og server."
+    ]
+  },
+  {
+    "id": "c344",
+    "name": "Æg fried rice",
+    "cuisine": "asiatisk",
+    "time": 20,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 75,
+    "ingredients": [
+      "400g jasminris (kogt og afkølet)",
+      "5 æg",
+      "200g ærter (frost)",
+      "2 gulerødder",
+      "4 spsk sojasauce",
+      "1 spsk sesamolie",
+      "3 fed hvidløg",
+      "3 forårsløg",
+      "rapsolie",
+      "salt og peber"
+    ],
+    "steps": [
+      "Pisk æg let. Riv gulerødder groft.",
+      "Varm wok meget varm med olie. Steg hvidløg og gulerødder 2 min.",
+      "Tilsæt kold ris og ærter. Steg ved høj varme under omrøring 5 min.",
+      "Skub til siden og scramble æggene. Bland alt.",
+      "Krydr med sojasauce og sesamolie. Drys med forårsløg."
+    ]
+  },
+  {
+    "id": "c345",
+    "name": "Tofu-wok med broccoli og sojasovs",
+    "cuisine": "asiatisk",
+    "time": 20,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 100,
+    "ingredients": [
+      "400g fast tofu",
+      "400g broccoli",
+      "1 rød peberfrugt",
+      "4 spsk sojasauce",
+      "1 spsk sesamolie",
+      "1 spsk revet ingefær",
+      "3 fed hvidløg",
+      "1 spsk maizena",
+      "400g jasminris",
+      "rapsolie",
+      "1 spsk sesamfrø"
+    ],
+    "steps": [
+      "Kok ris. Pres vand ud af tofu og skær i tern.",
+      "Bland sojasauce, sesamolie, ingefær og maizena til sovs.",
+      "Steg tofu i olie til gylden på alle sider. Tag op.",
+      "Steg broccoli og peberfrugt ved høj varme 4 min.",
+      "Hæld sovs over, tilsæt tofu og server med ris og sesamfrø."
+    ]
+  },
+  {
+    "id": "c346",
+    "name": "Røde linser med ris og grøntsager",
+    "cuisine": "indisk",
+    "time": 30,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 80,
+    "ingredients": [
+      "300g røde linser",
+      "400g basmatiris",
+      "400g dåsetomater",
+      "2 gulerødder",
+      "1 løg",
+      "3 fed hvidløg",
+      "2 spsk karrypulver",
+      "1 tsk gurkemeje",
+      "400ml grøntsagsbouillon",
+      "olivenolie",
+      "salt og peber",
+      "frisk koriander"
+    ],
+    "steps": [
+      "Kok ris.",
+      "Svits løg, hvidløg og gulerødder i olie. Tilsæt krydderier.",
+      "Tilsæt dåsetomater, bouillon og linser.",
+      "Simre 15-18 min. til linser er bløde. Rør jævnligt.",
+      "Krydr og server med ris og koriander."
+    ]
+  },
+  {
+    "id": "c347",
+    "name": "Bønne-quesadillas",
+    "cuisine": "mexicansk",
+    "time": 20,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 90,
+    "ingredients": [
+      "8 tortillaer (mellemstore)",
+      "2 dåser kidneybønner",
+      "150g emmental (revet)",
+      "1 løg",
+      "1 rød peberfrugt",
+      "2 fed hvidløg",
+      "1 tsk spidskommen",
+      "olivenolie",
+      "4 spsk creme fraiche",
+      "salsa (fra glas)"
+    ],
+    "steps": [
+      "Mos bønner groft med en gaffel. Svits løg, hvidløg og peberfrugt i olie.",
+      "Bland bønnemos med grøntsager og spidskommen.",
+      "Fordel bønneblandingen og ost på 4 tortillaer. Læg de andre ovenpå.",
+      "Steg på tør varm pande 2-3 min. på hver side til gylde.",
+      "Skær i trekanter og server med creme fraiche og salsa."
+    ]
+  },
+  {
+    "id": "c348",
+    "name": "Grøntsagscurry med røde linser og kokosmælk",
+    "cuisine": "indisk",
+    "time": 25,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 85,
+    "ingredients": [
+      "200g røde linser",
+      "400ml kokosmælk",
+      "400g dåsetomater",
+      "2 gulerødder",
+      "1 løg",
+      "3 fed hvidløg",
+      "1 spsk ingefær",
+      "2 spsk karrypulver",
+      "1 rød peberfrugt",
+      "rapsolie",
+      "salt og peber",
+      "400g jasminris"
+    ],
+    "steps": [
+      "Kok ris.",
+      "Svits løg, hvidløg og ingefær. Tilsæt karry.",
+      "Tilsæt dåsetomater og kokosmælk. Simre 5 min.",
+      "Tilsæt linser og gulerødder. Simre 15 min. under omrøring.",
+      "Tilsæt peberfrugt de sidste 5 min. Krydr og server med ris."
+    ]
+  },
+  {
+    "id": "c349",
+    "name": "Kikærte-stew med spinat og paprika",
+    "cuisine": "middelhavs",
+    "time": 25,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 80,
+    "ingredients": [
+      "2 dåser kikærter",
+      "400g dåsetomater",
+      "200g spinat",
+      "1 løg",
+      "3 fed hvidløg",
+      "2 tsk paprika",
+      "1 tsk spidskommen",
+      "olivenolie",
+      "salt og peber",
+      "400g couscous",
+      "frisk persille"
+    ],
+    "steps": [
+      "Tilbered couscous med kogende vand.",
+      "Svits løg og hvidløg i olie. Tilsæt paprika og spidskommen.",
+      "Tilsæt dåsetomater og simre 8 min.",
+      "Tilsæt kikærter og spinat, simre 5 min.",
+      "Krydr og server med couscous og persille."
+    ]
+  },
+  {
+    "id": "c350",
+    "name": "Grøntsagsomelett",
+    "cuisine": "dansk",
+    "time": 15,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 75,
+    "ingredients": [
+      "8 æg",
+      "1 løg",
+      "1 rød peberfrugt",
+      "200g champignoner",
+      "100g emmental (revet)",
+      "2 spsk mælk",
+      "smør",
+      "salt og peber",
+      "frisk persille",
+      "4 skiver brød"
+    ],
+    "steps": [
+      "Pisk æg med mælk, salt og peber.",
+      "Svits løg, peberfrugt og champignoner i smør 4 min.",
+      "Hæld æggeblandingen over og rist til kanten stivner.",
+      "Drys ost over og fold omelett.",
+      "Server med persille og brød."
+    ]
+  },
+  {
+    "id": "c351",
+    "name": "Rösti med bacon og æg",
+    "cuisine": "nordisk",
+    "time": 25,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 85,
+    "ingredients": [
+      "800g kartofler",
+      "200g bacon i tern",
+      "4 æg",
+      "1 løg",
+      "salt og peber",
+      "smør",
+      "4 spsk creme fraiche",
+      "frisk purløg"
+    ],
+    "steps": [
+      "Riv kartofler groft og pres vand ud. Bland med løg, salt og peber.",
+      "Steg bacon og tag op.",
+      "Smelt smør i panden. Fordel kartoffelmos og tryk flad.",
+      "Steg 8 min. på hver side til gylden og sprød.",
+      "Steg æg separat. Server rösti med bacon, æg, creme fraiche og purløg."
+    ]
+  },
+  {
+    "id": "c352",
+    "name": "Bagt feta med tomater og oliven",
+    "cuisine": "middelhavs",
+    "time": 25,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 85,
+    "ingredients": [
+      "400g feta",
+      "400g cherrytomater",
+      "100g sorte oliven",
+      "4 fed hvidløg",
+      "frisk basilikum",
+      "olivenolie",
+      "1 tsk tørret oregano",
+      "salt og peber",
+      "8 skiver rustikt brød"
+    ],
+    "steps": [
+      "Forvarm ovn til 200°C.",
+      "Læg fetaen i et ovnfast fad med cherrytomater, oliven og hvidløg.",
+      "Drys med oregano og hæld rigeligt olivenolie over.",
+      "Bag 20 min. til feta er gylden og tomater sprungne.",
+      "Server med basilikum og rustikt brød til at dyppe."
+    ]
+  },
+  {
+    "id": "c353",
+    "name": "Vegetarisk pad thai",
+    "cuisine": "asiatisk",
+    "time": 25,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 95,
+    "ingredients": [
+      "400g risnudler",
+      "4 æg",
+      "200g bønnespirer",
+      "4 forårsløg",
+      "4 spsk sojasauce",
+      "2 spsk riseddike",
+      "2 spsk sukker",
+      "1 lime",
+      "50g saltede jordnødder",
+      "rapsolie",
+      "chili flager"
+    ],
+    "steps": [
+      "Blød nudler i koldt vand 30 min.",
+      "Bland sojasauce, eddike og sukker til sovs.",
+      "Varm wok. Steg æg og rør rundt.",
+      "Tilsæt nudler og sovs, steg 3 min.",
+      "Server med bønnespirer, forårsløg, jordnødder, lime og chili."
+    ]
+  },
+  {
+    "id": "c354",
+    "name": "Æggekage med bacon og porre",
+    "cuisine": "dansk",
+    "time": 25,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 85,
+    "ingredients": [
+      "8 æg",
+      "200g bacon i tern",
+      "2 porrer",
+      "100g emmental (revet)",
+      "1 dl mælk",
+      "smør",
+      "salt og peber",
+      "frisk purløg",
+      "4 skiver rugbrød"
+    ],
+    "steps": [
+      "Pisk æg med mælk, salt og peber.",
+      "Steg bacon i ovnfast pande. Tilsæt skårne porrer og svits 3 min.",
+      "Hæld æggeblandingen over og drys med ost.",
+      "Sæt i ovn ved 190°C i 12-15 min. til stivnet.",
+      "Server med purløg og rugbrød."
+    ]
+  },
+  {
+    "id": "c355",
+    "name": "Bagt feta-pasta",
+    "cuisine": "middelhavs",
+    "time": 30,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 90,
+    "ingredients": [
+      "400g penne",
+      "200g feta",
+      "600g cherrytomater",
+      "4 fed hvidløg",
+      "olivenolie",
+      "frisk basilikum",
+      "1 tsk chiliflager",
+      "salt og peber"
+    ],
+    "steps": [
+      "Forvarm ovn til 200°C.",
+      "Læg cherrytomater og feta i ovnfast fad, hæld olie over med hvidløg og chili.",
+      "Bag 25-30 min. til feta er gylden og tomater sprungne.",
+      "Kog pasta al dente.",
+      "Rør feta og tomater til sovs og vend pasta i. Drys med basilikum."
+    ]
+  },
+  {
+    "id": "c356",
+    "name": "Grøntsagsfritter med yoghurt-dip",
+    "cuisine": "dansk",
+    "time": 25,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 80,
+    "ingredients": [
+      "2 zucchini",
+      "2 gulerødder",
+      "150g majs (dåse)",
+      "3 æg",
+      "100g hvedemel",
+      "50g emmental (revet)",
+      "salt og peber",
+      "rapsolie til stegning",
+      "250g græsk yoghurt",
+      "2 fed hvidløg",
+      "frisk mynte",
+      "4 skiver brød"
+    ],
+    "steps": [
+      "Riv zucchini og gulerødder groft. Pres vand ud.",
+      "Bland med majs, æg, mel og ost. Krydr.",
+      "Steg klatter i olie 3 min. på hver side til gyldne.",
+      "Bland yoghurt med presset hvidløg og mynte til dip.",
+      "Server fritter med yoghurt-dip og brød."
+    ]
+  },
+  {
+    "id": "c357",
+    "name": "Tomat-bønne stew med søde kartofler",
+    "cuisine": "indisk",
+    "time": 30,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 80,
+    "ingredients": [
+      "2 dåser hvide bønner",
+      "400g søde kartofler",
+      "400g dåsetomater",
+      "1 løg",
+      "3 fed hvidløg",
+      "1 spsk ingefær",
+      "1 tsk spidskommen",
+      "1 tsk paprika",
+      "1 tsk gurkemeje",
+      "400ml grøntsagsbouillon",
+      "rapsolie",
+      "salt og peber",
+      "frisk koriander"
+    ],
+    "steps": [
+      "Svits løg, hvidløg og ingefær i olie. Tilsæt alle krydderier.",
+      "Tilsæt søde kartofler i tern og dåsetomater.",
+      "Hæld bouillon over og simre 15 min.",
+      "Tilsæt bønner og simre 10 min. til kartofler er møre.",
+      "Krydr og server med koriander."
+    ]
+  },
+  {
+    "id": "c358",
+    "name": "Tortilla-enchiladas med grøntsager",
+    "cuisine": "mexicansk",
+    "time": 30,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 100,
+    "ingredients": [
+      "8 tortillaer",
+      "2 dåser kidneybønner",
+      "1 løg",
+      "1 rød peberfrugt",
+      "2 fed hvidløg",
+      "400ml passata",
+      "2 tsk chilipulver",
+      "150g emmental (revet)",
+      "olivenolie",
+      "4 spsk creme fraiche",
+      "salt og peber"
+    ],
+    "steps": [
+      "Forvarm ovn til 190°C.",
+      "Svits løg, peberfrugt og hvidløg. Tilsæt bønner og chili. Krydr.",
+      "Fordel bønneblandingen på tortillaer og rul. Læg i smurt ovnfad.",
+      "Hæld passata over og drys med ost.",
+      "Bag 20 min. Server med creme fraiche."
+    ]
+  },
+  {
+    "id": "c359",
+    "name": "Pita med hummus og bagte grøntsager",
+    "cuisine": "middelhavs",
+    "time": 25,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 80,
+    "ingredients": [
+      "8 pitabrød",
+      "200g hummus (fra pakke)",
+      "1 aubergine",
+      "2 røde peberfrugter",
+      "1 zucchini",
+      "olivenolie",
+      "1 tsk paprika",
+      "frisk persille",
+      "1 citron",
+      "salt og peber"
+    ],
+    "steps": [
+      "Forvarm ovn til 220°C.",
+      "Skær grøntsager i tern, vend i olie og paprika. Bag 20 min.",
+      "Varm pitabrød.",
+      "Smør hummus i pitaen, fyld med bagte grøntsager.",
+      "Drys med persille og citronsaft."
+    ]
+  },
+  {
+    "id": "c360",
+    "name": "Pandekager med skinke og ost",
+    "cuisine": "dansk",
+    "time": 20,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 75,
+    "ingredients": [
+      "3 dl hvedemel",
+      "3 dl sødmælk",
+      "3 æg",
+      "smør til stegning",
+      "200g kogt skinke",
+      "150g emmental (revet)",
+      "frisk purløg",
+      "salt og peber",
+      "4 spsk creme fraiche"
+    ],
+    "steps": [
+      "Rør mel, mælk og æg til glat dej. Hvil 10 min.",
+      "Steg tynde pandekager i smør.",
+      "Læg skinke, ost og creme fraiche i midten.",
+      "Rul pandekager og server.",
+      "Drys med frisk purløg."
+    ]
+  }
+]

@@ -1,0 +1,559 @@
+[
+  {
+    "id": "c361",
+    "name": "Kylling stir-fry med broccoli",
+    "cuisine": "asiatisk",
+    "time": 20,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 110,
+    "ingredients": [
+      "600g kyllingebryst",
+      "400g broccoli",
+      "1 rød peberfrugt",
+      "4 spsk sojasauce",
+      "1 spsk sesamolie",
+      "1 spsk maizena",
+      "3 fed hvidløg",
+      "1 spsk revet ingefær",
+      "400g jasminris",
+      "rapsolie",
+      "1 spsk sesamfrø"
+    ],
+    "steps": [
+      "Kok ris. Skær kylling i strimler og vend i sojasauce og maizena.",
+      "Varm wok meget varm. Steg kylling 4 min. Tag op.",
+      "Steg broccoli og peberfrugt 3 min.",
+      "Tilsæt hvidløg, ingefær og kylling. Hæld sesamolie over.",
+      "Server med ris og sesamfrø."
+    ]
+  },
+  {
+    "id": "c362",
+    "name": "Ovnbagte kyllingelår med kartofler",
+    "cuisine": "dansk",
+    "time": 40,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 100,
+    "ingredients": [
+      "8 kyllingelår",
+      "800g kartofler",
+      "3 fed hvidløg",
+      "frisk rosmarin og timian",
+      "olivenolie",
+      "salt og peber",
+      "1 citron",
+      "1 tsk paprika"
+    ],
+    "steps": [
+      "Forvarm ovn til 200°C.",
+      "Skær kartofler i både og vend med olie, hvidløg og krydderurter i stort fad.",
+      "Læg kyllingelår over. Krydr med salt, peber og paprika.",
+      "Pres citronsaft over.",
+      "Bag 35-40 min. til kylling er gennemstegt og kartofler gyldne."
+    ]
+  },
+  {
+    "id": "c363",
+    "name": "Hurtig kylling tikka masala",
+    "cuisine": "indisk",
+    "time": 30,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 120,
+    "ingredients": [
+      "700g kyllingebryst",
+      "400g dåsetomater",
+      "2 dl piskefløde",
+      "1 løg",
+      "3 fed hvidløg",
+      "1 spsk ingefær",
+      "2 spsk garam masala",
+      "1 tsk paprika",
+      "1 tsk gurkemeje",
+      "rapsolie",
+      "salt og peber",
+      "400g basmatiris",
+      "frisk koriander"
+    ],
+    "steps": [
+      "Kok ris.",
+      "Skær kylling i tern. Svits løg, hvidløg og ingefær i olie.",
+      "Tilsæt alle krydderier og steg 1 min.",
+      "Tilsæt kylling og brun let.",
+      "Hæld dåsetomater og fløde over. Simre 15 min. Server med ris og koriander."
+    ]
+  },
+  {
+    "id": "c364",
+    "name": "Kylling med pesto og pasta",
+    "cuisine": "italiensk",
+    "time": 20,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 110,
+    "ingredients": [
+      "600g kyllingebryst",
+      "400g penne",
+      "4 spsk grøn pesto",
+      "200g cherrytomater",
+      "50g parmesan",
+      "olivenolie",
+      "salt og peber",
+      "frisk basilikum"
+    ],
+    "steps": [
+      "Kok pasta al dente.",
+      "Skær kylling i tern og steg i olie 6-8 min. til gennemstegt. Krydr.",
+      "Tilsæt halverede cherrytomater og steg 2 min.",
+      "Vend pasta og pesto i. Tilsæt lidt pastavand.",
+      "Server med parmesan og basilikum."
+    ]
+  },
+  {
+    "id": "c365",
+    "name": "BBQ kyllingelår i ovn",
+    "cuisine": "amerikansk",
+    "time": 40,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 100,
+    "ingredients": [
+      "8 kyllingelår",
+      "3 dl bbq-sovs",
+      "1 spsk paprika",
+      "1 tsk hvidløgspulver",
+      "salt og peber",
+      "700g kartofler",
+      "300g coleslaw (færdig)"
+    ],
+    "steps": [
+      "Forvarm ovn til 200°C.",
+      "Bland paprika, hvidløgspulver, salt og peber. Gnid kyllingen.",
+      "Pensl med bbq-sovs og læg i ovnfast fad.",
+      "Bag 30 min., pensl med mere bbq-sovs og bag 10 min. mere.",
+      "Kok kartofler og server med kylling og coleslaw."
+    ]
+  },
+  {
+    "id": "c366",
+    "name": "Kylling i tomatsovs med ris",
+    "cuisine": "middelhavs",
+    "time": 25,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 105,
+    "ingredients": [
+      "700g kyllingebryst",
+      "800ml passata",
+      "1 løg",
+      "3 fed hvidløg",
+      "1 tsk oregano",
+      "1 tsk paprika",
+      "400g jasminris",
+      "olivenolie",
+      "salt og peber",
+      "frisk basilikum"
+    ],
+    "steps": [
+      "Kok ris.",
+      "Skær kylling i tern og brun i olie. Krydr.",
+      "Svits løg og hvidløg i panden.",
+      "Tilsæt passata, oregano og paprika. Læg kylling tilbage.",
+      "Simre 15 min. Server med ris og basilikum."
+    ]
+  },
+  {
+    "id": "c367",
+    "name": "Kylling fajitas",
+    "cuisine": "mexicansk",
+    "time": 25,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 115,
+    "ingredients": [
+      "600g kyllingebryst",
+      "3 peberfrugter (blandede farver)",
+      "2 løg",
+      "8 tortillaer",
+      "1 tsk spidskommen",
+      "1 tsk paprika",
+      "1 tsk hvidløgspulver",
+      "olivenolie",
+      "4 spsk creme fraiche",
+      "salsa (fra glas)",
+      "salt og peber"
+    ],
+    "steps": [
+      "Skær kylling i strimler. Krydr med spidskommen, paprika og hvidløgspulver.",
+      "Steg kylling i olie ved høj varme 5-6 min. Tag op.",
+      "Steg peberfrugter og løg i skiver 5 min.",
+      "Varm tortillaer.",
+      "Fyld med kylling, grøntsager, creme fraiche og salsa."
+    ]
+  },
+  {
+    "id": "c368",
+    "name": "Kylling i karry og kokosmælk",
+    "cuisine": "indisk",
+    "time": 25,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 115,
+    "ingredients": [
+      "700g kyllingebryst",
+      "400ml kokosmælk",
+      "400g dåsetomater",
+      "1 løg",
+      "3 fed hvidløg",
+      "2 spsk karrypulver",
+      "1 spsk ingefær",
+      "400g jasminris",
+      "rapsolie",
+      "salt og peber",
+      "frisk koriander"
+    ],
+    "steps": [
+      "Kok ris.",
+      "Svits løg, hvidløg og ingefær i olie. Tilsæt karry.",
+      "Tilsæt kylling i tern og brun let.",
+      "Hæld dåsetomater og kokosmælk over. Simre 15 min.",
+      "Krydr og server med ris og koriander."
+    ]
+  },
+  {
+    "id": "c369",
+    "name": "Kyllingelår med citron og hvidløg",
+    "cuisine": "middelhavs",
+    "time": 40,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 95,
+    "ingredients": [
+      "8 kyllingelår",
+      "4 citroner",
+      "6 fed hvidløg",
+      "frisk timian og rosmarin",
+      "olivenolie",
+      "salt og peber",
+      "400g couscous"
+    ],
+    "steps": [
+      "Forvarm ovn til 200°C. Tilbered couscous.",
+      "Krydr kyllingelår med salt og peber.",
+      "Læg i ovnfast fad med hvidløgsfed, citronskiver og krydderurter.",
+      "Hæld olivenolie over og pres citronsaft over kyllingen.",
+      "Bag 35-40 min. til gennemstegt og gylden."
+    ]
+  },
+  {
+    "id": "c370",
+    "name": "Kylling med hvidkål og sojasovs",
+    "cuisine": "asiatisk",
+    "time": 20,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 100,
+    "ingredients": [
+      "600g kyllingebryst",
+      "400g hvidkål",
+      "2 gulerødder",
+      "4 spsk sojasauce",
+      "1 spsk sesamolie",
+      "3 fed hvidløg",
+      "1 spsk ingefær",
+      "400g jasminris",
+      "rapsolie",
+      "2 forårsløg"
+    ],
+    "steps": [
+      "Kok ris. Skær kylling i strimler og riv kål og gulerødder groft.",
+      "Steg kylling i olie ved høj varme 4 min. Tag op.",
+      "Steg kål og gulerødder med hvidløg og ingefær 4 min.",
+      "Tilsæt kylling, sojasauce og sesamolie. Vend rundt.",
+      "Server med ris og forårsløg."
+    ]
+  },
+  {
+    "id": "c371",
+    "name": "Simpel kylling teriyaki",
+    "cuisine": "asiatisk",
+    "time": 25,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 110,
+    "ingredients": [
+      "700g kyllingelår (udbenet)",
+      "400g jasminris",
+      "4 spsk sojasauce",
+      "2 spsk honning",
+      "1 spsk riseddike",
+      "2 fed hvidløg",
+      "1 spsk ingefær",
+      "2 forårsløg",
+      "1 spsk sesamfrø",
+      "rapsolie",
+      "200g broccoli"
+    ],
+    "steps": [
+      "Kok ris. Blancher broccoli 3 min.",
+      "Bland sojasauce, honning, eddike, hvidløg og ingefær til teriyakisovs.",
+      "Steg kylling i olie 5 min. på hver side.",
+      "Pensl med teriyakisovs og steg 2 min. mere på hver side.",
+      "Server med ris, broccoli, forårsløg og sesamfrø."
+    ]
+  },
+  {
+    "id": "c372",
+    "name": "Kylling shawarma i pitabrød",
+    "cuisine": "middelhavs",
+    "time": 25,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 110,
+    "ingredients": [
+      "600g kyllingebryst",
+      "8 pitabrød",
+      "2 tsk paprika",
+      "1 tsk spidskommen",
+      "1 tsk gurkemeje",
+      "1 tsk hvidløgspulver",
+      "olivenolie",
+      "200g hummus",
+      "1 tomat",
+      "1 agurk",
+      "100g rødkål",
+      "salt og peber"
+    ],
+    "steps": [
+      "Bland paprika, spidskommen, gurkemeje, hvidløgspulver, olie, salt og peber.",
+      "Skær kylling i strimler og mariner 10 min.",
+      "Steg kylling i olie ved høj varme 6-8 min.",
+      "Varm pitabrød.",
+      "Fyld pita med hummus, kylling, tomat, agurk og rødkål."
+    ]
+  },
+  {
+    "id": "c373",
+    "name": "Kylling enchiladas",
+    "cuisine": "mexicansk",
+    "time": 30,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 115,
+    "ingredients": [
+      "500g kyllingebryst",
+      "8 tortillaer",
+      "400ml passata",
+      "2 tsk chilipulver",
+      "1 løg",
+      "2 fed hvidløg",
+      "150g emmental (revet)",
+      "olivenolie",
+      "4 spsk creme fraiche",
+      "salt og peber"
+    ],
+    "steps": [
+      "Forvarm ovn til 190°C.",
+      "Kog kylling i saltet vand 15 min. Pil i strimler.",
+      "Svits løg og hvidløg. Bland med kylling og halvdelen af osten.",
+      "Bland passata med chilipulver til enchilada-sovs.",
+      "Rul fyldte tortillaer, læg i fad, hæld sovs over og drys med ost. Bag 20 min."
+    ]
+  },
+  {
+    "id": "c374",
+    "name": "Kylling med brun løgsovs og kartofler",
+    "cuisine": "dansk",
+    "time": 25,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 100,
+    "ingredients": [
+      "700g kyllingebryst",
+      "3 løg",
+      "2 dl hønsebouillon",
+      "1 dl piskefløde",
+      "2 spsk mel",
+      "smør",
+      "frisk timian",
+      "salt og peber",
+      "700g kartofler"
+    ],
+    "steps": [
+      "Kok kartofler.",
+      "Skær kylling i tern og brun i smør. Krydr. Tag op.",
+      "Svits løg i skiver til gyldne. Tilsæt mel og rør.",
+      "Tilsæt bouillon og fløde. Simre 5 min.",
+      "Læg kylling tilbage med timian og server med kartofler."
+    ]
+  },
+  {
+    "id": "c375",
+    "name": "Kylling-bacon pasta",
+    "cuisine": "dansk",
+    "time": 20,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 115,
+    "ingredients": [
+      "500g kyllingebryst",
+      "400g penne",
+      "150g bacon i tern",
+      "2 dl piskefløde",
+      "2 fed hvidløg",
+      "50g parmesan",
+      "frisk persille",
+      "olivenolie",
+      "salt og peber"
+    ],
+    "steps": [
+      "Kok pasta al dente.",
+      "Steg bacon til sprødt. Tilsæt kylling i tern og steg 6 min. Krydr.",
+      "Tilsæt hvidløg og fløde. Lad simre 5 min.",
+      "Vend pasta i sovsen.",
+      "Server med parmesan og persille."
+    ]
+  },
+  {
+    "id": "c376",
+    "name": "Kyllingelår med hvidløg og rosmarin",
+    "cuisine": "middelhavs",
+    "time": 35,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 95,
+    "ingredients": [
+      "8 kyllingelår",
+      "6 fed hvidløg",
+      "frisk rosmarin",
+      "olivenolie",
+      "1 citron",
+      "salt og peber",
+      "700g kartofler"
+    ],
+    "steps": [
+      "Forvarm ovn til 200°C.",
+      "Krydr kyllingelår med salt og peber. Steg på pande 3 min. på hver side.",
+      "Læg i ovnfast fad med hvidløgsfed, rosmarin og citronsaft.",
+      "Hæld olie over og bag 25 min.",
+      "Kok kartofler og server ved siden af."
+    ]
+  },
+  {
+    "id": "c377",
+    "name": "Kylling-wraps med salsa",
+    "cuisine": "dansk",
+    "time": 25,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 110,
+    "ingredients": [
+      "600g kyllingebryst",
+      "8 tortillaer",
+      "1 tsk paprika",
+      "1 tsk spidskommen",
+      "olivenolie",
+      "salatblade",
+      "1 tomat",
+      "1 agurk",
+      "150g emmental (revet)",
+      "4 spsk creme fraiche",
+      "salsa (fra glas)",
+      "salt og peber"
+    ],
+    "steps": [
+      "Krydr kylling med paprika og spidskommen. Steg i olie 6-8 min.",
+      "Lad hvile 3 min. og skær i strimler.",
+      "Varm tortillaer.",
+      "Fyld med salat, tomat, agurk, kylling, ost og creme fraiche.",
+      "Hæld salsa over og rul."
+    ]
+  },
+  {
+    "id": "c378",
+    "name": "Kylling med gulerodsris",
+    "cuisine": "asiatisk",
+    "time": 25,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 105,
+    "ingredients": [
+      "600g kyllingebryst",
+      "400g jasminris",
+      "3 gulerødder",
+      "4 spsk sojasauce",
+      "1 spsk sesamolie",
+      "3 fed hvidløg",
+      "1 spsk ingefær",
+      "2 forårsløg",
+      "1 spsk sesamfrø",
+      "rapsolie"
+    ],
+    "steps": [
+      "Kok ris. Riv gulerødder groft.",
+      "Steg kylling i tern i olie 6-8 min. Krydr. Tag op.",
+      "Steg hvidløg og ingefær. Tilsæt gulerødder og steg 3 min.",
+      "Vend ris i med sojasauce og sesamolie.",
+      "Tilsæt kylling, server med forårsløg og sesamfrø."
+    ]
+  },
+  {
+    "id": "c379",
+    "name": "Grillede kyllingelår med coleslaw",
+    "cuisine": "amerikansk",
+    "time": 40,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 100,
+    "ingredients": [
+      "8 kyllingelår",
+      "2 spsk paprika",
+      "1 tsk hvidløgspulver",
+      "1 tsk spidskommen",
+      "olivenolie",
+      "salt og peber",
+      "300g hvidkål",
+      "2 gulerødder",
+      "3 spsk mayonnaise",
+      "1 spsk eddike",
+      "700g kartofler"
+    ],
+    "steps": [
+      "Kok kartofler.",
+      "Gnid kylling med paprika, hvidløgspulver, spidskommen, olie, salt og peber.",
+      "Steg på grill eller pande 8-10 min. på hver side.",
+      "Snit kål og gulerødder fint. Bland med mayo og eddike til coleslaw.",
+      "Server kylling med coleslaw og kartofler."
+    ]
+  },
+  {
+    "id": "c380",
+    "name": "Kylling med peberfrugt og pasta",
+    "cuisine": "italiensk",
+    "time": 25,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 110,
+    "ingredients": [
+      "600g kyllingebryst",
+      "400g penne",
+      "3 peberfrugter (blandede farver)",
+      "1 løg",
+      "3 fed hvidløg",
+      "400ml passata",
+      "1 tsk paprika",
+      "olivenolie",
+      "50g parmesan",
+      "salt og peber"
+    ],
+    "steps": [
+      "Kok pasta al dente.",
+      "Skær kylling i strimler og steg i olie. Krydr. Tag op.",
+      "Svits løg, hvidløg og peberfrugt i strimler.",
+      "Tilsæt paprika og passata. Simre 10 min.",
+      "Tilsæt kylling. Server med pasta og parmesan."
+    ]
+  }
+]

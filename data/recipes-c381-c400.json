@@ -1,0 +1,569 @@
+[
+  {
+    "id": "c381",
+    "name": "Hakkebøf med brun sovs og kartofler",
+    "cuisine": "dansk",
+    "time": 25,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 100,
+    "ingredients": [
+      "500g hakket oksekød",
+      "3 løg",
+      "2 dl oksebouillon",
+      "2 spsk mel",
+      "smør",
+      "salt og peber",
+      "700g kartofler",
+      "200g ærter"
+    ],
+    "steps": [
+      "Kok kartofler og ærter.",
+      "Form bøffer, krydr og steg i smør 4 min. på hver side. Tag op.",
+      "Svits løgringe i panden. Tilsæt mel og rør.",
+      "Tilsæt bouillon og lad simre til sovsen tykner.",
+      "Server bøffer med sovs, kartofler og ærter."
+    ]
+  },
+  {
+    "id": "c382",
+    "name": "Biksemad",
+    "cuisine": "dansk",
+    "time": 20,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 100,
+    "ingredients": [
+      "600g kogte kartofler",
+      "300g røget pålæg eller pølser",
+      "2 løg",
+      "smør",
+      "salt og peber",
+      "4 æg",
+      "worcestershiresauce",
+      "frisk purløg"
+    ],
+    "steps": [
+      "Skær kartofler og pålæg i tern.",
+      "Steg løg i smør til gyldne.",
+      "Tilsæt kartofler og steg ved høj varme til gyldne, vend sjældent.",
+      "Tilsæt pålæg og steg 3 min. Krydr.",
+      "Steg æg separat som spejlæg. Server med worcestershiresauce og purløg."
+    ]
+  },
+  {
+    "id": "c383",
+    "name": "Tacos med hakket kød",
+    "cuisine": "mexicansk",
+    "time": 25,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 110,
+    "ingredients": [
+      "500g hakket oksekød",
+      "12 tacoskaller",
+      "1 løg",
+      "2 fed hvidløg",
+      "2 tsk chilipulver",
+      "1 tsk spidskommen",
+      "1 tsk paprika",
+      "salsa (fra glas)",
+      "100g emmental (revet)",
+      "4 spsk creme fraiche",
+      "salatblade",
+      "1 tomat",
+      "olivenolie"
+    ],
+    "steps": [
+      "Svits løg og hvidløg i olie. Tilsæt hakket kød og brun.",
+      "Tilsæt chilipulver, spidskommen og paprika. Krydr.",
+      "Varm tacoskaller.",
+      "Fyld med kød, salat, tomat, ost, salsa og creme fraiche."
+    ]
+  },
+  {
+    "id": "c384",
+    "name": "Frikadeller med kartoffelsalat",
+    "cuisine": "dansk",
+    "time": 30,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 105,
+    "ingredients": [
+      "500g hakket svinekød",
+      "1 æg",
+      "3 spsk rasp",
+      "1 dl sødmælk",
+      "1 løg",
+      "smør",
+      "salt og peber",
+      "700g kartofler",
+      "3 spsk mayonnaise",
+      "1 spsk dijonsennep",
+      "frisk purløg"
+    ],
+    "steps": [
+      "Kok kartofler, lad afkøle og skær i skiver.",
+      "Bland kød, æg, rasp, mælk og løg til fars. Krydr.",
+      "Form frikadeller og steg i smør 4-5 min. på hver side.",
+      "Bland kartofler med mayonnaise, sennep og purløg til kartoffelsalat.",
+      "Server frikadeller med kartoffelsalat."
+    ]
+  },
+  {
+    "id": "c385",
+    "name": "Svinekødsboller i sødsur sovs",
+    "cuisine": "asiatisk",
+    "time": 30,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 105,
+    "ingredients": [
+      "500g hakket svinekød",
+      "1 æg",
+      "3 spsk rasp",
+      "400g ananas (dåse)",
+      "1 rød peberfrugt",
+      "4 spsk sojasauce",
+      "3 spsk riseddike",
+      "3 spsk ketchup",
+      "2 spsk sukker",
+      "1 spsk maizena",
+      "400g jasminris",
+      "rapsolie"
+    ],
+    "steps": [
+      "Kok ris.",
+      "Bland kød, æg og rasp til fars. Form boller og steg i olie til gyldne.",
+      "Bland sojasauce, eddike, ketchup, sukker og maizena til sovs.",
+      "Svits peberfrugt og ananasstykker 2 min.",
+      "Hæld sovsen over og tilsæt bollerne. Simre 5 min. Server med ris."
+    ]
+  },
+  {
+    "id": "c386",
+    "name": "Pølseret med kartofler og kål",
+    "cuisine": "dansk",
+    "time": 25,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 85,
+    "ingredients": [
+      "4 medisterpølser",
+      "600g kartofler",
+      "400g hvidkål",
+      "1 løg",
+      "2 dl hønsebouillon",
+      "smør",
+      "frisk timian",
+      "salt og peber",
+      "1 spsk dijonsennep"
+    ],
+    "steps": [
+      "Skær pølser i skiver og brun i smør. Tag op.",
+      "Svits løg. Tilsæt kartofler i tern og kål i strimler.",
+      "Hæld bouillon over med timian. Simre under låg 15 min.",
+      "Tilsæt pølser og varm igennem. Krydr.",
+      "Server med sennep ved siden af."
+    ]
+  },
+  {
+    "id": "c387",
+    "name": "Chili con carne",
+    "cuisine": "mexicansk",
+    "time": 30,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 110,
+    "ingredients": [
+      "400g hakket oksekød",
+      "2 dåser kidneybønner",
+      "800g dåsetomater",
+      "1 løg",
+      "3 fed hvidløg",
+      "1 rød peberfrugt",
+      "2 tsk chilipulver",
+      "1 tsk spidskommen",
+      "1 tsk paprika",
+      "olivenolie",
+      "salt og peber",
+      "400g basmatiris",
+      "creme fraiche"
+    ],
+    "steps": [
+      "Kok ris.",
+      "Brun hakket kød med løg og hvidløg. Krydr med alle krydderier.",
+      "Tilsæt peberfrugt, dåsetomater og bønner.",
+      "Simre 20 min. Krydr til.",
+      "Server med ris og creme fraiche."
+    ]
+  },
+  {
+    "id": "c388",
+    "name": "Svinekoteletter med æble og sennep",
+    "cuisine": "dansk",
+    "time": 25,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 100,
+    "ingredients": [
+      "4 svinekoteletter",
+      "2 æbler",
+      "2 spsk grov sennep",
+      "1 dl fløde",
+      "1 løg",
+      "smør",
+      "frisk timian",
+      "salt og peber",
+      "700g kartofler"
+    ],
+    "steps": [
+      "Kok kartofler.",
+      "Krydr koteletter og steg i smør 4 min. på hver side. Tag op.",
+      "Svits løg og æbleskiver i panden.",
+      "Rør sennep og fløde i. Simre 3 min.",
+      "Læg koteletter tilbage og varm igennem. Server med kartofler."
+    ]
+  },
+  {
+    "id": "c389",
+    "name": "Gyros pita med tzatziki",
+    "cuisine": "middelhavs",
+    "time": 25,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 110,
+    "ingredients": [
+      "500g hakket svinekød eller lam",
+      "8 pitabrød",
+      "2 tsk paprika",
+      "1 tsk spidskommen",
+      "1 tsk oregano",
+      "1 tsk hvidløgspulver",
+      "300g græsk yoghurt",
+      "1 agurk",
+      "2 fed hvidløg",
+      "1 citron",
+      "salatblade",
+      "1 tomat",
+      "olivenolie",
+      "salt og peber"
+    ],
+    "steps": [
+      "Bland kød med krydderier og form aflange stykker. Steg 8-10 min.",
+      "Riv agurk og pres vand ud. Bland med yoghurt, hvidløg og citronsaft til tzatziki.",
+      "Varm pitabrød.",
+      "Fyld pita med salat, tomat, kød og tzatziki."
+    ]
+  },
+  {
+    "id": "c390",
+    "name": "Spaghetti bolognese",
+    "cuisine": "italiensk",
+    "time": 30,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 110,
+    "ingredients": [
+      "400g spaghetti",
+      "400g hakket oksekød",
+      "800ml passata",
+      "1 løg",
+      "3 fed hvidløg",
+      "1 gulerod",
+      "1 dl rødvin",
+      "frisk basilikum",
+      "olivenolie",
+      "50g parmesan",
+      "salt og peber"
+    ],
+    "steps": [
+      "Kok spaghetti al dente.",
+      "Brun hakket kød med løg, hvidløg og gulerod i olie.",
+      "Tilsæt rødvin og lad koge 2 min.",
+      "Tilsæt passata og simre 20 min. Krydr.",
+      "Server med spaghetti, basilikum og parmesan."
+    ]
+  },
+  {
+    "id": "c391",
+    "name": "Oksekød-wok med grøntsager",
+    "cuisine": "asiatisk",
+    "time": 20,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 120,
+    "ingredients": [
+      "400g oksekød (tynde strimler)",
+      "400g broccoli",
+      "1 rød peberfrugt",
+      "2 gulerødder",
+      "4 spsk sojasauce",
+      "1 spsk sesamolie",
+      "1 spsk maizena",
+      "3 fed hvidløg",
+      "1 spsk ingefær",
+      "400g jasminris",
+      "rapsolie"
+    ],
+    "steps": [
+      "Kok ris. Vend oksekød i sojasauce og maizena.",
+      "Varm wok meget varm. Steg kød 3 min. ved høj varme. Tag op.",
+      "Steg broccoli, peberfrugt og gulerødder 4 min.",
+      "Tilsæt hvidløg, ingefær og kød. Hæld sesamolie over.",
+      "Server med ris."
+    ]
+  },
+  {
+    "id": "c392",
+    "name": "Hakket kød med ris og tomatsovs",
+    "cuisine": "dansk",
+    "time": 25,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 95,
+    "ingredients": [
+      "400g hakket svinekød",
+      "400g basmatiris",
+      "800ml passata",
+      "1 løg",
+      "2 fed hvidløg",
+      "1 tsk paprika",
+      "frisk basilikum",
+      "olivenolie",
+      "50g emmental",
+      "salt og peber"
+    ],
+    "steps": [
+      "Kok ris.",
+      "Brun hakket kød med løg og hvidløg i olie. Krydr med paprika.",
+      "Tilsæt passata og simre 15 min.",
+      "Krydr til.",
+      "Server over ris med emmental og basilikum."
+    ]
+  },
+  {
+    "id": "c393",
+    "name": "Pølsepasta med tomatsovs",
+    "cuisine": "dansk",
+    "time": 20,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 90,
+    "ingredients": [
+      "400g penne",
+      "4 medisterpølser eller wienerpølser",
+      "800ml passata",
+      "1 løg",
+      "2 fed hvidløg",
+      "1 tsk oregano",
+      "olivenolie",
+      "50g emmental (revet)",
+      "salt og peber"
+    ],
+    "steps": [
+      "Kok pasta al dente.",
+      "Skær pølser i skiver og brun let i olie.",
+      "Svits løg og hvidløg. Tilsæt oregano og passata, simre 10 min.",
+      "Tilsæt pølser og krydr.",
+      "Vend pasta i og server med revet ost."
+    ]
+  },
+  {
+    "id": "c394",
+    "name": "Svinekoteletter med champignoner og fløde",
+    "cuisine": "dansk",
+    "time": 25,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 110,
+    "ingredients": [
+      "4 svinekoteletter",
+      "400g champignoner",
+      "1 dl piskefløde",
+      "1 dl hønsebouillon",
+      "2 fed hvidløg",
+      "frisk timian",
+      "smør",
+      "salt og peber",
+      "700g kartofler"
+    ],
+    "steps": [
+      "Kok kartofler.",
+      "Krydr koteletter og steg i smør 4 min. på hver side. Tag op.",
+      "Steg champignoner og hvidløg i panden.",
+      "Tilsæt bouillon og fløde med timian. Simre 5 min.",
+      "Læg koteletter tilbage og server med kartofler."
+    ]
+  },
+  {
+    "id": "c395",
+    "name": "Hurtig oksekød-quesadilla",
+    "cuisine": "mexicansk",
+    "time": 20,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 110,
+    "ingredients": [
+      "300g hakket oksekød",
+      "8 tortillaer (mellemstore)",
+      "150g emmental (revet)",
+      "1 løg",
+      "1 rød peberfrugt",
+      "2 tsk chilipulver",
+      "4 spsk creme fraiche",
+      "salsa (fra glas)",
+      "olivenolie",
+      "salt og peber"
+    ],
+    "steps": [
+      "Brun hakket kød med løg og peberfrugt i olie. Krydr med chili, salt og peber.",
+      "Fordel kød og ost på 4 tortillaer. Læg de andre ovenpå.",
+      "Steg på tør varm pande 2-3 min. på hver side.",
+      "Skær i trekanter.",
+      "Server med creme fraiche og salsa."
+    ]
+  },
+  {
+    "id": "c396",
+    "name": "Kebabpita med krydret kød",
+    "cuisine": "middelhavs",
+    "time": 20,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 100,
+    "ingredients": [
+      "500g hakket lam eller oksekød",
+      "8 pitabrød",
+      "1 løg",
+      "2 fed hvidløg",
+      "1 tsk spidskommen",
+      "1 tsk paprika",
+      "frisk persille",
+      "salatblade",
+      "1 tomat",
+      "1 agurk",
+      "4 spsk hummus",
+      "olivenolie",
+      "salt og peber"
+    ],
+    "steps": [
+      "Bland kød med løg, hvidløg, krydderier og persille.",
+      "Form til aflange bøffer og steg i olie 4 min. på hver side.",
+      "Varm pitabrød.",
+      "Smør hummus i pita og fyld med kød, salat, tomat og agurk."
+    ]
+  },
+  {
+    "id": "c397",
+    "name": "Vietnamesisk-inspireret oksekødssalat",
+    "cuisine": "asiatisk",
+    "time": 20,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 115,
+    "ingredients": [
+      "400g oksekød (strimler)",
+      "300g risnudler",
+      "1 agurk",
+      "2 gulerødder",
+      "frisk koriander og mynte",
+      "4 spsk sojasauce",
+      "2 spsk riseddike",
+      "1 spsk sukker",
+      "1 lime",
+      "1 chili",
+      "50g jordnødder",
+      "rapsolie"
+    ],
+    "steps": [
+      "Blød nudler i kogende vand 5 min. Afdryp og afkøl.",
+      "Steg oksekød ved høj varme 3 min. Lad hvile.",
+      "Bland sojasauce, eddike, sukker, limesaft og chili til dressing.",
+      "Snit agurk og gulerødder i strimler.",
+      "Bland nudler, grøntsager, kød og dressing. Drys med koriander, mynte og jordnødder."
+    ]
+  },
+  {
+    "id": "c398",
+    "name": "Bøfstrimler med peberfrugt og løg",
+    "cuisine": "asiatisk",
+    "time": 20,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 120,
+    "ingredients": [
+      "400g oksekød (tynde strimler)",
+      "2 røde peberfrugter",
+      "2 løg",
+      "4 spsk sojasauce",
+      "1 spsk sesamolie",
+      "1 spsk oyster sauce",
+      "2 fed hvidløg",
+      "400g jasminris",
+      "rapsolie",
+      "2 forårsløg"
+    ],
+    "steps": [
+      "Kok ris.",
+      "Steg oksestrimler i meget varm wok 2-3 min. Tag op.",
+      "Steg peberfrugt og løg i skiver 4 min.",
+      "Tilsæt hvidløg, kød og alle sovse. Rør rundt.",
+      "Server med ris og forårsløg."
+    ]
+  },
+  {
+    "id": "c399",
+    "name": "Svinekam med rødkål og kartofler",
+    "cuisine": "dansk",
+    "time": 30,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 100,
+    "ingredients": [
+      "700g svinekam i skiver",
+      "500g rødkål (færdig på glas)",
+      "700g kartofler",
+      "1 løg",
+      "2 spsk smør",
+      "1 dl fløde",
+      "frisk timian",
+      "salt og peber"
+    ],
+    "steps": [
+      "Kok kartofler.",
+      "Krydr svinekam og steg i smør 4 min. på hver side.",
+      "Tag kød op og svits løg i panden.",
+      "Tilsæt fløde og timian. Lad simre 5 min.",
+      "Varm rødkål og server med svinekam, sovs og kartofler."
+    ]
+  },
+  {
+    "id": "c400",
+    "name": "Hakket kød med nudler og grøntsager",
+    "cuisine": "asiatisk",
+    "time": 20,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 100,
+    "ingredients": [
+      "400g hakket svinekød",
+      "400g ægnudler",
+      "300g hvidkål",
+      "2 gulerødder",
+      "4 spsk sojasauce",
+      "1 spsk sesamolie",
+      "3 fed hvidløg",
+      "1 spsk ingefær",
+      "3 forårsløg",
+      "rapsolie"
+    ],
+    "steps": [
+      "Kok nudler al dente.",
+      "Brun hakket kød i olie med hvidløg og ingefær. Krydr.",
+      "Tilsæt kål og gulerødder i strimler. Steg 4 min.",
+      "Tilsæt nudler, sojasauce og sesamolie. Vend rundt.",
+      "Drys med forårsløg og server."
+    ]
+  }
+]
