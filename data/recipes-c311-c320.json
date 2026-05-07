@@ -1,0 +1,311 @@
+[
+  {
+    "id": "c311",
+    "name": "Grønkålssuppe",
+    "cuisine": "vegetarisk",
+    "time": 30,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 65,
+    "source": "https://www.valdemarsro.dk/groenkaalssuppe/",
+    "ingredients": [
+      "2 løg, finthakket",
+      "2 fed hvidløg, finthakket",
+      "400g kartofler, skrællet og i tern",
+      "1 liter grøntsagsbouillon",
+      "200g grønkål, grofthakket",
+      "1 dl piskefløde",
+      "2 spsk olivenolie",
+      "salt og friskkværnet peber",
+      "1 æble, i små tern",
+      "2 spsk solsikkekerner",
+      "4 skiver brød"
+    ],
+    "steps": [
+      "Sauter løg og hvidløg i olie i en gryde til de er bløde, ca. 5 minutter.",
+      "Tilsæt kartofler og grøntsagsbouillon og lad simre 12-15 minutter til kartoflerne er møre.",
+      "Tilsæt grønkål og kog videre 3 minutter.",
+      "Rør fløde i og blend suppen helt glat og luftig.",
+      "Smag til med salt og peber.",
+      "Server i dybe skåle toppet med æbletern og solsikkekerner. Server med brød."
+    ]
+  },
+  {
+    "id": "c312",
+    "name": "Tomatsuppe med nudler",
+    "cuisine": "vegetarisk",
+    "time": 35,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 75,
+    "source": "https://www.valdemarsro.dk/tomatsuppe/",
+    "ingredients": [
+      "2 løg, finthakket",
+      "2 fed hvidløg, finthakket",
+      "1 porre, skåret i ringe",
+      "1 tsk sød paprika",
+      "½ tsk stødt spidskommen",
+      "½ tsk karry",
+      "200g kartofler, finrevet",
+      "2 gulerødder, finrevet",
+      "800g hakkede tomater på dåse",
+      "2 spsk tomatpuré",
+      "1 tsk tørret timian",
+      "8 dl grøntsagsbouillon",
+      "100g suppevermicelli eller fine spaghetti",
+      "1 dl piskefløde",
+      "2 spsk olivenolie",
+      "salt og friskkværnet peber",
+      "4 spsk creme fraiche 18%"
+    ],
+    "steps": [
+      "Sauter løg, hvidløg og porre i olie i en stor gryde til løgene er bløde.",
+      "Tilsæt paprika, spidskommen og karry og rør et minuts tid.",
+      "Kom revne kartofler og gulerødder, dåsetomater, tomatpuré, timian og bouillon i gryden.",
+      "Lad simre 15-20 minutter til grøntsagerne er møre.",
+      "Blend suppen glat og tilsæt nudler. Simr videre til nudlerne er møre, ca. 5 minutter.",
+      "Rør fløde i og smag til med salt og peber. Server med en klat creme fraiche."
+    ]
+  },
+  {
+    "id": "c313",
+    "name": "Squashsuppe",
+    "cuisine": "vegetarisk",
+    "time": 30,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 65,
+    "source": "https://www.valdemarsro.dk/squashsuppe/",
+    "ingredients": [
+      "1 løg, grofthakket",
+      "2 fed hvidløg, finthakket",
+      "2 squash, i grove stykker",
+      "1 tsk sød paprika",
+      "1 håndfuld frisk basilikum",
+      "8 dl grøntsagsbouillon",
+      "1 dl piskefløde",
+      "2 spsk olivenolie",
+      "salt og friskkværnet peber",
+      "50g mandler, grofthakkede",
+      "4 skiver brød"
+    ],
+    "steps": [
+      "Sauter løg og hvidløg i olie i en gryde til de er bløde.",
+      "Tilsæt squash og paprika og rør et minut.",
+      "Kom basilikum og bouillon i og lad simre 15 minutter.",
+      "Tilsæt fløde og blend suppen helt glat og luftig.",
+      "Smag til med salt og peber.",
+      "Rist mandler på en tør pande. Server suppen med ristede mandler og brød."
+    ]
+  },
+  {
+    "id": "c314",
+    "name": "Gulerodssuppe med kokosmælk",
+    "cuisine": "vegetarisk",
+    "time": 30,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 55,
+    "source": "https://www.valdemarsro.dk/gulerodssuppe/",
+    "ingredients": [
+      "2 løg, grofthakket",
+      "2 fed hvidløg, finthakket",
+      "600g gulerødder, skrællet og i skiver",
+      "1 tsk stødt spidskommen",
+      "1 tsk stødt koriander",
+      "1 tsk sød paprika",
+      "1,3 liter grøntsagsbouillon",
+      "400ml kokosmælk",
+      "2 spsk olivenolie",
+      "salt og friskkværnet peber",
+      "1 håndfuld frisk persille",
+      "4 skiver brød"
+    ],
+    "steps": [
+      "Sauter løg i olie i en gryde til de er bløde.",
+      "Tilsæt hvidløg, spidskommen, koriander, paprika og gulerødder og rør et minuts tid.",
+      "Kom grøntsagsbouillon i og lad simre til gulerødderne er møre, ca. 15 minutter.",
+      "Rør kokosmælk i og blend suppen glat og cremet.",
+      "Juster konsistensen med ekstra bouillon efter behov.",
+      "Smag til med salt og peber. Server med persille og brød."
+    ]
+  },
+  {
+    "id": "c315",
+    "name": "Pandekager",
+    "cuisine": "dansk",
+    "time": 60,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 35,
+    "source": "https://www.valdemarsro.dk/pandekager/",
+    "ingredients": [
+      "50g sukker",
+      "½ tsk stødt kardemomme",
+      "3 æg",
+      "3 dl sødmælk",
+      "125g hvedemel",
+      "1 knivspids salt",
+      "1 spsk smør til stegning",
+      "jordbærsyltetøj til servering",
+      "½ dl piskefløde, pisket"
+    ],
+    "steps": [
+      "Pisk sukker, kardemomme, æg, mælk og salt sammen i en skål.",
+      "Sigt hvedemel i og pisk dejen glat og klumpfri.",
+      "Lad dejen hvile 30 minutter.",
+      "Smelt en lille smørklat på panden og steg pandekagerne ved middelhøj varme til de er lysebrune på begge sider.",
+      "Fortsæt til dejen er brugt.",
+      "Server med syltetøj og flødeskum."
+    ]
+  },
+  {
+    "id": "c316",
+    "name": "Risengrød",
+    "cuisine": "dansk",
+    "time": 60,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 30,
+    "source": "https://www.valdemarsro.dk/risengroed/",
+    "ingredients": [
+      "300g grødris",
+      "1 dl vand",
+      "1,5 liter sødmælk",
+      "½ tsk salt",
+      "4 tsk sukker",
+      "4 tsk stødt kanel",
+      "4 tsk smør"
+    ],
+    "steps": [
+      "Forvarm ovn til 125°C.",
+      "Kog risen op i vandet under omrøring.",
+      "Tilsæt mælk og varm op til næsten kogepunktet under omrøring.",
+      "Sæt låg på gryden og bag i ovnen ca. 35-40 minutter.",
+      "Rør 1-2 gange undervejs.",
+      "Tag ud af ovnen, rør godt igennem og lad hvile 5 minutter.",
+      "Server i skåle med sukker, kanel og en smørklat."
+    ]
+  },
+  {
+    "id": "c317",
+    "name": "Havregrød med æble og mandler",
+    "cuisine": "dansk",
+    "time": 20,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 35,
+    "source": "https://www.valdemarsro.dk/havregroed/",
+    "ingredients": [
+      "200g grovvalset havregryn",
+      "8 dl vand",
+      "1 knivspids vaniljepulver",
+      "1 knivspids stødt kardemomme",
+      "3 dl sødmælk",
+      "1 knivspids salt",
+      "2 æbler, i tern",
+      "1 tsk stødt kanel",
+      "1 tsk sukker",
+      "50g mandler, finthakkede",
+      "1 spsk smør"
+    ],
+    "steps": [
+      "Kom havregryn, vand, vaniljepulver og kardemomme i en gryde og bring i kog ved middelhøj varme under omrøring.",
+      "Tilsæt mælken lidt ad gangen efterhånden som grøden tykner.",
+      "Rør salt i og tag af varmen, når grøden har den ønskede konsistens.",
+      "Steg æbletern med smør, kanel og sukker på en pande til de er gyldne og bløde.",
+      "Server grøden i dybe skåle med æbletern og hakkede mandler."
+    ]
+  },
+  {
+    "id": "c318",
+    "name": "Karrysild på rugbrød",
+    "cuisine": "dansk",
+    "time": 25,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 65,
+    "source": "https://www.valdemarsro.dk/karrysild/",
+    "ingredients": [
+      "2 tsk karry",
+      "1 dl creme fraiche 38%",
+      "1 knivspids stødt gurkemeje",
+      "2 tsk dijonsennep",
+      "20g cornichoner, finthakkede",
+      "1 æble, i små tern",
+      "250g modnede sildefileter",
+      "salt og friskkværnet peber",
+      "8 skiver rugbrød",
+      "1 rødløg, i ringe",
+      "4 æg",
+      "1 håndfuld frisk dild, finthakket"
+    ],
+    "steps": [
+      "Rist karry på en tør pande ved lav varme et par minutter til det dufter.",
+      "Bland creme fraiche med karry, gurkemeje og dijonsennep i en skål.",
+      "Tilsæt cornichoner og æbletern og rør sammen. Smag til med salt og peber.",
+      "Skær sildefileterne i mindre stykker og vend dem i karry-dressingen.",
+      "Steg æggene som spejlæg på en pande.",
+      "Server karrysild på rugbrød med rødløgsringe, spejlæg og frisk dild."
+    ]
+  },
+  {
+    "id": "c319",
+    "name": "Bagte rodfrugter med parmesan",
+    "cuisine": "vegetarisk",
+    "time": 80,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 60,
+    "source": "https://www.valdemarsro.dk/bagte-rodfrugter/",
+    "ingredients": [
+      "250g kartofler, skrællet og i tern",
+      "250g gulerødder, skrællet og i stykker",
+      "250g pastinakker, skrællet og i stykker",
+      "250g rødbeder, skrællet og i tern",
+      "1 rødløg, i både",
+      "4 fed hvidløg, knuste",
+      "5 kviste frisk timian",
+      "1 tsk honning",
+      "3 spsk olivenolie",
+      "salt og friskkværnet peber",
+      "50g parmesan, friskrevet",
+      "4 skiver brød"
+    ],
+    "steps": [
+      "Forvarm ovnen til 175°C varmluft.",
+      "Skær alle rodfrugterne i ensartede stykker for jævn tilberedning.",
+      "Bland rodfrugter, rødløg og hvidløg med olie, honning, timian, salt og peber.",
+      "Fordel i et ovnfad med bagepapir.",
+      "Bag 1 time til kartoflerne er møre og rodfrugterne er gyldne.",
+      "Drys med friskrevet parmesan og server med brød."
+    ]
+  },
+  {
+    "id": "c320",
+    "name": "Bagt blomkål med citron og parmesan",
+    "cuisine": "vegetarisk",
+    "time": 50,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 50,
+    "source": "https://www.valdemarsro.dk/bagt-blomkaal/",
+    "ingredients": [
+      "1 blomkål",
+      "50g smør, blødgjort",
+      "1 citron, saft og skal",
+      "salt og friskkværnet peber",
+      "50g parmesan, friskrevet",
+      "1 håndfuld bredbladet persille, grofthakket",
+      "4 skiver brød"
+    ],
+    "steps": [
+      "Forvarm ovnen til 175°C varmluft.",
+      "Skyl blomkålen, fjern blade og dup tør.",
+      "Bland blødgjort smør med citronskal og salt.",
+      "Fordel smørret jævnt over blomkålen.",
+      "Bag 35-45 minutter til blomkålen er gylden og mør.",
+      "Drys med friskrevet parmesan og hakket persille. Server med brød."
+    ]
+  }
+]
