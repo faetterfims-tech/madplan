@@ -1,0 +1,313 @@
+[
+  {
+    "id": "c351",
+    "name": "Fiskesuppe med torsk og laks",
+    "cuisine": "dansk",
+    "time": 40,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 120,
+    "source": "https://www.valdemarsro.dk/fiskesuppe/ (forenklet: fiskebouillon erstatter hjemmelavet fiskefond)",
+    "ingredients": [
+      "1,5 liter grøntsagsbouillon",
+      "2 dl hvidvin",
+      "1 løg, skåret i tern",
+      "2 fed hvidløg, finthakket",
+      "1 fennikel, i tern",
+      "2 gulerødder, i skiver",
+      "1 porre, i ringe",
+      "300g torskefilet, i mundrette stykker",
+      "150g laksfilet, i mundrette stykker",
+      "2,5 dl piskefløde",
+      "1 citron, saften herfra",
+      "1 håndfuld frisk dild",
+      "2 spsk smør",
+      "1 spsk olivenolie",
+      "salt og friskkværnet peber",
+      "4 skiver brød"
+    ],
+    "steps": [
+      "Sauter løg og hvidløg i smør og olie i en stor gryde til de er bløde.",
+      "Tilsæt fennikel, gulerødder og porre og rør 2 minutter.",
+      "Hæld hvidvin i og lad reducere 1 minut. Tilsæt bouillon og bring i kog.",
+      "Simr 10 minutter til grøntsagerne er næsten møre.",
+      "Rør fløde i og tilsæt fisk. Simr 5-8 minutter til fisken netop er kogt igennem.",
+      "Smag til med citronsaft, dild, salt og peber. Server med brød."
+    ]
+  },
+  {
+    "id": "c352",
+    "name": "Fiskefilet med remoulade",
+    "cuisine": "dansk",
+    "time": 30,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 90,
+    "source": "https://www.valdemarsro.dk/fiskefilet/",
+    "ingredients": [
+      "8 rødspættefileter (eller anden flatfisk)",
+      "2 æg, sammenpisket",
+      "20g hvedemel",
+      "30g fuldkornsmel",
+      "salt og friskkværnet peber",
+      "2 spsk smør",
+      "1 tsk olivenolie",
+      "8 skiver rugbrød",
+      "100g remoulade",
+      "1 citron, skåret i både",
+      "frisk persille"
+    ],
+    "steps": [
+      "Krydr fiskfileterne med salt og peber.",
+      "Pisk æggene i en dyb tallerken. Bland mel og fuldkornsmel med salt og peber på en anden.",
+      "Dyp fileterne i æg og vend derefter i melblandingen.",
+      "Smelt smør med olie på en pande og steg fileterne 4-5 minutter per side til de er gyldne og gennemstegte.",
+      "Steg i portioner for ikke at overfylde panden.",
+      "Server på rugbrød med remoulade, citron og frisk persille."
+    ]
+  },
+  {
+    "id": "c353",
+    "name": "Laks med spinat og grønt i fad",
+    "cuisine": "dansk",
+    "time": 40,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 125,
+    "source": "https://www.valdemarsro.dk/laks-med-spinat/",
+    "ingredients": [
+      "1 løg, finthakket",
+      "150g flødeost (neutral)",
+      "1 dl grøntsagsbouillon",
+      "300g frisk spinat",
+      "150g hvidkål, fint snittet",
+      "150g squash, finrevet",
+      "600g laksefilet, i 4 stykker",
+      "1 tsk olivenolie",
+      "10g smør",
+      "salt og friskkværnet peber",
+      "3 dl basmatiris"
+    ],
+    "steps": [
+      "Forvarm ovnen til 200°C varmluft.",
+      "Sauter løg i olie i en gryde til det er blødt. Tilsæt flødeost og bouillon og rør til osten er smeltet.",
+      "Tilsæt spinat og kål og rør til spinaten er faldet sammen. Smag til med salt og peber.",
+      "Fordel spinatblandingen i et smurt ovnfad og drys squash over. Bag 10 minutter.",
+      "Læg laksefileterne ovenpå og bag videre 14-16 minutter til laksens er netop gennemstegt.",
+      "Kog ris i mens. Server laks og grønt med ris."
+    ]
+  },
+  {
+    "id": "c354",
+    "name": "Laks i fad med kartofler og grøntsager",
+    "cuisine": "dansk",
+    "time": 90,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 145,
+    "source": "https://www.valdemarsro.dk/laks-i-fad/",
+    "ingredients": [
+      "1 porre, skåret i ringe",
+      "3 gulerødder, i skiver",
+      "1 fennikel, i tern",
+      "1 løg, skåret i tanto",
+      "400g hvidkål, i strimler",
+      "600g kartofler, i tynde skiver",
+      "150ml grøntsagsbouillon",
+      "100ml hvidvin",
+      "150ml piskefløde",
+      "1 tsk dijonsennep",
+      "1 tsk tørret timian",
+      "500g laksfilet, i tern",
+      "30g kapers",
+      "1 citron, saft og skal",
+      "salt og friskkværnet peber",
+      "1 håndfuld bredbladet persille"
+    ],
+    "steps": [
+      "Forvarm ovnen til 190°C varmluft.",
+      "Fordel kartofler, porre, gulerødder, fennikel, løg og kål i et smurt ovnfad.",
+      "Bland bouillon, hvidvin, fløde, sennep og timian og hæld over grøntsagerne.",
+      "Bag 45 minutter til grøntsagerne er møre.",
+      "Tag fadet ud, fordel lakstern og kapers over. Drys med citronskal og -saft og krydr med salt og peber.",
+      "Bag 7-8 minutter mere. Lad hvile 5 minutter og drys med persille inden servering."
+    ]
+  },
+  {
+    "id": "c355",
+    "name": "Rejecocktail på rugbrød",
+    "cuisine": "dansk",
+    "time": 30,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 95,
+    "source": "https://www.valdemarsro.dk/rejecocktail/",
+    "ingredients": [
+      "1 dl creme fraiche 38%",
+      "1 spsk majonnæse",
+      "2 spsk ketchup",
+      "1 fed hvidløg, presset",
+      "1 tsk sød paprika",
+      "½ tsk sukker",
+      "1 tsk worcestershiresauce",
+      "1 spsk tomatpuré",
+      "1 spsk citronsaft",
+      "1 avocado, i tern",
+      "8 grønne asparges",
+      "100g blandede salatblade",
+      "250g pillede rejer",
+      "frisk dild",
+      "8 skiver rugbrød",
+      "1 citron, i både",
+      "salt og friskkværnet peber"
+    ],
+    "steps": [
+      "Bland creme fraiche, majonnæse, ketchup, hvidløg, paprika, worcestershiresauce, tomatpuré og citronsaft. Smag til med sukker, salt og peber.",
+      "Steg asparges på en varm pande i 1 minut med lidt smør. Lad dem køle.",
+      "Anret salatblade på rugbrødsskiverne. Fordel rejer og avocadotern over.",
+      "Hæld dressing over og pynt med asparges og frisk dild.",
+      "Server med citronbåde."
+    ]
+  },
+  {
+    "id": "c356",
+    "name": "Ovnbagt laks med dildsmør og kartofler",
+    "cuisine": "dansk",
+    "time": 35,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 110,
+    "source": "https://www.valdemarsro.dk/laks-i-ovn/",
+    "ingredients": [
+      "600g laksefilet, i 4 stykker",
+      "50g smør, blødgjort",
+      "2 spsk frisk dild, finthakket",
+      "1 citron, saft og skal",
+      "salt og friskkværnet peber",
+      "750g kartofler",
+      "2 spsk olivenolie"
+    ],
+    "steps": [
+      "Forvarm ovnen til 175°C varmluft. Skær kartofler i både og vend i olie, salt og peber.",
+      "Bag kartofler 10 minutter.",
+      "Bland dildsmør: smør, dild, citronskal, salt og peber.",
+      "Læg laksefileterne i et ovnfad og fordel dildsmørret ovenpå.",
+      "Bag laks og kartofler 15-18 minutter til laksen netop er gennemstegt.",
+      "Server med citronsaft dryppet over og evt. en grøn salat."
+    ]
+  },
+  {
+    "id": "c357",
+    "name": "Torskefilet med sennepssauce og kartofler",
+    "cuisine": "dansk",
+    "time": 35,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 120,
+    "source": "https://www.valdemarsro.dk/torskefilet/",
+    "ingredients": [
+      "600g torskefilet, i 4 stykker",
+      "2 spsk smør",
+      "2 spsk dijonsennep",
+      "1 dl grøntsagsbouillon",
+      "1 dl piskefløde",
+      "1 spsk frisk dild eller persille",
+      "salt og friskkværnet peber",
+      "750g kartofler"
+    ],
+    "steps": [
+      "Kog kartofler i saltet vand til de er møre, ca. 20 minutter.",
+      "Krydr torskefileterne med salt og peber. Smelt smør på en pande og steg fisken 3-4 minutter per side.",
+      "Tag fisken op og hold varm. Tilsæt sennep og bouillon til panden og rør godt.",
+      "Rør fløde i og lad saucen simre 3-4 minutter til den tykner let.",
+      "Smag til med salt og peber.",
+      "Server torsken med sennepssauce, kartofler og frisk dild."
+    ]
+  },
+  {
+    "id": "c358",
+    "name": "Laks på pande med citron og kapers",
+    "cuisine": "middelhavs",
+    "time": 25,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 105,
+    "source": "https://www.valdemarsro.dk/laks-paa-pande/",
+    "ingredients": [
+      "600g laksefilet, i 4 stykker",
+      "2 spsk smør",
+      "2 spsk kapers",
+      "1 citron, saft og skal",
+      "1 håndfuld bredbladet persille, grofthakket",
+      "salt og friskkværnet peber",
+      "750g kartofler"
+    ],
+    "steps": [
+      "Kog kartofler i saltet vand.",
+      "Krydr laksefileterne med salt og peber. Smelt smør på en pande ved middelhøj varme.",
+      "Steg laksen med skindsiden nedad 4-5 minutter. Vend og steg 2-3 minutter mere.",
+      "Tilsæt kapers og citronsaft og lad det simre 1 minut i panden.",
+      "Riv citronskal over fisken og drys med persille.",
+      "Server straks med kogte kartofler."
+    ]
+  },
+  {
+    "id": "c359",
+    "name": "Paneret fisk med kartofler og remoulade",
+    "cuisine": "dansk",
+    "time": 35,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 100,
+    "source": "https://www.valdemarsro.dk/paneret-fisk/",
+    "ingredients": [
+      "500g hvid fisk (torsk, kuller eller rødspætte), i fileter",
+      "20g hvedemel",
+      "2 æg, sammenpisket",
+      "75g rasp",
+      "2 spsk smør",
+      "1 spsk rapsolie",
+      "salt og friskkværnet peber",
+      "600g kartofler",
+      "100g remoulade",
+      "1 citron, i skiver"
+    ],
+    "steps": [
+      "Kog kartofler i saltet vand.",
+      "Krydr fiskfileterne med salt og peber. Vend dem i mel, derefter i sammenpisket æg og til sidst i rasp.",
+      "Varm smør og olie på en pande ved middelhøj varme.",
+      "Steg de panerede fileter 3-4 minutter per side til de er gyldne og sprøde. Steg i portioner.",
+      "Server straks med kartofler, remoulade og citronskiver."
+    ]
+  },
+  {
+    "id": "c360",
+    "name": "Rejer i flødesauce med pasta",
+    "cuisine": "middelhavs",
+    "time": 25,
+    "difficulty": "let",
+    "portions": 4,
+    "cost": 115,
+    "source": "https://www.valdemarsro.dk/pasta-med-rejer/ (creamsauce-variant)",
+    "ingredients": [
+      "400g spaghetti eller tagliatelle",
+      "250g pillede rejer",
+      "2 fed hvidløg, finthakket",
+      "1 dl hvidvin",
+      "1,5 dl piskefløde",
+      "1 citron, saft og skal",
+      "50g parmesan, friskrevet",
+      "1 håndfuld frisk persille, finthakket",
+      "2 spsk smør",
+      "salt og friskkværnet peber"
+    ],
+    "steps": [
+      "Kog pasta al dente i rigeligt saltet vand.",
+      "Smelt smør på en pande og sauter hvidløg 1 minut.",
+      "Hæld hvidvin i og lad det reducere halvt.",
+      "Tilsæt fløde og lad simre 3-4 minutter til saucen tykner let.",
+      "Tilsæt rejer og varm igennem 2 minutter. Smag til med citronsaft, -skal, salt og peber.",
+      "Vend pastaen i saucen og server med friskrevet parmesan og persille."
+    ]
+  }
+]
