@@ -70,16 +70,16 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 8px 4px;
-      font-size: 10px;
+      padding: 8px 2px;
+      font-size: 9px;
       color: var(--text-tertiary);
       cursor: pointer;
       border: none;
       background: transparent;
-      gap: 3px;
+      gap: 2px;
       font-family: inherit;
     }
-    .nav-btn .icon { font-size: 22px; }
+    .nav-btn .icon { font-size: 20px; }
     .nav-btn.active { color: var(--green); }
 
     /* VIEWS */
@@ -234,6 +234,7 @@
     <div class="stat"><div class="stat-val" id="s-variety">-</div><div class="stat-lbl">Variation</div></div>
   </div>
   <button class="btn ai full" onclick="requestNewWeek()">✨ Planlæg uge</button>
+  <button class="btn full" style="border:2px solid var(--green);color:var(--green);font-weight:600;" onclick="approvePlan()">✓ Godkend og gem ugeplan</button>
   <button class="btn full" style="color:#e24b4a;border-color:#e24b4a;" onclick="clearWeek()">🗑 Ryd ugeplan</button>
   <div id="week-grid"></div>
 </div>
@@ -420,11 +421,32 @@
   </div>
 </div>
 
+<!-- PLANHISTORIK DETAIL MODAL -->
+<div class="modal" id="planhistory-detail-modal">
+  <div class="modal-sheet">
+    <div class="modal-handle"></div>
+    <h3 id="phd-title">Ugeplan</h3>
+    <div id="phd-meta" style="font-size:13px;color:var(--text-secondary);margin-bottom:14px;"></div>
+    <div id="phd-days" style="margin-bottom:16px;"></div>
+    <button class="btn primary full" id="phd-template-btn">📋 Brug som skabelon</button>
+    <button class="btn full" id="phd-delete-btn" style="color:#e24b4a;border-color:#e24b4a;">🗑 Slet fra historik</button>
+    <button class="btn full" onclick="closeModal('planhistory-detail-modal')" style="margin-top:4px;">Luk</button>
+  </div>
+</div>
+
+<!-- PLANHISTORIK VIEW -->
+<div id="planhistory-view" class="view">
+  <div style="height:12px;"></div>
+  <div class="hint" style="padding:4px 0 14px;text-align:left;font-style:normal;font-size:13px;color:var(--text-secondary);">Godkendte ugeplaner gemmes her med ugetal. Tryk "Godkend og gem ugeplan" i Ugeplan-fanen.</div>
+  <div id="planhistory-list"><div class="hint">Ingen godkendte ugeplaner endnu.</div></div>
+</div>
+
 <!-- BOTTOM NAV -->
 <nav class="bottom-nav">
   <button class="nav-btn active" onclick="switchTab('plan',this)"><span class="icon">📅</span>Ugeplan</button>
   <button class="nav-btn" onclick="switchTab('grocery',this)"><span class="icon">🛒</span>Indkøb</button>
   <button class="nav-btn" onclick="switchTab('favourites',this)"><span class="icon">⭐</span>Favoritter</button>
+  <button class="nav-btn" onclick="switchTab('planhistory',this)"><span class="icon">🗓</span>Historik</button>
   <button class="nav-btn" onclick="switchTab('history',this)"><span class="icon">📊</span>Præferencer</button>
 </nav>
 
@@ -438,6 +460,7 @@ let ratings = {};
 let favourites = [];
 let recentMeals = [];
 let customRecipes = [];
+let planHistory = [];
 let checkedItems = new Set();
 let recipeModalMeal = null;
 let editingCustomIdx = null;
@@ -451,6 +474,7 @@ function save() {
     localStorage.setItem('madplan_week', JSON.stringify(weekPlan));
     localStorage.setItem('madplan_settings', JSON.stringify(settings));
     localStorage.setItem('madplan_custom_recipes', JSON.stringify(customRecipes));
+    localStorage.setItem('madplan_plan_history', JSON.stringify(planHistory));
   } catch(e) {}
   saveAutoSnapshot();
 }
@@ -462,6 +486,7 @@ function load() {
     const w = localStorage.getItem('madplan_week'); if(w) weekPlan = JSON.parse(w);
     const s = localStorage.getItem('madplan_settings'); if(s) settings = {...settings, ...JSON.parse(s)};
     const cr = localStorage.getItem('madplan_custom_recipes'); if(cr) customRecipes = JSON.parse(cr);
+    const ph = localStorage.getItem('madplan_plan_history'); if(ph) planHistory = JSON.parse(ph);
   } catch(e) {}
 }
 
@@ -559,6 +584,105 @@ function clearWeek() {
   const cur = Object.values(weekPlan).filter(Boolean).map(m=>m.name);
   recentMeals = [...new Set([...cur,...recentMeals])].slice(0,21);
   weekPlan = {}; save(); renderWeekGrid(); renderHistory();
+}
+
+// ── UGEPLANSHISTORIK ──────────────────────────────────────
+function getISOWeek(date) {
+  const d = new Date(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()));
+  const day = d.getUTCDay() || 7;
+  d.setUTCDate(d.getUTCDate() + 4 - day);
+  const yearStart = new Date(Date.UTC(d.getUTCFullYear(), 0, 1));
+  return { week: Math.ceil((((d - yearStart) / 86400000) + 1) / 7), year: d.getUTCFullYear() };
+}
+
+function approvePlan() {
+  const planned = DAYS.filter(d => weekPlan[d]);
+  if (!planned.length) { alert('Ugeplanen er tom — tilføj mindst én ret først.'); return; }
+  const { week, year } = getISOWeek(new Date());
+  const existing = planHistory.findIndex(h => h.week === week && h.year === year);
+  const label = 'Uge ' + week + ' · ' + year;
+  if (existing >= 0) {
+    if (!confirm(label + ' er allerede gemt. Overskriv med den nuværende plan?')) return;
+    planHistory.splice(existing, 1);
+  }
+  const total = totalCost();
+  planHistory.unshift({
+    id: Date.now(),
+    week, year, label,
+    approvedAt: new Date().toISOString(),
+    weekPlan: JSON.parse(JSON.stringify(weekPlan)),
+    totalCost: total,
+    persons: settings.persons
+  });
+  save(); renderPlanHistory();
+  alert('✅ ' + label + ' gemt i historikken!');
+}
+
+function renderPlanHistory() {
+  const el = document.getElementById('planhistory-list');
+  if (!el) return;
+  if (!planHistory.length) { el.innerHTML = '<div class="hint">Ingen godkendte ugeplaner endnu.</div>'; return; }
+  el.innerHTML = planHistory.map(h => {
+    const days = DAYS.filter(d => h.weekPlan[d]);
+    const date = new Date(h.approvedAt);
+    const dateStr = date.toLocaleDateString('da-DK', { day: 'numeric', month: 'long', year: 'numeric' });
+    const meals = days.map(d => h.weekPlan[d].name).join(', ');
+    return `<div class="card" style="margin-bottom:10px;">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;">
+        <div style="font-size:17px;font-weight:700;color:var(--green);">${h.label}</div>
+        <span class="cost-pill">${h.totalCost} kr.</span>
+      </div>
+      <div style="font-size:12px;color:var(--text-secondary);margin-bottom:4px;">Godkendt ${dateStr} · ${days.length}/7 dage · ${h.persons} pers.</div>
+      <div style="font-size:12px;color:var(--text-tertiary);line-height:1.6;margin-bottom:10px;">${meals}</div>
+      <div style="display:flex;gap:8px;">
+        <button class="btn sm primary" onclick="openPlanHistoryDetail(${h.id})">📖 Se ugeplan</button>
+        <button class="btn sm" onclick="copyHistoricalWeek(${h.id})">📋 Brug som skabelon</button>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function openPlanHistoryDetail(id) {
+  const h = planHistory.find(x => x.id === id);
+  if (!h) return;
+  const date = new Date(h.approvedAt).toLocaleDateString('da-DK', { day: 'numeric', month: 'long', year: 'numeric' });
+  document.getElementById('phd-title').textContent = h.label;
+  document.getElementById('phd-meta').textContent = 'Godkendt ' + date + ' · ' + h.persons + ' personer · ' + h.totalCost + ' kr.';
+  const days = DAYS.filter(d => h.weekPlan[d]);
+  document.getElementById('phd-days').innerHTML = DAYS.map(d => {
+    const m = h.weekPlan[d];
+    if (!m) return `<div style="padding:8px 0;border-bottom:1px solid var(--border);font-size:13px;color:var(--text-tertiary);">${DAY_DK[d]}: <em>Ingen ret</em></div>`;
+    return `<div style="padding:10px 0;border-bottom:1px solid var(--border);">
+      <div style="display:flex;justify-content:space-between;align-items:baseline;">
+        <span style="font-size:11px;font-weight:600;color:var(--text-secondary);">${DAY_DK[d].toUpperCase()}</span>
+        <span class="cost-pill">${m.cost} kr.</span>
+      </div>
+      <div style="font-size:15px;font-weight:600;margin-top:2px;">${m.name}</div>
+      <div style="font-size:12px;color:var(--text-tertiary);margin-top:2px;">${m.time} · ${m.cuisine || ''}</div>
+    </div>`;
+  }).join('');
+  document.getElementById('phd-template-btn').onclick = () => copyHistoricalWeek(id);
+  document.getElementById('phd-delete-btn').onclick = () => deleteHistoricalWeek(id);
+  openModal('planhistory-detail-modal');
+}
+
+function copyHistoricalWeek(id) {
+  const h = planHistory.find(x => x.id === id);
+  if (!h) return;
+  if (!confirm('Indlæs ' + h.label + ' som din nuværende ugeplan?\n\nDen nuværende plan overskrives.')) return;
+  weekPlan = JSON.parse(JSON.stringify(h.weekPlan));
+  save(); renderWeekGrid();
+  closeModal('planhistory-detail-modal');
+  switchTab('plan', document.querySelector('.nav-btn'));
+  alert('✅ ' + h.label + ' indlæst som nuværende ugeplan!');
+}
+
+function deleteHistoricalWeek(id) {
+  const h = planHistory.find(x => x.id === id);
+  if (!h) return;
+  if (!confirm('Slet ' + h.label + ' fra historikken?')) return;
+  planHistory = planHistory.filter(x => x.id !== id);
+  save(); renderPlanHistory(); closeModal('planhistory-detail-modal');
 }
 
 // ── RECIPE MODAL ──────────────────────────────────────────
@@ -731,7 +855,7 @@ function saveAutoSnapshot() {
       const t = new Date(JSON.parse(raw).savedAt).getTime();
       if (t < oldestTime) { oldestTime = t; oldest = s; }
     }
-    const snapshot = { savedAt: new Date().toISOString(), weekPlan, ratings, favourites, customRecipes, recentMeals, settings };
+    const snapshot = { savedAt: new Date().toISOString(), weekPlan, ratings, favourites, customRecipes, recentMeals, settings, planHistory };
     localStorage.setItem('madplan_snap_' + oldest, JSON.stringify(snapshot));
     lastSnapshotAt = Date.now();
     renderSnapshotList();
@@ -762,8 +886,9 @@ function restoreFromSnapshot(slot) {
     if (data.customRecipes) customRecipes = data.customRecipes;
     if (data.recentMeals) recentMeals = data.recentMeals;
     if (data.settings) settings = { ...settings, ...data.settings };
+    if (data.planHistory) planHistory = data.planHistory;
     save();
-    renderWeekGrid(); renderCustomRecipes(); renderFavourites(); renderHistory(); renderGrocery();
+    renderWeekGrid(); renderCustomRecipes(); renderFavourites(); renderHistory(); renderPlanHistory(); renderGrocery();
     alert('✅ Genoprettet fra snapshot!');
   } catch(e) { alert('Fejl: Kunne ikke gendanne snapshot.'); }
 }
@@ -810,7 +935,8 @@ function exportBackup() {
     favourites,
     customRecipes,
     recentMeals,
-    settings
+    settings,
+    planHistory
   };
   const json = JSON.stringify(data, null, 2);
   const blob = new Blob([json], { type: 'application/json' });
@@ -859,8 +985,9 @@ function importBackup() {
         if (data.customRecipes) customRecipes = data.customRecipes;
         if (data.recentMeals) recentMeals = data.recentMeals;
         if (data.settings) settings = { ...settings, ...data.settings };
+        if (data.planHistory) planHistory = data.planHistory;
         save();
-        renderWeekGrid(); renderCustomRecipes(); renderFavourites(); renderHistory(); renderGrocery();
+        renderWeekGrid(); renderCustomRecipes(); renderFavourites(); renderHistory(); renderPlanHistory(); renderGrocery();
         alert('✅ Sikkerhedskopi genoprettet!');
       } catch(e) {
         alert('Fejl: Kunne ikke læse filen. Er det en gyldig SmartPlate-backup?');
@@ -1350,6 +1477,7 @@ renderCustomRecipes();
 renderFavourites();
 renderHistory();
 renderGrocery();
+renderPlanHistory();
 updateBackupStatus();
 renderSnapshotList();
 
