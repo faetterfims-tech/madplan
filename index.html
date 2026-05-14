@@ -340,10 +340,15 @@
 
   <div class="section-title">💾 Sikkerhedskopi</div>
   <div class="card" style="margin-bottom:14px;">
-    <div style="font-size:14px;font-weight:600;margin-bottom:6px;">Beskyt dine opskrifter og data</div>
-    <div style="font-size:13px;color:var(--text-secondary);margin-bottom:12px;line-height:1.6;">iPhone kan slette app-data ved lav lagerplads. Tag en kopi regelmæssigt og gem den i f.eks. Filer-appen eller send til dig selv.</div>
-    <button class="btn primary full" onclick="exportBackup()">⬆️ Tag sikkerhedskopi</button>
-    <button class="btn full" onclick="importBackup()">⬇️ Gendan fra sikkerhedskopi</button>
+    <div style="font-size:14px;font-weight:600;margin-bottom:6px;">Auto-snapshots</div>
+    <div style="font-size:13px;color:var(--text-secondary);margin-bottom:12px;line-height:1.6;">Appen gemmer automatisk op til 3 snapshots i baggrunden. Tryk <strong>Gendan</strong> for at rulle tilbage til et tidligere tidspunkt.</div>
+    <div id="snapshot-list"></div>
+  </div>
+  <div class="card" style="margin-bottom:14px;">
+    <div style="font-size:14px;font-weight:600;margin-bottom:6px;">Manuel kopi til iPhone</div>
+    <div style="font-size:13px;color:var(--text-secondary);margin-bottom:12px;line-height:1.6;">Auto-snapshots forsvinder hvis iOS rydder app-data. Gem en kopi i <strong>Filer</strong> eller send til dig selv som ekstra sikkerhed.</div>
+    <button class="btn primary full" onclick="exportBackup()">⬆️ Eksporter til Filer / Mail</button>
+    <button class="btn full" onclick="importBackup()">⬇️ Gendan fra fil</button>
     <div id="backup-status" style="font-size:12px;color:var(--text-tertiary);text-align:center;margin-top:6px;"></div>
   </div>
 
@@ -447,6 +452,7 @@ function save() {
     localStorage.setItem('madplan_settings', JSON.stringify(settings));
     localStorage.setItem('madplan_custom_recipes', JSON.stringify(customRecipes));
   } catch(e) {}
+  saveAutoSnapshot();
 }
 function load() {
   try {
@@ -708,6 +714,91 @@ function renderHistory() {
     : '<div class="hint">Ingen historik endnu.</div>';
 }
 function clearRating(name) { delete ratings[name]; save(); renderHistory(); renderWeekGrid(); }
+
+// ── AUTO-SNAPSHOTS ────────────────────────────────────────
+const SNAP_SLOTS = 3;
+const SNAP_INTERVAL = 2 * 60 * 60 * 1000; // 2 timer
+let lastSnapshotAt = 0;
+
+function saveAutoSnapshot() {
+  if (Date.now() - lastSnapshotAt < SNAP_INTERVAL) return;
+  try {
+    // Find ældste (eller tom) slot
+    let oldest = 1, oldestTime = Infinity;
+    for (let s = 1; s <= SNAP_SLOTS; s++) {
+      const raw = localStorage.getItem('madplan_snap_' + s);
+      if (!raw) { oldest = s; break; }
+      const t = new Date(JSON.parse(raw).savedAt).getTime();
+      if (t < oldestTime) { oldestTime = t; oldest = s; }
+    }
+    const snapshot = { savedAt: new Date().toISOString(), weekPlan, ratings, favourites, customRecipes, recentMeals, settings };
+    localStorage.setItem('madplan_snap_' + oldest, JSON.stringify(snapshot));
+    lastSnapshotAt = Date.now();
+    renderSnapshotList();
+  } catch(e) {}
+}
+
+function getSnapshots() {
+  const snaps = [];
+  for (let s = 1; s <= SNAP_SLOTS; s++) {
+    try {
+      const raw = localStorage.getItem('madplan_snap_' + s);
+      if (raw) snaps.push({ slot: s, ...JSON.parse(raw) });
+    } catch(e) {}
+  }
+  return snaps.sort((a, b) => new Date(b.savedAt) - new Date(a.savedAt));
+}
+
+function restoreFromSnapshot(slot) {
+  try {
+    const raw = localStorage.getItem('madplan_snap_' + slot);
+    if (!raw) return;
+    const data = JSON.parse(raw);
+    const when = formatSnapshotDate(data.savedAt);
+    if (!confirm('Gendan snapshot fra ' + when + '?\n\nDine nuværende data overskrives.')) return;
+    if (data.weekPlan) weekPlan = data.weekPlan;
+    if (data.ratings) ratings = data.ratings;
+    if (data.favourites) favourites = data.favourites;
+    if (data.customRecipes) customRecipes = data.customRecipes;
+    if (data.recentMeals) recentMeals = data.recentMeals;
+    if (data.settings) settings = { ...settings, ...data.settings };
+    save();
+    renderWeekGrid(); renderCustomRecipes(); renderFavourites(); renderHistory(); renderGrocery();
+    alert('✅ Genoprettet fra snapshot!');
+  } catch(e) { alert('Fejl: Kunne ikke gendanne snapshot.'); }
+}
+
+function formatSnapshotDate(iso) {
+  const d = new Date(iso);
+  const now = new Date();
+  const diffH = Math.round((now - d) / 3600000);
+  if (diffH < 1) return 'lige nu';
+  if (diffH < 24) return 'for ' + diffH + ' time' + (diffH === 1 ? '' : 'r') + ' siden';
+  const diffD = Math.floor(diffH / 24);
+  return 'for ' + diffD + ' dag' + (diffD === 1 ? '' : 'e') + ' siden';
+}
+
+function renderSnapshotList() {
+  const el = document.getElementById('snapshot-list');
+  if (!el) return;
+  const snaps = getSnapshots();
+  if (!snaps.length) {
+    el.innerHTML = '<div style="font-size:13px;color:var(--text-tertiary);font-style:italic;padding:4px 0;">Intet snapshot gemt endnu — sker automatisk om op til 2 timer.</div>';
+    return;
+  }
+  el.innerHTML = snaps.map(s => {
+    const customCount = (s.customRecipes || []).length;
+    const favCount = (s.favourites || []).length;
+    const planned = Object.values(s.weekPlan || {}).filter(Boolean).length;
+    return `<div style="display:flex;align-items:center;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border);">
+      <div>
+        <div style="font-size:13px;font-weight:600;">${formatSnapshotDate(s.savedAt)}</div>
+        <div style="font-size:11px;color:var(--text-tertiary);margin-top:2px;">${planned}/7 dage · ${customCount} egne · ${favCount} favorittes</div>
+      </div>
+      <button class="btn sm" onclick="restoreFromSnapshot(${s.slot})">Gendan</button>
+    </div>`;
+  }).join('');
+}
 
 // ── SIKKERHEDSKOPI ────────────────────────────────────────
 function exportBackup() {
@@ -1260,6 +1351,11 @@ renderFavourites();
 renderHistory();
 renderGrocery();
 updateBackupStatus();
+renderSnapshotList();
+
+// Tag et snapshot ved første åbning (ignorer 2-timers throttle første gang)
+lastSnapshotAt = 0;
+saveAutoSnapshot();
 
 // Bed iOS/browser om at beskytte localStorage mod automatisk sletning
 if (navigator.storage && navigator.storage.persist) {
