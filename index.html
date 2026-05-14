@@ -337,6 +337,16 @@
 
 <div id="history-view" class="view">
   <div style="height:12px;"></div>
+
+  <div class="section-title">💾 Sikkerhedskopi</div>
+  <div class="card" style="margin-bottom:14px;">
+    <div style="font-size:14px;font-weight:600;margin-bottom:6px;">Beskyt dine opskrifter og data</div>
+    <div style="font-size:13px;color:var(--text-secondary);margin-bottom:12px;line-height:1.6;">iPhone kan slette app-data ved lav lagerplads. Tag en kopi regelmæssigt og gem den i f.eks. Filer-appen eller send til dig selv.</div>
+    <button class="btn primary full" onclick="exportBackup()">⬆️ Tag sikkerhedskopi</button>
+    <button class="btn full" onclick="importBackup()">⬇️ Gendan fra sikkerhedskopi</button>
+    <div id="backup-status" style="font-size:12px;color:var(--text-tertiary);text-align:center;margin-top:6px;"></div>
+  </div>
+
   <div class="section-title">❤️ Familiefavoritter</div>
   <div class="card" style="padding:0 16px;"><div id="liked-list"><div class="hint">Ingen endnu.</div></div></div>
   <div class="section-title" style="margin-top:14px;">🚫 Kan ikke lide</div>
@@ -698,6 +708,88 @@ function renderHistory() {
     : '<div class="hint">Ingen historik endnu.</div>';
 }
 function clearRating(name) { delete ratings[name]; save(); renderHistory(); renderWeekGrid(); }
+
+// ── SIKKERHEDSKOPI ────────────────────────────────────────
+function exportBackup() {
+  const data = {
+    version: 1,
+    exportDate: new Date().toISOString(),
+    weekPlan,
+    ratings,
+    favourites,
+    customRecipes,
+    recentMeals,
+    settings
+  };
+  const json = JSON.stringify(data, null, 2);
+  const blob = new Blob([json], { type: 'application/json' });
+  const filename = 'smartplate-backup-' + new Date().toISOString().slice(0, 10) + '.json';
+
+  // iOS/PWA: brug Web Share API til at dele som fil (åbner Filer, AirDrop, Mail osv.)
+  if (navigator.share && navigator.canShare) {
+    const file = new File([blob], filename, { type: 'application/json' });
+    if (navigator.canShare({ files: [file] })) {
+      navigator.share({ files: [file], title: 'SmartPlate Sikkerhedskopi', text: 'Min SmartPlate-data: opskrifter, favoritter og præferencer.' })
+        .then(() => {
+          localStorage.setItem('madplan_last_backup', new Date().toISOString());
+          updateBackupStatus();
+        })
+        .catch(() => {});
+      return;
+    }
+  }
+
+  // Fallback: almindelig download
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = filename; a.click();
+  URL.revokeObjectURL(url);
+  localStorage.setItem('madplan_last_backup', new Date().toISOString());
+  updateBackupStatus();
+}
+
+function importBackup() {
+  const input = document.createElement('input');
+  input.type = 'file';
+  input.accept = '.json,application/json';
+  input.onchange = (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = (ev) => {
+      try {
+        const data = JSON.parse(ev.target.result);
+        if (!data.version || !data.exportDate) throw new Error('Ukendt format');
+        const d = data.exportDate.slice(0, 10);
+        if (!confirm('Gendan sikkerhedskopi fra ' + d + '?\n\nDette overskriver dine nuværende data.')) return;
+        if (data.weekPlan) weekPlan = data.weekPlan;
+        if (data.ratings) ratings = data.ratings;
+        if (data.favourites) favourites = data.favourites;
+        if (data.customRecipes) customRecipes = data.customRecipes;
+        if (data.recentMeals) recentMeals = data.recentMeals;
+        if (data.settings) settings = { ...settings, ...data.settings };
+        save();
+        renderWeekGrid(); renderCustomRecipes(); renderFavourites(); renderHistory(); renderGrocery();
+        alert('✅ Sikkerhedskopi genoprettet!');
+      } catch(e) {
+        alert('Fejl: Kunne ikke læse filen. Er det en gyldig SmartPlate-backup?');
+      }
+    };
+    reader.readAsText(file);
+  };
+  input.click();
+}
+
+function updateBackupStatus() {
+  const el = document.getElementById('backup-status');
+  if (!el) return;
+  const last = localStorage.getItem('madplan_last_backup');
+  if (!last) { el.textContent = 'Ingen sikkerhedskopi taget endnu'; return; }
+  const days = Math.floor((Date.now() - new Date(last)) / 86400000);
+  if (days === 0) el.textContent = 'Seneste kopi: i dag ✓';
+  else if (days === 1) el.textContent = 'Seneste kopi: i går';
+  else el.textContent = 'Seneste kopi: for ' + days + ' dage siden' + (days >= 14 ? ' ⚠️' : '');
+}
 
 // ── GROCERY ───────────────────────────────────────────────
 function resetChecks() { checkedItems.clear(); renderGrocery(); }
@@ -1167,7 +1259,12 @@ renderCustomRecipes();
 renderFavourites();
 renderHistory();
 renderGrocery();
+updateBackupStatus();
 
+// Bed iOS/browser om at beskytte localStorage mod automatisk sletning
+if (navigator.storage && navigator.storage.persist) {
+  navigator.storage.persist().catch(() => {});
+}
 
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('/sw.js').catch(() => {});
