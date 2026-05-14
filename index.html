@@ -323,8 +323,15 @@
 
 <div id="favourites-view" class="view">
   <div style="height:12px;"></div>
-  <button class="btn primary full" onclick="openAddFavModal()">+ Tilføj opskrift</button>
-  <div class="hint" style="padding:8px 0 16px;text-align:left;font-style:normal;font-size:13px;color:var(--text-secondary);">⭐ Gemte yndlingsretter — AI'en inkluderer dem i fremtidige planer.</div>
+
+  <div class="section-title">📝 Mine opskrifter</div>
+  <button class="btn primary full" onclick="openAddCustomModal()">+ Ny opskrift</button>
+  <div id="custom-recipes-list"><div class="hint">Ingen egne opskrifter endnu.</div></div>
+
+  <div style="height:16px;"></div>
+
+  <div class="section-title">⭐ Favoritter</div>
+  <div class="hint" style="padding:4px 0 12px;text-align:left;font-style:normal;font-size:13px;color:var(--text-secondary);">Retter du har stjernemarkeret — AI'en inkluderer dem i fremtidige planer.</div>
   <div id="fav-list"><div class="hint">Ingen favoritter endnu.</div></div>
 </div>
 
@@ -353,11 +360,11 @@
   </div>
 </div>
 
-<!-- ADD FAV MODAL -->
+<!-- ADD / EDIT CUSTOM RECIPE MODAL -->
 <div class="modal" id="add-fav-modal">
   <div class="modal-sheet">
     <div class="modal-handle"></div>
-    <h3>Tilføj opskrift</h3>
+    <h3 id="add-custom-modal-title">Ny opskrift</h3>
     <label>Navn på ret</label>
     <input type="text" id="fav-name" placeholder="f.eks. Lasagne">
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
@@ -365,15 +372,36 @@
       <div><label>Tid</label><input type="text" id="fav-time" placeholder="45 min"></div>
     </div>
     <label>Køkken/type</label>
-    <input type="text" id="fav-cuisine" placeholder="Italiensk">
+    <select id="fav-cuisine" style="width:100%;font-size:14px;padding:10px 12px;border-radius:10px;border:1px solid var(--border);background:var(--bg);color:var(--text);font-family:inherit;">
+      <option value="dansk">Dansk</option>
+      <option value="italiensk">Italiensk</option>
+      <option value="asiatisk">Asiatisk</option>
+      <option value="mexicansk">Mexicansk</option>
+      <option value="vegetarisk">Vegetarisk</option>
+      <option value="middelhavs">Middelhavsmadet</option>
+      <option value="indisk">Indisk</option>
+      <option value="nordisk">Nordisk</option>
+      <option value="amerikansk">Amerikansk</option>
+    </select>
     <label>Ingredienser (kommasepareret)</label>
-    <textarea id="fav-ingredients" placeholder="hakket oksekød 400g, pasta, tomatsauce..."></textarea>
-    <label>Fremgangsmåde (valgfri, ét trin per linje)</label>
-    <textarea id="fav-steps" placeholder="Svits løg og hvidløg&#10;Tilsæt kød og brun..."></textarea>
+    <textarea id="fav-ingredients" placeholder="hakket oksekød 400g, pasta 300g, tomatsauce 1 dåse..." style="min-height:90px;"></textarea>
+    <label>Fremgangsmåde (valgfri — ét trin per linje)</label>
+    <textarea id="fav-steps" placeholder="Svits løg og hvidløg i 2 min&#10;Tilsæt kød og brun godt&#10;Tilsæt tomatsauce og lad simre 20 min..."></textarea>
     <div style="display:flex;gap:10px;margin-top:14px;">
-      <button class="btn full" onclick="closeModal('add-fav-modal')">Annuller</button>
-      <button class="btn primary full" onclick="saveNewFav()">Gem opskrift</button>
+      <button class="btn full" onclick="closeCustomModal()">Annuller</button>
+      <button class="btn primary full" onclick="saveNewCustomRecipe()">Gem opskrift</button>
     </div>
+  </div>
+</div>
+
+<!-- DAY PICKER MODAL -->
+<div class="modal" id="day-picker-modal">
+  <div class="modal-sheet">
+    <div class="modal-handle"></div>
+    <h3 id="day-picker-title">Vælg dag</h3>
+    <p style="font-size:13px;color:var(--text-secondary);margin-bottom:14px;">Dage med en eksisterende ret overskrives.</p>
+    <div id="day-picker-content" style="display:flex;flex-direction:column;gap:8px;margin-bottom:16px;"></div>
+    <button class="btn full" onclick="closeModal('day-picker-modal')">Annuller</button>
   </div>
 </div>
 
@@ -394,8 +422,10 @@ let weekPlan = {};
 let ratings = {};
 let favourites = [];
 let recentMeals = [];
+let customRecipes = [];
 let checkedItems = new Set();
 let recipeModalMeal = null;
+let editingCustomIdx = null;
 
 // ── STORAGE ──────────────────────────────────────────────
 function save() {
@@ -405,6 +435,7 @@ function save() {
     localStorage.setItem('madplan_recent', JSON.stringify(recentMeals));
     localStorage.setItem('madplan_week', JSON.stringify(weekPlan));
     localStorage.setItem('madplan_settings', JSON.stringify(settings));
+    localStorage.setItem('madplan_custom_recipes', JSON.stringify(customRecipes));
   } catch(e) {}
 }
 function load() {
@@ -414,6 +445,7 @@ function load() {
     const rm = localStorage.getItem('madplan_recent'); if(rm) recentMeals = JSON.parse(rm);
     const w = localStorage.getItem('madplan_week'); if(w) weekPlan = JSON.parse(w);
     const s = localStorage.getItem('madplan_settings'); if(s) settings = {...settings, ...JSON.parse(s)};
+    const cr = localStorage.getItem('madplan_custom_recipes'); if(cr) customRecipes = JSON.parse(cr);
   } catch(e) {}
 }
 
@@ -539,20 +571,88 @@ function toggleFavFromModal() {
   save(); renderFavourites(); renderWeekGrid();
 }
 
+// ── MINE OPSKRIFTER ───────────────────────────────────────
+function openAddCustomModal() {
+  editingCustomIdx = null;
+  document.getElementById('add-custom-modal-title').textContent = 'Ny opskrift';
+  ['fav-name','fav-cost','fav-time','fav-ingredients','fav-steps'].forEach(id => document.getElementById(id).value = '');
+  document.getElementById('fav-cuisine').value = 'dansk';
+  openModal('add-fav-modal');
+}
+function openEditCustomModal(idx) {
+  editingCustomIdx = idx;
+  const r = customRecipes[idx];
+  document.getElementById('add-custom-modal-title').textContent = 'Rediger opskrift';
+  document.getElementById('fav-name').value = r.name;
+  document.getElementById('fav-cost').value = r.cost;
+  document.getElementById('fav-time').value = r.time;
+  document.getElementById('fav-cuisine').value = r.cuisine || 'dansk';
+  document.getElementById('fav-ingredients').value = r.ingredients.join(', ');
+  document.getElementById('fav-steps').value = (r.steps || []).join('\n');
+  openModal('add-fav-modal');
+}
+function closeCustomModal() {
+  editingCustomIdx = null;
+  closeModal('add-fav-modal');
+}
+function saveNewCustomRecipe() {
+  const name = document.getElementById('fav-name').value.trim();
+  if (!name) { alert('Angiv et navn på retten.'); return; }
+  const cost = parseInt(document.getElementById('fav-cost').value) || 100;
+  const time = document.getElementById('fav-time').value.trim() || '30 min';
+  const cuisine = document.getElementById('fav-cuisine').value || 'dansk';
+  const ingredients = document.getElementById('fav-ingredients').value.split(',').map(s => s.trim()).filter(Boolean);
+  const steps = document.getElementById('fav-steps').value.trim().split('\n').filter(Boolean);
+  const recipe = { name, cost, time, cuisine, ingredients, steps, portions: 4 };
+  if (editingCustomIdx !== null) {
+    customRecipes[editingCustomIdx] = recipe;
+    editingCustomIdx = null;
+  } else {
+    customRecipes.push(recipe);
+  }
+  save(); renderCustomRecipes(); closeModal('add-fav-modal');
+  document.getElementById('add-custom-modal-title').textContent = 'Ny opskrift';
+}
+function removeCustomRecipe(idx) {
+  if (!confirm('Slet "' + customRecipes[idx].name + '"?')) return;
+  customRecipes.splice(idx, 1);
+  save(); renderCustomRecipes();
+}
+function openDayPickerForCustom(idx) {
+  const r = customRecipes[idx];
+  document.getElementById('day-picker-title').textContent = r.name + ' — vælg dag';
+  const content = document.getElementById('day-picker-content');
+  content.innerHTML = DAYS.map(day => {
+    const occupied = weekPlan[day];
+    return `<button class="btn full${occupied ? '' : ' primary'}" onclick="addCustomToWeek(${idx},'${day}')">
+      ${DAY_DK[day]}${occupied ? ' <span style="font-size:11px;opacity:.7;">(' + weekPlan[day].name + ')</span>' : ''}
+    </button>`;
+  }).join('');
+  openModal('day-picker-modal');
+}
+function addCustomToWeek(idx, day) {
+  const r = customRecipes[idx];
+  weekPlan[day] = { name: r.name, cost: r.cost, time: r.time, cuisine: r.cuisine || 'dansk', ingredients: r.ingredients, steps: r.steps || [], portions: r.portions || 4 };
+  save(); renderWeekGrid();
+  closeModal('day-picker-modal');
+  switchTab('plan', document.querySelector('.nav-btn'));
+}
+function renderCustomRecipes() {
+  const c = document.getElementById('custom-recipes-list');
+  if (!customRecipes.length) { c.innerHTML = '<div class="hint">Ingen egne opskrifter endnu. Klik "+ Ny opskrift" for at tilføje.</div>'; return; }
+  c.innerHTML = customRecipes.map((r, i) => `<div class="fav-card">
+    <div class="fav-name">📝 ${r.name}</div>
+    <div class="fav-meta">${r.cuisine ? r.cuisine.charAt(0).toUpperCase() + r.cuisine.slice(1) : ''} · ${r.time} · ${r.cost} kr.</div>
+    <div class="fav-actions">
+      <button class="btn sm primary" onclick="openDayPickerForCustom(${i})">+ Tilføj til uge</button>
+      <button class="btn sm" onclick="openEditCustomModal(${i})">✏️ Rediger</button>
+      <button class="btn sm danger" onclick="removeCustomRecipe(${i})">Slet</button>
+    </div>
+  </div>`).join('');
+}
+
 // ── FAVOURITES ────────────────────────────────────────────
 function openAddFavModal() { openModal('add-fav-modal'); }
-function saveNewFav() {
-  const name = document.getElementById('fav-name').value.trim();
-  if(!name) { alert('Angiv et navn.'); return; }
-  const cost = parseInt(document.getElementById('fav-cost').value)||100;
-  const time = document.getElementById('fav-time').value.trim()||'30 min';
-  const cuisine = document.getElementById('fav-cuisine').value.trim()||'';
-  const ingredients = document.getElementById('fav-ingredients').value.split(',').map(s=>s.trim()).filter(Boolean);
-  const steps = document.getElementById('fav-steps').value.trim().split('\n').filter(Boolean);
-  favourites.push({name,cost,time,cuisine,ingredients,steps});
-  save(); renderFavourites(); closeModal('add-fav-modal');
-  ['fav-name','fav-cost','fav-time','fav-cuisine','fav-ingredients','fav-steps'].forEach(id=>document.getElementById(id).value='');
-}
 function saveFavFromPlan(day) {
   const m = weekPlan[day]; if(!m) return;
   if(favourites.some(f=>f.name===m.name)) { alert(m.name+' er allerede i dine favoritter!'); return; }
@@ -929,13 +1029,28 @@ function pickMeals(pool, count, alreadyPicked, liked, disliked) {
   return picked;
 }
 
+function mergeCustomIntoDb(db) {
+  const userDb = customRecipes.map((r, i) => ({
+    id: 'user_' + i,
+    name: r.name,
+    cost: r.cost,
+    time: typeof r.time === 'string' ? parseInt(r.time) || 30 : r.time,
+    cuisine: r.cuisine || 'dansk',
+    ingredients: r.ingredients,
+    steps: r.steps || [],
+    portions: r.portions || 4,
+    tags: ['bruger']
+  }));
+  return [...db, ...userDb];
+}
+
 async function requestNewWeek() {
   const btn = document.querySelector('.btn.ai');
   btn.disabled = true;
   btn.textContent = '⏳ Henter opskrifter...';
 
   try {
-    const db = await loadRecipeDb();
+    const db = mergeCustomIntoDb(await loadRecipeDb());
     if (db.length === 0) throw new Error('Ingen opskrifter fundet — tjek at data/-mappen er tilgængelig');
 
     const disliked = Object.entries(ratings).filter(([,v])=>v==='disliked').map(([k])=>k);
@@ -982,7 +1097,7 @@ async function requestSwap(day) {
   btn.textContent = '⏳...';
 
   try {
-    const db = await loadRecipeDb();
+    const db = mergeCustomIntoDb(await loadRecipeDb());
     if (db.length === 0) throw new Error('Ingen opskrifter fundet');
 
     const disliked = Object.entries(ratings).filter(([,v])=>v==='disliked').map(([k])=>k);
@@ -1048,6 +1163,7 @@ function switchTab(t, el) {
 load();
 initSettingsUI();
 renderWeekGrid();
+renderCustomRecipes();
 renderFavourites();
 renderHistory();
 renderGrocery();
