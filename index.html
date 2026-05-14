@@ -372,7 +372,8 @@
     <div class="section-title">Fremgangsmåde</div>
     <div id="rm-steps" style="margin-bottom:16px;"></div>
     <button class="btn primary full" id="rm-fav-btn" onclick="toggleFavFromModal()">⭐ Gem som favorit</button>
-    <button class="btn full" onclick="closeModal('recipe-modal')">Luk</button>
+    <button class="btn full" id="rm-back-btn" onclick="recipeModalGoBack()" style="display:none;">← Tilbage til ugeplan</button>
+    <button class="btn full" onclick="closeRecipeModal()">Luk</button>
   </div>
 </div>
 
@@ -463,6 +464,7 @@ let customRecipes = [];
 let planHistory = [];
 let checkedItems = new Set();
 let recipeModalMeal = null;
+let recipeModalBackId = null;
 let editingCustomIdx = null;
 
 // ── STORAGE ──────────────────────────────────────────────
@@ -681,7 +683,23 @@ function openPlanHistoryDetail(id) {
 function openRecipeModalFromHistory(histId, day) {
   const h = planHistory.find(x => x.id == histId);
   if (!h || !h.weekPlan[day]) return;
+  recipeModalBackId = histId;
+  closeModal('planhistory-detail-modal');
   openRecipeModalForMeal(h.weekPlan[day]);
+  document.getElementById('rm-back-btn').style.display = 'block';
+  document.getElementById('rm-back-btn').textContent = '← Tilbage til ' + h.label;
+}
+
+function recipeModalGoBack() {
+  const id = recipeModalBackId;
+  closeRecipeModal();
+  if (id) openPlanHistoryDetail(id);
+}
+
+function closeRecipeModal() {
+  recipeModalBackId = null;
+  document.getElementById('rm-back-btn').style.display = 'none';
+  closeModal('recipe-modal');
 }
 
 function favFromHistory(histId, day, btn) {
@@ -1498,7 +1516,7 @@ window.loadSingleMeal = function(day, json) {
 function openModal(id) { document.getElementById(id).classList.add('open'); document.body.style.overflow='hidden'; }
 function closeModal(id) { document.getElementById(id).classList.remove('open'); document.body.style.overflow=''; }
 document.querySelectorAll('.modal').forEach(m=>{
-  m.addEventListener('click',e=>{ if(e.target===m) closeModal(m.id); });
+  m.addEventListener('click',e=>{ if(e.target===m) { if(m.id==='recipe-modal') closeRecipeModal(); else closeModal(m.id); } });
 });
 
 // ── TABS ───────────────────────────────────────────────────
