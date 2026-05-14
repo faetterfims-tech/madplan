@@ -598,7 +598,9 @@ function getISOWeek(date) {
 function approvePlan() {
   const planned = DAYS.filter(d => weekPlan[d]);
   if (!planned.length) { alert('Ugeplanen er tom — tilføj mindst én ret først.'); return; }
-  const { week, year } = getISOWeek(new Date());
+  // Gem som næste uge — man planlægger altid ugen frem i tid
+  const nextWeek = new Date(); nextWeek.setDate(nextWeek.getDate() + 7);
+  const { week, year } = getISOWeek(nextWeek);
   const existing = planHistory.findIndex(h => h.week === week && h.year === year);
   const label = 'Uge ' + week + ' · ' + year;
   if (existing >= 0) {
@@ -648,22 +650,56 @@ function openPlanHistoryDetail(id) {
   const date = new Date(h.approvedAt).toLocaleDateString('da-DK', { day: 'numeric', month: 'long', year: 'numeric' });
   document.getElementById('phd-title').textContent = h.label;
   document.getElementById('phd-meta').textContent = 'Godkendt ' + date + ' · ' + h.persons + ' personer · ' + h.totalCost + ' kr.';
-  const days = DAYS.filter(d => h.weekPlan[d]);
   document.getElementById('phd-days').innerHTML = DAYS.map(d => {
     const m = h.weekPlan[d];
-    if (!m) return `<div style="padding:8px 0;border-bottom:1px solid var(--border);font-size:13px;color:var(--text-tertiary);">${DAY_DK[d]}: <em>Ingen ret</em></div>`;
-    return `<div style="padding:10px 0;border-bottom:1px solid var(--border);">
-      <div style="display:flex;justify-content:space-between;align-items:baseline;">
-        <span style="font-size:11px;font-weight:600;color:var(--text-secondary);">${DAY_DK[d].toUpperCase()}</span>
+    if (!m) return `<div class="day-card">
+      <div class="day-header"><span class="day-name">${DAY_DK[d]}</span></div>
+      <div class="day-body"><div class="empty-day">Ingen ret planlagt</div></div>
+    </div>`;
+    const isFav = favourites.some(f => f.name === m.name);
+    const mJson = JSON.stringify(m).replace(/'/g, '&#39;').replace(/"/g, '&quot;');
+    return `<div class="day-card">
+      <div class="day-header">
+        <span class="day-name">${DAY_DK[d]}</span>
         <span class="cost-pill">${m.cost} kr.</span>
       </div>
-      <div style="font-size:15px;font-weight:600;margin-top:2px;">${m.name}</div>
-      <div style="font-size:12px;color:var(--text-tertiary);margin-top:2px;">${m.time} · ${m.cuisine || ''}</div>
+      <div class="day-body">
+        <div class="meal-name">${m.name}${isFav ? ' ⭐' : ''}</div>
+        <div class="meal-meta"><span>${m.time}</span><span>${m.cuisine || ''}</span></div>
+        <div class="meal-actions">
+          <button class="btn sm" onclick="openRecipeModalFromHistory('${h.id}','${d}')">📖 Opskrift</button>
+          <button class="btn sm" onclick="favFromHistory('${h.id}','${d}',this)">⭐ Favorit</button>
+        </div>
+      </div>
     </div>`;
   }).join('');
   document.getElementById('phd-template-btn').onclick = () => copyHistoricalWeek(id);
   document.getElementById('phd-delete-btn').onclick = () => deleteHistoricalWeek(id);
   openModal('planhistory-detail-modal');
+}
+
+function openRecipeModalFromHistory(histId, day) {
+  const h = planHistory.find(x => x.id == histId);
+  if (!h || !h.weekPlan[day]) return;
+  openRecipeModalForMeal(h.weekPlan[day]);
+}
+
+function favFromHistory(histId, day, btn) {
+  const h = planHistory.find(x => x.id == histId);
+  if (!h || !h.weekPlan[day]) return;
+  const m = h.weekPlan[day];
+  const idx = favourites.findIndex(f => f.name === m.name);
+  if (idx >= 0) {
+    favourites.splice(idx, 1);
+    btn.textContent = '⭐ Favorit';
+  } else {
+    favourites.push({ ...m });
+    btn.textContent = '✅ Gemt';
+  }
+  save(); renderFavourites();
+  // Opdater ⭐ i overskriften på kortet
+  const nameEl = btn.closest('.day-body').querySelector('.meal-name');
+  if (nameEl) nameEl.textContent = m.name + (favourites.some(f => f.name === m.name) ? ' ⭐' : '');
 }
 
 function copyHistoricalWeek(id) {
@@ -688,6 +724,10 @@ function deleteHistoricalWeek(id) {
 // ── RECIPE MODAL ──────────────────────────────────────────
 function openRecipeModal(day) {
   const m = weekPlan[day]; if(!m) return;
+  openRecipeModalForMeal(m);
+}
+function openRecipeModalForMeal(m) {
+  if (!m) return;
   recipeModalMeal = m;
   const scale = settings.persons / (m.portions || 4);
   document.getElementById('rm-title').textContent = m.name;
