@@ -6,7 +6,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="SmartPlate">
-  <meta name="theme-color" content="#0d0f1a">
+  <meta name="theme-color" content="#ffffff">
   <link rel="apple-touch-icon" href="icon.png">
   <link rel="apple-touch-icon" sizes="152x152" href="icon.png">
   <link rel="apple-touch-icon" sizes="167x167" href="icon.png">
@@ -16,43 +16,49 @@
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
-      --green: #4ade80;
-      --green-dim: rgba(74,222,128,0.12);
-      --green-glow: rgba(74,222,128,0.3);
-      --red: #f87171;
-      --red-dim: rgba(248,113,113,0.12);
-      --blue: #60a5fa;
-      --blue-dim: rgba(96,165,250,0.12);
-      --orange: #fb923c;
-      --orange-dim: rgba(251,146,60,0.12);
-      --yellow: #fbbf24;
-      --yellow-dim: rgba(251,191,36,0.12);
+      --green: #10b981;
+      --green-light: #d1fae5;
+      --green-mid: #ecfdf5;
+      --green-dim: #ecfdf5;
+      --green-text: #065f46;
+      --red: #ef4444;
+      --red-light: #fef2f2;
+      --red-text: #b91c1c;
+      --indigo: #5b5ef4;
+      --indigo-light: #eef2ff;
+      --indigo-text: #3730a3;
+      --orange: #f59e0b;
+      --orange-light: #fffbeb;
+      --orange-text: #92400e;
+      --yellow: #f59e0b;
+      --yellow-light: #fffbeb;
+      --yellow-text: #92400e;
 
       /* Backward-compat aliases */
-      --green-light: var(--green-dim);
-      --green-text: var(--green);
-      --red-light: var(--red-dim);
-      --red-text: var(--red);
-      --blue-light: var(--blue-dim);
-      --blue-text: var(--blue);
-      --yellow-light: var(--yellow-dim);
-      --yellow-text: var(--yellow);
+      --blue: var(--indigo);
+      --blue-light: var(--indigo-light);
+      --blue-text: var(--indigo-text);
+      --red-dim: var(--red-light);
+      --green-glow: rgba(16,185,129,0.25);
 
-      --border: #1d2035;
-      --border2: #252840;
-      --bg: #0d0f1a;
-      --card: #131625;
-      --card2: #181b2e;
-      --text: #e2e4f0;
-      --text-secondary: #737594;
-      --text-tertiary: #3c3f5a;
+      --border: #f0f2f6;
+      --border2: #e5e7eb;
+      --bg: #f3f4f8;
+      --card: #ffffff;
+      --card2: #f8f9fc;
+      --text: #111827;
+      --text-secondary: #6b7280;
+      --text-tertiary: #9ca3af;
+
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.05), 0 1px 2px rgba(0,0,0,0.03);
+      --shadow-md: 0 4px 14px rgba(0,0,0,0.06), 0 2px 4px rgba(0,0,0,0.04);
     }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', sans-serif;
       background: var(--bg);
       color: var(--text);
       min-height: 100vh;
-      padding-bottom: 80px;
+      padding-bottom: 90px;
     }
 
     /* TOP BAR */
@@ -60,58 +66,53 @@
       position: sticky;
       top: 0;
       z-index: 50;
-      background: rgba(13,15,26,0.88);
-      backdrop-filter: blur(18px);
-      -webkit-backdrop-filter: blur(18px);
-      border-bottom: 1px solid var(--border);
-      padding: 14px 16px 10px;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border2);
+      padding: 14px 18px 10px;
     }
     .topbar-title {
-      font-size: 20px;
+      font-size: 22px;
       font-weight: 800;
-      background: linear-gradient(120deg, #4ade80, #22d3ee);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      letter-spacing: -0.4px;
+      color: var(--text);
+      letter-spacing: -0.6px;
     }
-    .topbar-budget { font-size: 12px; color: var(--text-secondary); margin-top: 5px; }
-    .budget-bar-wrap { height: 4px; background: var(--border2); border-radius: 99px; margin-top: 8px; }
-    .budget-bar { height: 4px; border-radius: 99px; background: linear-gradient(90deg, #4ade80, #22d3ee); transition: width .5s; }
-    .budget-bar.over { background: linear-gradient(90deg, var(--orange), var(--red)); }
+    .topbar-budget { font-size: 12px; color: var(--text-secondary); margin-top: 4px; }
+    .budget-bar-wrap { height: 5px; background: var(--border2); border-radius: 99px; margin-top: 8px; }
+    .budget-bar { height: 5px; border-radius: 99px; background: var(--green); transition: width .5s ease; }
+    .budget-bar.over { background: var(--red); }
 
     /* BOTTOM NAV */
     .bottom-nav {
       position: fixed;
       bottom: 0; left: 0; right: 0;
-      background: rgba(13,15,26,0.94);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      border-top: 1px solid var(--border);
+      background: #fff;
+      border-top: 1px solid var(--border2);
       display: flex;
       z-index: 50;
-      padding: 6px 0 calc(6px + env(safe-area-inset-bottom));
+      padding: 6px 8px calc(10px + env(safe-area-inset-bottom));
+      gap: 4px;
     }
     .nav-btn {
       flex: 1;
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 8px 2px 4px;
+      padding: 8px 4px 6px;
       font-size: 10px;
       color: var(--text-tertiary);
       cursor: pointer;
       border: none;
       background: transparent;
-      gap: 4px;
+      gap: 3px;
       font-family: inherit;
       font-weight: 600;
-      transition: color .2s;
-      letter-spacing: .01em;
+      border-radius: 12px;
+      transition: color .18s, background .18s;
     }
-    .nav-btn .icon { font-size: 22px; line-height: 1.2; transition: filter .2s; }
-    .nav-btn.active { color: var(--green); }
-    .nav-btn.active .icon { filter: drop-shadow(0 0 6px var(--green-glow)); }
+    .nav-btn .icon { font-size: 22px; line-height: 1.15; }
+    .nav-btn.active { color: var(--indigo); background: var(--indigo-light); }
 
     /* VIEWS */
     .view { display: none; padding: 16px; }
@@ -121,6 +122,7 @@
     .card {
       background: var(--card);
       border-radius: 16px;
+      box-shadow: var(--shadow-sm);
       border: 1px solid var(--border);
       padding: 14px 16px;
       margin-bottom: 12px;
@@ -129,39 +131,41 @@
     /* BUTTONS */
     .btn {
       display: inline-flex; align-items: center; gap: 6px;
-      padding: 12px 18px; border-radius: 12px;
-      border: 1px solid var(--border2);
-      background: var(--card2); color: var(--text);
+      padding: 11px 18px; border-radius: 12px;
+      border: 1.5px solid var(--border2);
+      background: var(--card); color: var(--text);
       font-size: 14px; cursor: pointer; font-family: inherit;
-      font-weight: 600; transition: transform .12s, opacity .12s;
-      letter-spacing: -0.1px;
+      font-weight: 600; transition: transform .12s, box-shadow .12s;
+      box-shadow: var(--shadow-sm);
     }
-    .btn:active { transform: scale(0.96); }
-    .btn.primary { background: var(--green); color: #052010; border-color: transparent; }
+    .btn:active { transform: scale(0.97); }
+    .btn.primary { background: var(--green); color: #fff; border-color: transparent; box-shadow: 0 3px 12px rgba(16,185,129,0.3); }
     .btn.ai {
-      background: linear-gradient(135deg, #3b82f6 0%, #6366f1 100%);
+      background: var(--indigo);
       color: #fff; border-color: transparent;
-      box-shadow: 0 4px 24px rgba(99,102,241,0.4);
-      font-size: 15px; padding: 14px 18px;
+      box-shadow: 0 4px 20px rgba(91,94,244,0.35);
+      font-size: 16px; padding: 16px 20px;
+      border-radius: 16px; font-weight: 700;
     }
-    .btn.danger { background: var(--red-dim); color: var(--red); border-color: rgba(248,113,113,0.18); }
-    .btn.warn { background: var(--orange-dim); color: var(--orange); border-color: rgba(251,146,60,0.18); }
-    .btn.sm { padding: 7px 12px; font-size: 12px; border-radius: 9px; }
+    .btn.danger { color: var(--red); border-color: #fca5a5; background: var(--red-light); box-shadow: none; }
+    .btn.warn { color: var(--orange); border-color: #fcd34d; background: var(--orange-light); box-shadow: none; }
+    .btn.sm { padding: 7px 12px; font-size: 12px; border-radius: 9px; box-shadow: none; }
     .btn.full { width: 100%; justify-content: center; margin-bottom: 10px; }
-    .btn:disabled { opacity: 0.35; cursor: not-allowed; transform: none; }
+    .btn:disabled { opacity: 0.4; cursor: not-allowed; transform: none; }
 
     /* SECTION TITLE */
     .section-title {
-      font-size: 11px; font-weight: 700; color: var(--text-secondary);
-      text-transform: uppercase; letter-spacing: .09em; margin-bottom: 10px;
+      font-size: 12px; font-weight: 700; color: var(--text-secondary);
+      text-transform: uppercase; letter-spacing: .08em; margin-bottom: 10px;
     }
 
     /* DAY CARDS */
     .day-card {
       background: var(--card);
-      border-radius: 18px;
+      border-radius: 20px;
+      box-shadow: var(--shadow-md);
       border: 1px solid var(--border);
-      margin-bottom: 12px;
+      margin-bottom: 14px;
       overflow: hidden;
     }
     .day-header {
@@ -171,72 +175,68 @@
       border-bottom: 1px solid var(--border);
     }
     .day-name {
-      font-size: 11px; font-weight: 700; color: var(--text-secondary);
-      text-transform: uppercase; letter-spacing: .09em;
+      font-size: 11px; font-weight: 800; color: var(--text-secondary);
+      text-transform: uppercase; letter-spacing: .1em;
     }
     .day-body { padding: 14px 16px; }
-    .meal-name { font-size: 18px; font-weight: 700; color: var(--text); letter-spacing: -0.4px; }
-    .meal-meta { font-size: 12px; color: var(--text-secondary); margin-top: 5px; display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
-    .cost-pill {
-      background: var(--green-dim);
-      color: var(--green);
-      border: 1px solid rgba(74,222,128,0.2);
-      border-radius: 99px; padding: 3px 10px; font-size: 11px; font-weight: 700;
-    }
-    .meal-ingredients { font-size: 12px; color: var(--text-tertiary); margin-top: 10px; line-height: 1.75; border-top: 1px solid var(--border); padding-top: 10px; }
-    .meal-actions { display: flex; gap: 6px; margin-top: 10px; flex-wrap: wrap; }
-    .empty-day { font-size: 14px; color: var(--text-tertiary); font-style: italic; padding: 14px 0; text-align: center; }
+    .meal-name { font-size: 20px; font-weight: 800; color: var(--text); letter-spacing: -0.5px; line-height: 1.25; }
+    .meal-meta { font-size: 12px; color: var(--text-secondary); margin-top: 6px; display: flex; gap: 5px; flex-wrap: wrap; align-items: center; }
+    .meal-meta span { background: var(--card2); border: 1px solid var(--border2); border-radius: 99px; padding: 2px 8px; font-size: 11px; font-weight: 500; }
+    .cost-pill { background: var(--green-mid); color: var(--green-text); border: 1px solid #a7f3d0; border-radius: 99px; padding: 3px 10px; font-size: 11px; font-weight: 700; }
+    .meal-ingredients { font-size: 12px; color: var(--text-tertiary); margin-top: 10px; line-height: 1.8; }
+    .meal-actions { display: flex; gap: 6px; margin-top: 12px; flex-wrap: wrap; }
+    .empty-day { font-size: 14px; color: var(--text-tertiary); font-style: italic; padding: 10px 0 4px; text-align: center; }
     .rating-btn {
       padding: 6px 12px; border-radius: 99px;
-      border: 1px solid var(--border2); font-size: 13px;
-      cursor: pointer; background: var(--card2); color: var(--text-secondary);
-      font-family: inherit; transition: all .15s;
+      border: 1.5px solid var(--border2); font-size: 13px;
+      cursor: pointer; background: var(--card); color: var(--text-secondary);
+      font-family: inherit; transition: all .15s; box-shadow: var(--shadow-sm);
     }
-    .rating-btn.liked { background: var(--green-dim); color: var(--green); border-color: rgba(74,222,128,0.2); }
-    .rating-btn.disliked { background: var(--red-dim); color: var(--red); border-color: rgba(248,113,113,0.2); }
+    .rating-btn.liked { background: var(--green-mid); color: var(--green-text); border-color: #a7f3d0; }
+    .rating-btn.disliked { background: var(--red-light); color: var(--red-text); border-color: #fca5a5; }
 
     /* GROCERY */
-    .grocery-category { font-size: 11px; font-weight: 700; color: var(--text-secondary); text-transform: uppercase; letter-spacing: .07em; padding: 14px 0 8px; }
+    .grocery-category { font-size: 11px; font-weight: 700; color: var(--text-secondary); text-transform: uppercase; letter-spacing: .08em; padding: 16px 0 8px; }
     .grocery-item { display: flex; align-items: center; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--border); font-size: 14px; color: var(--text); }
     .grocery-item:last-child { border-bottom: none; }
     .grocery-item input[type=checkbox] { width: 20px; height: 20px; accent-color: var(--green); flex-shrink: 0; }
     .checked-item { text-decoration: line-through; color: var(--text-tertiary); }
 
     /* FAVOURITES */
-    .fav-card {
-      background: var(--card); border-radius: 16px; border: 1px solid var(--border);
-      padding: 14px 16px; margin-bottom: 10px;
-    }
-    .fav-name { font-size: 15px; font-weight: 600; color: var(--text); }
+    .fav-card { background: var(--card); border-radius: 16px; box-shadow: var(--shadow-sm); border: 1px solid var(--border); padding: 14px 16px; margin-bottom: 10px; }
+    .fav-name { font-size: 15px; font-weight: 700; color: var(--text); }
     .fav-meta { font-size: 12px; color: var(--text-secondary); margin-top: 4px; }
     .fav-actions { display: flex; gap: 8px; margin-top: 10px; flex-wrap: wrap; }
 
     /* HISTORY */
     .pref-item { display: flex; align-items: center; justify-content: space-between; padding: 11px 0; border-bottom: 1px solid var(--border); font-size: 14px; color: var(--text); }
     .pref-item:last-child { border-bottom: none; }
-    .badge { display: inline-block; font-size: 11px; padding: 2px 8px; border-radius: 99px; font-weight: 600; }
-    .badge.liked { background: var(--green-dim); color: var(--green); }
-    .badge.disliked { background: var(--red-dim); color: var(--red); }
-    .badge.fav { background: var(--yellow-dim); color: var(--yellow); }
+    .badge { display: inline-block; font-size: 11px; padding: 3px 9px; border-radius: 99px; font-weight: 600; }
+    .badge.liked { background: var(--green-light); color: var(--green-text); }
+    .badge.disliked { background: var(--red-light); color: var(--red-text); }
+    .badge.fav { background: var(--orange-light); color: var(--orange-text); }
 
     /* MODAL */
-    .modal { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,.65); z-index: 200; align-items: flex-end; }
+    .modal { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(17,24,39,.45); z-index: 200; align-items: flex-end; backdrop-filter: blur(4px); }
     .modal.open { display: flex; }
     .modal-sheet {
-      background: var(--card); border-radius: 24px 24px 0 0;
-      border-top: 1px solid var(--border);
-      padding: 20px 20px calc(20px + env(safe-area-inset-bottom));
-      width: 100%; max-height: 90vh; overflow-y: auto;
+      background: #fff; border-radius: 28px 28px 0 0;
+      box-shadow: 0 -8px 40px rgba(0,0,0,0.10);
+      padding: 20px 20px calc(24px + env(safe-area-inset-bottom));
+      width: 100%; max-height: 92vh; overflow-y: auto;
     }
-    .modal-handle { width: 36px; height: 4px; background: var(--border2); border-radius: 99px; margin: 0 auto 18px; }
-    .modal-sheet h3 { font-size: 20px; font-weight: 700; margin-bottom: 12px; color: var(--text); }
-    .step-card { background: var(--card2); border-radius: 12px; padding: 12px 14px; margin-bottom: 8px; font-size: 14px; line-height: 1.65; color: var(--text); border: 1px solid var(--border); }
-    .step-num { font-size: 10px; font-weight: 700; color: var(--green); margin-bottom: 4px; letter-spacing: .08em; }
-    label { font-size: 13px; font-weight: 500; color: var(--text-secondary); display: block; margin-bottom: 5px; margin-top: 14px; }
+    .modal-handle { width: 36px; height: 4px; background: var(--border2); border-radius: 99px; margin: 0 auto 20px; }
+    .modal-sheet h3 { font-size: 20px; font-weight: 800; margin-bottom: 12px; letter-spacing: -0.4px; }
+    .step-card { background: var(--card2); border-radius: 12px; padding: 12px 14px; margin-bottom: 8px; font-size: 14px; line-height: 1.65; border: 1px solid var(--border); }
+    .step-num { font-size: 10px; font-weight: 800; color: var(--green); margin-bottom: 4px; letter-spacing: .08em; text-transform: uppercase; }
+    label { font-size: 13px; font-weight: 600; color: var(--text-secondary); display: block; margin-bottom: 5px; margin-top: 14px; }
     input[type=text], input[type=number], textarea, select {
       width: 100%; font-size: 14px; padding: 11px 14px;
-      border-radius: 10px; border: 1px solid var(--border2);
+      border-radius: 10px; border: 1.5px solid var(--border2);
       background: var(--card2); color: var(--text); font-family: inherit;
+    }
+    input[type=text]:focus, input[type=number]:focus, textarea:focus, select:focus {
+      outline: none; border-color: var(--indigo); box-shadow: 0 0 0 3px rgba(91,94,244,0.1);
     }
     textarea { resize: vertical; min-height: 80px; }
 
@@ -273,8 +273,8 @@
     </div>
   </div>
   <button class="btn ai full" onclick="requestNewWeek()">✨ Planlæg uge</button>
-  <button class="btn full" style="border:2px solid var(--green);color:var(--green);font-weight:600;" onclick="approvePlan()">✓ Godkend og gem ugeplan</button>
-  <button class="btn full" style="color:#e24b4a;border-color:#e24b4a;" onclick="clearWeek()">🗑 Ryd ugeplan</button>
+  <button class="btn full" style="border:1.5px solid #a7f3d0;color:var(--green-text);background:var(--green-mid);font-weight:700;box-shadow:none;" onclick="approvePlan()">✓ Godkend og gem ugeplan</button>
+  <button class="btn danger full" onclick="clearWeek()">🗑 Ryd ugeplan</button>
   <div id="week-grid"></div>
 </div>
 
@@ -288,8 +288,8 @@
 
 <!-- Chrome-udvidelse guide modal -->
 <div id="ext-guide-overlay" onclick="closeExtGuide()" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:8000;overflow-y:auto;-webkit-overflow-scrolling:touch;"></div>
-<div id="ext-guide-modal" style="display:none;position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);width:min(420px,94vw);max-height:90vh;overflow-y:auto;background:var(--card);border:1px solid var(--border2);border-radius:20px;box-shadow:0 20px 60px rgba(0,0,0,.7);z-index:8001;">
-  <div style="background:linear-gradient(135deg,#3b82f6,#6366f1);color:#fff;padding:16px 18px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:1;border-radius:20px 20px 0 0;">
+<div id="ext-guide-modal" style="display:none;position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);width:min(420px,94vw);max-height:90vh;overflow-y:auto;background:#fff;border:1px solid var(--border2);border-radius:20px;box-shadow:0 20px 60px rgba(0,0,0,.2);z-index:8001;">
+  <div style="background:linear-gradient(135deg,#5b5ef4,#8b5cf6);color:#fff;padding:16px 18px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:1;border-radius:20px 20px 0 0;">
     <div>
       <div style="font-size:17px;font-weight:700;">🧩 Chrome-udvidelse</div>
       <div style="font-size:12px;opacity:.8;margin-top:1px;">SmartPlate × Bilka ToGo — automatisk indkøb</div>
@@ -303,30 +303,30 @@
 
       <!-- Trin 1 -->
       <div style="display:flex;gap:12px;align-items:flex-start;">
-        <div style="min-width:32px;height:32px;background:var(--green-dim);border:1px solid rgba(74,222,128,0.25);color:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px;">1</div>
+        <div style="min-width:32px;height:32px;background:var(--indigo-light);border:1px solid rgba(91,94,244,0.3);color:var(--indigo);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px;">1</div>
         <div>
           <div style="font-weight:700;font-size:14px;margin-bottom:4px;color:var(--text);">Download filer fra GitHub</div>
           <p style="font-size:13px;color:var(--text-secondary);margin-bottom:8px;line-height:1.5;">Hent SmartPlate som ZIP-fil og pak den ud på din computer.</p>
-          <a href="https://github.com/faetterfims-tech/madplan/archive/refs/heads/main.zip" target="_blank" style="display:inline-block;background:var(--green);color:#052010;padding:8px 14px;border-radius:8px;font-size:13px;font-weight:700;text-decoration:none;">⬇️ Download ZIP-fil</a>
+          <a href="https://github.com/faetterfims-tech/madplan/archive/refs/heads/main.zip" target="_blank" style="display:inline-block;background:var(--indigo);color:#fff;padding:8px 14px;border-radius:8px;font-size:13px;font-weight:700;text-decoration:none;">⬇️ Download ZIP-fil</a>
         </div>
       </div>
 
       <!-- Trin 2 -->
       <div style="display:flex;gap:12px;align-items:flex-start;">
-        <div style="min-width:32px;height:32px;background:var(--green-dim);border:1px solid rgba(74,222,128,0.25);color:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px;">2</div>
+        <div style="min-width:32px;height:32px;background:var(--indigo-light);border:1px solid rgba(91,94,244,0.3);color:var(--indigo);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px;">2</div>
         <div>
           <div style="font-weight:700;font-size:14px;margin-bottom:4px;color:var(--text);">Åbn Chrome-udvidelser</div>
           <p style="font-size:13px;color:var(--text-secondary);margin-bottom:8px;line-height:1.5;">Kopier adressen nedenfor og sæt den ind i Chrome-adresselinjen.</p>
           <div style="background:var(--card2);border:1px solid var(--border2);border-radius:8px;padding:8px 12px;font-size:13px;font-family:monospace;display:flex;align-items:center;justify-content:space-between;gap:8px;color:var(--text);">
             <span>chrome://extensions</span>
-            <button onclick="navigator.clipboard.writeText('chrome://extensions').then(()=>{this.textContent='✓';setTimeout(()=>this.textContent='Kopier',1500)})" style="background:var(--green);color:#052010;border:none;border-radius:6px;padding:4px 10px;font-size:12px;cursor:pointer;white-space:nowrap;font-weight:700;">Kopier</button>
+            <button onclick="navigator.clipboard.writeText('chrome://extensions').then(()=>{this.textContent='✓';setTimeout(()=>this.textContent='Kopier',1500)})" style="background:var(--indigo);color:#fff;border:none;border-radius:6px;padding:4px 10px;font-size:12px;cursor:pointer;white-space:nowrap;font-weight:700;">Kopier</button>
           </div>
         </div>
       </div>
 
       <!-- Trin 3 -->
       <div style="display:flex;gap:12px;align-items:flex-start;">
-        <div style="min-width:32px;height:32px;background:var(--green-dim);border:1px solid rgba(74,222,128,0.25);color:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px;">3</div>
+        <div style="min-width:32px;height:32px;background:var(--indigo-light);border:1px solid rgba(91,94,244,0.3);color:var(--indigo);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px;">3</div>
         <div>
           <div style="font-weight:700;font-size:14px;margin-bottom:4px;color:var(--text);">Slå udviklertilstand til</div>
           <p style="font-size:13px;color:var(--text-secondary);line-height:1.5;">Øverst til højre på siden er der en kontakt ved siden af <strong style="color:var(--text);">"Udviklertilstand"</strong> — slå den til (bliver blå).</p>
@@ -335,7 +335,7 @@
 
       <!-- Trin 4 -->
       <div style="display:flex;gap:12px;align-items:flex-start;">
-        <div style="min-width:32px;height:32px;background:var(--green-dim);border:1px solid rgba(74,222,128,0.25);color:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px;">4</div>
+        <div style="min-width:32px;height:32px;background:var(--indigo-light);border:1px solid rgba(91,94,244,0.3);color:var(--indigo);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px;">4</div>
         <div>
           <div style="font-weight:700;font-size:14px;margin-bottom:4px;color:var(--text);">Indlæs udvidelsen</div>
           <p style="font-size:13px;color:var(--text-secondary);line-height:1.5;">Klik på <strong style="color:var(--text);">"Indlæs ikke-pakket"</strong>.<br>Naviger til den udpakkede mappe og vælg mappen <strong style="font-family:monospace;color:var(--text);">madplan-main/extension</strong>.</p>
@@ -343,8 +343,8 @@
       </div>
 
       <!-- Trin 5 -->
-      <div style="display:flex;gap:12px;align-items:flex-start;background:var(--green-dim);border:1px solid rgba(74,222,128,0.15);border-radius:14px;padding:14px;">
-        <div style="min-width:32px;height:32px;background:var(--green);color:#052010;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px;">✓</div>
+      <div style="display:flex;gap:12px;align-items:flex-start;background:var(--green-mid);border:1px solid #a7f3d0;border-radius:14px;padding:14px;">
+        <div style="min-width:32px;height:32px;background:var(--green);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px;">✓</div>
         <div>
           <div style="font-weight:700;font-size:14px;margin-bottom:4px;color:var(--green);">Klart! Sådan bruger du det</div>
           <ol style="font-size:13px;color:var(--text-secondary);line-height:1.8;margin:0;padding-left:16px;">
