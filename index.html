@@ -6,7 +6,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="SmartPlate">
-  <meta name="theme-color" content="#2d7a2d">
+  <meta name="theme-color" content="#0d0f1a">
   <link rel="apple-touch-icon" href="icon.png">
   <link rel="apple-touch-icon" sizes="152x152" href="icon.png">
   <link rel="apple-touch-icon" sizes="167x167" href="icon.png">
@@ -16,71 +16,102 @@
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
-      --green: #2d7a2d;
-      --green-light: #eaf3de;
-      --green-text: #1a4d1a;
-      --red-light: #fcebeb;
-      --red-text: #791f1f;
-      --blue: #185fa5;
-      --blue-light: #e6f1fb;
-      --blue-text: #0d3d6e;
-      --yellow-light: #fff3cd;
-      --yellow-text: #7a5900;
-      --border: #e0e0e0;
-      --bg: #f5f5f5;
-      --card: #ffffff;
-      --text: #1a1a1a;
-      --text-secondary: #666;
-      --text-tertiary: #999;
+      --green: #4ade80;
+      --green-dim: rgba(74,222,128,0.12);
+      --green-glow: rgba(74,222,128,0.3);
+      --red: #f87171;
+      --red-dim: rgba(248,113,113,0.12);
+      --blue: #60a5fa;
+      --blue-dim: rgba(96,165,250,0.12);
+      --orange: #fb923c;
+      --orange-dim: rgba(251,146,60,0.12);
+      --yellow: #fbbf24;
+      --yellow-dim: rgba(251,191,36,0.12);
+
+      /* Backward-compat aliases */
+      --green-light: var(--green-dim);
+      --green-text: var(--green);
+      --red-light: var(--red-dim);
+      --red-text: var(--red);
+      --blue-light: var(--blue-dim);
+      --blue-text: var(--blue);
+      --yellow-light: var(--yellow-dim);
+      --yellow-text: var(--yellow);
+
+      --border: #1d2035;
+      --border2: #252840;
+      --bg: #0d0f1a;
+      --card: #131625;
+      --card2: #181b2e;
+      --text: #e2e4f0;
+      --text-secondary: #737594;
+      --text-tertiary: #3c3f5a;
     }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif;
       background: var(--bg);
       color: var(--text);
       min-height: 100vh;
       padding-bottom: 80px;
     }
+
     /* TOP BAR */
     .topbar {
       position: sticky;
       top: 0;
       z-index: 50;
-      background: #fff;
+      background: rgba(13,15,26,0.88);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
       border-bottom: 1px solid var(--border);
-      padding: 12px 16px;
+      padding: 14px 16px 10px;
     }
-    .topbar-title { font-size: 18px; font-weight: 700; color: var(--green); }
-    .topbar-budget { font-size: 13px; color: var(--text-secondary); margin-top: 4px; }
-    .budget-bar-wrap { height: 6px; background: #e8e8e8; border-radius: 99px; margin-top: 6px; }
-    .budget-bar { height: 6px; border-radius: 99px; background: var(--green); transition: width .4s; }
-    .budget-bar.over { background: #e24b4a; }
+    .topbar-title {
+      font-size: 20px;
+      font-weight: 800;
+      background: linear-gradient(120deg, #4ade80, #22d3ee);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      letter-spacing: -0.4px;
+    }
+    .topbar-budget { font-size: 12px; color: var(--text-secondary); margin-top: 5px; }
+    .budget-bar-wrap { height: 4px; background: var(--border2); border-radius: 99px; margin-top: 8px; }
+    .budget-bar { height: 4px; border-radius: 99px; background: linear-gradient(90deg, #4ade80, #22d3ee); transition: width .5s; }
+    .budget-bar.over { background: linear-gradient(90deg, var(--orange), var(--red)); }
 
     /* BOTTOM NAV */
     .bottom-nav {
       position: fixed;
       bottom: 0; left: 0; right: 0;
-      background: #fff;
+      background: rgba(13,15,26,0.94);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
       border-top: 1px solid var(--border);
       display: flex;
       z-index: 50;
-      padding-bottom: env(safe-area-inset-bottom);
+      padding: 6px 0 calc(6px + env(safe-area-inset-bottom));
     }
     .nav-btn {
       flex: 1;
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 8px 2px;
-      font-size: 9px;
+      padding: 8px 2px 4px;
+      font-size: 10px;
       color: var(--text-tertiary);
       cursor: pointer;
       border: none;
       background: transparent;
-      gap: 2px;
+      gap: 4px;
       font-family: inherit;
+      font-weight: 600;
+      transition: color .2s;
+      letter-spacing: .01em;
     }
-    .nav-btn .icon { font-size: 20px; }
+    .nav-btn .icon { font-size: 22px; line-height: 1.2; transition: filter .2s; }
     .nav-btn.active { color: var(--green); }
+    .nav-btn.active .icon { filter: drop-shadow(0 0 6px var(--green-glow)); }
 
     /* VIEWS */
     .view { display: none; padding: 16px; }
@@ -89,111 +120,123 @@
     /* CARDS */
     .card {
       background: var(--card);
-      border-radius: 14px;
+      border-radius: 16px;
       border: 1px solid var(--border);
       padding: 14px 16px;
       margin-bottom: 12px;
     }
 
-    /* STATS */
-    .stats-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-bottom: 14px; }
-    .stat { background: var(--card); border-radius: 12px; border: 1px solid var(--border); padding: 12px; text-align: center; }
-    .stat-val { font-size: 22px; font-weight: 700; color: var(--text); }
-    .stat-lbl { font-size: 11px; color: var(--text-secondary); margin-top: 2px; }
-
     /* BUTTONS */
     .btn {
-      display: inline-flex; align-items: center; gap: 5px;
-      padding: 10px 16px; border-radius: 10px;
-      border: 1px solid var(--border);
-      background: transparent; color: var(--text);
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 12px 18px; border-radius: 12px;
+      border: 1px solid var(--border2);
+      background: var(--card2); color: var(--text);
       font-size: 14px; cursor: pointer; font-family: inherit;
-      font-weight: 500; transition: opacity .15s;
+      font-weight: 600; transition: transform .12s, opacity .12s;
+      letter-spacing: -0.1px;
     }
-    .btn:active { opacity: 0.75; }
-    .btn.primary { background: var(--green); color: #fff; border-color: transparent; }
-    .btn.ai { background: var(--blue); color: #fff; border-color: transparent; }
-    .btn.danger { background: #e24b4a; color: #fff; border-color: transparent; }
-    .btn.warn { background: #f5a623; color: #fff; border-color: transparent; }
-    .btn.sm { padding: 6px 12px; font-size: 12px; border-radius: 8px; }
+    .btn:active { transform: scale(0.96); }
+    .btn.primary { background: var(--green); color: #052010; border-color: transparent; }
+    .btn.ai {
+      background: linear-gradient(135deg, #3b82f6 0%, #6366f1 100%);
+      color: #fff; border-color: transparent;
+      box-shadow: 0 4px 24px rgba(99,102,241,0.4);
+      font-size: 15px; padding: 14px 18px;
+    }
+    .btn.danger { background: var(--red-dim); color: var(--red); border-color: rgba(248,113,113,0.18); }
+    .btn.warn { background: var(--orange-dim); color: var(--orange); border-color: rgba(251,146,60,0.18); }
+    .btn.sm { padding: 7px 12px; font-size: 12px; border-radius: 9px; }
     .btn.full { width: 100%; justify-content: center; margin-bottom: 10px; }
-    .btn:disabled { opacity: 0.4; cursor: not-allowed; }
+    .btn:disabled { opacity: 0.35; cursor: not-allowed; transform: none; }
 
     /* SECTION TITLE */
-    .section-title { font-size: 11px; font-weight: 600; color: var(--text-secondary); text-transform: uppercase; letter-spacing: .06em; margin-bottom: 10px; }
+    .section-title {
+      font-size: 11px; font-weight: 700; color: var(--text-secondary);
+      text-transform: uppercase; letter-spacing: .09em; margin-bottom: 10px;
+    }
 
     /* DAY CARDS */
     .day-card {
       background: var(--card);
-      border-radius: 14px;
+      border-radius: 18px;
       border: 1px solid var(--border);
-      margin-bottom: 10px;
+      margin-bottom: 12px;
       overflow: hidden;
     }
     .day-header {
       display: flex; align-items: center; justify-content: space-between;
-      padding: 10px 14px;
-      background: var(--bg);
+      padding: 10px 16px;
+      background: var(--card2);
       border-bottom: 1px solid var(--border);
     }
-    .day-name { font-size: 13px; font-weight: 600; color: var(--text-secondary); }
-    .day-body { padding: 12px 14px; }
-    .meal-name { font-size: 16px; font-weight: 600; color: var(--text); }
-    .meal-meta { font-size: 12px; color: var(--text-secondary); margin-top: 3px; display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
-    .cost-pill { background: var(--green-light); color: var(--green-text); border-radius: 99px; padding: 2px 8px; font-size: 11px; font-weight: 600; }
-    .meal-ingredients { font-size: 12px; color: var(--text-tertiary); margin-top: 6px; line-height: 1.7; }
+    .day-name {
+      font-size: 11px; font-weight: 700; color: var(--text-secondary);
+      text-transform: uppercase; letter-spacing: .09em;
+    }
+    .day-body { padding: 14px 16px; }
+    .meal-name { font-size: 18px; font-weight: 700; color: var(--text); letter-spacing: -0.4px; }
+    .meal-meta { font-size: 12px; color: var(--text-secondary); margin-top: 5px; display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+    .cost-pill {
+      background: var(--green-dim);
+      color: var(--green);
+      border: 1px solid rgba(74,222,128,0.2);
+      border-radius: 99px; padding: 3px 10px; font-size: 11px; font-weight: 700;
+    }
+    .meal-ingredients { font-size: 12px; color: var(--text-tertiary); margin-top: 10px; line-height: 1.75; border-top: 1px solid var(--border); padding-top: 10px; }
     .meal-actions { display: flex; gap: 6px; margin-top: 10px; flex-wrap: wrap; }
-    .empty-day { font-size: 14px; color: var(--text-tertiary); font-style: italic; padding: 8px 0; }
+    .empty-day { font-size: 14px; color: var(--text-tertiary); font-style: italic; padding: 14px 0; text-align: center; }
     .rating-btn {
-      padding: 5px 12px; border-radius: 99px;
-      border: 1px solid var(--border); font-size: 12px;
-      cursor: pointer; background: transparent; color: var(--text-secondary);
+      padding: 6px 12px; border-radius: 99px;
+      border: 1px solid var(--border2); font-size: 13px;
+      cursor: pointer; background: var(--card2); color: var(--text-secondary);
       font-family: inherit; transition: all .15s;
     }
-    .rating-btn.liked { background: var(--green-light); color: var(--green-text); border-color: transparent; }
-    .rating-btn.disliked { background: var(--red-light); color: var(--red-text); border-color: transparent; }
+    .rating-btn.liked { background: var(--green-dim); color: var(--green); border-color: rgba(74,222,128,0.2); }
+    .rating-btn.disliked { background: var(--red-dim); color: var(--red); border-color: rgba(248,113,113,0.2); }
 
     /* GROCERY */
-    .grocery-category { font-size: 11px; font-weight: 600; color: var(--text-tertiary); text-transform: uppercase; letter-spacing: .05em; padding: 12px 0 6px; }
-    .grocery-item { display: flex; align-items: center; gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--border); font-size: 14px; }
+    .grocery-category { font-size: 11px; font-weight: 700; color: var(--text-secondary); text-transform: uppercase; letter-spacing: .07em; padding: 14px 0 8px; }
+    .grocery-item { display: flex; align-items: center; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--border); font-size: 14px; color: var(--text); }
     .grocery-item:last-child { border-bottom: none; }
     .grocery-item input[type=checkbox] { width: 20px; height: 20px; accent-color: var(--green); flex-shrink: 0; }
     .checked-item { text-decoration: line-through; color: var(--text-tertiary); }
 
     /* FAVOURITES */
     .fav-card {
-      background: var(--card); border-radius: 14px; border: 1px solid var(--border);
-      padding: 14px; margin-bottom: 10px;
+      background: var(--card); border-radius: 16px; border: 1px solid var(--border);
+      padding: 14px 16px; margin-bottom: 10px;
     }
-    .fav-name { font-size: 15px; font-weight: 600; }
-    .fav-meta { font-size: 12px; color: var(--text-secondary); margin-top: 3px; }
+    .fav-name { font-size: 15px; font-weight: 600; color: var(--text); }
+    .fav-meta { font-size: 12px; color: var(--text-secondary); margin-top: 4px; }
     .fav-actions { display: flex; gap: 8px; margin-top: 10px; flex-wrap: wrap; }
 
     /* HISTORY */
-    .pref-item { display: flex; align-items: center; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--border); font-size: 14px; }
+    .pref-item { display: flex; align-items: center; justify-content: space-between; padding: 11px 0; border-bottom: 1px solid var(--border); font-size: 14px; color: var(--text); }
     .pref-item:last-child { border-bottom: none; }
     .badge { display: inline-block; font-size: 11px; padding: 2px 8px; border-radius: 99px; font-weight: 600; }
-    .badge.liked { background: var(--green-light); color: var(--green-text); }
-    .badge.disliked { background: var(--red-light); color: var(--red-text); }
-    .badge.fav { background: var(--yellow-light); color: var(--yellow-text); }
+    .badge.liked { background: var(--green-dim); color: var(--green); }
+    .badge.disliked { background: var(--red-dim); color: var(--red); }
+    .badge.fav { background: var(--yellow-dim); color: var(--yellow); }
 
     /* MODAL */
-    .modal { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,.45); z-index: 200; align-items: flex-end; }
+    .modal { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,.65); z-index: 200; align-items: flex-end; }
     .modal.open { display: flex; }
     .modal-sheet {
-      background: #fff; border-radius: 20px 20px 0 0;
+      background: var(--card); border-radius: 24px 24px 0 0;
+      border-top: 1px solid var(--border);
       padding: 20px 20px calc(20px + env(safe-area-inset-bottom));
       width: 100%; max-height: 90vh; overflow-y: auto;
     }
-    .modal-handle { width: 40px; height: 4px; background: #ddd; border-radius: 99px; margin: 0 auto 16px; }
-    .modal-sheet h3 { font-size: 18px; font-weight: 700; margin-bottom: 12px; }
-    .step-card { background: var(--bg); border-radius: 10px; padding: 10px 12px; margin-bottom: 8px; font-size: 14px; line-height: 1.6; }
-    .step-num { font-size: 11px; font-weight: 700; color: var(--green); margin-bottom: 3px; }
-    label { font-size: 13px; font-weight: 500; color: var(--text-secondary); display: block; margin-bottom: 5px; margin-top: 12px; }
+    .modal-handle { width: 36px; height: 4px; background: var(--border2); border-radius: 99px; margin: 0 auto 18px; }
+    .modal-sheet h3 { font-size: 20px; font-weight: 700; margin-bottom: 12px; color: var(--text); }
+    .step-card { background: var(--card2); border-radius: 12px; padding: 12px 14px; margin-bottom: 8px; font-size: 14px; line-height: 1.65; color: var(--text); border: 1px solid var(--border); }
+    .step-num { font-size: 10px; font-weight: 700; color: var(--green); margin-bottom: 4px; letter-spacing: .08em; }
+    label { font-size: 13px; font-weight: 500; color: var(--text-secondary); display: block; margin-bottom: 5px; margin-top: 14px; }
     input[type=text], input[type=number], textarea, select {
-      width: 100%; font-size: 14px; padding: 10px 12px;
-      border-radius: 10px; border: 1px solid var(--border);
-      background: var(--bg); color: var(--text); font-family: inherit;
+      width: 100%; font-size: 14px; padding: 11px 14px;
+      border-radius: 10px; border: 1px solid var(--border2);
+      background: var(--card2); color: var(--text); font-family: inherit;
     }
     textarea { resize: vertical; min-height: 80px; }
 
@@ -202,7 +245,7 @@
 
     /* LOADING */
     .loading { text-align: center; padding: 32px 16px; }
-    .spinner { display: inline-block; width: 32px; height: 32px; border: 3px solid var(--border); border-top-color: var(--green); border-radius: 50%; animation: spin .8s linear infinite; margin-bottom: 12px; }
+    .spinner { display: inline-block; width: 32px; height: 32px; border: 3px solid var(--border2); border-top-color: var(--green); border-radius: 50%; animation: spin .8s linear infinite; margin-bottom: 12px; }
     @keyframes spin { to { transform: rotate(360deg); } }
   </style>
 </head>
@@ -211,7 +254,7 @@
 
 <!-- TOP BAR -->
 <div class="topbar">
-  <div class="topbar-title">🥗 Ugentlig Madplan</div>
+  <div class="topbar-title">🍽 SmartPlate</div>
   <div class="topbar-budget" id="budget-text">0 / 1000 kr. brugt denne uge</div>
   <div class="budget-bar-wrap"><div class="budget-bar" id="budget-bar" style="width:0%"></div></div>
 </div>
@@ -245,8 +288,8 @@
 
 <!-- Chrome-udvidelse guide modal -->
 <div id="ext-guide-overlay" onclick="closeExtGuide()" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:8000;overflow-y:auto;-webkit-overflow-scrolling:touch;"></div>
-<div id="ext-guide-modal" style="display:none;position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);width:min(420px,94vw);max-height:90vh;overflow-y:auto;background:#fff;border-radius:18px;box-shadow:0 12px 48px rgba(0,0,0,.3);z-index:8001;">
-  <div style="background:var(--green);color:#fff;padding:16px 18px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:1;">
+<div id="ext-guide-modal" style="display:none;position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);width:min(420px,94vw);max-height:90vh;overflow-y:auto;background:var(--card);border:1px solid var(--border2);border-radius:20px;box-shadow:0 20px 60px rgba(0,0,0,.7);z-index:8001;">
+  <div style="background:linear-gradient(135deg,#3b82f6,#6366f1);color:#fff;padding:16px 18px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:1;border-radius:20px 20px 0 0;">
     <div>
       <div style="font-size:17px;font-weight:700;">🧩 Chrome-udvidelse</div>
       <div style="font-size:12px;opacity:.8;margin-top:1px;">SmartPlate × Bilka ToGo — automatisk indkøb</div>
@@ -254,61 +297,61 @@
     <button onclick="closeExtGuide()" style="background:none;border:none;color:#fff;font-size:26px;line-height:1;cursor:pointer;padding:0 2px;">×</button>
   </div>
   <div style="padding:18px;">
-    <p style="font-size:13px;color:#555;margin-bottom:18px;line-height:1.6;">Udvidelsen sender din indkøbsliste til Bilka ToGo og søger automatisk efter hver vare — du trykker bare ét klik per vare.</p>
+    <p style="font-size:13px;color:var(--text-secondary);margin-bottom:18px;line-height:1.6;">Udvidelsen sender din indkøbsliste til Bilka ToGo og søger automatisk efter hver vare — du trykker bare ét klik per vare.</p>
 
     <div style="display:flex;flex-direction:column;gap:14px;">
 
       <!-- Trin 1 -->
       <div style="display:flex;gap:12px;align-items:flex-start;">
-        <div style="min-width:32px;height:32px;background:var(--green);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px;">1</div>
+        <div style="min-width:32px;height:32px;background:var(--green-dim);border:1px solid rgba(74,222,128,0.25);color:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px;">1</div>
         <div>
-          <div style="font-weight:700;font-size:14px;margin-bottom:4px;">Download filer fra GitHub</div>
-          <p style="font-size:13px;color:#555;margin-bottom:8px;line-height:1.5;">Hent SmartPlate som ZIP-fil og pak den ud på din computer.</p>
-          <a href="https://github.com/faetterfims-tech/madplan/archive/refs/heads/main.zip" target="_blank" style="display:inline-block;background:var(--green);color:#fff;padding:8px 14px;border-radius:8px;font-size:13px;font-weight:600;text-decoration:none;">⬇️ Download ZIP-fil</a>
+          <div style="font-weight:700;font-size:14px;margin-bottom:4px;color:var(--text);">Download filer fra GitHub</div>
+          <p style="font-size:13px;color:var(--text-secondary);margin-bottom:8px;line-height:1.5;">Hent SmartPlate som ZIP-fil og pak den ud på din computer.</p>
+          <a href="https://github.com/faetterfims-tech/madplan/archive/refs/heads/main.zip" target="_blank" style="display:inline-block;background:var(--green);color:#052010;padding:8px 14px;border-radius:8px;font-size:13px;font-weight:700;text-decoration:none;">⬇️ Download ZIP-fil</a>
         </div>
       </div>
 
       <!-- Trin 2 -->
       <div style="display:flex;gap:12px;align-items:flex-start;">
-        <div style="min-width:32px;height:32px;background:var(--green);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px;">2</div>
+        <div style="min-width:32px;height:32px;background:var(--green-dim);border:1px solid rgba(74,222,128,0.25);color:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px;">2</div>
         <div>
-          <div style="font-weight:700;font-size:14px;margin-bottom:4px;">Åbn Chrome-udvidelser</div>
-          <p style="font-size:13px;color:#555;margin-bottom:8px;line-height:1.5;">Kopier adressen nedenfor og sæt den ind i Chrome-adresselinjen.</p>
-          <div style="background:#f5f5f5;border-radius:8px;padding:8px 12px;font-size:13px;font-family:monospace;display:flex;align-items:center;justify-content:space-between;gap:8px;">
+          <div style="font-weight:700;font-size:14px;margin-bottom:4px;color:var(--text);">Åbn Chrome-udvidelser</div>
+          <p style="font-size:13px;color:var(--text-secondary);margin-bottom:8px;line-height:1.5;">Kopier adressen nedenfor og sæt den ind i Chrome-adresselinjen.</p>
+          <div style="background:var(--card2);border:1px solid var(--border2);border-radius:8px;padding:8px 12px;font-size:13px;font-family:monospace;display:flex;align-items:center;justify-content:space-between;gap:8px;color:var(--text);">
             <span>chrome://extensions</span>
-            <button onclick="navigator.clipboard.writeText('chrome://extensions').then(()=>{this.textContent='✓';setTimeout(()=>this.textContent='Kopier',1500)})" style="background:var(--green);color:#fff;border:none;border-radius:6px;padding:4px 10px;font-size:12px;cursor:pointer;white-space:nowrap;">Kopier</button>
+            <button onclick="navigator.clipboard.writeText('chrome://extensions').then(()=>{this.textContent='✓';setTimeout(()=>this.textContent='Kopier',1500)})" style="background:var(--green);color:#052010;border:none;border-radius:6px;padding:4px 10px;font-size:12px;cursor:pointer;white-space:nowrap;font-weight:700;">Kopier</button>
           </div>
         </div>
       </div>
 
       <!-- Trin 3 -->
       <div style="display:flex;gap:12px;align-items:flex-start;">
-        <div style="min-width:32px;height:32px;background:var(--green);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px;">3</div>
+        <div style="min-width:32px;height:32px;background:var(--green-dim);border:1px solid rgba(74,222,128,0.25);color:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px;">3</div>
         <div>
-          <div style="font-weight:700;font-size:14px;margin-bottom:4px;">Slå udviklertilstand til</div>
-          <p style="font-size:13px;color:#555;line-height:1.5;">Øverst til højre på siden er der en kontakt ved siden af <strong>"Udviklertilstand"</strong> — slå den til (bliver blå).</p>
+          <div style="font-weight:700;font-size:14px;margin-bottom:4px;color:var(--text);">Slå udviklertilstand til</div>
+          <p style="font-size:13px;color:var(--text-secondary);line-height:1.5;">Øverst til højre på siden er der en kontakt ved siden af <strong style="color:var(--text);">"Udviklertilstand"</strong> — slå den til (bliver blå).</p>
         </div>
       </div>
 
       <!-- Trin 4 -->
       <div style="display:flex;gap:12px;align-items:flex-start;">
-        <div style="min-width:32px;height:32px;background:var(--green);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px;">4</div>
+        <div style="min-width:32px;height:32px;background:var(--green-dim);border:1px solid rgba(74,222,128,0.25);color:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px;">4</div>
         <div>
-          <div style="font-weight:700;font-size:14px;margin-bottom:4px;">Indlæs udvidelsen</div>
-          <p style="font-size:13px;color:#555;line-height:1.5;">Klik på <strong>"Indlæs ikke-pakket"</strong>.<br>Naviger til den udpakkede mappe og vælg mappen <strong style="font-family:monospace;">madplan-main/extension</strong>.</p>
+          <div style="font-weight:700;font-size:14px;margin-bottom:4px;color:var(--text);">Indlæs udvidelsen</div>
+          <p style="font-size:13px;color:var(--text-secondary);line-height:1.5;">Klik på <strong style="color:var(--text);">"Indlæs ikke-pakket"</strong>.<br>Naviger til den udpakkede mappe og vælg mappen <strong style="font-family:monospace;color:var(--text);">madplan-main/extension</strong>.</p>
         </div>
       </div>
 
       <!-- Trin 5 -->
-      <div style="display:flex;gap:12px;align-items:flex-start;background:#f2f9f2;border-radius:12px;padding:12px;">
-        <div style="min-width:32px;height:32px;background:var(--green);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px;">✓</div>
+      <div style="display:flex;gap:12px;align-items:flex-start;background:var(--green-dim);border:1px solid rgba(74,222,128,0.15);border-radius:14px;padding:14px;">
+        <div style="min-width:32px;height:32px;background:var(--green);color:#052010;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px;">✓</div>
         <div>
           <div style="font-weight:700;font-size:14px;margin-bottom:4px;color:var(--green);">Klart! Sådan bruger du det</div>
-          <ol style="font-size:13px;color:#555;line-height:1.8;margin:0;padding-left:16px;">
-            <li>Åbn <strong>smartplate.dk</strong> med din ugeplan</li>
-            <li>Klik på 🧩 <strong>SmartPlate-ikonet</strong> i Chrome-værktøjslinjen</li>
-            <li>Tryk <strong>"Synkroniser fra SmartPlate"</strong></li>
-            <li>Tryk <strong>"Start indkøb på Bilka ToGo"</strong></li>
+          <ol style="font-size:13px;color:var(--text-secondary);line-height:1.8;margin:0;padding-left:16px;">
+            <li>Åbn <strong style="color:var(--text);">smartplate.dk</strong> med din ugeplan</li>
+            <li>Klik på 🧩 <strong style="color:var(--text);">SmartPlate-ikonet</strong> i Chrome-værktøjslinjen</li>
+            <li>Tryk <strong style="color:var(--text);">"Synkroniser fra SmartPlate"</strong></li>
+            <li>Tryk <strong style="color:var(--text);">"Start indkøb på Bilka ToGo"</strong></li>
             <li>Udvidelsen søger automatisk — tryk ✓ for hver vare</li>
           </ol>
         </div>
@@ -527,9 +570,9 @@ function updateStats() {
   document.getElementById('budget-bar').className = 'budget-bar'+(cost>budget?' over':'');
   document.getElementById('budget-text').textContent = cost+' / '+budget+' kr. · '+settings.persons+' pers.';
   const planned = DAYS.filter(d=>weekPlan[d]).length;
-  document.getElementById('s-planned').textContent = planned+'/7';
+  const el1 = document.getElementById('s-planned'); if(el1) el1.textContent = planned+'/7';
   const names = DAYS.filter(d=>weekPlan[d]).map(d=>weekPlan[d].name);
-  document.getElementById('s-variety').textContent = names.length ? new Set(names).size+'/'+names.length : '-';
+  const el2 = document.getElementById('s-variety'); if(el2) el2.textContent = names.length ? new Set(names).size+'/'+names.length : '-';
 }
 
 // ── WEEK GRID ─────────────────────────────────────────────
@@ -1114,7 +1157,7 @@ function renderGrocery() {
   const budget=settings.budget;
   html+=`<div class="card" style="display:flex;justify-content:space-between;align-items:center;">
     <span style="font-weight:600;">Estimeret total (${settings.persons} pers.)</span>
-    <span style="font-size:16px;font-weight:700;color:${cost>budget?'#e24b4a':'var(--green)'}">${cost} kr.</span>
+    <span style="font-size:16px;font-weight:700;color:${cost>budget?'var(--red)':'var(--green)'}">${cost} kr.</span>
   </div>`;
   c.innerHTML=html;
 }
