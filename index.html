@@ -623,7 +623,7 @@ function removeMeal(day) { delete weekPlan[day]; renderWeekGrid(); }
 function clearWeek() {
   if(!confirm('Ryd hele ugeplanen?')) return;
   const cur = Object.values(weekPlan).filter(Boolean).map(m=>m.name);
-  recentMeals = [...new Set([...cur,...recentMeals])].slice(0,21);
+  recentMeals = [...new Set([...cur,...recentMeals])].slice(0,56);
   weekPlan = {}; save(); renderWeekGrid(); renderHistory();
 }
 
@@ -657,7 +657,10 @@ function approvePlan() {
     totalCost: total,
     persons: settings.persons
   });
-  save(); renderPlanHistory();
+  // Tilføj ugens retter til recentMeals så algoritmen undgår gentagelser næste gang
+  const curNames = planned.map(d => weekPlan[d].name);
+  recentMeals = [...new Set([...curNames, ...recentMeals])].slice(0, 56);
+  save(); renderPlanHistory(); renderHistory();
   alert('✅ ' + label + ' gemt i historikken!');
 }
 
@@ -1311,7 +1314,7 @@ function scoreRecipe(r, liked, pickedMainIngs) {
   else                    budgetScore = -20;  // alt for billig
   return {
     ...r,
-    _score: (liked.includes(r.name) ? 20 : 0) + Math.random() * 6 - repeat * 20 + budgetScore,
+    _score: (liked.includes(r.name) ? 20 : 0) + Math.random() * 40 - repeat * 20 + budgetScore,
     _mainIngs: mainIngs
   };
 }
@@ -1401,21 +1404,28 @@ function pickMeals(pool, count, alreadyPicked, liked, disliked) {
   const pickedMainIngs = new Set();
   const picked      = [];
 
-  // Find bedste tilgængelige opskrift fra en given cuisine
-  const getBest = (cuisine) =>
-    avail
+  // Vælg tilfældigt fra de N bedste kandidater (giver variation uden at ignorere kvalitet)
+  const pickFromTop = (candidates, n = 5) => {
+    if (!candidates.length) return null;
+    const top = candidates.sort((a, b) => b._score - a._score).slice(0, n);
+    return top[Math.floor(Math.random() * top.length)];
+  };
+
+  // Find tilfældig god opskrift fra en given cuisine
+  const getBest = (cuisine) => {
+    const scored = avail
       .filter(r => !usedIds.has(r.id) && r.cuisine === cuisine)
-      .map(r => scoreRecipe(r, liked, pickedMainIngs))
-      .sort((a, b) => b._score - a._score)[0] || null;
+      .map(r => scoreRecipe(r, liked, pickedMainIngs));
+    return pickFromTop(scored, 5);
+  };
 
   // Fallback: bed om HVILKEN SOM HELST cuisine vi ikke har overskredet
   const getAny = (usedCuisines) => {
-    const all = avail
+    const scored = avail
       .filter(r => !usedIds.has(r.id))
       .map(r => scoreRecipe(r, liked, pickedMainIngs))
-      .filter(r => (usedCuisines[r.cuisine] || 0) < 2)
-      .sort((a, b) => b._score - a._score);
-    return all[0] || avail.filter(r => !usedIds.has(r.id)).map(r => scoreRecipe(r, liked, pickedMainIngs)).sort((a, b) => b._score - a._score)[0] || null;
+      .filter(r => (usedCuisines[r.cuisine] || 0) < 2);
+    return pickFromTop(scored, 5) || pickFromTop(avail.filter(r => !usedIds.has(r.id)).map(r => scoreRecipe(r, liked, pickedMainIngs)), 5) || null;
   };
 
   for (const targetCuisine of cuisinePlan) {
@@ -1465,7 +1475,15 @@ async function requestNewWeek() {
       ...Object.entries(ratings).filter(([,v])=>v==='liked').map(([k])=>k),
       ...favourites.map(f=>f.name)
     ];
-    const avoid = [...new Set([...recentMeals, ...Object.values(weekPlan).filter(Boolean).map(m=>m.name)])].slice(0,21);
+    // Byg avoid-liste: recentMeals + nuværende uge + de 4 seneste godkendte ugeplaner
+    const historyMeals = planHistory.slice(0, 4).flatMap(h =>
+      Object.values(h.weekPlan || {}).filter(Boolean).map(m => m.name)
+    );
+    const avoid = [...new Set([
+      ...recentMeals,
+      ...Object.values(weekPlan).filter(Boolean).map(m => m.name),
+      ...historyMeals
+    ])].slice(0, 56);
     const target  = budgetTargetPer4();
     const maxCost = target * 1.35;
     const minCost = target * 0.45; // undgå opskrifter der er alt for billige ift. budgettet
