@@ -502,6 +502,7 @@ let recentMeals = [];
 let customRecipes = [];
 let planHistory = [];
 let checkedItems = new Set();
+let sessionGenerated = []; // opskrifter vist i denne session — nulstilles ved godkend/ryd
 let recipeModalMeal = null;
 let recipeModalBackId = null;
 let editingCustomIdx = null;
@@ -624,6 +625,7 @@ function clearWeek() {
   if(!confirm('Ryd hele ugeplanen?')) return;
   const cur = Object.values(weekPlan).filter(Boolean).map(m=>m.name);
   recentMeals = [...new Set([...cur,...recentMeals])].slice(0,56);
+  sessionGenerated = [];
   weekPlan = {}; save(); renderWeekGrid(); renderHistory();
 }
 
@@ -660,6 +662,7 @@ function approvePlan() {
   // Tilføj ugens retter til recentMeals så algoritmen undgår gentagelser næste gang
   const curNames = planned.map(d => weekPlan[d].name);
   recentMeals = [...new Set([...curNames, ...recentMeals])].slice(0, 56);
+  sessionGenerated = [];
   save(); renderPlanHistory(); renderHistory();
   alert('✅ ' + label + ' gemt i historikken!');
 }
@@ -1475,15 +1478,16 @@ async function requestNewWeek() {
       ...Object.entries(ratings).filter(([,v])=>v==='liked').map(([k])=>k),
       ...favourites.map(f=>f.name)
     ];
-    // Byg avoid-liste: recentMeals + nuværende uge + de 4 seneste godkendte ugeplaner
+    // Byg avoid-liste: recentMeals + session-genererede + nuværende uge + de 4 seneste godkendte ugeplaner
     const historyMeals = planHistory.slice(0, 4).flatMap(h =>
       Object.values(h.weekPlan || {}).filter(Boolean).map(m => m.name)
     );
     const avoid = [...new Set([
       ...recentMeals,
+      ...sessionGenerated,
       ...Object.values(weekPlan).filter(Boolean).map(m => m.name),
       ...historyMeals
-    ])].slice(0, 56);
+    ])].slice(0, 140);
     const target  = budgetTargetPer4();
     const maxCost = target * 1.35;
     const minCost = target * 0.45; // undgå opskrifter der er alt for billige ift. budgettet
@@ -1504,6 +1508,10 @@ async function requestNewWeek() {
 
     // Kalibrér totalen mod budget — swap afvigere op til 5 gange
     picked = budgetCalibrate(picked, db, disliked);
+
+    // Husk de valgte opskrifter i session-hukommelsen
+    const pickedNames = picked.map(p => p.name);
+    sessionGenerated = [...new Set([...sessionGenerated, ...pickedNames])];
 
     weekPlan = {};
     DAYS.forEach((day, i) => { if (picked[i]) weekPlan[day] = recipeToMeal(picked[i]); });
